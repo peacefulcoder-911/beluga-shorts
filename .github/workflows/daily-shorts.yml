@@ -1,0 +1,52 @@
+name: Daily Beluga Shorts Automation
+
+on:
+  schedule:
+    # Runs everyday at 12:00 PM UTC (5:30 PM IST / peak afternoon Shorts viewing)
+    - cron: '0 12 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI or mobile app anytime
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-upload:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install System Dependencies for Remotion
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg libasound2 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libpango-1.0-0 libxshmfence1
+
+      - name: Install Node Dependencies
+        run: npm ci
+
+      - name: Run Daily Generation, Render & Upload
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_PRIVACY: public
+        run: node runDaily.js
+
+      - name: Commit and Push Updated Story History
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add history.json
+          git commit -m "chore: record uploaded short to history [skip ci]" || echo "No changes to commit"
+          git push
