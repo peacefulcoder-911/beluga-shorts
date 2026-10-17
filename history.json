@@ -730,5 +730,53 @@
         "time": "Today at 3:22 PM"
       }
     ]
+  },
+  {
+    "date": "2026-10-17T08:59:49.485Z",
+    "title": "Beluga's 'sick day' got exposed 💀",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "mr. smith my head hurts so bad. cant make it to school 🤒",
+        "time": "Today at 9:07 AM"
+      },
+      {
+        "id": 2,
+        "author": "Mr. Smith",
+        "content": "Oh dear, Beluga. Get some rest. Feel better!",
+        "time": "Today at 9:08 AM"
+      },
+      {
+        "id": 3,
+        "author": "Mr. Smith",
+        "content": "But your Discord status says 'Playing CS:GO for 7 hours'?",
+        "time": "Today at 9:10 AM"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "my dog pressed 'play' sir",
+        "time": "Today at 9:11 AM"
+      },
+      {
+        "id": 5,
+        "author": "Mr. Smith",
+        "content": "Your dog with the username 'BelugaOfficial'?",
+        "time": "Today at 9:12 AM"
+      },
+      {
+        "id": 6,
+        "author": "Hecker",
+        "content": "Live scan: dog just hit global elite.",
+        "time": "Today at 9:13 AM"
+      },
+      {
+        "id": 7,
+        "author": "Mr. Smith",
+        "content": "See you in class. Bring your homework. And your 'dog'.",
+        "time": "Today at 9:14 AM"
+      }
+    ]
   }
 ]
