@@ -23,13 +23,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
-
-      - name: Install System Dependencies for Remotion
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg libasound2 libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 libpango-1.0-0 libxshmfence1
 
       - name: Install Node Dependencies
         run: npm ci
