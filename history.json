@@ -778,5 +778,65 @@
         "time": "Today at 9:14 AM"
       }
     ]
+  },
+  {
+    "date": "2026-10-17T14:38:17.683Z",
+    "title": "Beluga got caught cheating by the teacher... 💀",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "yo who did the math homework",
+        "time": "Today at 3:15 PM"
+      },
+      {
+        "id": 2,
+        "author": "Pablo",
+        "content": "I got you Beluga, it's all attached",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "lifesaver 🙏",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 4,
+        "author": "Ms. Lily",
+        "content": "Beluga, Pablo. See me after class.",
+        "time": "Today at 3:17 PM"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "wait ms. lily???",
+        "time": "Today at 3:17 PM"
+      },
+      {
+        "id": 6,
+        "author": "Pablo",
+        "content": "she's in the group chat? 💀",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 7,
+        "author": "Hecker",
+        "content": "live scan: group admin is 'Ms. Lily'.",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "Hecker delete her 😭",
+        "time": "Today at 3:19 PM"
+      },
+      {
+        "id": 9,
+        "author": "Ms. Lily",
+        "content": "One more message and it's detention.",
+        "time": "Today at 3:19 PM"
+      }
+    ]
   }
 ]
