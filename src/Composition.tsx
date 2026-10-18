@@ -38,6 +38,9 @@ const getAvatar = (name: string) => {
   if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return staticFile("police.jpg");
   if (n.includes("skittle")) return staticFile("skittle.jpg");
   if (n.includes("vladimir") || n.includes("vlad")) return staticFile("vladimir.jpg");
+  if (n.includes("nasa")) return staticFile("nasa.jpg");
+  if (n.includes("google")) return staticFile("google.jpg");
+  if (n.includes("system") || n.includes("bot")) return staticFile("system.jpg");
   return staticFile("default_user.jpg");
 };
 
@@ -53,6 +56,9 @@ const getColor = (name: string) => {
   if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return "#5865F2";
   if (n.includes("skittle")) return "#ff73fa";
   if (n.includes("vladimir") || n.includes("vlad")) return "#00bcd4";
+  if (n.includes("nasa")) return "#1e88e5";
+  if (n.includes("google")) return "#4285F4";
+  if (n.includes("system") || n.includes("bot")) return "#ff5252";
   return "#99aab5";
 };
 
