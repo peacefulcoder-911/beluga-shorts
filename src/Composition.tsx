@@ -5,13 +5,19 @@ import scriptJson from "./script.json";
 const fps = 30;
 const MAX_FRAMES = 58 * fps; // 58 seconds safe limit for YouTube Shorts
 
-// Calculate per-message frames with generous reading time
+// Calculate per-message frames with natural, responsive reading time
 const rawTimes = scriptJson.map((msg, idx) => {
   const isLast = idx === scriptJson.length - 1;
-  // Give comfortable reading time: at least 2.2s for normal messages, 3.5s for the punchline
-  const baseSeconds = isLast ? 3.5 : 2.2;
-  const lengthSeconds = msg.content.length * 0.045;
-  const totalSeconds = Math.max(baseSeconds, 1.2 + lengthSeconds);
+  if (isLast) return Math.floor(3.5 * fps);
+
+  const words = msg.content.trim().split(/\s+/).length;
+  let baseSec = 1.1;
+  if (words <= 2) baseSec = 1.0;
+  else if (words <= 5) baseSec = 1.35;
+  else if (words <= 8) baseSec = 1.75;
+  else baseSec = 2.4;
+
+  const totalSeconds = baseSec + msg.content.length * 0.015;
   return Math.floor(totalSeconds * fps);
 });
 
@@ -27,6 +33,7 @@ const getAvatar = (name: string) => {
   if (n.includes("hecker")) return staticFile("hecker.jpg");
   if (n.includes("mom") || n.includes("mother")) return staticFile("mom.jpg");
   if (n.includes("girlfriend") || n.includes("gf") || n.includes("babe")) return staticFile("girlfriend.jpg");
+  if (n.includes("admin") || n.includes("mod")) return staticFile("admin.jpg");
   if (n.includes("pablo")) return staticFile("pablo.jpg");
   if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return staticFile("police.jpg");
   if (n.includes("skittle")) return staticFile("skittle.jpg");
@@ -41,6 +48,7 @@ const getColor = (name: string) => {
   if (n.includes("hecker")) return "#57f287";
   if (n.includes("mom") || n.includes("mother")) return "#f47b67";
   if (n.includes("girlfriend") || n.includes("gf") || n.includes("babe")) return "#eb459e";
+  if (n.includes("admin") || n.includes("mod")) return "#fee75c";
   if (n.includes("pablo")) return "#fee75c";
   if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return "#5865F2";
   if (n.includes("skittle")) return "#ff73fa";

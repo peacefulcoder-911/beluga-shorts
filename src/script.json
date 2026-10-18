@@ -1,56 +1,206 @@
 [
   {
     "id": 1,
-    "author": "Girlfriend",
-    "content": "babe can you help me with homework later?",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "guys i just became a millionaire",
+    "time": "Today at 12:00 PM"
   },
   {
     "id": 2,
-    "author": "Beluga",
-    "content": "no can do, literally buried in assignments 😩",
-    "time": "Today at 3:16 PM"
+    "author": "Skittle",
+    "content": "bro your bank account has $2",
+    "time": "Today at 12:00 PM"
   },
   {
     "id": 3,
-    "author": "Girlfriend",
-    "content": "oh really? your Discord status says...",
-    "time": "Today at 3:17 PM"
+    "author": "Beluga",
+    "content": "not anymore",
+    "time": "Today at 12:01 PM"
   },
   {
     "id": 4,
-    "author": "Girlfriend",
-    "content": "'Playing My Little Pony: Equestria Girls - Dance Magic for 7 hours'",
-    "time": "Today at 3:17 PM"
+    "author": "Skittle",
+    "content": "WHAT DID YOU DO",
+    "time": "Today at 12:01 PM"
   },
   {
     "id": 5,
     "author": "Beluga",
-    "content": "that's... that's a prank by Hecker!",
-    "time": "Today at 3:18 PM"
+    "content": "i found a wallet",
+    "time": "Today at 12:02 PM"
   },
   {
     "id": 6,
-    "author": "Girlfriend",
-    "content": "Hecker lives 3000 miles away, Beluga.",
-    "time": "Today at 3:19 PM"
+    "author": "Skittle",
+    "content": "return it \ud83d\udc80",
+    "time": "Today at 12:02 PM"
   },
   {
     "id": 7,
-    "author": "Hecker",
-    "content": "live scan: adult male observed performing the 'Filly Fandango'.",
-    "time": "Today at 3:20 PM"
+    "author": "Beluga",
+    "content": "i did",
+    "time": "Today at 12:02 PM"
   },
   {
     "id": 8,
-    "author": "Beluga",
-    "content": "it's for research purposes! okay! 💀",
-    "time": "Today at 3:21 PM"
+    "author": "Skittle",
+    "content": "then how are you rich",
+    "time": "Today at 12:03 PM"
   },
   {
     "id": 9,
-    "author": "Girlfriend",
-    "content": "...",
-    "time": "Today at 3:22 PM"
+    "author": "Beluga",
+    "content": "the wallet belonged to a billionaire",
+    "time": "Today at 12:03 PM"
+  },
+  {
+    "id": 10,
+    "author": "Hecker",
+    "content": "WAIT",
+    "time": "Today at 12:04 PM"
+  },
+  {
+    "id": 11,
+    "author": "Hecker",
+    "content": "DID YOU STEAL HIS MONEY",
+    "time": "Today at 12:04 PM"
+  },
+  {
+    "id": 12,
+    "author": "Beluga",
+    "content": "no",
+    "time": "Today at 12:04 PM"
+  },
+  {
+    "id": 13,
+    "author": "Beluga",
+    "content": "he gave me $1 million as a reward",
+    "time": "Today at 12:05 PM"
+  },
+  {
+    "id": 14,
+    "author": "Skittle",
+    "content": "this is the most unbelievable thing you've ever said",
+    "time": "Today at 12:05 PM"
+  },
+  {
+    "id": 15,
+    "author": "Beluga",
+    "content": "check my bank account",
+    "time": "Today at 12:06 PM"
+  },
+  {
+    "id": 16,
+    "author": "Skittle",
+    "content": "BRO ACTUALLY HAS $1,000,002",
+    "time": "Today at 12:06 PM"
+  },
+  {
+    "id": 17,
+    "author": "Admin",
+    "content": "Beluga, congratulations!",
+    "time": "Today at 12:07 PM"
+  },
+  {
+    "id": 18,
+    "author": "Beluga",
+    "content": "thank you admin",
+    "time": "Today at 12:07 PM"
+  },
+  {
+    "id": 19,
+    "author": "Admin",
+    "content": "now please pay your $999,999 server debt",
+    "time": "Today at 12:08 PM"
+  },
+  {
+    "id": 20,
+    "author": "Beluga",
+    "content": "WHAT DEBT",
+    "time": "Today at 12:08 PM"
+  },
+  {
+    "id": 21,
+    "author": "Admin",
+    "content": "you accidentally bought the entire server yesterday",
+    "time": "Today at 12:09 PM"
+  },
+  {
+    "id": 22,
+    "author": "Skittle",
+    "content": "WAIT",
+    "time": "Today at 12:10 PM"
+  },
+  {
+    "id": 23,
+    "author": "Skittle",
+    "content": "YOU OWN THE SERVER?",
+    "time": "Today at 12:10 PM"
+  },
+  {
+    "id": 24,
+    "author": "Beluga",
+    "content": "technically",
+    "time": "Today at 12:11 PM"
+  },
+  {
+    "id": 25,
+    "author": "Hecker",
+    "content": "THEN MAKE ME ADMIN",
+    "time": "Today at 12:11 PM"
+  },
+  {
+    "id": 26,
+    "author": "Beluga",
+    "content": "done",
+    "time": "Today at 12:12 PM"
+  },
+  {
+    "id": 27,
+    "author": "Hecker",
+    "content": "LET'S GOOOO",
+    "time": "Today at 12:12 PM"
+  },
+  {
+    "id": 28,
+    "author": "Admin",
+    "content": "Beluga, you have been banned for abusing administrator privileges",
+    "time": "Today at 12:13 PM"
+  },
+  {
+    "id": 29,
+    "author": "Beluga",
+    "content": "guys",
+    "time": "Today at 12:14 PM"
+  },
+  {
+    "id": 30,
+    "author": "Beluga",
+    "content": "i just became a millionaire again",
+    "time": "Today at 12:14 PM"
+  },
+  {
+    "id": 31,
+    "author": "Skittle",
+    "content": "HOW",
+    "time": "Today at 12:15 PM"
+  },
+  {
+    "id": 32,
+    "author": "Beluga",
+    "content": "i sold the server",
+    "time": "Today at 12:15 PM"
+  },
+  {
+    "id": 33,
+    "author": "Hecker",
+    "content": "TO WHO",
+    "time": "Today at 12:16 PM"
+  },
+  {
+    "id": 34,
+    "author": "Beluga",
+    "content": "the billionaire",
+    "time": "Today at 12:16 PM"
   }
 ]
