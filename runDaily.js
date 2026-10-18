@@ -39,6 +39,18 @@ async function runDaily() {
     const videoTitle = `${data.title} #shorts`;
     const videoUrl = await uploadVideo(outputPath, videoTitle);
 
+    // Save video URL to history
+    const historyPath = path.join(process.cwd(), "history.json");
+    if (fs.existsSync(historyPath)) {
+      try {
+        const hist = JSON.parse(fs.readFileSync(historyPath, "utf8"));
+        if (hist.length > 0) {
+          hist[hist.length - 1].videoUrl = videoUrl;
+          fs.writeFileSync(historyPath, JSON.stringify(hist, null, 2));
+        }
+      } catch (e) {}
+    }
+
     console.log('\n====================================');
     console.log('🎉 24/7 DAILY SHORT UPLOAD COMPLETE!');
     console.log(`📺 Video URL: ${videoUrl}`);
