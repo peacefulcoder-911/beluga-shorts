@@ -1,10 +1,19 @@
-name: Daily Beluga Shorts Automation
+name: 10x Daily Beluga Shorts Automation
 
 on:
   schedule:
-    # Runs everyday at 12:00 PM UTC (5:30 PM IST / peak afternoon Shorts viewing)
-    - cron: '0 12 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI or mobile app anytime
+    # 10 Peak Global Slots (Spaced every ~1h45m across peak viewing windows)
+    - cron: '30 2 * * *'   # Slot 1:  08:00 AM IST (Asia morning wakeup)
+    - cron: '15 4 * * *'   # Slot 2:  09:45 AM IST (Mid-morning surge)
+    - cron: '0 6 * * *'    # Slot 3:  11:30 AM IST (Pre-lunch / Europe morning)
+    - cron: '45 7 * * *'   # Slot 4:  01:15 PM IST (Lunchtime peak / Europe commute)
+    - cron: '30 9 * * *'   # Slot 5:  03:00 PM IST (Afternoon break / Europe lunch)
+    - cron: '15 11 * * *'  # Slot 6:  04:45 PM IST (School out / US East morning)
+    - cron: '0 13 * * *'   # Slot 7:  06:30 PM IST (Evening commute / US East lunch)
+    - cron: '45 14 * * *'  # Slot 8:  08:15 PM IST (Prime evening / Europe evening)
+    - cron: '30 16 * * *'  # Slot 9:  10:00 PM IST (Night relaxation / US East afternoon)
+    - cron: '15 18 * * *'  # Slot 10: 11:45 PM IST (Midnight scroll / US peak prime)
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:
   contents: write
@@ -42,6 +51,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main || true
           git add history.json
           git commit -m "chore: record uploaded short to history [skip ci]" || echo "No changes to commit"
-          git push
+          git push origin main

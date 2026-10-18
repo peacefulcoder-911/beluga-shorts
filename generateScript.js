@@ -205,7 +205,7 @@ Title: Beluga Accidentally Started World War 3 💀 #shorts
 4. **SHOUTING & EMOJIS**:
    - Use ALL CAPS for shock, screaming, and panic ('BRO WHAT', 'DO NOT YOU DARE', 'WHAT DID YOU DO').
    - Use awkward emojis (💀, 😳, 🥺, <3) sparingly at emotional peaks.
-5. **ALLOWED CHARACTERS ONLY (The 12 Core Archetypes)**:
+5. **STRICT CLOSED CAST (ONLY USE THESE CURRENT AVATARS - NO NEW CHARACTERS)**:
    - 'Beluga' (chaotic, deadpan main cat)
    - 'Skittle' (skeptical best friend kitten)
    - 'Hecker' (elite hacker Floppa cat)
@@ -219,6 +219,7 @@ Title: Beluga Accidentally Started World War 3 💀 #shorts
    - 'Mom' (furious mother)
    - 'Girlfriend' (suspicious partner asking trap questions)
    - 'Pablo' (shady Discord moderator)
+   CRITICAL: DO NOT invent, create, or name ANY character not on this list (NO "Doctor", NO "Customer", NO "Stranger", etc.). Every single message MUST be sent by one of the 13 approved characters above.
 6. **FRESH VIRAL TOPIC**: Pick an original, unexpected, high-curiosity dilemma following one of the 4 archetypes above.
 7. **AVOID PAST TITLES**: [${pastTitles || 'None yet'}]
 
