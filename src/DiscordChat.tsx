@@ -1,4 +1,4 @@
-import { useCurrentFrame, useVideoConfig, Audio, Sequence, staticFile } from "remotion";
+import { useCurrentFrame, Audio, Sequence, staticFile } from "remotion";
 import React from "react";
 
 export type MessageData = {
@@ -13,7 +13,7 @@ export type MessageData = {
 
 export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  // const { fps } = useVideoConfig();
 
   // Show a new message every 1.5 seconds (fps * 1.5 frames)
   const visibleMessages = script.filter(msg => frame >= (msg.startFrame || 0));

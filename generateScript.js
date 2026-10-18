@@ -73,6 +73,18 @@ Messages:
 8. Hecker: "Rule 1: don't touch Beluga."
 9. Beluga: "L + ratio pablo"
 
+ALLOWED CHARACTERS (Strictly choose from these names):
+- "Beluga": The main awkward cat
+- "Mr. Smith": The strict school teacher
+- "Hecker": The mysterious hacker cat with computer skills
+- "Girlfriend": Beluga's suspicious girlfriend
+- "Pablo": The abusive Discord server moderator
+- "Mom": Beluga's angry or protective mother
+- "Police": Law enforcement / FBI
+- "Skittle": Cute anime girl character, friend
+- "Vladimir": Stoic Russian cat wearing Ushanka hat
+CRITICAL: Every character MUST use one of the exact names above so their unique profile pictures and colors load properly!
+
 NOW WRITE A BRAND NEW, ORIGINAL STORY:
 1. TOPIC: Choose a relatable real-world dilemma:
    - Girlfriend asking a ridiculous test or catching a lie

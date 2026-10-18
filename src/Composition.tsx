@@ -22,22 +22,30 @@ const scaleFactor = rawTotalFrames > MAX_FRAMES ? MAX_FRAMES / rawTotalFrames : 
 
 const getAvatar = (name: string) => {
   const n = name.toLowerCase();
+  if (n.includes("beluga") || n.includes("belu")) return staticFile("beluga.jpg");
+  if (n.includes("smith") || n.includes("teacher") || n.includes("prof") || n.includes("sir")) return staticFile("teacher.jpg");
   if (n.includes("hecker")) return staticFile("hecker.jpg");
-  if (n.includes("mom")) return staticFile("mom.jpg");
-  if (n.includes("girlfriend") || n.includes("gf")) return staticFile("girlfriend.jpg");
+  if (n.includes("mom") || n.includes("mother")) return staticFile("mom.jpg");
+  if (n.includes("girlfriend") || n.includes("gf") || n.includes("babe")) return staticFile("girlfriend.jpg");
   if (n.includes("pablo")) return staticFile("pablo.jpg");
-  if (n.includes("police") || n.includes("fbi")) return staticFile("police.jpg");
-  return staticFile("beluga.jpg");
+  if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return staticFile("police.jpg");
+  if (n.includes("skittle")) return staticFile("skittle.jpg");
+  if (n.includes("vladimir") || n.includes("vlad")) return staticFile("vladimir.jpg");
+  return staticFile("default_user.jpg");
 };
 
 const getColor = (name: string) => {
   const n = name.toLowerCase();
+  if (n.includes("beluga") || n.includes("belu")) return "#ed4245";
+  if (n.includes("smith") || n.includes("teacher") || n.includes("prof") || n.includes("sir")) return "#3ba55c";
   if (n.includes("hecker")) return "#57f287";
-  if (n.includes("mom")) return "#ed4245";
-  if (n.includes("girlfriend") || n.includes("gf")) return "#eb459e";
+  if (n.includes("mom") || n.includes("mother")) return "#f47b67";
+  if (n.includes("girlfriend") || n.includes("gf") || n.includes("babe")) return "#eb459e";
   if (n.includes("pablo")) return "#fee75c";
-  if (n.includes("police") || n.includes("fbi")) return "#5865F2";
-  return "#ed4245";
+  if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return "#5865F2";
+  if (n.includes("skittle")) return "#ff73fa";
+  if (n.includes("vladimir") || n.includes("vlad")) return "#00bcd4";
+  return "#99aab5";
 };
 
 let currentFrame = 0;
