@@ -29,7 +29,10 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "start": "node runDaily.js"
+    "start": "node runDaily.js",
+    "longform:generate": "node longform/scripts/generateLongformScript.js",
+    "longform:render": "remotion render src/index.ts LongformDiscord out/longform_test.mp4",
+    "longform:start": "node longform/scripts/runLongform.js"
   },
   "sideEffects": [
     "*.css"

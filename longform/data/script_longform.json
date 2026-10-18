@@ -1,0 +1,268 @@
+{
+  "title": "Beluga Accidentally Sells the Discord Server 💸",
+  "description": "Beluga thought he was claiming a free emoji but accidentally sold the entire Discord server to a Billionaire. Now Admin, the Police, and Hecker are involved! #beluga #discord #comedy",
+  "tags": [
+    "beluga",
+    "discord",
+    "animation",
+    "comedy",
+    "funny",
+    "memes",
+    "hecker",
+    "server",
+    "billionaire"
+  ],
+  "scenes": [
+    {
+      "sceneId": 1,
+      "channelName": "general",
+      "channelType": "text",
+      "topic": "Welcome to the server! Don't click sketchy links.",
+      "messages": [
+        {
+          "id": 1,
+          "author": "Beluga",
+          "time": "Today at 4:10 PM",
+          "content": "guys i clicked a link for a free 'server' emoji"
+        },
+        {
+          "id": 2,
+          "author": "Skittle",
+          "time": "Today at 4:10 PM",
+          "content": "BELUGA NO. DO NOT CLICK LINKS"
+        },
+        {
+          "id": 3,
+          "author": "SYSTEM",
+          "time": "Today at 4:11 PM",
+          "content": "Server ownership transferred from 'Admin' to 'BillionaireCorp'."
+        },
+        {
+          "id": 4,
+          "author": "Admin",
+          "time": "Today at 4:11 PM",
+          "content": "WHAT IS THIS. MY SERVER?!"
+        },
+        {
+          "id": 5,
+          "author": "Beluga",
+          "time": "Today at 4:11 PM",
+          "content": "what happened? did i get the emoji?"
+        },
+        {
+          "id": 6,
+          "author": "Skittle",
+          "time": "Today at 4:12 PM",
+          "content": "YOU JUST SOLD THE SERVER FOR AN EMOJI!"
+        },
+        {
+          "id": 7,
+          "author": "Admin",
+          "time": "Today at 4:12 PM",
+          "content": "CALL HECKER NOW!"
+        },
+        {
+          "id": 8,
+          "author": "Google",
+          "time": "Today at 4:12 PM",
+          "content": "Did you mean: 'How to reverse a blockchain-secured server ownership transfer'?"
+        },
+        {
+          "id": 9,
+          "author": "NASA",
+          "time": "Today at 4:13 PM",
+          "content": "Anomaly detected. A high-value digital asset just changed hands."
+        },
+        {
+          "id": 10,
+          "author": "Beluga",
+          "time": "Today at 4:13 PM",
+          "content": "so no free emoji?"
+        },
+        {
+          "id": 11,
+          "author": "Hecker",
+          "time": "Today at 4:13 PM",
+          "content": "Beluga, you absolute idiot. Call me. NOW."
+        }
+      ]
+    },
+    {
+      "sceneId": 2,
+      "channelName": "voice-lounge",
+      "channelType": "voice",
+      "topic": "Emergency meeting regarding international digital assets",
+      "voiceMembers": [
+        "Beluga",
+        "Hecker"
+      ],
+      "messages": [
+        {
+          "id": 12,
+          "author": "Hecker",
+          "time": "Today at 4:14 PM",
+          "content": "Beluga, WHAT DID YOU CLICK",
+          "voiceEvent": "user_joined"
+        },
+        {
+          "id": 13,
+          "author": "Beluga",
+          "time": "Today at 4:14 PM",
+          "content": "it said free 'server' emoji. it looked like admin's crown icon."
+        },
+        {
+          "id": 14,
+          "author": "Hecker",
+          "time": "Today at 4:15 PM",
+          "content": "YOU SOLD THE SERVER FOR ADMIN'S ICON?! THAT WAS A BINDING SMART CONTRACT!"
+        },
+        {
+          "id": 15,
+          "author": "Skittle",
+          "time": "Today at 4:15 PM",
+          "content": "HECKER IS THERE ANY WAY TO UNDO IT?!"
+        },
+        {
+          "id": 16,
+          "author": "Hecker",
+          "time": "Today at 4:15 PM",
+          "content": "His servers are quantum-locked! I'll have to initiate a reverse-proxy blockchain-unwinding sequence. This is insane!"
+        },
+        {
+          "id": 17,
+          "author": "Beluga",
+          "time": "Today at 4:16 PM",
+          "content": "will i get the emoji or not?"
+        },
+        {
+          "id": 18,
+          "author": "Hecker",
+          "time": "Today at 4:16 PM",
+          "content": "WE ARE FACING INTERNATIONAL CHARGES! YOU ARE GOING TO JAIL!"
+        },
+        {
+          "id": 19,
+          "author": "Police",
+          "time": "Today at 4:16 PM",
+          "content": "Hecker, we've traced your IP. Stop attempting unauthorized access."
+        },
+        {
+          "id": 20,
+          "author": "Hecker",
+          "time": "Today at 4:17 PM",
+          "content": "They're already on me! This is worse than the Great Bitcoin Heist!"
+        },
+        {
+          "id": 21,
+          "author": "Beluga",
+          "time": "Today at 4:17 PM",
+          "content": "i just wanted the crown"
+        },
+        {
+          "id": 22,
+          "author": "Hecker",
+          "time": "Today at 4:17 PM",
+          "content": "THE CROWN IS NOT AN EMOJI!"
+        },
+        {
+          "id": 23,
+          "author": "Girlfriend",
+          "time": "Today at 4:18 PM",
+          "content": "Beluga, are you doing something stupid again?"
+        }
+      ]
+    },
+    {
+      "sceneId": 3,
+      "channelName": "admin-only",
+      "channelType": "text",
+      "topic": "Interrogation room",
+      "messages": [
+        {
+          "id": 24,
+          "author": "Admin",
+          "time": "Today at 4:18 PM",
+          "content": "Beluga, you have 5 seconds to explain why my server is gone!"
+        },
+        {
+          "id": 25,
+          "author": "Billionaire",
+          "time": "Today at 4:19 PM",
+          "content": "No need for explanations. The server is now my property. Excellent purchase."
+        },
+        {
+          "id": 26,
+          "author": "Police",
+          "time": "Today at 4:19 PM",
+          "content": "Beluga, you're under arrest for unauthorized digital asset transaction."
+        },
+        {
+          "id": 27,
+          "author": "Beluga",
+          "time": "Today at 4:19 PM",
+          "content": "i just wanted the free 'server' emoji. it looked like admin's crown."
+        },
+        {
+          "id": 28,
+          "author": "Admin",
+          "time": "Today at 4:20 PM",
+          "content": "MY CROWN ICON?! YOU SOLD MY SERVER FOR MY OWN ICON?!"
+        },
+        {
+          "id": 29,
+          "author": "Billionaire",
+          "time": "Today at 4:20 PM",
+          "content": "An emoji? You mean the 'Server Sovereign' NFT I acquired for millions?"
+        },
+        {
+          "id": 30,
+          "author": "Beluga",
+          "time": "Today at 4:20 PM",
+          "content": "the free one. with the crown."
+        },
+        {
+          "id": 31,
+          "author": "Police",
+          "time": "Today at 4:21 PM",
+          "content": "He... actually just wanted a free emoji?"
+        },
+        {
+          "id": 32,
+          "author": "Billionaire",
+          "time": "Today at 4:21 PM",
+          "content": "This is utterly ridiculous. Fine. I'll give him the NFT. Consider it a refund for his... misunderstanding."
+        },
+        {
+          "id": 33,
+          "author": "SYSTEM",
+          "time": "Today at 4:22 PM",
+          "content": "Server ownership transferred from 'BillionaireCorp' to 'Beluga'."
+        },
+        {
+          "id": 34,
+          "author": "SYSTEM",
+          "time": "Today at 4:22 PM",
+          "content": "Server ownership transferred from 'Beluga' to 'Admin'."
+        },
+        {
+          "id": 35,
+          "author": "Beluga",
+          "time": "Today at 4:22 PM",
+          "content": "cool. free crown emoji."
+        },
+        {
+          "id": 36,
+          "author": "Admin",
+          "time": "Today at 4:23 PM",
+          "content": "I... I need a vacation."
+        },
+        {
+          "id": 37,
+          "author": "Skittle",
+          "time": "Today at 4:23 PM",
+          "content": "HE ACTUALLY GOT IT."
+        }
+      ]
+    }
+  ]
+}
