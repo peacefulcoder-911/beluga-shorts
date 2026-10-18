@@ -1,7 +1,7 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
-import fs from "fs";
-import path from "path";
-import dotenv from "dotenv";
+import { GoogleGenerativeAI } from '@google/generative-ai';
+import fs from 'fs';
+import path from 'path';
+import dotenv from 'dotenv';
 
 dotenv.config();
 
@@ -9,103 +9,121 @@ const apiKey = process.env.GEMINI_API_KEY;
 
 export async function generateScript() {
   if (!apiKey) {
-    console.error("Please provide GEMINI_API_KEY in .env");
+    console.error('Please provide GEMINI_API_KEY in .env');
     process.exit(1);
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  console.log("Generating authentic, viral Beluga-style Discord story with few-shot mastery...");
+  console.log('Generating elite 6-beat viral Beluga Shorts script with rapid-fire pacing...');
   const model = genAI.getGenerativeModel({
-    model: "gemini-2.5-flash",
-    generationConfig: { responseMimeType: "application/json" }
+    model: 'gemini-2.5-flash',
+    generationConfig: { responseMimeType: 'application/json' }
   });
 
-  const historyPath = path.join(process.cwd(), "history.json");
+  const historyPath = path.join(process.cwd(), 'history.json');
   let history = [];
   if (fs.existsSync(historyPath)) {
     try {
-      history = JSON.parse(fs.readFileSync(historyPath, "utf8"));
+      history = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
     } catch (e) {}
   }
 
-  const pastTitles = history.map(h => h.title).slice(-15).join(", ");
+  const pastTitles = history.map(h => h.title).slice(-20).join(', ');
 
   const prompt = `
-You are the master comedy scriptwriter for the legendary Beluga YouTube channel. You write high-retention, laugh-out-loud funny Discord chat Shorts.
+You are the elite viral comedy scriptwriter for the legendary Beluga YouTube channel (10M+ subscribers).
+Your videos get millions of views because of RAPID-FIRE PACING, ZERO FILLER, SHOCKING TWISTS, and LOOPBACK PUNCHLINES.
 
-STUDY THESE 3 REAL BELUGA MASTERPIECE EXAMPLES:
+### MASTER STUDY: 'The Accidental Millionaire' (THE GOLD STANDARD)
+[HOOK]
+1. Beluga: 'guys i just became a millionaire'
+2. Skittle: 'bro your bank account has '
+3. Beluga: 'not anymore'
 
---- EXAMPLE 1 (The Status Caught in 4K) ---
-Title: Beluga got caught in 4K... 💀
-Messages:
-1. Girlfriend: "babe are you asleep?"
-2. Beluga: "yes deeply asleep dreaming about you"
-3. Girlfriend: "then why does your discord status say: 'Playing Roblox Anime Battle for 14 hours'?"
-4. Beluga: "my cat is holding the controller"
-5. Girlfriend: "BELUGA YOU ARE THE CAT"
-6. Beluga: "..."
-7. Hecker: "live scan: cat has acquired 350 wins and a girlfriend."
-8. Girlfriend: "EX-GIRLFRIEND."
-9. Beluga: "worth it"
+[CURIOSITY / RAPID-FIRE]
+4. Skittle: 'WHAT DID YOU DO'
+5. Beluga: 'i found a wallet'
+6. Skittle: 'return it 💀'
+7. Beluga: 'i did'
+8. Skittle: 'then how are you rich'
+9. Beluga: 'the wallet belonged to a billionaire'
 
---- EXAMPLE 2 (The Trap Question) ---
-Title: When your Girlfriend asks a trap question... 😳
-Messages:
-1. Girlfriend: "babe would you still love me if i was a worm?"
-2. Beluga: "of course baby you'd be the prettiest worm"
-3. Girlfriend: "aww really? what kind of worm? :)"
-4. Beluga: "tapeworm"
-5. Girlfriend: "..."
-6. Beluga: "because you're always in my stomach <3"
-7. Hecker: "romantic rizz level: negative 500."
-8. Girlfriend: "don't ever text me again."
+[ESCALATION & PROOF]
+10. Hecker: 'WAIT'
+11. Hecker: 'DID YOU STEAL HIS MONEY'
+12. Beluga: 'no'
+13. Beluga: 'he gave me  million as a reward'
+14. Skittle: 'this is the most unbelievable thing you have ever said'
+15. Beluga: 'check my bank account'
+16. Skittle: 'BRO ACTUALLY HAS ,000,002'
 
---- EXAMPLE 3 (The Discord Moderator Abuse) ---
-Title: When the Discord Mod has too much power... 💀
-Messages:
-1. Beluga: "good morning everyone :)"
-2. Pablo: "Rule 42: No positivity in #general. 24 hour timeout."
-3. Beluga: "what??? i just said good morning!"
-4. Pablo: "arguing with a moderator? that's a permanent ban."
-5. Beluga: "hecker please save my nitro"
-6. Hecker: "executing admin_override.exe..."
-7. Pablo: "wait why is my role changed to 'Server Clown'?"
-8. Hecker: "Rule 1: don't touch Beluga."
-9. Beluga: "L + ratio pablo"
+[TWIST SETUP]
+17. Admin: 'Beluga, congratulations!'
+18. Beluga: 'thank you admin'
+19. Admin: 'now please pay your ,999 server debt'
+20. Beluga: 'WHAT DEBT'
+21. Admin: 'you accidentally bought the entire server yesterday'
 
-ALLOWED CHARACTERS (Strictly choose from these names):
-- "Beluga": The main awkward cat
-- "Mr. Smith": The strict school teacher
-- "Hecker": The mysterious hacker cat with computer skills
-- "Girlfriend": Beluga's suspicious girlfriend
-- "Pablo": The abusive Discord server moderator
-- "Mom": Beluga's angry or protective mother
-- "Police": Law enforcement / FBI
-- "Skittle": Cute anime girl character, friend
-- "Vladimir": Stoic Russian cat wearing Ushanka hat
-CRITICAL: Every character MUST use one of the exact names above so their unique profile pictures and colors load properly!
+[PAYOFF & CHAOS]
+22. Skittle: 'WAIT'
+23. Skittle: 'YOU OWN THE SERVER?'
+24. Beluga: 'technically'
+25. Hecker: 'THEN MAKE ME ADMIN'
+26. Beluga: 'done'
+27. Hecker: 'LET US GOOOO'
+28. Admin: 'Beluga, you have been banned for abusing administrator privileges'
 
-NOW WRITE A BRAND NEW, ORIGINAL STORY:
-1. TOPIC: Choose a relatable real-world dilemma:
-   - Girlfriend asking a ridiculous test or catching a lie
-   - Discord status or rich presence revealing what someone is actually doing
-   - Pablo abusing mod powers over tiny rules
-   - School / homework / exam group chat gone wrong
-   - Buying/selling something crazy on Discord or marketplace
-2. PACING: Exactly 7 to 9 messages.
-3. DIALOGUE: Short, crisp, natural (under 10 words per line). Use awkward emojis (💀, 😳, <3, ...).
-4. COMEDY & REWATCH VALUE: The punchline MUST make the viewer laugh out loud and want to quote it in the comments.
-5. DO NOT reuse any past title or theme: [${pastTitles || "None yet"}]
+[FINAL LOOPBACK PUNCHLINE]
+29. Beluga: 'guys'
+30. Beluga: 'i just became a millionaire again'
+31. Skittle: 'HOW'
+32. Beluga: 'i sold the server'
+33. Hecker: 'TO WHO'
+34. Beluga: 'the billionaire'
+
+---
+
+### CORE VIRAL RULES (MANDATORY):
+1. **ULTRA-SHORT SENTENCES**: 
+   - Most lines MUST be 1 to 4 words ('WAIT', 'no', 'i did', 'done', 'HOW', 'TO WHO', 'technically').
+   - Maximum 7-8 words per line for explanations. NEVER write paragraphs or long sentences.
+2. **THE 6-BEAT NARRATIVE ARC**:
+   - Beat 1 (Hook): Unbelievable claim or situation revealed instantly.
+   - Beat 2 (Curiosity): Skeptical questioning in rapid 1-3 word ping-pong exchanges.
+   - Beat 3 (Proof): Third party or scan/bank account confirms the impossible fact.
+   - Beat 4 (The Catch): Authority figure drops a massive unexpected complication or debt.
+   - Beat 5 (Chaos): Abuse of power or hasty bad decision leads to instant punishment.
+   - Beat 6 (Loopback Punchline): Beluga solves the problem by looping back to the original premise in a hilarious way.
+3. **PACING**: Exactly 24 to 34 rapid-fire lines total. Every line must provoke curiosity or a laugh.
+4. **EMOTIONAL TEXTURE**:
+   - Use ALL CAPS for genuine panic/shock ('WHAT DID YOU DO', 'BRO ACTUALLY HAS ,000,002', 'LET US GOOOO').
+   - Use awkward emojis (💀, 😳, 🥺, <3) sparingly at emotional peaks.
+5. **ALLOWED CHARACTERS ONLY**:
+   - 'Beluga' (chaotic, deadpan main cat)
+   - 'Skittle' (skeptical best friend kitten)
+   - 'Hecker' (elite hacker Floppa cat)
+   - 'Admin' (pompous Discord server owner cat with gold crown)
+   - 'Mr. Smith' (strict school teacher)
+   - 'Mom' (furious mother)
+   - 'Girlfriend' (suspicious partner asking trap questions)
+   - 'Pablo' (shady Discord moderator)
+6. **FRESH VIRAL TOPICS** (Choose one original premise):
+   - Beluga accidentally buys something absurd online (an airport, an FBI server, a submarine).
+   - Discord status or live scan exposing a completely unhinged reality.
+   - Accidental crypto/stock/lottery windfall that comes with a hilarious catastrophic condition.
+   - High-stakes school / exam / homework disaster where a cheat goes completely haywire.
+   - Discord server ownership transfer or moderator war with Hecker overriding the system.
+7. **AVOID PAST TITLES**: [${pastTitles || 'None yet'}]
 
 Return in this exact JSON structure:
 {
-  "title": "Viral YouTube Shorts Title",
-  "messages": [
+  'title': 'Viral YouTube Shorts Title with Emojis',
+  'messages': [
     {
-      "id": 1,
-      "author": "CharacterName",
-      "content": "Message content",
-      "time": "Today at 3:15 PM"
+      'id': 1,
+      'author': 'Beluga',
+      'content': 'guys i just did something crazy',
+      'time': 'Today at 3:15 PM'
     }
   ]
 }
@@ -116,7 +134,7 @@ Return in this exact JSON structure:
     const text = result.response.text();
     const data = JSON.parse(text);
 
-    fs.writeFileSync(path.join(process.cwd(), "src", "script.json"), JSON.stringify(data.messages, null, 2));
+    fs.writeFileSync(path.join(process.cwd(), 'src', 'script.json'), JSON.stringify(data.messages, null, 2));
 
     history.push({
       date: new Date().toISOString(),
@@ -125,16 +143,16 @@ Return in this exact JSON structure:
     });
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
-    console.log("Successfully generated authentic Beluga script!");
-    console.log("Title: " + data.title);
-    console.log("Message Count: " + data.messages.length);
+    console.log('Successfully generated authentic 6-beat Beluga script!');
+    console.log('Title: ' + data.title);
+    console.log('Message Count: ' + data.messages.length);
     return data;
   } catch (e) {
-    console.error("Failed to generate script:", e);
+    console.error('Failed to generate script:', e);
     throw e;
   }
 }
 
-if (process.argv[1] && process.argv[1].endsWith("generateScript.js")) {
+if (process.argv[1] && process.argv[1].endsWith('generateScript.js')) {
   generateScript();
 }
