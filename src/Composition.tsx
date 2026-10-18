@@ -40,7 +40,9 @@ const getAvatar = (name: string) => {
   if (n.includes("vladimir") || n.includes("vlad")) return staticFile("vladimir.jpg");
   if (n.includes("nasa")) return staticFile("nasa.jpg");
   if (n.includes("google")) return staticFile("google.jpg");
-  if (n.includes("system") || n.includes("bot")) return staticFile("system.jpg");
+  if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return staticFile("ai.jpg");
+  if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return staticFile("billionaire.jpg");
+  if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
   return staticFile("default_user.jpg");
 };
 
@@ -58,7 +60,9 @@ const getColor = (name: string) => {
   if (n.includes("vladimir") || n.includes("vlad")) return "#00bcd4";
   if (n.includes("nasa")) return "#1e88e5";
   if (n.includes("google")) return "#4285F4";
-  if (n.includes("system") || n.includes("bot")) return "#ff5252";
+  if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return "#00e5ff";
+  if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return "#d4af37";
+  if (n.includes("system") || n.includes("server") || n.includes("terminal")) return "#ff5252";
   return "#99aab5";
 };
 

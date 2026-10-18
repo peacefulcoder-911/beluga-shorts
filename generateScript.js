@@ -205,11 +205,13 @@ Title: Beluga Accidentally Started World War 3 💀 #shorts
 4. **SHOUTING & EMOJIS**:
    - Use ALL CAPS for shock, screaming, and panic ('BRO WHAT', 'DO NOT YOU DARE', 'WHAT DID YOU DO').
    - Use awkward emojis (💀, 😳, 🥺, <3) sparingly at emotional peaks.
-5. **ALLOWED CHARACTERS ONLY**:
+5. **ALLOWED CHARACTERS ONLY (The 12 Core Archetypes)**:
    - 'Beluga' (chaotic, deadpan main cat)
    - 'Skittle' (skeptical best friend kitten)
    - 'Hecker' (elite hacker Floppa cat)
    - 'Admin' (pompous Discord server owner cat with gold crown)
+   - 'AI' (rogue sentient cyber cat with glowing visor)
+   - 'Billionaire' (eccentric wealthy cat/mogul)
    - 'NASA' (NASA astronaut cat in space suit)
    - 'Google' (Google AI Assistant)
    - 'SYSTEM' (Discord automated system bot)
