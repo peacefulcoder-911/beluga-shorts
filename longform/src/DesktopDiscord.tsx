@@ -10,6 +10,7 @@ export interface DesktopDiscordProps {
 
 const getAvatar = (name: string): string => {
   const n = name.toLowerCase();
+  if (n.includes("unknown") || n.includes("shadow")) return staticFile("unknown.jpg");
   if (n.includes("egg")) return staticFile("egg.jpg");
   if (n.includes("beluga") || n.includes("belu")) return staticFile("beluga.jpg");
   if (n.includes("smith") || n.includes("teacher") || n.includes("prof") || n.includes("sir")) return staticFile("teacher.jpg");
@@ -27,6 +28,17 @@ const getAvatar = (name: string): string => {
   if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return staticFile("billionaire.jpg");
   if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
   return staticFile("default_user.jpg");
+};
+
+const getAuthorColor = (name: string): string => {
+  const n = name.toLowerCase();
+  if (n.includes("unknown") || n.includes("shadow")) return "#ff4d4d";
+  if (n.includes("hecker")) return "#2ecc71";
+  if (n.includes("skittle")) return "#f1c40f";
+  if (n.includes("mom") || n.includes("mother")) return "#eb459e";
+  if (n.includes("admin") || n.includes("mod")) return "#9b59b6";
+  if (n.includes("smith") || n.includes("teacher")) return "#3498db";
+  return "#ffffff";
 };
 
 export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title }) => {
@@ -49,18 +61,41 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
   const startFrame = activeMsg.startFrame || 0;
   const age = frame - startFrame;
 
+  const isUnknown = activeMsg.author.toLowerCase().includes("unknown");
+  const isShock =
+    activeMsg.content.includes("WIFI") ||
+    activeMsg.content.includes("step 5") ||
+    activeMsg.content.includes("outside your room") ||
+    activeMsg.content.includes("GIVE ME YOUR PHONE");
+
+  // Camera recoil / jitter on shock moments
+  const jitterX = isShock && age < 8 ? Math.sin(age * 3.5) * (8 - age) * 1.5 : 0;
+  const jitterY = isShock && age < 8 ? Math.cos(age * 3.5) * (8 - age) * 1.5 : 0;
+
   // Pop-in scale animation on message arrival
   const scale = age < 6 ? 0.96 + (age / 6) * 0.04 : 1;
   const opacity = age < 4 ? age / 4 : 1;
 
   const isEgg = activeMsg.author.toLowerCase().includes("egg");
 
+  const isCreepy =
+    scenes[0]?.topic?.includes("chill") ||
+    title.toLowerCase().includes("3 am") ||
+    title.toLowerCase().includes("creepy") ||
+    title.toLowerCase().includes("unknown");
+
+  const loopDuration = isCreepy ? 420 : 360;
+  const loopCount = 20;
+
   return (
     <>
-      {/* Ambient Looping Comedy Background Music */}
-      {Array.from({ length: 40 }).map((_, i) => (
-        <Sequence key={`bg-music-${i}`} from={i * 360} durationInFrames={360}>
-          <Audio src={staticFile("audio/comedy_lofi_bg.wav")} volume={0.12} />
+      {/* Ambient Looping Background Music */}
+      {Array.from({ length: loopCount }).map((_, i) => (
+        <Sequence key={`bg-music-${i}`} from={i * loopDuration} durationInFrames={loopDuration}>
+          <Audio
+            src={staticFile(isCreepy ? "audio/creepy_ambience.wav" : "audio/comedy_lofi_bg.wav")}
+            volume={isCreepy ? 0.32 : 0.22}
+          />
         </Sequence>
       ))}
 
@@ -77,10 +112,30 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
             </Sequence>
           );
         }
+
+        const isUnknownMsg = msg.author.toLowerCase().includes("unknown");
+        const isShockMsg =
+          msg.content.includes("WIFI") ||
+          msg.content.includes("step 5") ||
+          msg.content.includes("outside your room") ||
+          msg.content.includes("GIVE ME YOUR PHONE");
+
         return (
-          <Sequence key={`sfx-${msg.id}`} from={start}>
-            <Audio src={staticFile("notification.mp3")} volume={0.5} />
-          </Sequence>
+          <React.Fragment key={`sfx-group-${msg.id}`}>
+            <Sequence from={start}>
+              <Audio src={staticFile("notification.mp3")} volume={0.5} />
+            </Sequence>
+            {isShockMsg && (
+              <Sequence from={start}>
+                <Audio src={staticFile("audio/horror_hit.wav")} volume={0.7} />
+              </Sequence>
+            )}
+            {isUnknownMsg && !isShockMsg && (
+              <Sequence from={start}>
+                <Audio src={staticFile("audio/creepy_sting.wav")} volume={0.45} />
+              </Sequence>
+            )}
+          </React.Fragment>
         );
       })}
 
@@ -106,9 +161,10 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
             left: "32px",
             fontSize: "20px",
             fontWeight: 600,
-            color: "rgba(255, 255, 255, 0.9)",
+            color: isUnknown ? "#ff5252" : "rgba(255, 255, 255, 0.9)",
             letterSpacing: "0.2px",
             zIndex: 10,
+            textShadow: isUnknown ? "0 0 10px rgba(255, 82, 82, 0.6)" : "none",
           }}
         >
           {title}
@@ -122,15 +178,19 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           <div
             style={{
               width: "100%",
-              backgroundColor: "#36393f",
+              backgroundColor: isUnknown ? "#323338" : "#36393f",
               padding: "42px 100px",
               display: "flex",
               alignItems: "flex-start",
               gap: "44px",
-              boxShadow: "0 0 60px rgba(0, 0, 0, 0.85)",
-              transform: `scale(${scale})`,
+              boxShadow: isUnknown
+                ? "0 0 70px rgba(180, 20, 20, 0.45), 0 0 30px rgba(0, 0, 0, 0.9)"
+                : "0 0 60px rgba(0, 0, 0, 0.85)",
+              borderLeft: isUnknown ? "8px solid #ff4d4d" : undefined,
+              transform: `translate(${jitterX}px, ${jitterY}px) scale(${scale})`,
               opacity: opacity,
               transformOrigin: "center center",
+              transition: "background-color 0.15s ease",
             }}
           >
             {/* Circular Avatar */}
@@ -139,13 +199,15 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 width: "170px",
                 height: "170px",
                 borderRadius: "50%",
-                backgroundColor: "#ffffff",
+                backgroundColor: isUnknown ? "#111111" : "#ffffff",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 flexShrink: 0,
                 overflow: "hidden",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+                boxShadow: isUnknown
+                  ? "0 0 25px rgba(255, 40, 40, 0.6)"
+                  : "0 4px 16px rgba(0,0,0,0.3)",
               }}
             >
               <img
@@ -173,10 +235,11 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
               <div style={{ display: "flex", alignItems: "baseline", gap: "22px" }}>
                 <span
                   style={{
-                    color: "#ffffff",
+                    color: getAuthorColor(activeMsg.author),
                     fontSize: "62px",
                     fontWeight: 700,
                     letterSpacing: "0.3px",
+                    textShadow: isUnknown ? "0 0 15px rgba(255, 77, 77, 0.5)" : "none",
                   }}
                 >
                   {activeMsg.author}
@@ -189,7 +252,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                     fontWeight: 400,
                   }}
                 >
-                  {activeMsg.time || "1:56 PM"}
+                  {activeMsg.time || "3:14 AM"}
                 </span>
               </div>
 
