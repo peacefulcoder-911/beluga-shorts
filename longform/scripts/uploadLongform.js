@@ -1,9 +1,10 @@
 import fs from 'fs';
+import path from 'path';
 import { google } from 'googleapis';
 import dotenv from 'dotenv';
 dotenv.config();
 
-export async function uploadLongformVideo(videoPath, title, customDescription, customTags) {
+export async function uploadLongformVideo(videoPath, title, customDescription, customTags, thumbnailPath = null) {
   try {
     console.log(`Starting Long-Form Upload for: "${title}"`);
 
@@ -23,9 +24,9 @@ export async function uploadLongformVideo(videoPath, title, customDescription, c
     });
 
     const description = customDescription || 
-      `${title}\n\nBeluga, Hecker, and Skittle get caught in an escalating Discord crisis!\nSubscribe for full-length Discord comedy adventures.\n\n#beluga #discord #comedy #hecker #animation`;
+      `${title}\n\nBeluga helps Egg reach 10 Million subscribers at 3:14 AM... but an entity hijacks the stream from inside Beluga's house!\n\n🔔 Subscribe for full-length Discord mystery comedy episodes!\n\n#beluga #discord #horror #comedy #hecker #skittle #egg #3am`;
 
-    const tags = customTags || ["beluga", "discord", "hecker", "skittle", "comedy", "funny", "memes", "animation"];
+    const tags = customTags || ["beluga", "discord", "hecker", "skittle", "comedy", "funny", "memes", "animation", "3am", "horror", "egg"];
 
     const requestParameters = {
       part: 'snippet,status',
@@ -47,9 +48,28 @@ export async function uploadLongformVideo(videoPath, title, customDescription, c
     };
 
     const res = await youtube.videos.insert(requestParameters);
-    const videoUrl = `https://youtube.com/watch?v=${res.data.id}`;
+    const videoId = res.data.id;
+    const videoUrl = `https://youtube.com/watch?v=${videoId}`;
     console.log(`\n🎉 Long-form video uploaded successfully!`);
     console.log(`📺 Video URL: ${videoUrl}`);
+
+    if (thumbnailPath && fs.existsSync(thumbnailPath)) {
+      try {
+        console.log(`🖼️ Applying custom thumbnail: ${thumbnailPath}`);
+        const ext = path.extname(thumbnailPath).toLowerCase();
+        await youtube.thumbnails.set({
+          videoId: videoId,
+          media: {
+            mimeType: ext === '.png' ? 'image/png' : 'image/jpeg',
+            body: fs.createReadStream(thumbnailPath),
+          },
+        });
+        console.log(`✅ Thumbnail applied successfully!`);
+      } catch (tErr) {
+        console.warn(`⚠️ Thumbnail upload notice:`, tErr.response ? tErr.response.data : tErr.message);
+      }
+    }
+
     return videoUrl;
   } catch (error) {
     console.error("❌ Failed to upload long-form video:");
