@@ -79,7 +79,11 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
     activeMsg.content.includes("ARMORED") ||
     activeMsg.content.includes("BATTERING") ||
     activeMsg.content.includes("SNIPER") ||
-    activeMsg.content.includes("SWAT");
+    activeMsg.content.includes("SWAT") ||
+    activeMsg.content.includes("WHAT IN GOD'S NAME") ||
+    activeMsg.content.includes("Shrek 2") ||
+    activeMsg.content.includes("STREAMING SHREK") ||
+    activeMsg.content.includes("NOT CLEARED OF MY CHARGES");
 
   // Camera recoil / jitter on sudden shock moments
   const jitterX = isShock && age < 8 ? Math.sin(age * 3.5) * (8 - age) * 1.5 : 0;
@@ -91,59 +95,89 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
 
   const isEgg = activeMsg.author.toLowerCase().includes("egg");
 
-  const isIntense =
-    scenes[0]?.topic?.includes("cyber") ||
-    scenes[0]?.topic?.includes("chill") ||
-    title.toLowerCase().includes("pentagon") ||
-    title.toLowerCase().includes("fbi") ||
-    title.toLowerCase().includes("3 am");
-
-  const loopDuration = isIntense ? 420 : 360;
-  const loopCount = 22;
-
   return (
     <>
-      {/* Ambient Looping Tension / Lo-Fi Background Music */}
-      {Array.from({ length: loopCount }).map((_, i) => (
-        <Sequence key={`bg-music-${i}`} from={i * loopDuration} durationInFrames={loopDuration}>
-          <Audio
-            src={staticFile(isIntense ? "audio/creepy_ambience.wav" : "audio/comedy_lofi_bg.wav")}
-            volume={isIntense ? 0.32 : 0.22}
-          />
-        </Sequence>
-      ))}
+      {/* Background audio REMOVED as requested. Dead-silent Discord ambience with crisp dynamic SFX. */}
 
-      {/* Sound Effects on Message Arrival */}
+      {/* Dynamic Sound Effects on Message Arrival */}
       {allMessages.map((msg) => {
         const start = msg.startFrame || 0;
         if (msg.cutaway?.type === "subscribe_button") {
           return null;
         }
 
+        const isUserJoin =
+          msg.content.includes("SPECIAL AGENT MILLER") ||
+          msg.content.includes("WHAT IN GOD'S NAME");
+
+        const isTwistBoom =
+          msg.content.includes("WHAT IN GOD'S NAME") ||
+          msg.content.includes("Shrek 2") ||
+          msg.content.includes("NOT CLEARED OF MY CHARGES") ||
+          msg.content.includes("WIPED YOUR DIRTY BOOTS") ||
+          msg.content.includes("under your bed") ||
+          msg.content.includes("STREAMING SHREK") ||
+          msg.content.includes("40 YEARS") ||
+          msg.content.includes("safe option");
+
         const isCyberAlarm =
           msg.content.includes("BREACH") ||
           msg.content.includes("PENTAGON") ||
+          msg.content.includes("TACTICAL UNITS") ||
           msg.content.includes("BATTERING RAM");
 
         const isHeavyHit =
           msg.content.includes("DISARMED") ||
           msg.content.includes("SNIPER") ||
           msg.content.includes("ARMORED") ||
-          msg.content.includes("SPLINTERING");
+          msg.content.includes("SPLINTERING") ||
+          Boolean(msg.attachmentUrl);
+
+        const isTensionSting =
+          msg.content === "3..." ||
+          msg.content === "2..." ||
+          msg.content === "1..." ||
+          msg.content.includes("laser pointer");
 
         return (
           <React.Fragment key={`sfx-group-${msg.id}`}>
+            {/* Standard Discord message notification chime */}
             <Sequence from={start}>
               <Audio src={staticFile("notification.mp3")} volume={0.5} />
             </Sequence>
-            {isCyberAlarm && (
+
+            {/* User joined channel chime on sudden entrance */}
+            {isUserJoin && (
+              <Sequence from={start}>
+                <Audio src={staticFile("audio/discord_join.wav")} volume={0.65} />
+              </Sequence>
+            )}
+
+            {/* Punchy comedic vine boom on major plot twists */}
+            {isTwistBoom && (
+              <Sequence from={start}>
+                <Audio src={staticFile("audio/twist_boom.wav")} volume={0.8} />
+              </Sequence>
+            )}
+
+            {/* Tactical cyber klaxon on alarms */}
+            {isCyberAlarm && !isTwistBoom && (
               <Sequence from={start}>
                 <Audio src={staticFile("audio/cyber_alarm.wav")} volume={0.65} />
               </Sequence>
             )}
-            {isHeavyHit && (
+
+            {/* Deep cinematic hit on door battering and image attachments */}
+            {isHeavyHit && !isTwistBoom && (
               <Sequence from={start}>
                 <Audio src={staticFile("audio/horror_hit.wav")} volume={0.7} />
+              </Sequence>
+            )}
+
+            {/* High-frequency tension shiver during countdowns */}
+            {isTensionSting && (
+              <Sequence from={start}>
+                <Audio src={staticFile("audio/creepy_sting.wav")} volume={0.45} />
               </Sequence>
             )}
           </React.Fragment>
