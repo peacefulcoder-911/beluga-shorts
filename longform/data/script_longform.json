@@ -1,14 +1,7 @@
 {
   "title": "When a Youtuber reveals their face",
   "description": "When Egg Gaming promises a face reveal at 10M subscribers... but Beluga has a plan. #beluga #discord #comedy",
-  "tags": [
-    "beluga",
-    "discord",
-    "comedy",
-    "hecker",
-    "skittle",
-    "memes"
-  ],
+  "tags": ["beluga", "discord", "comedy", "hecker", "skittle", "memes"],
   "scenes": [
     {
       "sceneId": 1,
@@ -43,7 +36,7 @@
         {
           "id": 4,
           "author": "Beluga",
-          "time": "1:57 PM",
+          "time": "1:56 PM",
           "content": "",
           "cutaway": {
             "type": "subscribe_button"
@@ -51,33 +44,45 @@
         },
         {
           "id": 5,
-          "author": "Egg gaming",
-          "time": "1:57 PM",
-          "content": "yes?"
+          "author": "Beluga",
+          "time": "1:56 PM",
+          "content": "time to reveal"
         },
         {
           "id": 6,
-          "author": "Beluga",
-          "time": "1:57 PM",
-          "content": "check your subscriber count"
+          "author": "Egg gaming",
+          "time": "1:56 PM",
+          "content": "i am not ready..."
         },
         {
           "id": 7,
-          "author": "Hecker",
-          "time": "1:58 PM",
-          "content": "BRO HIT 10,000,001"
+          "author": "Egg gaming",
+          "time": "1:57 PM",
+          "content": "i lied ( ͡° ͜ʖ ͡°)"
         },
         {
           "id": 8,
           "author": "Egg gaming",
-          "time": "1:58 PM",
-          "content": "WAIT NO MY CAMERA IS ON"
+          "time": "1:57 PM",
+          "content": "i am never\n\nEVER\n\ngoing to reveal\n\nmy face"
         },
         {
           "id": 9,
           "author": "Beluga",
-          "time": "1:59 PM",
-          "content": "nice forehead"
+          "time": "1:58 PM",
+          "content": "check your webcam"
+        },
+        {
+          "id": 10,
+          "author": "Egg gaming",
+          "time": "1:58 PM",
+          "content": "WAIT WHY IS THE GREEN LIGHT ON"
+        },
+        {
+          "id": 11,
+          "author": "Hecker",
+          "time": "1:58 PM",
+          "content": "nice egg head bro 💀"
         }
       ]
     }

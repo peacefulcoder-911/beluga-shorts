@@ -10,7 +10,7 @@ export interface DesktopDiscordProps {
 
 const getAvatar = (name: string): string => {
   const n = name.toLowerCase();
-  if (n.includes("egg")) return staticFile("egg.png");
+  if (n.includes("egg")) return staticFile("egg.jpg");
   if (n.includes("beluga") || n.includes("belu")) return staticFile("beluga.jpg");
   if (n.includes("smith") || n.includes("teacher") || n.includes("prof") || n.includes("sir")) return staticFile("teacher.jpg");
   if (n.includes("hecker")) return staticFile("hecker.jpg");
@@ -50,23 +50,25 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
   const age = frame - startFrame;
 
   // Pop-in scale animation on message arrival
-  const scale = age < 6 ? 0.95 + (age / 6) * 0.05 : 1;
+  const scale = age < 6 ? 0.96 + (age / 6) * 0.04 : 1;
   const opacity = age < 4 ? age / 4 : 1;
+
+  const isEgg = activeMsg.author.toLowerCase().includes("egg");
 
   return (
     <>
-      {/* Background Lofi Comedy Music Loop */}
+      {/* Ambient Looping Comedy Background Music */}
       {Array.from({ length: 40 }).map((_, i) => (
         <Sequence key={`bg-music-${i}`} from={i * 360} durationInFrames={360}>
           <Audio src={staticFile("audio/comedy_lofi_bg.wav")} volume={0.12} />
         </Sequence>
       ))}
 
-      {/* Message Arrival Sound Effects */}
+      {/* Sound Effects on Message Arrival */}
       {allMessages.map((msg) => {
         const start = msg.startFrame || 0;
         if (msg.cutaway?.type === "subscribe_button") {
-          return null; // mouse click can play or silent
+          return null;
         }
         if (msg.voiceEvent === "call_ringing") {
           return (
@@ -82,7 +84,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
         );
       })}
 
-      {/* 1920x1080 16:9 Authentic Beluga Cinema Canvas */}
+      {/* 1920x1080 16:9 Beluga Cinematic Canvas */}
       <div
         style={{
           width: "1920px",
@@ -92,17 +94,17 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           flexDirection: "column",
           justifyContent: "center",
           position: "relative",
-          fontFamily: "'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          fontFamily: "'gg sans', 'Roboto', 'Helvetica Neue', Arial, sans-serif",
           overflow: "hidden",
         }}
       >
-        {/* Top Watermark / Episode Title (Beluga Signature Header) */}
+        {/* Top Watermark / Episode Title */}
         <div
           style={{
             position: "absolute",
             top: "24px",
             left: "32px",
-            fontSize: "22px",
+            fontSize: "20px",
             fontWeight: 600,
             color: "rgba(255, 255, 255, 0.9)",
             letterSpacing: "0.2px",
@@ -112,30 +114,30 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           {title}
         </div>
 
-        {/* If Active Message is a Cutaway / Visual Gag Screen */}
+        {/* If Active Item is a Cutaway Gag */}
         {activeMsg.cutaway ? (
           <CutawayScreen cutaway={activeMsg.cutaway} frame={frame} startFrame={startFrame} />
         ) : (
-          /* Signature Focused Discord Message Band (Screenshots 2, 4, 5) */
+          /* Signature Focused Discord Message Strip (Exact Replica) */
           <div
             style={{
               width: "100%",
-              backgroundColor: "#313338",
-              padding: "48px 120px",
+              backgroundColor: "#36393f",
+              padding: "42px 100px",
               display: "flex",
               alignItems: "flex-start",
-              gap: "48px",
-              boxShadow: "0 0 60px rgba(0, 0, 0, 0.8)",
+              gap: "44px",
+              boxShadow: "0 0 60px rgba(0, 0, 0, 0.85)",
               transform: `scale(${scale})`,
               opacity: opacity,
               transformOrigin: "center center",
             }}
           >
-            {/* Giant Circular Avatar */}
+            {/* Circular Avatar */}
             <div
               style={{
-                width: "160px",
-                height: "160px",
+                width: "170px",
+                height: "170px",
                 borderRadius: "50%",
                 backgroundColor: "#ffffff",
                 display: "flex",
@@ -143,16 +145,16 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 justifyContent: "center",
                 flexShrink: 0,
                 overflow: "hidden",
-                boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
               }}
             >
               <img
                 src={getAvatar(activeMsg.author)}
                 style={{
-                  width: "100%",
-                  height: "100%",
-                  borderRadius: "50%",
-                  objectFit: "cover",
+                  width: isEgg ? "80%" : "100%",
+                  height: isEgg ? "80%" : "100%",
+                  borderRadius: isEgg ? "0px" : "50%",
+                  objectFit: isEgg ? "contain" : "cover",
                 }}
               />
             </div>
@@ -164,17 +166,17 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 flexDirection: "column",
                 justifyContent: "center",
                 flex: 1,
-                paddingTop: "6px",
+                paddingTop: "4px",
               }}
             >
               {/* Name & Time */}
-              <div style={{ display: "flex", alignItems: "baseline", gap: "24px" }}>
+              <div style={{ display: "flex", alignItems: "baseline", gap: "22px" }}>
                 <span
                   style={{
                     color: "#ffffff",
-                    fontSize: "58px",
+                    fontSize: "62px",
                     fontWeight: 700,
-                    letterSpacing: "0.4px",
+                    letterSpacing: "0.3px",
                   }}
                 >
                   {activeMsg.author}
@@ -183,8 +185,8 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 <span
                   style={{
                     color: "#80848e",
-                    fontSize: "38px",
-                    fontWeight: 500,
+                    fontSize: "40px",
+                    fontWeight: 400,
                   }}
                 >
                   {activeMsg.time || "1:56 PM"}
@@ -196,9 +198,9 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 <div style={{ marginTop: "14px", marginBottom: "4px" }}>
                   <span
                     style={{
-                      backgroundColor: "rgba(88, 101, 242, 0.28)",
+                      backgroundColor: "rgba(88, 101, 242, 0.3)",
                       color: "#c9cdfb",
-                      fontSize: "44px",
+                      fontSize: "46px",
                       fontWeight: 600,
                       padding: "4px 18px",
                       borderRadius: "8px",
@@ -210,16 +212,17 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 </div>
               )}
 
-              {/* Large Punchy Message Content */}
+              {/* Message Content Text */}
               <div
                 style={{
-                  color: "#dbdee1",
-                  fontSize: "54px",
-                  fontWeight: 400,
-                  lineHeight: "1.35",
+                  color: "#dcddde",
+                  fontSize: "58px",
+                  fontWeight: 350,
+                  lineHeight: "1.34",
                   marginTop: activeMsg.mention ? "8px" : "12px",
                   whiteSpace: "pre-line",
                   wordBreak: "break-word",
+                  letterSpacing: "0.2px",
                 }}
               >
                 {activeMsg.content}
