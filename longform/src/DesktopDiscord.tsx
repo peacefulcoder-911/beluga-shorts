@@ -11,6 +11,7 @@ export interface DesktopDiscordProps {
 const getAvatar = (name: string): string => {
   const n = name.toLowerCase();
   if (n.includes("unknown") || n.includes("shadow") || n.includes("entity")) return staticFile("unknown.jpg");
+  if (n.includes("police") || n.includes("fbi") || n.includes("agent") || n.includes("miller")) return staticFile("police.jpg");
   if (n.includes("egg")) return staticFile("egg.jpg");
   if (n.includes("beluga") || n.includes("belu")) return staticFile("beluga.jpg");
   if (n.includes("smith") || n.includes("teacher") || n.includes("prof") || n.includes("sir")) return staticFile("teacher.jpg");
@@ -19,7 +20,6 @@ const getAvatar = (name: string): string => {
   if (n.includes("girlfriend") || n.includes("gf") || n.includes("babe")) return staticFile("girlfriend.jpg");
   if (n.includes("admin") || n.includes("mod")) return staticFile("admin.jpg");
   if (n.includes("pablo")) return staticFile("pablo.jpg");
-  if (n.includes("police") || n.includes("fbi") || n.includes("cop")) return staticFile("police.jpg");
   if (n.includes("skittle")) return staticFile("skittle.jpg");
   if (n.includes("vladimir") || n.includes("vlad")) return staticFile("vladimir.jpg");
   if (n.includes("nasa")) return staticFile("nasa.jpg");
@@ -33,6 +33,9 @@ const getAvatar = (name: string): string => {
 const getAuthorColor = (name: string): string => {
   const n = name.toLowerCase();
   if (n.includes("unknown") || n.includes("shadow") || n.includes("entity")) return "#ff4d4d";
+  if (n.includes("police") || n.includes("fbi") || n.includes("agent") || n.includes("miller")) return "#00a8ff";
+  if (n.includes("system")) return "#ff3838";
+  if (n.includes("vladimir") || n.includes("vlad")) return "#ff9f1a";
   if (n.includes("hecker")) return "#2ecc71";
   if (n.includes("skittle")) return "#f1c40f";
   if (n.includes("mom") || n.includes("mother")) return "#eb459e";
@@ -63,20 +66,22 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
   const startFrame = activeMsg.startFrame || 0;
   const age = frame - startFrame;
 
-  const isUnknown =
-    activeMsg.author.toLowerCase().includes("unknown") ||
-    activeMsg.author.toLowerCase().includes("entity");
+  const isAlertSender =
+    activeMsg.author.toLowerCase().includes("police") ||
+    activeMsg.author.toLowerCase().includes("system") ||
+    activeMsg.author.toLowerCase().includes("unknown");
 
   const isShock =
-    activeMsg.content.includes("WIFI") ||
-    activeMsg.content.includes("ROUTER") ||
-    activeMsg.content.includes("STAIRCASE") ||
-    activeMsg.content.includes("DOOR") ||
-    activeMsg.content.includes("under your bed") ||
-    activeMsg.content.includes("GIVE ME THAT PHONE") ||
-    activeMsg.content.includes("LOCKED OUT");
+    activeMsg.content.includes("BREACH") ||
+    activeMsg.content.includes("PENTAGON") ||
+    activeMsg.content.includes("DISARMED") ||
+    activeMsg.content.includes("RADAR") ||
+    activeMsg.content.includes("ARMORED") ||
+    activeMsg.content.includes("BATTERING") ||
+    activeMsg.content.includes("SNIPER") ||
+    activeMsg.content.includes("SWAT");
 
-  // Camera recoil / jitter on shock moments
+  // Camera recoil / jitter on sudden shock moments
   const jitterX = isShock && age < 8 ? Math.sin(age * 3.5) * (8 - age) * 1.5 : 0;
   const jitterY = isShock && age < 8 ? Math.cos(age * 3.5) * (8 - age) * 1.5 : 0;
 
@@ -86,26 +91,24 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
 
   const isEgg = activeMsg.author.toLowerCase().includes("egg");
 
-  const isCreepy =
+  const isIntense =
+    scenes[0]?.topic?.includes("cyber") ||
     scenes[0]?.topic?.includes("chill") ||
-    title.toLowerCase().includes("3 am") ||
-    title.toLowerCase().includes("creepy") ||
-    title.toLowerCase().includes("unknown") ||
-    title.toLowerCase().includes("curse") ||
-    title.toLowerCase().includes("stream");
+    title.toLowerCase().includes("pentagon") ||
+    title.toLowerCase().includes("fbi") ||
+    title.toLowerCase().includes("3 am");
 
-  const loopDuration = isCreepy ? 420 : 360;
-  // Calculate loops to support 3-4 minutes (up to ~7500 frames)
+  const loopDuration = isIntense ? 420 : 360;
   const loopCount = 22;
 
   return (
     <>
-      {/* Ambient Looping Background Music */}
+      {/* Ambient Looping Tension / Lo-Fi Background Music */}
       {Array.from({ length: loopCount }).map((_, i) => (
         <Sequence key={`bg-music-${i}`} from={i * loopDuration} durationInFrames={loopDuration}>
           <Audio
-            src={staticFile(isCreepy ? "audio/creepy_ambience.wav" : "audio/comedy_lofi_bg.wav")}
-            volume={isCreepy ? 0.32 : 0.22}
+            src={staticFile(isIntense ? "audio/creepy_ambience.wav" : "audio/comedy_lofi_bg.wav")}
+            volume={isIntense ? 0.32 : 0.22}
           />
         </Sequence>
       ))}
@@ -116,39 +119,31 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
         if (msg.cutaway?.type === "subscribe_button") {
           return null;
         }
-        if (msg.voiceEvent === "call_ringing") {
-          return (
-            <Sequence key={`sfx-${msg.id}`} from={start}>
-              <Audio src={staticFile("audio/discord_ring.wav")} volume={0.45} />
-            </Sequence>
-          );
-        }
 
-        const isUnknownMsg =
-          msg.author.toLowerCase().includes("unknown") ||
-          msg.author.toLowerCase().includes("entity");
-        const isShockMsg =
-          msg.content.includes("WIFI") ||
-          msg.content.includes("ROUTER") ||
-          msg.content.includes("STAIRCASE") ||
-          msg.content.includes("DOOR") ||
-          msg.content.includes("under your bed") ||
-          msg.content.includes("GIVE ME THAT PHONE") ||
-          msg.content.includes("LOCKED OUT");
+        const isCyberAlarm =
+          msg.content.includes("BREACH") ||
+          msg.content.includes("PENTAGON") ||
+          msg.content.includes("BATTERING RAM");
+
+        const isHeavyHit =
+          msg.content.includes("DISARMED") ||
+          msg.content.includes("SNIPER") ||
+          msg.content.includes("ARMORED") ||
+          msg.content.includes("SPLINTERING");
 
         return (
           <React.Fragment key={`sfx-group-${msg.id}`}>
             <Sequence from={start}>
               <Audio src={staticFile("notification.mp3")} volume={0.5} />
             </Sequence>
-            {isShockMsg && (
+            {isCyberAlarm && (
               <Sequence from={start}>
-                <Audio src={staticFile("audio/horror_hit.wav")} volume={0.7} />
+                <Audio src={staticFile("audio/cyber_alarm.wav")} volume={0.65} />
               </Sequence>
             )}
-            {isUnknownMsg && !isShockMsg && (
+            {isHeavyHit && (
               <Sequence from={start}>
-                <Audio src={staticFile("audio/creepy_sting.wav")} volume={0.45} />
+                <Audio src={staticFile("audio/horror_hit.wav")} volume={0.7} />
               </Sequence>
             )}
           </React.Fragment>
@@ -169,7 +164,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           overflow: "hidden",
         }}
       >
-        {/* Top Watermark / Title has been REMOVED as requested */}
+        {/* Top Watermark / Title removed for clean Beluga aesthetic */}
 
         {/* If Active Item is a Cutaway Gag */}
         {activeMsg.cutaway ? (
@@ -179,15 +174,15 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           <div
             style={{
               width: "100%",
-              backgroundColor: isUnknown ? "#323338" : "#36393f",
+              backgroundColor: isAlertSender ? "#2f3136" : "#36393f",
               padding: "42px 100px",
               display: "flex",
               alignItems: "flex-start",
               gap: "44px",
-              boxShadow: isUnknown
-                ? "0 0 70px rgba(180, 20, 20, 0.45), 0 0 30px rgba(0, 0, 0, 0.9)"
+              boxShadow: isAlertSender
+                ? "0 0 70px rgba(0, 168, 255, 0.35), 0 0 30px rgba(0, 0, 0, 0.9)"
                 : "0 0 60px rgba(0, 0, 0, 0.85)",
-              borderLeft: isUnknown ? "8px solid #ff4d4d" : undefined,
+              borderLeft: isAlertSender ? "8px solid #00a8ff" : undefined,
               transform: `translate(${jitterX}px, ${jitterY}px) scale(${scale})`,
               opacity: opacity,
               transformOrigin: "center center",
@@ -200,14 +195,14 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 width: "170px",
                 height: "170px",
                 borderRadius: "50%",
-                backgroundColor: isUnknown ? "#111111" : "#ffffff",
+                backgroundColor: isAlertSender ? "#111111" : "#ffffff",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 flexShrink: 0,
                 overflow: "hidden",
-                boxShadow: isUnknown
-                  ? "0 0 25px rgba(255, 40, 40, 0.6)"
+                boxShadow: isAlertSender
+                  ? "0 0 25px rgba(0, 168, 255, 0.5)"
                   : "0 4px 16px rgba(0,0,0,0.3)",
               }}
             >
@@ -240,7 +235,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                     fontSize: "62px",
                     fontWeight: 700,
                     letterSpacing: "0.3px",
-                    textShadow: isUnknown ? "0 0 15px rgba(255, 77, 77, 0.5)" : "none",
+                    textShadow: isAlertSender ? "0 0 15px rgba(0, 168, 255, 0.5)" : "none",
                   }}
                 >
                   {activeMsg.author}
@@ -253,28 +248,9 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                     fontWeight: 400,
                   }}
                 >
-                  {activeMsg.time || "3:14 AM"}
+                  {activeMsg.time || "2:15 PM"}
                 </span>
               </div>
-
-              {/* Discord Mention Tag (@everyone / @Beluga) */}
-              {activeMsg.mention && (
-                <div style={{ marginTop: "14px", marginBottom: "4px" }}>
-                  <span
-                    style={{
-                      backgroundColor: "rgba(88, 101, 242, 0.3)",
-                      color: "#c9cdfb",
-                      fontSize: "46px",
-                      fontWeight: 600,
-                      padding: "4px 18px",
-                      borderRadius: "8px",
-                      display: "inline-block",
-                    }}
-                  >
-                    {activeMsg.mention}
-                  </span>
-                </div>
-              )}
 
               {/* Message Content Text */}
               <div
@@ -283,7 +259,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                   fontSize: "58px",
                   fontWeight: 350,
                   lineHeight: "1.34",
-                  marginTop: activeMsg.mention ? "8px" : "12px",
+                  marginTop: "12px",
                   whiteSpace: "pre-line",
                   wordBreak: "break-word",
                   letterSpacing: "0.2px",
@@ -292,7 +268,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 {activeMsg.content}
               </div>
 
-              {/* Optional Sent Photo / CCTV / Meme Attachment */}
+              {/* Optional Sent Photo / FBI Monitor / SWAT Attachment */}
               {activeMsg.attachmentUrl && (
                 <div style={{ marginTop: "24px" }}>
                   <img

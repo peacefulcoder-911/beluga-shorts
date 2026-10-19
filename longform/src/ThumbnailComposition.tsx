@@ -7,7 +7,7 @@ export const Thumbnail: React.FC = () => {
       style={{
         width: "1920px",
         height: "1080px",
-        backgroundColor: "#0d0e12",
+        backgroundColor: "#080c14",
         position: "relative",
         overflow: "hidden",
         display: "flex",
@@ -16,9 +16,9 @@ export const Thumbnail: React.FC = () => {
         fontFamily: "'gg sans', 'Roboto', 'Helvetica Neue', Arial, sans-serif",
       }}
     >
-      {/* Background: Eerie dark staircase with heavy atmospheric gradient */}
+      {/* Background: SWAT arrival night vision with heavy atmospheric gradient */}
       <img
-        src={staticFile("staircase_door.jpg")}
+        src={staticFile("swat_arrival.jpg")}
         style={{
           position: "absolute",
           top: 0,
@@ -26,21 +26,21 @@ export const Thumbnail: React.FC = () => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          filter: "brightness(0.28) contrast(1.2)",
+          filter: "brightness(0.24) contrast(1.2)",
         }}
       />
 
-      {/* Crimson blood-red vignette glow from edges */}
+      {/* Police siren blue and red dual atmospheric vignette */}
       <div
         style={{
           position: "absolute",
           inset: 0,
           background:
-            "radial-gradient(circle at 75% 50%, rgba(220, 20, 60, 0.25) 0%, transparent 60%), radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0.9) 100%)",
+            "radial-gradient(circle at 80% 30%, rgba(0, 168, 255, 0.3) 0%, transparent 60%), radial-gradient(circle at 15% 70%, rgba(255, 50, 50, 0.35) 0%, transparent 60%), radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.92) 100%)",
         }}
       />
 
-      {/* Top Punchy Yellow & White Viral Text */}
+      {/* Top Punchy Viral Banner Text */}
       <div
         style={{
           position: "absolute",
@@ -51,32 +51,32 @@ export const Thumbnail: React.FC = () => {
           gap: "18px",
           alignItems: "center",
           zIndex: 10,
-          textShadow: "0 6px 20px rgba(0,0,0,0.95), 0 0 30px rgba(255, 0, 0, 0.6)",
+          textShadow: "0 6px 20px rgba(0,0,0,0.95), 0 0 30px rgba(0, 168, 255, 0.8)",
         }}
       >
         <span
           style={{
-            backgroundColor: "#e74c3c",
+            backgroundColor: "#00a8ff",
             color: "#ffffff",
             fontSize: "58px",
             fontWeight: 900,
             padding: "8px 28px",
             borderRadius: "14px",
             letterSpacing: "1px",
-            boxShadow: "0 8px 24px rgba(231, 76, 60, 0.5)",
+            boxShadow: "0 8px 24px rgba(0, 168, 255, 0.6)",
           }}
         >
-          3:00 AM
+          FBI RAID
         </span>
         <span
           style={{
-            color: "#f1c40f",
+            color: "#ffdd59",
             fontSize: "68px",
             fontWeight: 900,
             letterSpacing: "1px",
           }}
         >
-          HE IS IN MY HOUSE?! 💀
+          I HACKED THE PENTAGON?! 💀
         </span>
       </div>
 
@@ -98,8 +98,8 @@ export const Thumbnail: React.FC = () => {
             borderRadius: "50%",
             backgroundColor: "#ffffff",
             overflow: "hidden",
-            boxShadow: "0 0 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 60, 60, 0.6)",
-            border: "8px solid #ffffff",
+            boxShadow: "0 0 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(0, 168, 255, 0.7)",
+            border: "8px solid #00a8ff",
           }}
         >
           <img
@@ -136,19 +136,19 @@ export const Thumbnail: React.FC = () => {
           position: "relative",
           marginRight: "70px",
           width: "1150px",
-          backgroundColor: "#323338",
+          backgroundColor: "#2b2d32",
           borderRadius: "28px",
           padding: "44px 50px",
           display: "flex",
           alignItems: "center",
           gap: "36px",
-          boxShadow: "0 0 80px rgba(180, 20, 20, 0.5), 0 20px 50px rgba(0, 0, 0, 0.9)",
-          borderLeft: "12px solid #ff4d4d",
+          boxShadow: "0 0 80px rgba(0, 168, 255, 0.4), 0 20px 50px rgba(0, 0, 0, 0.9)",
+          borderLeft: "12px solid #00a8ff",
           borderTop: "1px solid rgba(255,255,255,0.08)",
           zIndex: 5,
         }}
       >
-        {/* Unknown Entity Avatar */}
+        {/* Police Agent Avatar */}
         <div
           style={{
             width: "180px",
@@ -157,12 +157,12 @@ export const Thumbnail: React.FC = () => {
             backgroundColor: "#111111",
             overflow: "hidden",
             flexShrink: 0,
-            boxShadow: "0 0 30px rgba(255, 50, 50, 0.7)",
-            border: "4px solid #ff4d4d",
+            boxShadow: "0 0 30px rgba(0, 168, 255, 0.7)",
+            border: "4px solid #00a8ff",
           }}
         >
           <img
-            src={staticFile("unknown.jpg")}
+            src={staticFile("police.jpg")}
             style={{
               width: "100%",
               height: "100%",
@@ -176,47 +176,47 @@ export const Thumbnail: React.FC = () => {
           <div style={{ display: "flex", alignItems: "baseline", gap: "18px" }}>
             <span
               style={{
-                color: "#ff4d4d",
+                color: "#00a8ff",
                 fontSize: "64px",
                 fontWeight: 800,
                 letterSpacing: "0.5px",
-                textShadow: "0 0 20px rgba(255, 77, 77, 0.6)",
+                textShadow: "0 0 20px rgba(0, 168, 255, 0.6)",
               }}
             >
-              Unknown
+              Police
             </span>
             <span style={{ color: "#80848e", fontSize: "38px", fontWeight: 500 }}>
-              3:35 AM
+              2:20 PM
             </span>
           </div>
 
           <div
             style={{
               color: "#ffffff",
-              fontSize: "66px",
+              fontSize: "64px",
               fontWeight: 400,
               lineHeight: 1.25,
               textShadow: "0 2px 10px rgba(0,0,0,0.8)",
             }}
           >
-            i am under your bed... 👁️
+            STEP AWAY FROM THE KEYBOARD. 🚨
           </div>
         </div>
       </div>
 
-      {/* Discord Unread Ping Badge Bottom-Right */}
+      {/* Police SWAT Alert Badge Bottom-Right */}
       <div
         style={{
           position: "absolute",
           bottom: "35px",
           right: "50px",
-          backgroundColor: "#f04747",
+          backgroundColor: "#ff3838",
           color: "#ffffff",
           fontSize: "36px",
           fontWeight: 900,
           padding: "10px 24px",
           borderRadius: "30px",
-          boxShadow: "0 6px 20px rgba(240, 71, 71, 0.7)",
+          boxShadow: "0 6px 20px rgba(255, 56, 56, 0.8)",
           zIndex: 10,
           display: "flex",
           alignItems: "center",
@@ -224,7 +224,7 @@ export const Thumbnail: React.FC = () => {
         }}
       >
         <span style={{ width: "16px", height: "16px", borderRadius: "50%", backgroundColor: "#ffffff" }} />
-        1 NEW MESSAGE
+        LEVEL 5 DEFENSE BREACH
       </div>
     </div>
   );
