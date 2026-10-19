@@ -10,7 +10,7 @@ export interface DesktopDiscordProps {
 
 const getAvatar = (name: string): string => {
   const n = name.toLowerCase();
-  if (n.includes("unknown") || n.includes("shadow")) return staticFile("unknown.jpg");
+  if (n.includes("unknown") || n.includes("shadow") || n.includes("entity")) return staticFile("unknown.jpg");
   if (n.includes("egg")) return staticFile("egg.jpg");
   if (n.includes("beluga") || n.includes("belu")) return staticFile("beluga.jpg");
   if (n.includes("smith") || n.includes("teacher") || n.includes("prof") || n.includes("sir")) return staticFile("teacher.jpg");
@@ -32,10 +32,12 @@ const getAvatar = (name: string): string => {
 
 const getAuthorColor = (name: string): string => {
   const n = name.toLowerCase();
-  if (n.includes("unknown") || n.includes("shadow")) return "#ff4d4d";
+  if (n.includes("unknown") || n.includes("shadow") || n.includes("entity")) return "#ff4d4d";
   if (n.includes("hecker")) return "#2ecc71";
   if (n.includes("skittle")) return "#f1c40f";
   if (n.includes("mom") || n.includes("mother")) return "#eb459e";
+  if (n.includes("pablo")) return "#e67e22";
+  if (n.includes("egg")) return "#ffffff";
   if (n.includes("admin") || n.includes("mod")) return "#9b59b6";
   if (n.includes("smith") || n.includes("teacher")) return "#3498db";
   return "#ffffff";
@@ -61,12 +63,18 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
   const startFrame = activeMsg.startFrame || 0;
   const age = frame - startFrame;
 
-  const isUnknown = activeMsg.author.toLowerCase().includes("unknown");
+  const isUnknown =
+    activeMsg.author.toLowerCase().includes("unknown") ||
+    activeMsg.author.toLowerCase().includes("entity");
+
   const isShock =
     activeMsg.content.includes("WIFI") ||
-    activeMsg.content.includes("step 5") ||
-    activeMsg.content.includes("outside your room") ||
-    activeMsg.content.includes("GIVE ME YOUR PHONE");
+    activeMsg.content.includes("ROUTER") ||
+    activeMsg.content.includes("STAIRCASE") ||
+    activeMsg.content.includes("DOOR") ||
+    activeMsg.content.includes("under your bed") ||
+    activeMsg.content.includes("GIVE ME THAT PHONE") ||
+    activeMsg.content.includes("LOCKED OUT");
 
   // Camera recoil / jitter on shock moments
   const jitterX = isShock && age < 8 ? Math.sin(age * 3.5) * (8 - age) * 1.5 : 0;
@@ -82,10 +90,13 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
     scenes[0]?.topic?.includes("chill") ||
     title.toLowerCase().includes("3 am") ||
     title.toLowerCase().includes("creepy") ||
-    title.toLowerCase().includes("unknown");
+    title.toLowerCase().includes("unknown") ||
+    title.toLowerCase().includes("curse") ||
+    title.toLowerCase().includes("stream");
 
   const loopDuration = isCreepy ? 420 : 360;
-  const loopCount = 20;
+  // Calculate loops to support 3-4 minutes (up to ~7500 frames)
+  const loopCount = 22;
 
   return (
     <>
@@ -113,12 +124,17 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           );
         }
 
-        const isUnknownMsg = msg.author.toLowerCase().includes("unknown");
+        const isUnknownMsg =
+          msg.author.toLowerCase().includes("unknown") ||
+          msg.author.toLowerCase().includes("entity");
         const isShockMsg =
           msg.content.includes("WIFI") ||
-          msg.content.includes("step 5") ||
-          msg.content.includes("outside your room") ||
-          msg.content.includes("GIVE ME YOUR PHONE");
+          msg.content.includes("ROUTER") ||
+          msg.content.includes("STAIRCASE") ||
+          msg.content.includes("DOOR") ||
+          msg.content.includes("under your bed") ||
+          msg.content.includes("GIVE ME THAT PHONE") ||
+          msg.content.includes("LOCKED OUT");
 
         return (
           <React.Fragment key={`sfx-group-${msg.id}`}>
@@ -153,22 +169,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           overflow: "hidden",
         }}
       >
-        {/* Top Watermark / Episode Title */}
-        <div
-          style={{
-            position: "absolute",
-            top: "24px",
-            left: "32px",
-            fontSize: "20px",
-            fontWeight: 600,
-            color: isUnknown ? "#ff5252" : "rgba(255, 255, 255, 0.9)",
-            letterSpacing: "0.2px",
-            zIndex: 10,
-            textShadow: isUnknown ? "0 0 10px rgba(255, 82, 82, 0.6)" : "none",
-          }}
-        >
-          {title}
-        </div>
+        {/* Top Watermark / Title has been REMOVED as requested */}
 
         {/* If Active Item is a Cutaway Gag */}
         {activeMsg.cutaway ? (
@@ -291,16 +292,22 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                 {activeMsg.content}
               </div>
 
-              {/* Optional Meme Image Attachment */}
+              {/* Optional Sent Photo / CCTV / Meme Attachment */}
               {activeMsg.attachmentUrl && (
-                <div style={{ marginTop: "20px" }}>
+                <div style={{ marginTop: "24px" }}>
                   <img
-                    src={activeMsg.attachmentUrl}
+                    src={
+                      activeMsg.attachmentUrl.startsWith("http")
+                        ? activeMsg.attachmentUrl
+                        : staticFile(activeMsg.attachmentUrl)
+                    }
                     style={{
-                      maxWidth: "700px",
-                      maxHeight: "380px",
+                      maxWidth: "850px",
+                      maxHeight: "460px",
                       borderRadius: "14px",
                       objectFit: "contain",
+                      boxShadow: "0 8px 30px rgba(0, 0, 0, 0.6)",
+                      border: "1px solid rgba(255, 255, 255, 0.1)",
                     }}
                   />
                 </div>

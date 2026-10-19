@@ -57,7 +57,7 @@ export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; star
             border: "1px solid rgba(255,255,255,0.08)",
           }}
         >
-          Subscribe
+          {isClicked ? "Subscribed ✓" : "Subscribe"}
         </div>
 
         {/* Animated Mouse Cursor Pointer */}
@@ -118,7 +118,7 @@ export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; star
             style={{
               fontSize: "64px",
               fontWeight: 600,
-              color: "#6b6b6b",
+              color: "#aaaaaa",
               letterSpacing: "1px",
             }}
           >
@@ -229,9 +229,9 @@ export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; star
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "32px",
+              fontSize: "30px",
               fontWeight: 800,
-              color: "#666666",
+              color: "#888888",
               border: "1px solid #2d2d2d",
             }}
           >
@@ -246,18 +246,67 @@ export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; star
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              fontSize: "32px",
+              fontSize: "30px",
               fontWeight: 800,
-              color: "#666666",
-              border: "1px solid #2d2d2d",
+              color: "#ff4d4d",
+              border: "1px solid #ff4d4d",
             }}
           >
-            FORTNITE WIN 🏆
+            🔴 LIVE 3 AM
           </div>
         </div>
 
         {/* Bottom letterbox */}
         <div style={{ height: "60px", backgroundColor: "#000000", marginTop: "auto" }} />
+      </div>
+    );
+  }
+
+  if (cutaway.type === "image") {
+    const imgSrc = cutaway.imageUrl?.startsWith("http")
+      ? cutaway.imageUrl
+      : staticFile(cutaway.imageUrl || "cctv_stairs.jpg");
+    return (
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          backgroundColor: "#000000",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          position: "relative",
+          overflow: "hidden",
+        }}
+      >
+        <img
+          src={imgSrc}
+          style={{
+            maxWidth: "100%",
+            maxHeight: "920px",
+            objectFit: "contain",
+            boxShadow: "0 0 50px rgba(0,0,0,0.9)",
+          }}
+        />
+        {cutaway.bannerText && (
+          <div
+            style={{
+              position: "absolute",
+              bottom: "80px",
+              backgroundColor: "rgba(0,0,0,0.85)",
+              color: "#ff4d4d",
+              fontSize: "36px",
+              fontWeight: 700,
+              padding: "12px 32px",
+              borderRadius: "12px",
+              border: "1px solid #ff4d4d",
+              letterSpacing: "1px",
+            }}
+          >
+            {cutaway.bannerText}
+          </div>
+        )}
       </div>
     );
   }

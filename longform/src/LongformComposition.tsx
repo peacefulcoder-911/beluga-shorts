@@ -21,15 +21,17 @@ const parsedScenes: LongformScene[] = (scriptData.scenes as LongformScene[]).map
 
       // Calculate natural reading duration based on word count and length
       const words = msg.content.trim().split(/\s+/).length;
-      let durationSec = 1.6;
-      if (words <= 2) durationSec = 1.3;
-      else if (words <= 5) durationSec = 1.9;
-      else if (words <= 9) durationSec = 2.6;
-      else durationSec = 3.4;
+      let durationSec = 1.8;
+      if (words <= 2) durationSec = 1.4;
+      else if (words <= 5) durationSec = 2.0;
+      else if (words <= 9) durationSec = 2.7;
+      else durationSec = 3.6;
 
       // Special event pacing
       if (msg.cutaway) {
-        durationSec = 2.5;
+        durationSec = msg.cutaway.type === "youtube_channel" ? 3.6 : 2.6;
+      } else if (msg.attachmentUrl) {
+        durationSec = 4.0; // Audience absorbs chilling photos
       } else if (msg.voiceEvent === "call_ringing") {
         durationSec = 2.4;
       }
@@ -52,7 +54,7 @@ const parsedScenes: LongformScene[] = (scriptData.scenes as LongformScene[]).map
 );
 
 // End padding for the punchline to sink in
-currentFrame += Math.floor(3.5 * fps);
+currentFrame += Math.floor(4.0 * fps);
 const totalDurationInFrames = currentFrame;
 
 export const LongformComposition: React.FC = () => {
