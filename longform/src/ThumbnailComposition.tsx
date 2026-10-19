@@ -7,16 +7,16 @@ export const Thumbnail: React.FC = () => {
       style={{
         width: "1920px",
         height: "1080px",
-        backgroundColor: "#080c14",
+        backgroundColor: "#0b0d13",
         position: "relative",
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        fontFamily: "'gg sans', 'Roboto', 'Helvetica Neue', Arial, sans-serif",
+        fontFamily: "'gg sans', 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif",
       }}
     >
-      {/* Background: SWAT arrival night vision with heavy atmospheric gradient */}
+      {/* Background: SWAT arrival feed with heavy atmospheric darkening */}
       <img
         src={staticFile("swat_arrival.jpg")}
         style={{
@@ -26,7 +26,8 @@ export const Thumbnail: React.FC = () => {
           width: "100%",
           height: "100%",
           objectFit: "cover",
-          filter: "brightness(0.24) contrast(1.2)",
+          filter: "brightness(0.20) contrast(1.3) blur(2px)",
+          transform: "scale(1.05)",
         }}
       />
 
@@ -36,195 +37,342 @@ export const Thumbnail: React.FC = () => {
           position: "absolute",
           inset: 0,
           background:
-            "radial-gradient(circle at 80% 30%, rgba(0, 168, 255, 0.3) 0%, transparent 60%), radial-gradient(circle at 15% 70%, rgba(255, 50, 50, 0.35) 0%, transparent 60%), radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.6) 0%, rgba(0,0,0,0.92) 100%)",
+            "radial-gradient(circle at 18% 45%, rgba(255, 30, 30, 0.45) 0%, transparent 55%), radial-gradient(circle at 82% 40%, rgba(0, 150, 255, 0.4) 0%, transparent 60%), linear-gradient(180deg, rgba(5,7,12,0.88) 0%, rgba(10,12,18,0.3) 40%, rgba(5,7,12,0.95) 100%)",
         }}
       />
 
-      {/* Top Punchy Viral Banner Text */}
+      {/* Top Banner: Huge High-Impact Viral Headline with high contrast */}
       <div
         style={{
           position: "absolute",
-          top: "45px",
+          top: "35px",
           left: "50%",
           transform: "translateX(-50%)",
           display: "flex",
-          gap: "18px",
           alignItems: "center",
-          zIndex: 10,
-          textShadow: "0 6px 20px rgba(0,0,0,0.95), 0 0 30px rgba(0, 168, 255, 0.8)",
+          gap: "20px",
+          zIndex: 20,
+          whiteSpace: "nowrap",
+          filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.95))",
         }}
       >
-        <span
+        <div
           style={{
-            backgroundColor: "#00a8ff",
+            backgroundColor: "#ff0055",
             color: "#ffffff",
-            fontSize: "58px",
+            fontSize: "46px",
             fontWeight: 900,
-            padding: "8px 28px",
-            borderRadius: "14px",
-            letterSpacing: "1px",
-            boxShadow: "0 8px 24px rgba(0, 168, 255, 0.6)",
+            padding: "10px 28px",
+            borderRadius: "16px",
+            textTransform: "uppercase",
+            letterSpacing: "2px",
+            boxShadow: "0 8px 30px rgba(255, 0, 85, 0.7)",
+            border: "4px solid #ffffff",
           }}
         >
-          FBI RAID
-        </span>
-        <span
+          🚨 FBI RAID 🚨
+        </div>
+        <div
           style={{
-            color: "#ffdd59",
-            fontSize: "68px",
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
+            padding: "8px 30px",
+            borderRadius: "20px",
+            border: "3px solid rgba(255, 230, 0, 0.6)",
+            color: "#ffe600",
+            fontSize: "78px",
             fontWeight: 900,
             letterSpacing: "1px",
+            textShadow:
+              "0 4px 0 #000, 0 8px 0 #000, 0 12px 28px rgba(0,0,0,0.95), 0 0 35px rgba(255, 230, 0, 0.8)",
+            WebkitTextStroke: "2.5px #000000",
           }}
         >
           I HACKED THE PENTAGON?! 💀
-        </span>
+        </div>
       </div>
 
-      {/* Left: Huge Iconic Beluga Cat Meme Avatar */}
+      {/* LEFT: THE REAL BELUGA (Iconic Meme Cat Face) */}
       <div
         style={{
           position: "relative",
-          marginLeft: "80px",
-          zIndex: 5,
+          marginLeft: "65px",
+          marginTop: "65px",
+          zIndex: 10,
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
         }}
       >
+        {/* Massive Beluga Portrait Container */}
         <div
           style={{
-            width: "420px",
-            height: "420px",
+            position: "relative",
+            width: "540px",
+            height: "540px",
             borderRadius: "50%",
-            backgroundColor: "#ffffff",
+            backgroundColor: "#202225",
+            border: "12px solid #ffffff",
+            boxShadow:
+              "0 0 0 10px #ff2a2a, 0 0 70px rgba(255, 42, 42, 0.85), 0 25px 50px rgba(0,0,0,0.95)",
             overflow: "hidden",
-            boxShadow: "0 0 50px rgba(0, 0, 0, 0.9), 0 0 35px rgba(0, 168, 255, 0.7)",
-            border: "8px solid #00a8ff",
           }}
         >
+          {/* Canonical Beluga Cat Photo */}
           <img
             src={staticFile("beluga.jpg")}
             style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
+              transform: "scale(1.14) translateY(-12px)",
+              filter: "contrast(1.15) brightness(1.05)",
+            }}
+          />
+
+          {/* Red Tactical Sniper Laser Dot on Forehead */}
+          <div
+            style={{
+              position: "absolute",
+              top: "145px",
+              left: "250px",
+              width: "28px",
+              height: "28px",
+              borderRadius: "50%",
+              backgroundColor: "#ff0000",
+              boxShadow: "0 0 25px 12px #ff0033, 0 0 50px 25px #ff0000",
+              border: "3px solid #ffffff",
+              zIndex: 15,
             }}
           />
         </div>
 
-        {/* Beluga Name Tag */}
+        {/* Laser beam trailing in from left directly to the dot */}
         <div
           style={{
-            marginTop: "20px",
-            backgroundColor: "#202225",
+            position: "absolute",
+            top: "157px",
+            left: "-180px",
+            width: "440px",
+            height: "4px",
+            backgroundColor: "#ff0033",
+            boxShadow: "0 0 15px 3px #ff0000",
+            transform: "rotate(6deg)",
+            opacity: 0.9,
+            zIndex: 12,
+            pointerEvents: "none",
+          }}
+        />
+
+        {/* Beluga Name Badge */}
+        <div
+          style={{
+            marginTop: "22px",
+            backgroundColor: "#1e1f22",
             color: "#ffffff",
-            fontSize: "44px",
-            fontWeight: 800,
-            padding: "8px 36px",
-            borderRadius: "24px",
-            boxShadow: "0 4px 16px rgba(0,0,0,0.6)",
-            border: "2px solid rgba(255,255,255,0.15)",
+            fontSize: "48px",
+            fontWeight: 900,
+            padding: "10px 48px",
+            borderRadius: "30px",
+            display: "flex",
+            alignItems: "center",
+            gap: "18px",
+            border: "3px solid rgba(255,255,255,0.25)",
+            boxShadow: "0 10px 30px rgba(0,0,0,0.8)",
           }}
         >
+          {/* Discord Online Status Indicator */}
+          <span
+            style={{
+              width: "24px",
+              height: "24px",
+              borderRadius: "50%",
+              backgroundColor: "#23a55a",
+              border: "4px solid #1e1f22",
+              boxShadow: "0 0 12px #23a55a",
+            }}
+          />
           Beluga
         </div>
       </div>
 
-      {/* Right: Massive Realistic Floating Discord Message */}
+      {/* RIGHT: Authentic Giant Discord Chat UI */}
       <div
         style={{
           position: "relative",
-          marginRight: "70px",
-          width: "1150px",
-          backgroundColor: "#2b2d32",
-          borderRadius: "28px",
-          padding: "44px 50px",
+          marginRight: "55px",
+          marginTop: "65px",
+          width: "1170px",
+          backgroundColor: "#313338",
+          borderRadius: "32px",
+          padding: "44px 48px",
           display: "flex",
-          alignItems: "center",
-          gap: "36px",
-          boxShadow: "0 0 80px rgba(0, 168, 255, 0.4), 0 20px 50px rgba(0, 0, 0, 0.9)",
-          borderLeft: "12px solid #00a8ff",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-          zIndex: 5,
+          flexDirection: "column",
+          gap: "24px",
+          boxShadow:
+            "0 0 80px rgba(0, 168, 255, 0.45), 0 25px 60px rgba(0, 0, 0, 0.95)",
+          border: "4px solid rgba(0, 168, 255, 0.7)",
+          zIndex: 10,
         }}
       >
-        {/* Police Agent Avatar */}
+        {/* Message 1: Police Agent */}
+        <div style={{ display: "flex", gap: "28px", alignItems: "flex-start" }}>
+          <div
+            style={{
+              width: "130px",
+              height: "130px",
+              borderRadius: "50%",
+              backgroundColor: "#111",
+              overflow: "hidden",
+              flexShrink: 0,
+              border: "4px solid #00a8ff",
+              boxShadow: "0 0 25px rgba(0, 168, 255, 0.8)",
+            }}
+          >
+            <img
+              src={staticFile("police.jpg")}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "8px", flex: 1 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+              <span
+                style={{
+                  color: "#00a8ff",
+                  fontSize: "52px",
+                  fontWeight: 900,
+                  letterSpacing: "0.5px",
+                }}
+              >
+                Special Agent Miller
+              </span>
+              <span
+                style={{
+                  backgroundColor: "#5865f2",
+                  color: "#ffffff",
+                  fontSize: "22px",
+                  fontWeight: 800,
+                  padding: "4px 12px",
+                  borderRadius: "8px",
+                }}
+              >
+                BOT
+              </span>
+              <span style={{ color: "#949ba4", fontSize: "32px", fontWeight: 500 }}>
+                Today at 2:00 AM
+              </span>
+            </div>
+
+            <div
+              style={{
+                color: "#ffffff",
+                fontSize: "46px",
+                fontWeight: 700,
+                lineHeight: 1.3,
+                textShadow: "0 2px 10px rgba(0,0,0,0.8)",
+              }}
+            >
+              STEP AWAY FROM THE KEYBOARD. 🚨
+            </div>
+
+            <div
+              style={{
+                color: "#f23f43",
+                fontSize: "40px",
+                fontWeight: 800,
+                marginTop: "4px",
+              }}
+            >
+              WE HAVE YOUR HOUSE SURROUNDED.
+            </div>
+          </div>
+        </div>
+
+        {/* Attachment Card: FBI Monitor Screen Alert */}
         <div
           style={{
-            width: "180px",
-            height: "180px",
-            borderRadius: "50%",
-            backgroundColor: "#111111",
-            overflow: "hidden",
-            flexShrink: 0,
-            boxShadow: "0 0 30px rgba(0, 168, 255, 0.7)",
-            border: "4px solid #00a8ff",
+            marginLeft: "158px",
+            backgroundColor: "#2b2d31",
+            borderRadius: "20px",
+            padding: "20px",
+            border: "3px solid #f23f43",
+            display: "flex",
+            alignItems: "center",
+            gap: "24px",
+            boxShadow: "0 8px 24px rgba(242, 63, 67, 0.3)",
           }}
         >
           <img
-            src={staticFile("police.jpg")}
+            src={staticFile("fbi_alert.jpg")}
             style={{
-              width: "100%",
-              height: "100%",
+              width: "280px",
+              height: "160px",
               objectFit: "cover",
+              borderRadius: "14px",
+              border: "2px solid #f23f43",
             }}
           />
-        </div>
-
-        {/* Text Area */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-          <div style={{ display: "flex", alignItems: "baseline", gap: "18px" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
             <span
               style={{
-                color: "#00a8ff",
-                fontSize: "64px",
-                fontWeight: 800,
-                letterSpacing: "0.5px",
-                textShadow: "0 0 20px rgba(0, 168, 255, 0.6)",
+                color: "#f23f43",
+                fontSize: "34px",
+                fontWeight: 900,
+                letterSpacing: "1px",
               }}
             >
-              Police
+              ⚠️ LEVEL 5 PENTAGON DEFENSE BREACH
             </span>
-            <span style={{ color: "#80848e", fontSize: "38px", fontWeight: 500 }}>
-              2:20 PM
+            <span style={{ color: "#dbdee1", fontSize: "28px", fontWeight: 600 }}>
+              Device IP: 192.168.1.42 (Beluga-Smart-Toaster)
             </span>
-          </div>
-
-          <div
-            style={{
-              color: "#ffffff",
-              fontSize: "64px",
-              fontWeight: 400,
-              lineHeight: 1.25,
-              textShadow: "0 2px 10px rgba(0,0,0,0.8)",
-            }}
-          >
-            STEP AWAY FROM THE KEYBOARD. 🚨
+            <span style={{ color: "#23a55a", fontSize: "26px", fontWeight: 800 }}>
+              Status: TACTICAL ASSAULT AUTHORIZED
+            </span>
           </div>
         </div>
-      </div>
 
-      {/* Police SWAT Alert Badge Bottom-Right */}
-      <div
-        style={{
-          position: "absolute",
-          bottom: "35px",
-          right: "50px",
-          backgroundColor: "#ff3838",
-          color: "#ffffff",
-          fontSize: "36px",
-          fontWeight: 900,
-          padding: "10px 24px",
-          borderRadius: "30px",
-          boxShadow: "0 6px 20px rgba(255, 56, 56, 0.8)",
-          zIndex: 10,
-          display: "flex",
-          alignItems: "center",
-          gap: "12px",
-        }}
-      >
-        <span style={{ width: "16px", height: "16px", borderRadius: "50%", backgroundColor: "#ffffff" }} />
-        LEVEL 5 DEFENSE BREACH
+        {/* Message 2: Beluga Panic Response */}
+        <div style={{ display: "flex", gap: "28px", alignItems: "flex-start", marginTop: "8px" }}>
+          <div
+            style={{
+              width: "110px",
+              height: "110px",
+              borderRadius: "50%",
+              backgroundColor: "#fff",
+              overflow: "hidden",
+              flexShrink: 0,
+              border: "3px solid #5865f2",
+            }}
+          >
+            <img
+              src={staticFile("beluga.jpg")}
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "6px" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+              <span style={{ color: "#ffffff", fontSize: "42px", fontWeight: 800 }}>
+                Beluga
+              </span>
+              <span style={{ color: "#949ba4", fontSize: "28px" }}>Today at 2:01 AM</span>
+            </div>
+            <div
+              style={{
+                color: "#ffe600",
+                fontSize: "44px",
+                fontWeight: 800,
+                backgroundColor: "rgba(255, 230, 0, 0.12)",
+                padding: "8px 18px",
+                borderRadius: "12px",
+                borderLeft: "6px solid #ffe600",
+              }}
+            >
+              can i at least finish downloading Shrek 2 first? 😭
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
