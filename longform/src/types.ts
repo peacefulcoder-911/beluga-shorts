@@ -3,6 +3,17 @@ export interface LongformReaction {
   count: number;
 }
 
+export interface CutawayData {
+  type: "youtube_channel" | "subscribe_button" | "image" | "bank_account" | "google_search";
+  channelName?: string;
+  subscriberCount?: string;
+  avatarUrl?: string;
+  bannerText?: string;
+  imageUrl?: string;
+  searchQuery?: string;
+  balance?: string;
+}
+
 export interface LongformMessage {
   id: number;
   author: string;
@@ -10,6 +21,8 @@ export interface LongformMessage {
   color?: string;
   time: string;
   content: string;
+  mention?: string; // e.g. "@everyone", "@Beluga"
+  cutaway?: CutawayData; // Full screen cutaway gag (YouTube channel, subscribe button, etc.)
   attachmentUrl?: string;
   attachmentCaption?: string;
   reactions?: LongformReaction[];

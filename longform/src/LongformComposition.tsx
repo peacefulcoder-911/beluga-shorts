@@ -27,8 +27,10 @@ const parsedScenes: LongformScene[] = (scriptData.scenes as LongformScene[]).map
       else if (words <= 9) durationSec = 2.6;
       else durationSec = 3.4;
 
-      // Special event pacing (e.g. call ringing gets dedicated 2 seconds)
-      if (msg.voiceEvent === "call_ringing") {
+      // Special event pacing
+      if (msg.cutaway) {
+        durationSec = 2.5;
+      } else if (msg.voiceEvent === "call_ringing") {
         durationSec = 2.4;
       }
 
