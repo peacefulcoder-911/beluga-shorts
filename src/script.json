@@ -1,220 +1,176 @@
 [
   {
     "id": 1,
-    "author": "Mr. Sterling",
-    "content": "Hello, Beluga.",
-    "time": "Today at 2:03 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Beluga",
+    "content": "guys look at this picture of my grandmother",
+    "time": "Today at 3:10 PM",
+    "attachmentUrl": "attachments/mona_lisa_louvre.jpg"
   },
   {
     "id": 2,
-    "author": "Mr. Sterling",
-    "content": "This is your bank.",
-    "time": "Today at 2:03 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Skittle",
+    "content": "BELUGA THAT IS THE MONA LISA",
+    "time": "Today at 3:10 PM"
   },
   {
     "id": 3,
-    "author": "Mr. Sterling",
-    "content": "Your account is frozen.",
-    "time": "Today at 2:04 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Beluga",
+    "content": "no her name is lisa mona",
+    "time": "Today at 3:11 PM"
   },
   {
     "id": 4,
     "author": "Beluga",
-    "content": "frozen?",
-    "time": "Today at 2:04 PM"
+    "content": "she lived in ohio",
+    "time": "Today at 3:11 PM"
   },
   {
     "id": 5,
     "author": "Skittle",
-    "content": "BRO WHAT?!",
-    "time": "Today at 2:04 PM"
+    "content": "THAT IS A 500 YEAR OLD PAINTING IN PARIS",
+    "time": "Today at 3:12 PM"
   },
   {
     "id": 6,
-    "author": "Hecker",
-    "content": "Scam. Obvious.",
-    "time": "Today at 2:05 PM"
+    "author": "Beluga",
+    "content": "she aged gracefully",
+    "time": "Today at 3:12 PM"
   },
   {
     "id": 7,
-    "author": "Mr. Sterling",
-    "content": "Need security verification.",
-    "time": "Today at 2:05 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Hecker",
+    "content": "WAIT.",
+    "time": "Today at 3:12 PM"
   },
   {
     "id": 8,
-    "author": "Mr. Sterling",
-    "content": "Send proof of funds.",
-    "time": "Today at 2:06 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Hecker",
+    "content": "WHERE ARE HER EYEBROWS",
+    "time": "Today at 3:13 PM"
   },
   {
     "id": 9,
     "author": "Beluga",
-    "content": "proof of funds?",
-    "time": "Today at 2:06 PM"
+    "content": "she forgot them in 1503",
+    "time": "Today at 3:13 PM"
   },
   {
     "id": 10,
-    "author": "Hecker",
-    "content": "DO NOT. SEND. ANYTHING.",
-    "time": "Today at 2:07 PM"
+    "author": "Skittle",
+    "content": "BRO YOU ADMITTED SHE WAS ALIVE IN 1503 💀",
+    "time": "Today at 3:14 PM"
   },
   {
     "id": 11,
     "author": "Beluga",
-    "content": "ok.",
-    "time": "Today at 2:07 PM"
+    "content": "i said she was old",
+    "time": "Today at 3:14 PM"
   },
   {
     "id": 12,
-    "author": "Beluga",
-    "content": "here are my funds",
-    "time": "Today at 2:08 PM",
-    "attachmentUrl": "attachments/deposit_penny.jpg"
+    "author": "Pierre",
+    "content": "SACRÉ BLEU! THAT PORTRAIT WAS STOLEN FROM THE LOUVRE 20 MINUTES AGO!",
+    "time": "Today at 3:15 PM",
+    "avatarUrl": "characters/pierre.jpg"
   },
   {
     "id": 13,
-    "author": "Mr. Sterling",
-    "content": "...a penny?",
-    "time": "Today at 2:08 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Hecker",
+    "content": "BELUGA WHY IS A FRENCH ART CURATOR IN OUR DISCORD",
+    "time": "Today at 3:15 PM"
   },
   {
     "id": 14,
     "author": "Beluga",
-    "content": "Yes. My funds.",
-    "time": "Today at 2:09 PM"
+    "content": "i bought it at a garage sale for $4",
+    "time": "Today at 3:16 PM"
   },
   {
     "id": 15,
-    "author": "Skittle",
-    "content": "BELUGA NOOO!",
-    "time": "Today at 2:09 PM"
+    "author": "Pierre",
+    "content": "DO NOT TOUCH ZE CANVAS! IT IS PRICELESS HISTORY!",
+    "time": "Today at 3:16 PM",
+    "avatarUrl": "characters/pierre.jpg"
   },
   {
     "id": 16,
-    "author": "Mr. Sterling",
-    "content": "This is not helping.",
-    "time": "Today at 2:10 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Beluga",
+    "content": "too late",
+    "time": "Today at 3:17 PM"
   },
   {
     "id": 17,
-    "author": "Mr. Sterling",
-    "content": "Send $500 gift cards.",
-    "time": "Today at 2:10 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Skittle",
+    "content": "WHAT DID YOU DO TO IT",
+    "time": "Today at 3:17 PM"
   },
   {
     "id": 18,
-    "author": "Hecker",
-    "content": "Classic scammer request.",
-    "time": "Today at 2:11 PM"
+    "author": "Beluga",
+    "content": "she looked depressed so i fixed her smile",
+    "time": "Today at 3:17 PM"
   },
   {
     "id": 19,
-    "author": "Beluga",
-    "content": "i'm poor.",
-    "time": "Today at 2:11 PM"
+    "author": "Hecker",
+    "content": "BELUGA YOU DID NOT VANDALIZE DA VINCI 💀",
+    "time": "Today at 3:18 PM"
   },
   {
     "id": 20,
-    "author": "Mr. Sterling",
-    "content": "ANY gift cards!",
-    "time": "Today at 2:12 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Beluga",
+    "content": "meet the new and improved Mona Lisa",
+    "time": "Today at 3:18 PM",
+    "attachmentUrl": "attachments/beluga_mona_lisa.jpg"
   },
   {
     "id": 21,
-    "author": "Beluga",
-    "content": "ok!",
-    "time": "Today at 2:12 PM"
+    "author": "Skittle",
+    "content": "...",
+    "time": "Today at 3:19 PM"
   },
   {
     "id": 22,
-    "author": "Beluga",
-    "content": "i found gift cards",
-    "time": "Today at 2:13 PM",
-    "attachmentUrl": "attachments/birthday_gifts.jpg"
+    "author": "Hecker",
+    "content": "...",
+    "time": "Today at 3:19 PM"
   },
   {
     "id": 23,
-    "author": "Mr. Sterling",
-    "content": "ARE THOSE BIRTHDAY GIFTS?!",
-    "time": "Today at 2:13 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Pierre",
+    "content": "...mon dieu",
+    "time": "Today at 3:20 PM",
+    "avatarUrl": "characters/pierre.jpg"
   },
   {
     "id": 24,
-    "author": "Beluga",
-    "content": "Yes. For Skittle.",
-    "time": "Today at 2:14 PM"
+    "author": "Pierre",
+    "content": "IT IS... MAGNIFIQUE! A TRUE MASTERPIECE!",
+    "time": "Today at 3:20 PM",
+    "avatarUrl": "characters/pierre.jpg"
   },
   {
     "id": 25,
-    "author": "Skittle",
-    "content": "MY BIRTHDAY ISN'T UNTIL JULY!",
-    "time": "Today at 2:14 PM"
+    "author": "Billionaire",
+    "content": "I WILL PAY $500,000,000 FOR THIS ARTWORK RIGHT NOW.",
+    "time": "Today at 3:21 PM"
   },
   {
     "id": 26,
-    "author": "Mr. Sterling",
-    "content": "GIVE ME YOUR SOCIAL SECURITY NUMBER!",
-    "time": "Today at 2:15 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
+    "author": "Beluga",
+    "content": "make it $5 and a large pepperoni pizza",
+    "time": "Today at 3:21 PM"
   },
   {
     "id": 27,
-    "author": "Beluga",
-    "content": "no.",
-    "time": "Today at 2:15 PM"
+    "author": "Billionaire",
+    "content": "DEAL.",
+    "time": "Today at 3:22 PM"
   },
   {
     "id": 28,
-    "author": "Mom",
-    "content": "BELUGA WHAT ARE YOU DOING?!",
-    "time": "Today at 2:16 PM"
-  },
-  {
-    "id": 29,
-    "author": "Beluga",
-    "content": "MOM!",
-    "time": "Today at 2:16 PM"
-  },
-  {
-    "id": 30,
-    "author": "Mr. Sterling",
-    "content": "(Offline)",
-    "time": "Today at 2:16 PM",
-    "avatarUrl": "characters/mr__sterling.jpg"
-  },
-  {
-    "id": 31,
-    "author": "Hecker",
-    "content": "You scared him off.",
-    "time": "Today at 2:17 PM"
-  },
-  {
-    "id": 32,
     "author": "Skittle",
-    "content": "Or Mom did.",
-    "time": "Today at 2:17 PM"
-  },
-  {
-    "id": 33,
-    "author": "Beluga",
-    "content": "Probably Mom.",
-    "time": "Today at 2:18 PM"
-  },
-  {
-    "id": 34,
-    "author": "Mom",
-    "content": "YOU'RE GROUNDED!",
-    "time": "Today at 2:18 PM"
+    "content": "BRO SOLD A $500M PAINTING FOR PIZZA 😭",
+    "time": "Today at 3:22 PM"
   }
 ]
