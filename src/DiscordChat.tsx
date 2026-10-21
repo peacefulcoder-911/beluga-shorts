@@ -15,8 +15,8 @@ export type MessageData = {
 export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => {
   const frame = useCurrentFrame();
 
-  // Show a new message every calculated startFrame
-  const visibleMessages = script.filter(msg => frame >= (msg.startFrame || 0));
+  // Show messages up to current frame
+  const visibleMessages = script.filter((msg) => frame >= (msg.startFrame || 0));
 
   return (
     <>
@@ -25,12 +25,12 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
         const appearanceFrame = msg.startFrame || 0;
         return (
           <React.Fragment key={`audio-group-${msg.id}`}>
-            {/* Standard Discord message notification */}
+            {/* Standard Discord message notification chime */}
             <Sequence from={appearanceFrame}>
               <Audio src={staticFile("notification.mp3")} volume={0.5} />
             </Sequence>
 
-            {/* Impact audio when an in-chat image attachment appears */}
+            {/* Impact SFX when an in-chat image attachment appears */}
             {msg.attachmentUrl && (
               <Sequence from={appearanceFrame}>
                 <Audio src={staticFile("audio/horror_hit.wav")} volume={0.65} />
@@ -42,32 +42,138 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
 
       <div
         style={{
-          width: "100%",
-          height: "100%",
-          backgroundColor: "#000000", // Pure black for mobile OLED look
+          width: "1440px",
+          height: "2560px",
+          backgroundColor: "#1e1f22", // Official Discord Mobile Deep Dark
           display: "flex",
           flexDirection: "column",
-          color: "white",
-          fontFamily: "'gg sans', 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+          color: "#f2f3f5",
+          fontFamily:
+            "'gg sans', 'Whitney', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
+          WebkitFontSmoothing: "antialiased",
+          overflow: "hidden",
         }}
       >
-        {/* Top Header */}
-        <div style={{ height: "140px", flexShrink: 0, display: "flex", alignItems: "center", padding: "0 140px 0 20px", borderBottom: "2px solid #202225" }}>
-          <span style={{ fontSize: "50px", fontWeight: "bold" }}>←</span>
-          <span style={{ fontSize: "60px", margin: "0 30px", color: "#8e9297" }}>#</span>
-          <span style={{ fontSize: "44px", fontWeight: "bold", flex: 1 }}>general</span>
-          <span style={{ fontSize: "50px", color: "#8e9297" }}>🔍</span>
+        {/* Top Header: Authentic Mobile Discord Top Bar */}
+        <div
+          style={{
+            height: "240px",
+            flexShrink: 0,
+            display: "flex",
+            alignItems: "center",
+            padding: "0 280px 0 40px",
+            backgroundColor: "#2b2d31",
+            borderBottom: "2px solid rgba(255, 255, 255, 0.08)",
+            boxShadow: "0 4px 20px rgba(0, 0, 0, 0.35)",
+            zIndex: 10,
+          }}
+        >
+          {/* Back Chevron */}
+          <svg
+            width="56"
+            height="56"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#b5bac1"
+            strokeWidth="2.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            style={{ marginRight: "28px", flexShrink: 0 }}
+          >
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+
+          {/* Hashtag Icon */}
+          <span
+            style={{
+              fontSize: "64px",
+              fontWeight: 700,
+              color: "#80848e",
+              marginRight: "20px",
+              lineHeight: 1,
+            }}
+          >
+            #
+          </span>
+
+          {/* Channel Name */}
+          <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
+            <span
+              style={{
+                fontSize: "56px",
+                fontWeight: 700,
+                color: "#f2f3f5",
+                letterSpacing: "-0.5px",
+              }}
+            >
+              general
+            </span>
+            <span
+              style={{
+                fontSize: "28px",
+                color: "#949ba4",
+                fontWeight: 500,
+                marginTop: "-2px",
+              }}
+            >
+              Discord Central Server
+            </span>
+          </div>
+
+          {/* Search / Member Icons */}
+          <div style={{ display: "flex", alignItems: "center", gap: "36px" }}>
+            {/* Search Icon */}
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#b5bac1"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            {/* Members Icon */}
+            <svg
+              width="48"
+              height="48"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#b5bac1"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
         </div>
 
-        {/* Chat Area */}
-        <div style={{ flex: 1, display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "40px 140px 40px 20px", gap: "32px", overflow: "hidden" }}>
+        {/* Chat Messages Area */}
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "flex-end",
+            padding: "50px 280px 50px 40px", // 280px right padding keeps text clear of YouTube Shorts UI buttons
+            gap: "42px",
+            overflow: "hidden",
+          }}
+        >
           {visibleMessages.map((msg) => {
             const appearanceFrame = msg.startFrame || 0;
             const ageInFrames = frame - appearanceFrame;
-            
-            // Pop-in scale & opacity animation
-            const scale = ageInFrames < 10 ? 0.9 + (ageInFrames / 10) * 0.1 : 1;
-            const opacity = ageInFrames < 10 ? ageInFrames / 10 : 1;
+
+            // Pop-in animation
+            const scale = ageInFrames < 8 ? 0.92 + (ageInFrames / 8) * 0.08 : 1;
+            const opacity = ageInFrames < 6 ? ageInFrames / 6 : 1;
 
             return (
               <div
@@ -76,72 +182,91 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                   display: "flex",
                   flexDirection: "row",
                   alignItems: "flex-start",
-                  gap: "20px",
+                  gap: "32px",
                   transform: `scale(${scale})`,
                   opacity: opacity,
                   transformOrigin: "left center",
                 }}
               >
-                <div style={{ position: "relative", height: "90px", flexShrink: 0 }}>
+                {/* Avatar with authentic Discord online badge */}
+                <div style={{ position: "relative", width: "136px", height: "136px", flexShrink: 0 }}>
                   <img
                     src={msg.avatarUrl}
                     style={{
-                      width: "90px",
-                      height: "90px",
+                      width: "136px",
+                      height: "136px",
                       borderRadius: "50%",
                       objectFit: "cover",
-                      backgroundColor: "#1e1f22",
+                      backgroundColor: "#2b2d31",
+                      border: "2px solid rgba(255,255,255,0.06)",
                     }}
                   />
-                  {/* Online indicator */}
-                  <div style={{ position: "absolute", bottom: "0px", right: "0px", width: "26px", height: "26px", backgroundColor: "#3ba55c", borderRadius: "50%", border: "4px solid #000" }} />
+                  {/* Discord Online Indicator */}
+                  <div
+                    style={{
+                      position: "absolute",
+                      bottom: "-2px",
+                      right: "-2px",
+                      width: "38px",
+                      height: "38px",
+                      backgroundColor: "#23a55a",
+                      borderRadius: "50%",
+                      border: "6px solid #1e1f22",
+                    }}
+                  />
                 </div>
-                
+
+                {/* Message Body */}
                 <div style={{ display: "flex", flexDirection: "column", marginTop: "2px", flex: 1 }}>
-                  <div style={{ display: "flex", alignItems: "baseline", gap: "12px" }}>
+                  {/* Author Name and Timestamp */}
+                  <div style={{ display: "flex", alignItems: "baseline", gap: "18px" }}>
                     <span
                       style={{
-                        color: msg.color || "white",
-                        fontWeight: 600,
-                        fontSize: "32px",
-                        letterSpacing: "0.2px"
+                        color: msg.color || "#f2f3f5",
+                        fontWeight: 700,
+                        fontSize: "48px",
+                        letterSpacing: "0.2px",
                       }}
                     >
                       {msg.author}
                     </span>
                     <span
                       style={{
-                        color: "#72767d",
-                        fontSize: "22px",
-                        fontWeight: 400,
+                        color: "#949ba4",
+                        fontSize: "32px",
+                        fontWeight: 500,
                       }}
                     >
                       {msg.time}
                     </span>
                   </div>
+
+                  {/* Message Content */}
                   <div
                     style={{
-                      color: "#dcddde",
-                      fontSize: "32px",
-                      marginTop: "4px",
-                      lineHeight: "1.3",
+                      color: "#dbdee1",
+                      fontSize: "48px",
+                      marginTop: "6px",
+                      lineHeight: "1.32",
                       letterSpacing: "0.1px",
-                      wordBreak: "break-word"
+                      wordBreak: "break-word",
+                      fontWeight: 400,
+                      textShadow: "0 1px 3px rgba(0,0,0,0.5)",
                     }}
                   >
                     {msg.content}
                   </div>
 
-                  {/* IN-CHAT IMAGE ATTACHMENT */}
+                  {/* Authentic Discord In-Chat Image Attachment */}
                   {msg.attachmentUrl && (
                     <div
                       style={{
-                        marginTop: "14px",
-                        borderRadius: "18px",
+                        marginTop: "20px",
+                        borderRadius: "24px",
                         overflow: "hidden",
-                        border: "3px solid rgba(255, 255, 255, 0.18)",
-                        maxWidth: "480px",
-                        boxShadow: "0 10px 35px rgba(0,0,0,0.85)",
+                        border: "3px solid rgba(255, 255, 255, 0.12)",
+                        maxWidth: "820px",
+                        boxShadow: "0 12px 40px rgba(0,0,0,0.7)",
                         backgroundColor: "#2b2d31",
                       }}
                     >
@@ -153,7 +278,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                         }
                         style={{
                           width: "100%",
-                          maxHeight: "340px",
+                          maxHeight: "560px",
                           objectFit: "cover",
                           display: "block",
                         }}
@@ -166,15 +291,91 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
           })}
         </div>
 
-        {/* Bottom Input Area */}
-        <div style={{ height: "160px", flexShrink: 0, display: "flex", alignItems: "center", padding: "0 140px 80px 20px", gap: "24px", backgroundColor: "#000000" }}>
-          <div style={{ width: "70px", height: "70px", borderRadius: "50%", backgroundColor: "#2f3136", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "40px", color: "#b9bbbe", fontWeight: "bold" }}>+</div>
-          <div style={{ width: "70px", height: "70px", borderRadius: "50%", backgroundColor: "#2f3136", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "36px" }}>🎁</div>
-          <div style={{ flex: 1, backgroundColor: "#202225", height: "90px", borderRadius: "45px", display: "flex", alignItems: "center", padding: "0 40px", color: "#72767d", fontSize: "36px" }}>
-            Message #general
-            <div style={{ marginLeft: "auto", fontSize: "44px" }}>🙂</div>
+        {/* Bottom Input Area: Authentic Discord Mobile Bar */}
+        <div
+          style={{
+            height: "240px",
+            flexShrink: 0,
+            display: "flex",
+            alignItems: "center",
+            padding: "0 280px 40px 40px",
+            gap: "28px",
+            backgroundColor: "#2b2d31",
+            borderTop: "2px solid rgba(255, 255, 255, 0.06)",
+          }}
+        >
+          {/* Action Plus Button */}
+          <div
+            style={{
+              width: "90px",
+              height: "90px",
+              borderRadius: "50%",
+              backgroundColor: "#383a40",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              color: "#b5bac1",
+              fontSize: "52px",
+              fontWeight: 700,
+              flexShrink: 0,
+            }}
+          >
+            +
           </div>
-          <div style={{ width: "70px", height: "70px", borderRadius: "50%", backgroundColor: "#2f3136", display: "flex", justifyContent: "center", alignItems: "center", fontSize: "36px" }}>🎤</div>
+
+          {/* Gift Button */}
+          <div
+            style={{
+              width: "90px",
+              height: "90px",
+              borderRadius: "50%",
+              backgroundColor: "#383a40",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "44px",
+              flexShrink: 0,
+            }}
+          >
+            🎁
+          </div>
+
+          {/* Input Pill */}
+          <div
+            style={{
+              flex: 1,
+              backgroundColor: "#383a40",
+              height: "110px",
+              borderRadius: "55px",
+              display: "flex",
+              alignItems: "center",
+              padding: "0 40px",
+              color: "#949ba4",
+              fontSize: "44px",
+              border: "1px solid rgba(255,255,255,0.05)",
+            }}
+          >
+            Message #general
+            <div style={{ marginLeft: "auto", fontSize: "52px" }}>🙂</div>
+          </div>
+
+          {/* Voice Mic Button */}
+          <div
+            style={{
+              width: "90px",
+              height: "90px",
+              borderRadius: "50%",
+              backgroundColor: "#5865f2", // Discord Blurple for primary action
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "44px",
+              flexShrink: 0,
+              boxShadow: "0 6px 20px rgba(88, 101, 242, 0.4)",
+            }}
+          >
+            🎤
+          </div>
         </div>
       </div>
     </>

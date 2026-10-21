@@ -117,8 +117,8 @@ export const MyComposition = () => {
       }}
       durationInFrames={totalDuration}
       fps={30}
-      width={720}
-      height={1280}
+      width={1440}
+      height={2560}
     />
   );
 };
