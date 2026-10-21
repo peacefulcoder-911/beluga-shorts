@@ -12,7 +12,7 @@ export type MessageData = {
   attachmentUrl?: string;
 };
 
-export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => {
+export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: string }> = ({ script, hookThumbnailUrl }) => {
   const frame = useCurrentFrame();
 
   // Show messages up to current frame
@@ -51,9 +51,34 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
           fontFamily:
             "'gg sans', 'Whitney', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif",
           WebkitFontSmoothing: "antialiased",
+          position: "relative",
           overflow: "hidden",
         }}
       >
+        {/* Baked-in Thumbnail Hook Card (Frames 0 to 18 / 0.6s) */}
+        {/* Guarantees YouTube selects this high-CTR vertical card as the Shorts cover! */}
+        {hookThumbnailUrl && frame < 20 && (
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              zIndex: 9999,
+              backgroundColor: "#1e1f22",
+              opacity: frame < 15 ? 1 : Math.max(0, 1 - (frame - 15) / 5),
+              pointerEvents: "none",
+            }}
+          >
+            <img
+              src={hookThumbnailUrl.startsWith("http") ? hookThumbnailUrl : staticFile(hookThumbnailUrl)}
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        )}
+
         {/* Top Header: Authentic Mobile Discord Top Bar */}
         <div
           style={{

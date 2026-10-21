@@ -111,6 +111,17 @@ const parsedScript: MessageData[] = (scriptJson as any[]).map((msg, idx) => {
 });
 const totalDuration = currentFrame + Math.floor(Math.floor(fps * 1.5) * scaleFactor);
 
+const getHookThumbnail = () => {
+  const scriptStr = JSON.stringify(scriptJson).toLowerCase();
+  if (scriptStr.includes("napoleon") || scriptStr.includes("mule")) {
+    return "thumbnail_napoleon_short.jpg";
+  }
+  if (scriptStr.includes("mona") || scriptStr.includes("lisa")) {
+    return "thumbnail_mona_lisa_short.jpg";
+  }
+  return undefined;
+};
+
 export const MyComposition = () => {
   return (
     <Composition
@@ -118,6 +129,7 @@ export const MyComposition = () => {
       component={DiscordChat}
       defaultProps={{
         script: parsedScript,
+        hookThumbnailUrl: getHookThumbnail(),
       }}
       durationInFrames={totalDuration}
       fps={30}
