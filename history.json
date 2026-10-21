@@ -3748,5 +3748,214 @@
         "time": "Today at 2:18 PM"
       }
     ]
+  },
+  {
+    "date": "2026-10-21T07:54:04.210Z",
+    "title": "When An IRS Scammer Tries To Extort Beluga 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "IRS Agent Rajesh",
+      "avatarPrompt": "Discord profile avatar of an annoyed cat wearing a headset with a badge in a call center, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 14,
+      "slug": "apple_bitten",
+      "imagePrompt": "A single fresh red apple with a large bite taken out of it resting on an office desk, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "IRS Agent Rajesh",
+        "content": "Is this Beluga?",
+        "time": "Today at 2:00 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "who is this",
+        "time": "Today at 2:00 PM"
+      },
+      {
+        "id": 3,
+        "author": "IRS Agent Rajesh",
+        "content": "IRS. Back taxes.",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "no i dont",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 5,
+        "author": "IRS Agent Rajesh",
+        "content": "You do. $5,000.",
+        "time": "Today at 2:02 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "BELUGA PANIC",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 7,
+        "author": "Hecker",
+        "content": "They're scamming you 😹",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "how do i pay",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 9,
+        "author": "IRS Agent Rajesh",
+        "content": "Apple gift cards.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "WHAT",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "He's scamming you!",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "how many apples",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 13,
+        "author": "IRS Agent Rajesh",
+        "content": "Not apples. Gift cards!",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "oh. i have one",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "Here.",
+        "attachment": "apple_bitten",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 16,
+        "author": "IRS Agent Rajesh",
+        "content": "A BITTEN APPLE?!",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "Yes. Last one.",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 18,
+        "author": "IRS Agent Rajesh",
+        "content": "CODES. NOT FRUIT.",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Hecker",
+        "content": "Too easy 💀",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "what codes",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 21,
+        "author": "IRS Agent Rajesh",
+        "content": "THE GIFT CARD CODES!",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "oh.",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "Thought actual apples.",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 24,
+        "author": "IRS Agent Rajesh",
+        "content": "I'M GETTING FIRED!",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "why?",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 26,
+        "author": "IRS Agent Rajesh",
+        "content": "THIS IS MY JOB!",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Hecker",
+        "content": "He's telling truth 😹",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 28,
+        "author": "IRS Agent Rajesh",
+        "content": "LOST MY SCAM OPERATION!",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 29,
+        "author": "Beluga",
+        "content": "oh. oops.",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 30,
+        "author": "Skittle",
+        "content": "Ended scammer's career!",
+        "time": "Today at 2:14 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=VWPEP3fR3bo"
   }
 ]
