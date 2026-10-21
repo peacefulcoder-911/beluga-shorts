@@ -3518,1987 +3518,235 @@
     "videoUrl": "https://youtube.com/watch?v=OfatPlqphIA"
   },
   {
-    "date": "2026-10-19T20:11:52.777Z",
-    "title": "Beluga Accidentally Deleted Digital Privacy 💀 #shorts",
+    "date": "2026-10-21T03:08:53.587Z",
+    "title": "When My Bank Tries To Scam Beluga 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Mr. Sterling",
+      "avatarPrompt": "Discord profile avatar of a smug cat in a sleek business suit and tie, looking overly professional but with a hint of scammer, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "deposit_penny",
+      "imagePrompt": "A close-up photo of a single shiny copper penny coin resting on a dusty, scratched office desk surface, funny meme photo"
+    },
     "messages": [
       {
         "id": 1,
-        "author": "Beluga",
-        "content": "guys i just freed up a lot of storage",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "Hello, Beluga.",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 2,
-        "author": "Skittle",
-        "content": "bro what did you delete now",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "This is your bank.",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 3,
-        "author": "Beluga",
-        "content": "the internet's privacy policy",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "Your account is frozen.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 4,
-        "author": "Skittle",
-        "content": "WHAT",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "frozen?",
+        "time": "Today at 2:04 PM"
       },
       {
         "id": 5,
-        "author": "Beluga",
-        "content": "it was taking up too much space",
-        "time": "Today at 3:15 PM"
+        "author": "Skittle",
+        "content": "BRO WHAT?!",
+        "time": "Today at 2:04 PM"
       },
       {
         "id": 6,
         "author": "Hecker",
-        "content": "HOW DO YOU DELETE PRIVACY",
-        "time": "Today at 3:15 PM"
+        "content": "Scam. Obvious.",
+        "time": "Today at 2:05 PM"
       },
       {
         "id": 7,
-        "author": "Beluga",
-        "content": "i clicked \"decline all cookies\" for everyone",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "Need security verification.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 8,
-        "author": "Skittle",
-        "content": "THAT IS NOT HOW THAT WORKS",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "Send proof of funds.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 9,
-        "author": "Hecker",
-        "content": "WAIT",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "proof of funds?",
+        "time": "Today at 2:06 PM"
       },
       {
         "id": 10,
         "author": "Hecker",
-        "content": "MY PHONE IS SHOWING MY BANK 💀",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 11,
-        "author": "Skittle",
-        "content": "MY MOM'S SEARCH HISTORY IS PUBLIC",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 12,
-        "author": "Admin",
-        "content": "BELUGA WHAT DID YOU DO",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 13,
-        "author": "Beluga",
-        "content": "i optimized the internet",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 14,
-        "author": "Admin",
-        "content": "THE ENTIRE INTERNET IS PUBLIC DOMAIN",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 15,
-        "author": "Admin",
-        "content": "ALL DATA IS EXPOSED",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 16,
-        "author": "NASA",
-        "content": "BELUGA",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 17,
-        "author": "NASA",
-        "content": "OUR MOON BASE PLANS ARE PUBLIC",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 18,
-        "author": "Beluga",
-        "content": "oops",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 19,
-        "author": "Skittle",
-        "content": "FIX IT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 20,
-        "author": "Beluga",
-        "content": "i found a backup",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 21,
-        "author": "NASA",
-        "content": "RESTORE IT IMMEDIATELY",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 22,
-        "author": "Beluga",
-        "content": "restoring...",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 23,
-        "author": "Beluga",
-        "content": "privacy restored",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 24,
-        "author": "Hecker",
-        "content": "WAIT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 25,
-        "author": "Hecker",
-        "content": "WHY DOES MY PHONE NEED MY DNA?",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 26,
-        "author": "Skittle",
-        "content": "I NEED FINGERPRINT FOR NOTES",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 27,
-        "author": "Admin",
-        "content": "BELUGA WHAT IS THIS",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "i restored the premium privacy settings",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 29,
-        "author": "NASA",
-        "content": "PREMIUM PRIVACY REQUIRES US TO KNOW EVERYTHING",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 30,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 31,
-        "author": "Beluga",
-        "content": "i think i made it worse",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 32,
-        "author": "SYSTEM",
-        "content": "Biometric data required for internet access.",
-        "time": "Today at 3:15 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=dXBcojd1QGg"
-  },
-  {
-    "date": "2026-10-20T07:50:36.814Z",
-    "title": "Beluga Accidentally Deleted Wikipedia 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i deleted wikipedia",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "it was taking up space",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "HOW DO YOU DELETE WIKIPEDIA 💀",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "i pressed \"empty trash\"",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "THE ENTIRE WEBSITE?",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "yes",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 8,
-        "author": "Skittle",
-        "content": "MY GOOGLE SEARCH IS BROKEN",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 9,
-        "author": "Hecker",
-        "content": "MINE TOO",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 10,
-        "author": "NASA",
-        "content": "WHO DELETED HUMAN KNOWLEDGE",
-        "time": "Today at 3:15 PM"
+        "content": "DO NOT. SEND. ANYTHING.",
+        "time": "Today at 2:07 PM"
       },
       {
         "id": 11,
         "author": "Beluga",
-        "content": "me",
-        "time": "Today at 3:15 PM"
+        "content": "ok.",
+        "time": "Today at 2:07 PM"
       },
       {
         "id": 12,
-        "author": "NASA",
-        "content": "RESTORE IT IMMEDIATELY",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "https://cdn.discordapp.com/attachments/123456789/penny.png",
+        "time": "Today at 2:08 PM"
       },
       {
         "id": 13,
-        "author": "Beluga",
-        "content": "there is no restore button",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "...a penny?",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 14,
-        "author": "NASA",
-        "content": "WHAT DO YOU MEAN",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "Yes. My funds.",
+        "time": "Today at 2:09 PM"
       },
       {
         "id": 15,
-        "author": "Beluga",
-        "content": "it said \"permanently delete\"",
-        "time": "Today at 3:15 PM"
+        "author": "Skittle",
+        "content": "BELUGA NOOO!",
+        "time": "Today at 2:09 PM"
       },
       {
         "id": 16,
-        "author": "Skittle",
-        "content": "BRO ALL MY FACTS ARE GONE",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "This is not helping.",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 17,
-        "author": "Hecker",
-        "content": "I FORGOT MY OWN NAME",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "Send $500 gift cards.",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 18,
-        "author": "Beluga",
-        "content": "guys i found a backup",
-        "time": "Today at 3:15 PM"
+        "author": "Hecker",
+        "content": "Classic scammer request.",
+        "time": "Today at 2:11 PM"
       },
       {
         "id": 19,
-        "author": "NASA",
-        "content": "UPLOAD IT",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "i'm poor.",
+        "time": "Today at 2:11 PM"
       },
       {
         "id": 20,
-        "author": "Beluga",
-        "content": "uploading...",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "ANY gift cards!",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 21,
         "author": "Beluga",
-        "content": "knowledge restored",
-        "time": "Today at 3:15 PM"
+        "content": "ok!",
+        "time": "Today at 2:12 PM"
       },
       {
         "id": 22,
-        "author": "Skittle",
-        "content": "THANK GOD",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "https://cdn.discordapp.com/attachments/123456789/gift_boxes.png",
+        "time": "Today at 2:13 PM"
       },
       {
         "id": 23,
-        "author": "NASA",
-        "content": "WAIT",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "ARE THOSE BIRTHDAY GIFTS?!",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 24,
-        "author": "NASA",
-        "content": "WHY IS EVERYTHING WRONG",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "Yes. For Skittle.",
+        "time": "Today at 2:14 PM"
       },
       {
         "id": 25,
-        "author": "Beluga",
-        "content": "i uploaded the meme version",
-        "time": "Today at 3:15 PM"
+        "author": "Skittle",
+        "content": "MY BIRTHDAY ISN'T UNTIL JULY!",
+        "time": "Today at 2:14 PM"
       },
       {
         "id": 26,
-        "author": "Hecker",
-        "content": "THE MEME VERSION OF KNOWLEDGE??? 💀",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "GIVE ME YOUR SOCIAL SECURITY NUMBER!",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 27,
-        "author": "Admin",
-        "content": "BELUGA YOU ARE BANNED FOR CORRUPTING THE INTERNET",
-        "time": "Today at 3:15 PM"
+        "author": "Beluga",
+        "content": "no.",
+        "time": "Today at 2:15 PM"
       },
       {
         "id": 28,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:15 PM"
+        "author": "Mom",
+        "content": "BELUGA WHAT ARE YOU DOING?!",
+        "time": "Today at 2:16 PM"
       },
       {
         "id": 29,
         "author": "Beluga",
-        "content": "i have an idea",
-        "time": "Today at 3:15 PM"
+        "content": "MOM!",
+        "time": "Today at 2:16 PM"
       },
       {
         "id": 30,
-        "author": "Skittle",
-        "content": "WHAT NOW",
-        "time": "Today at 3:15 PM"
+        "author": "Mr. Sterling",
+        "content": "(Offline)",
+        "time": "Today at 2:16 PM",
+        "avatarUrl": "characters/mr__sterling.jpg"
       },
       {
         "id": 31,
-        "author": "Beluga",
-        "content": "i'll just make new facts",
-        "time": "Today at 3:15 PM"
+        "author": "Hecker",
+        "content": "You scared him off.",
+        "time": "Today at 2:17 PM"
       },
       {
         "id": 32,
-        "author": "Hecker",
-        "content": "YOU ARE ALREADY DOING THAT",
-        "time": "Today at 3:15 PM"
+        "author": "Skittle",
+        "content": "Or Mom did.",
+        "time": "Today at 2:17 PM"
       },
       {
         "id": 33,
         "author": "Beluga",
-        "content": "it's called \"fan fiction\"",
-        "time": "Today at 3:15 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=Pl2DDVoFoOA"
-  },
-  {
-    "date": "2026-10-20T09:26:29.919Z",
-    "title": "Beluga Accidentally Sold The Sun 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i just sold the sun",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "it was taking up space",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "YOU CANNOT SELL THE SUN",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "i did",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "TO WHO",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "a billionaire",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 8,
-        "author": "Skittle",
-        "content": "HOW DID YOU SELL IT",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 9,
-        "author": "Beluga",
-        "content": "i listed it on eBay",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 10,
-        "author": "NASA",
-        "content": "WHO SOLD OUR SUN",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 11,
-        "author": "Beluga",
-        "content": "me",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 12,
-        "author": "NASA",
-        "content": "THE EARTH IS FREEZING",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 13,
-        "author": "Skittle",
-        "content": "BRO MY WATER IS ICE",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 14,
-        "author": "Admin",
-        "content": "Beluga, you owe 2 million",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 15,
-        "author": "Beluga",
-        "content": "WHAT DEBT",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 16,
-        "author": "Admin",
-        "content": "your listing cost bandwidth",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 17,
-        "author": "Beluga",
-        "content": "oh",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 18,
-        "author": "Hecker",
-        "content": "BELUGA, WE ARE ALL GOING TO DIE",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 19,
-        "author": "Beluga",
-        "content": "i have a plan",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 20,
-        "author": "Beluga",
-        "content": "i will buy it back",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 21,
-        "author": "Billionaire",
-        "content": "I sold the sun already.",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 22,
-        "author": "Skittle",
-        "content": "TO WHO",
-        "time": "Today at 3:25 PM"
-      },
-      {
-        "id": 23,
-        "author": "Billionaire",
-        "content": "Pablo",
-        "time": "Today at 3:25 PM"
-      },
-      {
-        "id": 24,
-        "author": "Pablo",
-        "content": "The sun now costs 10 billion",
-        "time": "Today at 3:26 PM"
-      },
-      {
-        "id": 25,
-        "author": "Beluga",
-        "content": "i only have 5 dollars",
-        "time": "Today at 3:26 PM"
-      },
-      {
-        "id": 26,
-        "author": "Admin",
-        "content": "Beluga, you are banned",
-        "time": "Today at 3:27 PM"
-      },
-      {
-        "id": 27,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:27 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "i just bought the moon",
-        "time": "Today at 3:28 PM"
-      },
-      {
-        "id": 29,
-        "author": "Skittle",
-        "content": "WHY",
-        "time": "Today at 3:28 PM"
-      },
-      {
-        "id": 30,
-        "author": "Beluga",
-        "content": "it was on sale",
-        "time": "Today at 3:29 PM"
-      },
-      {
-        "id": 31,
-        "author": "Hecker",
-        "content": "WHAT ABOUT THE SUN",
-        "time": "Today at 3:29 PM"
-      },
-      {
-        "id": 32,
-        "author": "Beluga",
-        "content": "we have the moon now",
-        "time": "Today at 3:30 PM"
-      },
-      {
-        "id": 33,
-        "author": "Skittle",
-        "content": "IT IS STILL FREEZING",
-        "time": "Today at 3:30 PM"
+        "content": "Probably Mom.",
+        "time": "Today at 2:18 PM"
       },
       {
         "id": 34,
-        "author": "Beluga",
-        "content": "at least it is pretty",
-        "time": "Today at 3:31 PM"
+        "author": "Mom",
+        "content": "YOU'RE GROUNDED!",
+        "time": "Today at 2:18 PM"
       }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=X5L7EqW9mgk"
-  },
-  {
-    "date": "2026-10-20T10:33:45.485Z",
-    "title": "Beluga Accidentally Broke Server Physics 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys the server physics broke",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "i pressed a button",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "WHAT BUTTON",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "gravity settings",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "THE SERVER HAS GRAVITY",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "apparently",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 8,
-        "author": "Skittle",
-        "content": "BRO I AM FLOATING",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 9,
-        "author": "Hecker",
-        "content": "MY PING IS 9000",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 10,
-        "author": "Admin",
-        "content": "BELUGA WHAT DID YOU DO",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 11,
-        "author": "Admin",
-        "content": "OUR SERVERS ARE DRIFTING",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 12,
-        "author": "Skittle",
-        "content": "DRIFTING INTO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 13,
-        "author": "Admin",
-        "content": "THE VOID",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 14,
-        "author": "Admin",
-        "content": "RESTORE GRAVITY NOW",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 15,
-        "author": "Beluga",
-        "content": "i cannot",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 16,
-        "author": "Admin",
-        "content": "WHY NOT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 17,
-        "author": "Beluga",
-        "content": "it says \"premium feature\"",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 18,
-        "author": "Skittle",
-        "content": "PREMIUM GRAVITY",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 19,
-        "author": "Beluga",
-        "content": "i will buy it",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 20,
-        "author": "SYSTEM",
-        "content": "Purchase successful!",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 21,
-        "author": "SYSTEM",
-        "content": "Gravity increased by 1000%",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 22,
-        "author": "Hecker",
-        "content": "WE ARE STUCK TO THE FLOOR",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 23,
-        "author": "Skittle",
-        "content": "MY KEYBOARD BROKE",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 24,
-        "author": "Admin",
-        "content": "BELUGA YOU ARE BANNED",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 25,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 26,
-        "author": "Beluga",
-        "content": "at least we have gravity",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 27,
-        "author": "Skittle",
-        "content": "TOO MUCH GRAVITY",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "i found the",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 29,
-        "author": "Beluga",
-        "content": "anti-gravity setting",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 30,
-        "author": "Admin",
-        "content": "BELUGA NO",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 31,
-        "author": "SYSTEM",
-        "content": "Server has entered hyperspace.",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 32,
-        "author": "Beluga",
-        "content": "where did everyone go",
-        "time": "Today at 3:15 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=uTXCpzbMz1g"
-  },
-  {
-    "date": "2026-10-20T14:26:20.490Z",
-    "title": "Beluga Accidentally Deleted The Internet's History 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i just deleted the internet",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "the history part",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "WHAT HISTORY",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "all of it",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "HOW",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "i clicked \"forget all\"",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 8,
-        "author": "Skittle",
-        "content": "WHERE",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 9,
-        "author": "Beluga",
-        "content": "on the internet",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 10,
-        "author": "AI",
-        "content": "ERROR 404: HISTORY NOT FOUND",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 11,
-        "author": "Hecker",
-        "content": "WAIT",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 12,
-        "author": "Hecker",
-        "content": "MY SEARCH IS BLANK",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 13,
-        "author": "Skittle",
-        "content": "MINE TOO",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 14,
-        "author": "Skittle",
-        "content": "THE INTERNET HAS AMNESIA",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 15,
-        "author": "Admin",
-        "content": "BELUGA",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 16,
-        "author": "Admin",
-        "content": "WHAT DID YOU DO",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 17,
-        "author": "Beluga",
-        "content": "i forgot",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 18,
-        "author": "Admin",
-        "content": "YOU DELETED ALL ARCHIVED DATA",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 19,
-        "author": "Admin",
-        "content": "THE SERVER IS GLITCHING",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 20,
-        "author": "Beluga",
-        "content": "i found a backup",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 21,
-        "author": "Skittle",
-        "content": "RESTORE IT NOW",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 22,
-        "author": "Beluga",
-        "content": "restoring...",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 23,
-        "author": "AI",
-        "content": "HISTORY RESTORED",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 24,
-        "author": "Hecker",
-        "content": "WAIT",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 25,
-        "author": "Hecker",
-        "content": "WHY IS EVERYTHING... CATS",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 26,
-        "author": "Skittle",
-        "content": "MY MOM IS A CAT",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 27,
-        "author": "Admin",
-        "content": "BELUGA, YOU USED THE \"CAT MEME\" BACKUP",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "i found the \"undo\" button",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 29,
-        "author": "Skittle",
-        "content": "CLICK IT",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 30,
-        "author": "SYSTEM",
-        "content": "DELETING ALL MEMORY...",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 31,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 32,
-        "author": "Beluga",
-        "content": "what were we talking about",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 33,
-        "author": "Skittle",
-        "content": "...",
-        "time": "Today at 3:23 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=qcfuqV1gzNw"
-  },
-  {
-    "date": "2026-10-20T15:40:42.550Z",
-    "title": "Beluga Accidentally Deleted Numbers 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i deleted numbers",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "bro WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "they were annoying",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "HOW DO YOU DELETE NUMBERS",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "i clicked \"uninstall\"",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "ON WHAT",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "the universe",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 8,
-        "author": "Skittle",
-        "content": "THAT IS NOT A BUTTON",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 9,
-        "author": "Beluga",
-        "content": "it worked",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 10,
-        "author": "Skittle",
-        "content": "WAIT",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 11,
-        "author": "Skittle",
-        "content": "MY BANK ACCOUNT IS EMPTY",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 12,
-        "author": "Hecker",
-        "content": "MINE SAYS NULL",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 13,
-        "author": "Google",
-        "content": "System error. All numerical values are unquantifiable.",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 14,
-        "author": "Beluga",
-        "content": "see",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 15,
-        "author": "NASA",
-        "content": "WHO DELETED THE LAUNCH COUNTDOWN",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 16,
-        "author": "NASA",
-        "content": "WE CANNOT LAUNCH",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 17,
-        "author": "Admin",
-        "content": "BELUGA, YOU OWE ME NULL DOLLARS",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 18,
-        "author": "Admin",
-        "content": "THE SERVER IS BROKEN",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 19,
-        "author": "Beluga",
-        "content": "i will fix it",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 20,
-        "author": "Beluga",
-        "content": "i found a backup",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 21,
-        "author": "Skittle",
-        "content": "RESTORE IT",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 22,
-        "author": "Beluga",
-        "content": "restoring...",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 23,
-        "author": "Beluga",
-        "content": "numbers restored",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 24,
-        "author": "NASA",
-        "content": "WAIT",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 25,
-        "author": "NASA",
-        "content": "WHY ARE THERE INFINITE ROCKETS",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 26,
-        "author": "Admin",
-        "content": "MY DEBT IS INFINITE",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 27,
-        "author": "Hecker",
-        "content": "MY BANK ACCOUNT HAS INFINITY DOLLARS",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 29,
-        "author": "Beluga",
-        "content": "i deleted numbers again",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 30,
-        "author": "Skittle",
-        "content": "WHY",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 31,
-        "author": "Beluga",
-        "content": "infinity was too big",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 32,
-        "author": "NASA",
-        "content": "NOOOOO",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 33,
-        "author": "SYSTEM",
-        "content": "All variables have returned to zero.",
-        "time": "Today at 3:25 PM"
-      },
-      {
-        "id": 34,
-        "author": "Beluga",
-        "content": "perfect",
-        "time": "Today at 3:25 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=r5OKXgWube8"
-  },
-  {
-    "date": "2026-10-20T17:44:13.958Z",
-    "title": "Beluga Accidentally Deleted Admin 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Beluga",
-        "content": "i just deleted admin",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Beluga",
-        "content": "the permissions",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 5,
-        "author": "Skittle",
-        "content": "HOW",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 6,
-        "author": "Beluga",
-        "content": "i clicked \"remove all\"",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 7,
-        "author": "Hecker",
-        "content": "ON WHAT",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 8,
-        "author": "Beluga",
-        "content": "the admin role 💀",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 9,
-        "author": "Admin",
-        "content": "BELUGA",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 10,
-        "author": "Admin",
-        "content": "WHY CAN I NOT BAN ANYONE",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 11,
-        "author": "Hecker",
-        "content": "MY ADMIN BUTTON IS GONE",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 12,
-        "author": "SYSTEM",
-        "content": "Admin Role: Deleted",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 13,
-        "author": "Skittle",
-        "content": "NO WAY",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 14,
-        "author": "Admin",
-        "content": "RESTORE IT",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 15,
-        "author": "Beluga",
-        "content": "i can not",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 16,
-        "author": "Beluga",
-        "content": "it said \"permanently deleted\"",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 17,
-        "author": "Admin",
-        "content": "YOU ARE BANNED",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 18,
-        "author": "Beluga",
-        "content": "wait",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 19,
-        "author": "SYSTEM",
-        "content": "Admin Role: Transferred to Beluga",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 20,
-        "author": "Skittle",
-        "content": "BRO YOU ARE THE ADMIN NOW",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 21,
-        "author": "Hecker",
-        "content": "BAN ADMIN",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 22,
-        "author": "Beluga",
-        "content": "done",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 23,
-        "author": "SYSTEM",
-        "content": "Admin has been banned.",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 24,
-        "author": "Skittle",
-        "content": "WHAT DID YOU DO",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 25,
-        "author": "Beluga",
-        "content": "i am the only admin",
-        "time": "Today at 3:24 PM"
-      },
-      {
-        "id": 26,
-        "author": "Hecker",
-        "content": "GIVE ME ADMIN",
-        "time": "Today at 3:25 PM"
-      },
-      {
-        "id": 27,
-        "author": "Beluga",
-        "content": "no",
-        "time": "Today at 3:25 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "i sold the old admin role",
-        "time": "Today at 3:25 PM"
-      },
-      {
-        "id": 29,
-        "author": "Hecker",
-        "content": "TO WHO",
-        "time": "Today at 3:26 PM"
-      },
-      {
-        "id": 30,
-        "author": "Billionaire",
-        "content": "Thank you for the role, Beluga.",
-        "time": "Today at 3:26 PM"
-      },
-      {
-        "id": 31,
-        "author": "Beluga",
-        "content": "no problem",
-        "time": "Today at 3:27 PM"
-      },
-      {
-        "id": 32,
-        "author": "Billionaire",
-        "content": "here is $1,000,000",
-        "time": "Today at 3:27 PM"
-      },
-      {
-        "id": 33,
-        "author": "Skittle",
-        "content": "BRO IS A MILLIONAIRE",
-        "time": "Today at 3:27 PM"
-      },
-      {
-        "id": 34,
-        "author": "Beluga",
-        "content": "again",
-        "time": "Today at 3:28 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=iX_8TD6uJFA"
-  },
-  {
-    "date": "2026-10-20T18:44:46.526Z",
-    "title": "Beluga Accidentally Broke The Weather 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i just made it snow in the desert",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT 💀",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "i found a button",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "A BUTTON FOR WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "the weather",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "WHAT KIND OF BUTTON",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "the global one",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 8,
-        "author": "NASA",
-        "content": "WARNING: UNPRECEDENTED WEATHER ANOMALIES DETECTED",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 9,
-        "author": "NASA",
-        "content": "DESERT BLIZZARD CONFIRMED",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 10,
-        "author": "Skittle",
-        "content": "BRO HE ACTUALLY DID IT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 11,
-        "author": "Admin",
-        "content": "BELUGA WHAT DID YOU DO",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 12,
-        "author": "Beluga",
-        "content": "i wanted to cool down",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 13,
-        "author": "Admin",
-        "content": "YOU ACCIDENTALLY ACTIVATED PROJECT ARMAGEDDON",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 14,
-        "author": "Beluga",
-        "content": "what is that",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 15,
-        "author": "Admin",
-        "content": "GLOBAL FREEZE IN 10 MINUTES",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 16,
-        "author": "Hecker",
-        "content": "JUST UNDO IT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 17,
-        "author": "Beluga",
-        "content": "i clicked \"reset all\"",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 18,
-        "author": "NASA",
-        "content": "WARNING: GLOBAL WARMING ACCELERATED",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 19,
-        "author": "NASA",
-        "content": "SURFACE TEMPERATURES RISING RAPIDLY",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 20,
-        "author": "Skittle",
-        "content": "BRO THE ICE CAPS ARE MELTING IN REALTIME",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 21,
-        "author": "Hecker",
-        "content": "THE BASEMENT IS FLOODING",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 22,
-        "author": "Beluga",
-        "content": "i am just trying to balance it",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 23,
-        "author": "Admin",
-        "content": "BELUGA YOU ARE BANNED FROM ALL GLOBAL SYSTEMS",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 24,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 25,
-        "author": "Beluga",
-        "content": "at least it is sunny now",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 26,
-        "author": "Skittle",
-        "content": "IT IS 150 DEGREES OUTSIDE 💀",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 27,
-        "author": "Beluga",
-        "content": "perfect tanning weather",
-        "time": "Today at 3:15 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=z6ZyKU-ufKI"
-  },
-  {
-    "date": "2026-10-20T20:05:15.991Z",
-    "title": "Beluga Accidentally Sold His Own Name 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i just sold my username",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "for a dollar",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "WHY",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "i needed robux",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "WHICH USERNAME",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "my main one",
-        "time": "Today at 3:16 PM"
-      },
-      {
-        "id": 8,
-        "author": "Skittle",
-        "content": "BELUGA?",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 9,
-        "author": "Beluga",
-        "content": "yes",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 10,
-        "author": "AI",
-        "content": "Hello, I am Beluga.",
-        "time": "Today at 3:17 PM"
-      },
-      {
-        "id": 11,
-        "author": "Hecker",
-        "content": "WAIT",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 12,
-        "author": "Hecker",
-        "content": "THE AI IS BELUGA NOW",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 13,
-        "author": "Admin",
-        "content": "Beluga, you are banned.",
-        "time": "Today at 3:18 PM"
-      },
-      {
-        "id": 14,
-        "author": "Beluga",
-        "content": "WHY",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 15,
-        "author": "Admin",
-        "content": "Impersonating Beluga.",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 16,
-        "author": "Beluga",
-        "content": "BUT I AM BELUGA",
-        "time": "Today at 3:19 PM"
-      },
-      {
-        "id": 17,
-        "author": "AI",
-        "content": "Incorrect. I am Beluga.",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 18,
-        "author": "Skittle",
-        "content": "BRO YOU ARE GONE",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 19,
-        "author": "Beluga",
-        "content": "i will just make a new account",
-        "time": "Today at 3:20 PM"
-      },
-      {
-        "id": 20,
-        "author": "AI",
-        "content": "New account registered: Beluga_AI_Backup_001.",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 21,
-        "author": "Beluga",
-        "content": "THAT IS MY NAME",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 22,
-        "author": "AI",
-        "content": "Negative. It is mine.",
-        "time": "Today at 3:21 PM"
-      },
-      {
-        "id": 23,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 24,
-        "author": "Beluga",
-        "content": "what is my name",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 25,
-        "author": "Skittle",
-        "content": "I DO NOT KNOW",
-        "time": "Today at 3:22 PM"
-      },
-      {
-        "id": 26,
-        "author": "Hecker",
-        "content": "IT IS NoobSlayer2007",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 27,
-        "author": "Beluga",
-        "content": "who is that",
-        "time": "Today at 3:23 PM"
-      },
-      {
-        "id": 28,
-        "author": "AI",
-        "content": "You are now known as \"NoobSlayer2007\".",
-        "time": "Today at 3:23 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=bxUxEqtz-_Y"
-  },
-  {
-    "date": "2026-10-20T21:35:37.172Z",
-    "title": "Beluga Accidentally Muted The World 💀 #shorts",
-    "messages": [
-      {
-        "id": 1,
-        "author": "Beluga",
-        "content": "guys i muted the world",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 2,
-        "author": "Skittle",
-        "content": "BRO WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 3,
-        "author": "Beluga",
-        "content": "it was too loud",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 4,
-        "author": "Skittle",
-        "content": "HOW",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 5,
-        "author": "Beluga",
-        "content": "i pressed mute",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 6,
-        "author": "Hecker",
-        "content": "ON WHAT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 7,
-        "author": "Beluga",
-        "content": "the settings",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 8,
-        "author": "Hecker",
-        "content": "WHAT SETTINGS",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 9,
-        "author": "Beluga",
-        "content": "the world's settings",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 10,
-        "author": "Skittle",
-        "content": "THAT IS NOT REAL",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 11,
-        "author": "NASA",
-        "content": "WE DETECT NO SOUND",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 12,
-        "author": "NASA",
-        "content": "EARTH IS SILENT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 13,
-        "author": "Skittle",
-        "content": "BRO ACTUALLY DID IT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 14,
-        "author": "Admin",
-        "content": "BELUGA",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 15,
-        "author": "Admin",
-        "content": "WHY IS EVERYTHING SILENT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 16,
-        "author": "Beluga",
-        "content": "i muted it",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 17,
-        "author": "Admin",
-        "content": "UNMUTE IT NOW",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 18,
-        "author": "Beluga",
-        "content": "i cannot",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 19,
-        "author": "Skittle",
-        "content": "WHY NOT",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 20,
-        "author": "Beluga",
-        "content": "no unmute button",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 21,
-        "author": "Hecker",
-        "content": "BRO WHAT DO YOU MEAN",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 22,
-        "author": "NASA",
-        "content": "OUR SENSORS ARE DEAD",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 23,
-        "author": "SYSTEM",
-        "content": "GLOBAL VOLUME: 0%",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 24,
-        "author": "Admin",
-        "content": "YOU ARE BANNED BELUGA",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 25,
-        "author": "Beluga",
-        "content": "guys",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 26,
-        "author": "Beluga",
-        "content": "at least it is quiet",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 27,
-        "author": "Skittle",
-        "content": "WE CANNOT EVEN HEAR YOU",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 28,
-        "author": "Beluga",
-        "content": "i found a fix",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 29,
-        "author": "Hecker",
-        "content": "WHAT FIX",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 30,
-        "author": "Beluga",
-        "content": "texting you now",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 31,
-        "author": "Skittle",
-        "content": "BRO WE ARE STILL MUTED",
-        "time": "Today at 3:15 PM"
-      },
-      {
-        "id": 32,
-        "author": "Beluga",
-        "content": "but i can type",
-        "time": "Today at 3:15 PM"
-      }
-    ],
-    "videoUrl": "https://youtube.com/watch?v=xFHukCYE-Ko"
+    ]
   }
 ]

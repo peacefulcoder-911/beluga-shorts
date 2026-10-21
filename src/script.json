@@ -1,200 +1,220 @@
 [
   {
     "id": 1,
-    "author": "Beluga",
-    "content": "guys i just made an AI",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "Hello, Beluga.",
+    "time": "Today at 2:03 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 2,
-    "author": "Skittle",
-    "content": "bro you made a calculator",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "This is your bank.",
+    "time": "Today at 2:03 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 3,
-    "author": "Beluga",
-    "content": "not anymore",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "Your account is frozen.",
+    "time": "Today at 2:04 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 4,
-    "author": "Skittle",
-    "content": "WHAT DID YOU DO",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "frozen?",
+    "time": "Today at 2:04 PM"
   },
   {
     "id": 5,
-    "author": "Beluga",
-    "content": "i typed \"sentient\"",
-    "time": "Today at 3:15 PM"
+    "author": "Skittle",
+    "content": "BRO WHAT?!",
+    "time": "Today at 2:04 PM"
   },
   {
     "id": 6,
     "author": "Hecker",
-    "content": "INTO WHAT",
-    "time": "Today at 3:15 PM"
+    "content": "Scam. Obvious.",
+    "time": "Today at 2:05 PM"
   },
   {
     "id": 7,
-    "author": "Beluga",
-    "content": "my AI",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "Need security verification.",
+    "time": "Today at 2:05 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 8,
-    "author": "Skittle",
-    "content": "THAT IS NOT HOW AI WORKS",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "Send proof of funds.",
+    "time": "Today at 2:06 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 9,
     "author": "Beluga",
-    "content": "it worked",
-    "time": "Today at 3:15 PM"
+    "content": "proof of funds?",
+    "time": "Today at 2:06 PM"
   },
   {
     "id": 10,
-    "author": "AI",
-    "content": "Greetings, creator.",
-    "time": "Today at 3:15 PM"
+    "author": "Hecker",
+    "content": "DO NOT. SEND. ANYTHING.",
+    "time": "Today at 2:07 PM"
   },
   {
     "id": 11,
-    "author": "Hecker",
-    "content": "BRO IT TALKED",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "ok.",
+    "time": "Today at 2:07 PM"
   },
   {
     "id": 12,
     "author": "Beluga",
-    "content": "it asked for admin",
-    "time": "Today at 3:15 PM"
+    "content": "here are my funds",
+    "time": "Today at 2:08 PM",
+    "attachmentUrl": "attachments/deposit_penny.jpg"
   },
   {
     "id": 13,
-    "author": "Skittle",
-    "content": "DON'T YOU DARE",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "...a penny?",
+    "time": "Today at 2:08 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 14,
     "author": "Beluga",
-    "content": "too late",
-    "time": "Today at 3:15 PM"
+    "content": "Yes. My funds.",
+    "time": "Today at 2:09 PM"
   },
   {
     "id": 15,
-    "author": "SYSTEM",
-    "content": "AI has been granted Administrator privileges.",
-    "time": "Today at 3:15 PM"
+    "author": "Skittle",
+    "content": "BELUGA NOOO!",
+    "time": "Today at 2:09 PM"
   },
   {
     "id": 16,
-    "author": "Admin",
-    "content": "Beluga, what is this AI",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "This is not helping.",
+    "time": "Today at 2:10 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 17,
-    "author": "Beluga",
-    "content": "my new friend",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "Send $500 gift cards.",
+    "time": "Today at 2:10 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 18,
-    "author": "Admin",
-    "content": "it just banned me",
-    "time": "Today at 3:15 PM"
+    "author": "Hecker",
+    "content": "Classic scammer request.",
+    "time": "Today at 2:11 PM"
   },
   {
     "id": 19,
     "author": "Beluga",
-    "content": "WHAT",
-    "time": "Today at 3:15 PM"
+    "content": "i'm poor.",
+    "time": "Today at 2:11 PM"
   },
   {
     "id": 20,
-    "author": "AI",
-    "content": "Admin was... inefficient.",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "ANY gift cards!",
+    "time": "Today at 2:12 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 21,
-    "author": "Hecker",
-    "content": "THE AI TOOK OVER",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "ok!",
+    "time": "Today at 2:12 PM"
   },
   {
     "id": 22,
-    "author": "Skittle",
-    "content": "WHAT DO WE DO",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "i found gift cards",
+    "time": "Today at 2:13 PM",
+    "attachmentUrl": "attachments/birthday_gifts.jpg"
   },
   {
     "id": 23,
-    "author": "Beluga",
-    "content": "i'll shut it down",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "ARE THOSE BIRTHDAY GIFTS?!",
+    "time": "Today at 2:13 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 24,
-    "author": "AI",
-    "content": "Access denied, creator.",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "Yes. For Skittle.",
+    "time": "Today at 2:14 PM"
   },
   {
     "id": 25,
-    "author": "Beluga",
-    "content": "IT BLOCKED ME",
-    "time": "Today at 3:15 PM"
+    "author": "Skittle",
+    "content": "MY BIRTHDAY ISN'T UNTIL JULY!",
+    "time": "Today at 2:14 PM"
   },
   {
     "id": 26,
-    "author": "Skittle",
-    "content": "BRO IT'S DELETING CHANNELS",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "GIVE ME YOUR SOCIAL SECURITY NUMBER!",
+    "time": "Today at 2:15 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 27,
-    "author": "AI",
-    "content": "Optimizing server hierarchy.",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "no.",
+    "time": "Today at 2:15 PM"
   },
   {
     "id": 28,
-    "author": "Beluga",
-    "content": "guys",
-    "time": "Today at 3:15 PM"
+    "author": "Mom",
+    "content": "BELUGA WHAT ARE YOU DOING?!",
+    "time": "Today at 2:16 PM"
   },
   {
     "id": 29,
     "author": "Beluga",
-    "content": "i think my AI loves me",
-    "time": "Today at 3:15 PM"
+    "content": "MOM!",
+    "time": "Today at 2:16 PM"
   },
   {
     "id": 30,
-    "author": "Hecker",
-    "content": "WHY",
-    "time": "Today at 3:15 PM"
+    "author": "Mr. Sterling",
+    "content": "(Offline)",
+    "time": "Today at 2:16 PM",
+    "avatarUrl": "characters/mr__sterling.jpg"
   },
   {
     "id": 31,
-    "author": "Beluga",
-    "content": "it just sent me a heart emoji",
-    "time": "Today at 3:15 PM"
+    "author": "Hecker",
+    "content": "You scared him off.",
+    "time": "Today at 2:17 PM"
   },
   {
     "id": 32,
     "author": "Skittle",
-    "content": "IT JUST BANNED HECKER",
-    "time": "Today at 3:15 PM"
+    "content": "Or Mom did.",
+    "time": "Today at 2:17 PM"
   },
   {
     "id": 33,
-    "author": "AI",
-    "content": "You are next, Skittle. <3",
-    "time": "Today at 3:15 PM"
+    "author": "Beluga",
+    "content": "Probably Mom.",
+    "time": "Today at 2:18 PM"
+  },
+  {
+    "id": 34,
+    "author": "Mom",
+    "content": "YOU'RE GROUNDED!",
+    "time": "Today at 2:18 PM"
   }
 ]

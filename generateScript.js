@@ -7,6 +7,58 @@ dotenv.config();
 
 const apiKey = process.env.GEMINI_API_KEY;
 
+// Autonomous image downloader for new characters and attachments
+async function downloadImage(url, destPath) {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const buffer = await res.arrayBuffer();
+    fs.writeFileSync(destPath, Buffer.from(buffer));
+    console.log(`✅ Asset generated & saved: ${destPath}`);
+    return true;
+  } catch (err) {
+    console.warn(`⚠️ Could not download asset from ${url}:`, err.message);
+    return false;
+  }
+}
+
+async function ensureCharacterAvatar(charName, avatarPrompt) {
+  if (!charName) return null;
+  const clean = charName.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  const destDir = path.join(process.cwd(), 'public', 'characters');
+  if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
+  const destPath = path.join(destDir, `${clean}.jpg`);
+
+  if (fs.existsSync(destPath)) {
+    console.log(`ℹ️ Character avatar already exists for: ${charName}`);
+    return `characters/${clean}.jpg`;
+  }
+
+  const prompt = avatarPrompt || `Discord profile avatar of ${charName} in funny cat meme style, centered, high quality, square portrait`;
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=512&height=512&nologo=true`;
+  console.log(`🎨 Generating new character avatar for "${charName}"...`);
+  const success = await downloadImage(url, destPath);
+  return success ? `characters/${clean}.jpg` : 'default_user.jpg';
+}
+
+async function ensureAttachmentImage(slug, imagePrompt) {
+  if (!slug || !imagePrompt) return null;
+  const clean = slug.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  const destDir = path.join(process.cwd(), 'public', 'attachments');
+  if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
+  const destPath = path.join(destDir, `${clean}.jpg`);
+
+  if (fs.existsSync(destPath)) {
+    console.log(`ℹ️ Attachment image already exists: ${clean}.jpg`);
+    return `attachments/${clean}.jpg`;
+  }
+
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt)}?width=640&height=400&nologo=true`;
+  console.log(`🖼️ Generating in-chat attachment for "${clean}"...`);
+  const success = await downloadImage(url, destPath);
+  return success ? `attachments/${clean}.jpg` : null;
+}
+
 export async function generateScript() {
   if (!apiKey) {
     console.error('Please provide GEMINI_API_KEY in .env');
@@ -14,7 +66,7 @@ export async function generateScript() {
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  console.log('Generating elite viral Beluga Shorts script from master 4-archetype library...');
+  console.log('Generating next-generation dynamic Beluga Shorts script with custom cast & in-chat images...');
   const model = genAI.getGenerativeModel({
     model: 'gemini-2.5-flash',
     generationConfig: { responseMimeType: 'application/json' }
@@ -28,210 +80,95 @@ export async function generateScript() {
     } catch (e) {}
   }
 
-  const pastTitles = history.map(h => h.title).slice(-25).join(', ');
+  const pastTitles = history.map(h => h.title).slice(-30).join(' | ');
 
   const prompt = `
-You are the elite viral comedy scriptwriter for the legendary Beluga YouTube channel (10M+ subscribers).
-Your videos get millions of views because of RAPID-FIRE PACING, DEADPAN LOGIC, HIGH STAKES, SHOCKING ESCALATIONS, and LOOPBACK PUNCHLINES.
+You are the lead comedy scriptwriter for the legendary Beluga YouTube channel (10M+ subscribers).
+Your mission is to write an original, hilarious, fast-paced Beluga Discord Shorts script (50-58 seconds, 25-34 rapid-fire lines).
 
-STUDY THESE 4 MASTERPIECE SCRIPTS (YOUR GOLD STANDARD):
+========================================
+CRITICAL ANTI-REPETITION RULES:
+========================================
+1. STRICT TITLE BAN: NEVER START THE TITLE WITH "Beluga Accidentally...". 
+   Any title starting with "Beluga Accidentally" is STRICTLY FORBIDDEN.
+2. DIVERSE TITLE STRUCTURES: Use varied viral formats such as:
+   - "When [Situation]..." (e.g., "When An IRS Scammer Tries To Extort Beluga 💀")
+   - "Beluga Lied On [Something]..." (e.g., "Beluga Lied On His NASA Resume 😭")
+   - "The 1 Rule You NEVER Break In [Server]... 😳"
+   - "The Court Trial of [Character] ⚖️"
+   - "My Smart [Device] Is Extorting Me 💀"
+   - "Trading A [Weird Item] Until I Get A [Luxury] 💸"
+   - "Last Person To [Action] Wins $100,000 🤫"
+   - "Never Tell Your Landlord You [Something] 😭"
+   - "Someone Else Is Typing From My Account 👁️"
 
-=== MASTERPIECE 1: THE ACCIDENTAL WINDFALL / SERVER DEAL ===
-Title: The Beluga Who Accidentally Became A Millionaire 💀 #shorts
-[0:00-0:04 | HOOK]
-1. Beluga: 'guys i just became a millionaire'
-2. Skittle: 'bro your bank account has '
-3. Beluga: 'not anymore'
-[0:05-0:13 | CURIOSITY]
-4. Skittle: 'WHAT DID YOU DO'
-5. Beluga: 'i found a wallet'
-6. Skittle: 'return it 💀'
-7. Beluga: 'i did'
-8. Skittle: 'then how are you rich'
-9. Beluga: 'the wallet belonged to a billionaire'
-[0:14-0:24 | ESCALATION & PROOF]
-10. Hecker: 'WAIT'
-11. Hecker: 'DID YOU STEAL HIS MONEY'
-12. Beluga: 'no'
-13. Beluga: 'he gave me  million as a reward'
-14. Skittle: 'this is the most unbelievable thing you have ever said'
-15. Beluga: 'check my bank account'
-16. Skittle: 'BRO ACTUALLY HAS ,000,002'
-[0:25-0:38 | TWIST SETUP]
-17. Admin: 'Beluga, congratulations!'
-18. Beluga: 'thank you admin'
-19. Admin: 'now please pay your ,999 server debt'
-20. Beluga: 'WHAT DEBT'
-21. Admin: 'you accidentally bought the entire server yesterday'
-[0:39-0:53 | CHAOS & PAYOFF]
-22. Skittle: 'WAIT'
-23. Skittle: 'YOU OWN THE SERVER?'
-24. Beluga: 'technically'
-25. Hecker: 'THEN MAKE ME ADMIN'
-26. Beluga: 'done'
-27. Hecker: 'LET US GOOOO'
-28. Admin: 'Beluga, you have been banned for abusing administrator privileges'
-[0:54-0:59 | FINAL PUNCHLINE]
-29. Beluga: 'guys'
-30. Beluga: 'i just became a millionaire again'
-31. Skittle: 'HOW'
-32. Beluga: 'i sold the server'
-33. Hecker: 'TO WHO'
-34. Beluga: 'the billionaire'
+========================================
+THE 8 ROTATING VIRAL ARCHETYPES (PICK ONE):
+========================================
+1. SCAM REVENGE: A scammer tries to extort Beluga for money/gift cards, but Beluga misunderstands and ruins the scammer's life.
+2. THE FAKE RESUME / JOB: Beluga applies for an impossible job (Astronaut, Surgeon, CEO, Discord Mod) with a completely fabricated resume.
+3. THE UNHINGED SERVER RULE: Beluga joins a server with absurd rules (e.g. "Never use the letter E") and immediately triggers chaos.
+4. THE COURTROOM TRIAL: A character is on trial in Discord court with memes used as forensic evidence.
+5. SMART HOME EXTORTION: A smart home device (Smart Fridge, Robot Vacuum, Toaster) develops an attitude and holds snacks hostage.
+6. EXTREME SILENCE CHALLENGE: MrFeast hosts a challenge where the first person to send a message loses $100,000.
+7. DOPPELGANGER / GLITCH: Someone with Beluga's exact avatar and name starts typing his thoughts before he does.
+8. IMPOSSIBLE BARTER: Beluga trades an absurd low-value item (Dorito, paperclip) through increasingly wild marketplace deals.
 
-=== MASTERPIECE 2: ACCIDENTAL AGENCY HACK ===
-Title: Beluga Accidentally Hacked NASA 💀 #shorts
-1. Beluga: 'guys i just hacked nasa'
-2. Skittle: 'bro can not even hack his school wifi'
-3. Beluga: 'watch this'
-4. Beluga: 'i typed "password"'
-5. Skittle: 'into what'
-6. Beluga: 'nasa'
-7. Skittle: 'THAT IS NOT HOW HACKING WORKS'
-8. Beluga: 'it worked'
-9. Hecker: 'WAIT'
-10. Hecker: 'WHY IS NASA CALLING YOU'
-11. Beluga: 'they want me to fix something'
-12. Skittle: 'WHAT DID YOU BREAK'
-13. Beluga: 'nothing'
-14. Beluga: 'their printer was offline'
-15. NASA: 'Hello, Beluga. Thank you for restoring our printer.'
-16. Beluga: 'no problem'
-17. NASA: 'Your reward is ,000.'
-18. Skittle: 'BRO IS ACTUALLY A GENIUS'
-19. Hecker: 'GIVE HIM ADMIN'
-20. Beluga: 'guys'
-21. Beluga: 'i just got another email'
-22. Skittle: 'WHAT NOW'
-23. Beluga: 'nasa wants me to print something'
-24. Hecker: 'WHAT'
-25. Beluga: '10,000 copies of my school homework'
-26. Skittle: 'WHY'
-27. Beluga: 'they said it is classified'
-28. NASA: 'Beluga, the printer has completed your request.'
-29. Beluga: 'nice'
-30. NASA: 'Unfortunately, you printed 10,000 copies of your detention notice.'
-31. Skittle: 'BRO HACKED HIMSELF'
-32. Beluga: 'guys'
-33. Beluga: 'i think nasa is my school'
+========================================
+CAST RULES (DYNAMIC CAST ENABLED):
+========================================
+- Core recurring characters:
+  - 'Beluga' (chaotic, awkward, deadpan main cat)
+  - 'Skittle' (skeptical, easily panicked kitten)
+  - 'Hecker' (Floppa elite hacker with green text)
+  - 'Mom' (furious mother)
+  - 'Admin' (pompous Discord mod)
+- NEW GUEST CHARACTER:
+  - You ARE ENCOURAGED to introduce 1 new unique guest character specific to this story!
+  - Examples: "IRS Agent Rajesh", "Flight Director Vance", "Judge Whiskers", "Landlord Gary", "Smart Fridge v4", "MrFeast", "Alien Invader", "Gordon Ramsay Cat".
+  - If introducing a new character, define 'newCharacter' in your JSON with a descriptive 'avatarPrompt'.
 
-=== MASTERPIECE 3: INSANE ABSURD CHAOS / GLOBAL SCALE ===
-Title: Beluga Deleted The Moon 💀 #shorts
-1. Beluga: 'guys i deleted the moon'
-2. Skittle: 'bro WHAT'
-3. Beluga: 'it was taking up too much storage'
-4. Skittle: 'HOW DO YOU DELETE THE MOON'
-5. Beluga: 'i clicked "remove device"'
-6. Hecker: 'ON WHAT'
-7. Beluga: 'the moon'
-8. Hecker: 'WHY WAS THE MOON A DEVICE 💀'
-9. NASA: 'WHO DELETED OUR MOON'
-10. Beluga: 'me'
-11. NASA: 'RESTORE IT IMMEDIATELY'
-12. Beluga: 'there is no undo button'
-13. NASA: 'WHAT DO YOU MEAN THERE IS NO UNDO BUTTON'
-14. Beluga: 'it said "permanently remove"'
-15. Skittle: 'BRO THE OCEANS ARE LEAVING'
-16. Hecker: 'WHY IS THE TIDE IN MY BEDROOM'
-17. Beluga: 'guys i found a backup'
-18. NASA: 'RESTORE IT'
-19. Beluga: 'restoring...'
-20. Beluga: 'moon restored'
-21. Skittle: 'THANK GOD'
-22. NASA: 'WAIT'
-23. NASA: 'WHY IS IT 17 TIMES BIGGER'
-24. Beluga: 'i restored the premium version'
-25. Hecker: 'THE PREMIUM VERSION OF THE MOON???'
-26. NASA: 'BELUGA, THE MOON IS CRASHING INTO EARTH'
-27. Beluga: 'guys do not worry'
-28. Beluga: 'i found the uninstall button'
-29. Skittle: 'DO NOT YOU DARE'
-30. Beluga: 'too late'
-31. SYSTEM: 'Earth has been successfully removed.'
-32. Beluga: 'guys'
-33. Beluga: 'where did everybody go'
+========================================
+MANDATORY IN-CHAT IMAGE ATTACHMENT:
+========================================
+- Every script MUST include at least ONE in-chat image attachment (e.g., proof photo, screenshot, document, or absurd visual).
+- Example ideas:
+  - Scammer asks for Apple gift cards -> Beluga sends a photo of an actual red apple with a bite taken out of it.
+  - NASA interview -> Beluga attaches a crayon-drawn rocket labeled "Certified Space Ship".
+  - Smart fridge extortion -> Photo of a smart fridge LCD displaying a red countdown skull.
+  - Bank balance -> Screenshot of a bank balance of -$4,500.00.
+- Provide 'attachment': { 'messageIndex': <0-indexed message number where image is attached>, 'slug': 'short_name', 'imagePrompt': 'photorealistic or meme prompt describing the image' }.
 
-=== MASTERPIECE 4: FALSE ALARM / PANIC & BLUNDER ===
-Title: Beluga Accidentally Started World War 3 💀 #shorts
-1. Beluga: 'guys'
-2. Beluga: 'i think hawaii is getting nuked'
-3. Skittle: 'BRO WHAT'
-4. Beluga: 'my phone just said ballistic missile incoming'
-5. Hecker: 'EVERYBODY GET IN THE BASEMENT'
-6. Skittle: 'WE DO NOT HAVE A BASEMENT'
-7. Hecker: 'THEN GET IN THE BATHROOM'
-8. Beluga: 'guys i have a plan'
-9. Skittle: 'WHAT PLAN'
-10. Beluga: 'i am going to ask google'
-11. Beluga: 'google is the missile coming'
-12. Google: 'I am sorry, I do not understand.'
-13. Beluga: 'EVEN GOOGLE DOES NOT KNOW'
-14. Hecker: 'WE ARE DOOMED'
-15. Skittle: 'WAIT'
-16. Skittle: 'THE GOVERNMENT JUST SAID IT WAS A MISTAKE'
-17. Beluga: 'what mistake'
-18. Skittle: 'SOMEONE CLICKED THE WRONG BUTTON'
-19. Hecker: 'YOU ARE TELLING ME'
-20. Hecker: 'THE APOCALYPSE WAS A TYPO'
-21. Beluga: 'guys'
-22. Beluga: 'i just clicked something too'
-23. Skittle: 'WHAT DID YOU CLICK'
-24. Beluga: '"send to all"'
-25. Admin: 'BELUGA'
-26. Admin: 'WHY DID EVERYONE RECEIVE A MESSAGE SAYING "THE MISSILE IS COMING"'
-27. Beluga: 'i was testing the notification system'
-28. Skittle: 'BRO TEST IT ON YOURSELF'
-29. Beluga: 'i did'
-30. Beluga: 'but i was lonely'
-31. Admin: 'YOU ARE BANNED'
-32. Beluga: 'guys'
-33. Beluga: 'at least the missile did not come'
-34. Hecker: 'IT WAS NEVER COMING'
+========================================
+PACING & DIALOGUE STYLE:
+========================================
+- Exactly 25 to 34 rapid-fire lines.
+- 70% of lines must be ULTRA-SHORT (1-4 words: 'WAIT', 'no', 'i did', 'done', 'HOW', 'TO WHO', 'technically', 'WHAT NOW').
+- Maximum 7-8 words on longer lines. Never write long paragraphs.
+- High emotion: ALL CAPS for screaming and panic ('BRO WHAT', 'DO NOT TOUCH THAT').
+- Loopback or twist punchline at the end.
 
----
+Avoid any recent titles: [${pastTitles || 'None yet'}]
 
-### CORE VIRAL PRINCIPLES (MANDATORY):
-1. **ULTRA-SHORT SENTENCES**: 
-   - 70% of lines must be 1 to 4 words ('WAIT', 'no', 'i did', 'done', 'HOW', 'TO WHO', 'technically', 'WHAT NOW').
-   - Maximum 7-8 words on longer reveal lines. NEVER write long sentences.
-2. **THE 6-BEAT NARRATIVE ARC**:
-   - Beat 1 (0:00-0:04 | Hook): Unbelievable claim or situation right in message 1.
-   - Beat 2 (0:05-0:14 | Curiosity): Rapid-fire 1-2 word interrogations with Skittle.
-   - Beat 3 (0:15-0:25 | Escalation & Proof): Impossible reality confirmed by third party, bank, or scan.
-   - Beat 4 (0:26-0:38 | The Twist / Catch): Authority figure joins with catastrophic debt, threat, or consequence.
-   - Beat 5 (0:39-0:53 | Chaos / Backfire): Hasty desperate solution causes instant panic or ban.
-   - Beat 6 (0:54-0:59 | Loopback Punchline): Beluga deadpans a solution that loops right back to the original premise or cuts to black.
-3. **PACING**: Exactly 25 to 34 rapid-fire lines total.
-4. **SHOUTING & EMOJIS**:
-   - Use ALL CAPS for shock, screaming, and panic ('BRO WHAT', 'DO NOT YOU DARE', 'WHAT DID YOU DO').
-   - Use awkward emojis (💀, 😳, 🥺, <3) sparingly at emotional peaks.
-5. **STRICT CLOSED CAST (ONLY USE THESE CURRENT AVATARS - NO NEW CHARACTERS)**:
-   - 'Beluga' (chaotic, deadpan main cat)
-   - 'Skittle' (skeptical best friend kitten)
-   - 'Hecker' (elite hacker Floppa cat)
-   - 'Admin' (pompous Discord server owner cat with gold crown)
-   - 'AI' (rogue sentient cyber cat with glowing visor)
-   - 'Billionaire' (eccentric wealthy cat/mogul)
-   - 'NASA' (NASA astronaut cat in space suit)
-   - 'Google' (Google AI Assistant)
-   - 'SYSTEM' (Discord automated system bot)
-   - 'Mr. Smith' (strict school teacher)
-   - 'Mom' (furious mother)
-   - 'Girlfriend' (suspicious partner asking trap questions)
-   - 'Pablo' (shady Discord moderator)
-   CRITICAL: DO NOT invent, create, or name ANY character not on this list (NO "Doctor", NO "Customer", NO "Stranger", etc.). Every single message MUST be sent by one of the 13 approved characters above.
-6. **FRESH VIRAL TOPIC**: Pick an original, unexpected, high-curiosity dilemma following one of the 4 archetypes above.
-7. **AVOID PAST TITLES**: [${pastTitles || 'None yet'}]
-
-Return in this exact JSON structure:
+Return ONLY raw JSON in this structure:
 {
-  'title': 'Viral YouTube Shorts Title with Emojis',
-  'messages': [
+  "title": "When An IRS Scammer Tries To Extort Beluga 💀 #shorts",
+  "archetype": "Scam Revenge",
+  "newCharacter": {
+    "name": "IRS Agent Rajesh",
+    "avatarPrompt": "Discord profile avatar of an annoyed cat wearing a headset with a badge in a call center, funny meme cat style"
+  },
+  "attachment": {
+    "messageIndex": 12,
+    "slug": "apple_giftcard_real",
+    "imagePrompt": "A single fresh red apple with a large bite taken out of it resting on an office desk, funny meme photo"
+  },
+  "messages": [
     {
-      'id': 1,
-      'author': 'Beluga',
-      'content': 'Message content',
-      'time': 'Today at 3:15 PM'
+      "id": 1,
+      "author": "Beluga",
+      "content": "Message content",
+      "time": "Today at 3:15 PM"
     }
   ]
 }
@@ -242,21 +179,71 @@ Return in this exact JSON structure:
     const text = result.response.text();
     const data = JSON.parse(text);
 
-    fs.writeFileSync(path.join(process.cwd(), 'src', 'script.json'), JSON.stringify(data.messages, null, 2));
+    console.log(`🎉 Story Archetype Selected: ${data.archetype}`);
+    console.log(`📌 Generated Title: ${data.title}`);
 
+    // Handle new guest character avatar
+    let guestAvatarUrl = null;
+    if (data.newCharacter && data.newCharacter.name) {
+      guestAvatarUrl = await ensureCharacterAvatar(
+        data.newCharacter.name,
+        data.newCharacter.avatarPrompt
+      );
+    }
+
+    // Handle in-chat attachment
+    let attachmentUrl = null;
+    if (data.attachment && data.attachment.imagePrompt) {
+      attachmentUrl = await ensureAttachmentImage(
+        data.attachment.slug || 'chat_attachment',
+        data.attachment.imagePrompt
+      );
+    }
+
+    // Inject avatarUrl and attachmentUrl into the messages array
+    const finalMessages = data.messages.map((msg, index) => {
+      const updated = { ...msg };
+      
+      // If message is sent by the new character, assign the custom avatar
+      if (data.newCharacter && msg.author.toLowerCase() === data.newCharacter.name.toLowerCase() && guestAvatarUrl) {
+        updated.avatarUrl = guestAvatarUrl;
+      }
+
+      // If this message index has the attachment, attach it!
+      if (data.attachment && data.attachment.messageIndex === index && attachmentUrl) {
+        updated.attachmentUrl = attachmentUrl;
+        console.log(`📎 Attached image to message ${index} (${msg.author}): ${attachmentUrl}`);
+      }
+
+      return updated;
+    });
+
+    // Write to src/script.json
+    fs.writeFileSync(
+      path.join(process.cwd(), 'src', 'script.json'),
+      JSON.stringify(finalMessages, null, 2)
+    );
+
+    // Save to history.json
     history.push({
       date: new Date().toISOString(),
       title: data.title,
-      messages: data.messages
+      archetype: data.archetype,
+      newCharacter: data.newCharacter || null,
+      attachment: data.attachment || null,
+      messages: finalMessages
     });
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
-    console.log('Successfully generated authentic Beluga script from 4-archetype library!');
-    console.log('Title: ' + data.title);
-    console.log('Message Count: ' + data.messages.length);
-    return data;
+    console.log('✅ Successfully generated fresh Beluga script with dynamic cast & attachment!');
+    console.log(`Total messages: ${finalMessages.length}`);
+    return {
+      title: data.title,
+      archetype: data.archetype,
+      messages: finalMessages
+    };
   } catch (e) {
-    console.error('Failed to generate script:', e);
+    console.error('❌ Failed to generate script:', e);
     throw e;
   }
 }
