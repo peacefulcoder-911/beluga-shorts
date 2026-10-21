@@ -1,9 +1,10 @@
 import fs from 'fs';
+import path from 'path';
 import { google } from 'googleapis';
 import dotenv from 'dotenv';
 dotenv.config();
 
-export async function uploadVideo(videoPath, title) {
+export async function uploadVideo(videoPath, title, thumbnailPath = null) {
   try {
     console.log(`Starting upload for: ${title}`);
 
@@ -43,9 +44,29 @@ export async function uploadVideo(videoPath, title) {
     };
 
     const res = await youtube.videos.insert(requestParameters);
-    const videoUrl = `https://youtube.com/watch?v=${res.data.id}`;
-    console.log(`\n✅ Video uploaded successfully!`);
+    const videoId = res.data.id;
+    const videoUrl = `https://youtube.com/watch?v=${videoId}`;
+    console.log(`
+✅ Video uploaded successfully!`);
     console.log(`Video URL: ${videoUrl}`);
+
+    if (thumbnailPath && fs.existsSync(thumbnailPath)) {
+      try {
+        console.log(`🖼️ Applying custom Shorts thumbnail: ${thumbnailPath}`);
+        const ext = path.extname(thumbnailPath).toLowerCase();
+        await youtube.thumbnails.set({
+          videoId: videoId,
+          media: {
+            mimeType: ext === '.png' ? 'image/png' : 'image/jpeg',
+            body: fs.createReadStream(thumbnailPath),
+          },
+        });
+        console.log(`✅ Shorts thumbnail applied successfully!`);
+      } catch (tErr) {
+        console.warn(`⚠️ Shorts thumbnail upload notice:`, tErr.response ? tErr.response.data : tErr.message);
+      }
+    }
+
     return videoUrl;
   } catch (error) {
     console.error("❌ Failed to upload video:");
@@ -57,5 +78,6 @@ export async function uploadVideo(videoPath, title) {
 if (process.argv[1] && process.argv[1].endsWith("uploadToYoutube.js")) {
   const videoFile = process.argv[2] || "out/beluga_exposed_dance_magic.mp4";
   const videoTitle = process.argv[3] || "When Beluga's secret hobby was exposed... 💀 #shorts";
-  uploadVideo(videoFile, videoTitle);
+  const thumbFile = process.argv[4] || null;
+  uploadVideo(videoFile, videoTitle, thumbFile);
 }
