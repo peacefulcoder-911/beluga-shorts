@@ -1,19 +1,19 @@
 [
   {
     "date": "2026-10-18T23:59:00.000Z",
-    "title": "Beluga Accidentally Bought An Entire Country 💀",
+    "title": "Beluga Accidentally Bought An Entire Country \ud83d\udc80",
     "scenes": 3,
     "status": "initialized"
   },
   {
     "date": "2026-10-18T18:43:33.953Z",
-    "title": "Beluga Accidentally Sells the Discord Server 💸",
+    "title": "Beluga Accidentally Sells the Discord Server \ud83d\udcb8",
     "scenes": 3,
     "totalMessages": 37
   },
   {
     "date": "2026-10-19T19:01:23.267Z",
-    "title": "When An Unknown Entity Watches Your House At 3 AM... 💀",
+    "title": "When An Unknown Entity Watches Your House At 3 AM... \ud83d\udc80",
     "videoId": "1VxV4YUDSSk",
     "videoUrl": "https://youtube.com/watch?v=1VxV4YUDSSk",
     "thumbnail": "/Users/vinaybt/Downloads/discord-video/out/thumbnail_classic.png",
@@ -22,10 +22,19 @@
   },
   {
     "date": "2026-10-19T19:53:42.267Z",
-    "title": "I Accidentally HACKED The Pentagon... 💀 (Full Episode)",
+    "title": "I Accidentally HACKED The Pentagon... \ud83d\udc80 (Full Episode)",
     "videoId": "xcsYqMSR1Do",
     "videoUrl": "https://youtube.com/watch?v=xcsYqMSR1Do",
     "thumbnail": "/Users/vinaybt/Downloads/discord-video/out/thumbnail_pentagon_beluga.png",
+    "publishAt": null,
+    "privacy": "public"
+  },
+  {
+    "date": "2026-10-21T16:42:54.000Z",
+    "title": "When Beluga Found Napoleon's Fake Horse... \ud83d\udc80 (Full Episode)",
+    "videoId": "H2h7lK49CFg",
+    "videoUrl": "https://youtube.com/watch?v=H2h7lK49CFg",
+    "thumbnail": "out/thumbnail_mrbeast_mule.jpg",
     "publishAt": null,
     "privacy": "public"
   }

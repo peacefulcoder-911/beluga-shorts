@@ -7,18 +7,20 @@ import fs from 'fs';
 async function runLongform() {
   console.log('====================================');
   console.log('🎬 BELUGA LONG-FORM VIDEO PIPELINE');
-  console.log('====================================\n');
+  console.log('====================================
+');
 
   try {
     // 1. Generate Multi-Scene Story
-    console.log('📝 [Step 1/3] Generating 3-Act episodic story with Gemini AI...');
+    console.log('📝 [Step 1/3] Generating One-Act story with Gemini AI...');
     const data = await generateLongformScript();
     if (!data || !data.title) {
       throw new Error('Failed to generate script from AI');
     }
-    console.log(`✅ Episode Generated: "${data.title}"\n`);
+    console.log(`✅ Episode Generated: "${data.title}"
+`);
 
-    // 2. Render 1920x1080 Video & Clean High-CTR Thumbnail
+    // 2. Render 1920x1080 Video & Thumbnail
     const outDir = path.join(process.cwd(), 'out');
     if (!fs.existsSync(outDir)) {
       fs.mkdirSync(outDir, { recursive: true });
@@ -27,7 +29,7 @@ async function runLongform() {
     const timestamp = Date.now();
     const videoFileName = `longform_${timestamp}.mp4`;
     const outputPath = path.join(outDir, videoFileName);
-    const thumbnailPath = path.join(outDir, `thumbnail_longform_${timestamp}.png`);
+    const fallbackThumbnail = path.join(outDir, `thumbnail_longform_${timestamp}.png`);
 
     console.log(`🎬 [Step 2/3] Rendering 1920x1080 Landscape video with Remotion to ${videoFileName}...`);
     execSync(`npx remotion render src/index.ts LongformDiscord "${outputPath}" --concurrency=4`, {
@@ -35,11 +37,21 @@ async function runLongform() {
     });
     console.log(`✅ Long-form video rendered successfully!`);
 
-    console.log(`🖼️ Rendering authentic clean Beluga thumbnail to ${thumbnailPath}...`);
-    execSync(`npx remotion still src/index.ts BelugaThumbnail "${thumbnailPath}"`, {
-      stdio: 'inherit'
-    });
-    console.log(`✅ Clean thumbnail generated successfully!\n`);
+    // Use standard MrBeast-style thumbnail if generated, otherwise fallback
+    let chosenThumbnail = (data.customThumbnailPath && fs.existsSync(data.customThumbnailPath))
+      ? data.customThumbnailPath
+      : null;
+
+    if (!chosenThumbnail) {
+      console.log(`🖼️ Rendering fallback thumbnail to ${fallbackThumbnail}...`);
+      execSync(`npx remotion still src/index.ts BelugaThumbnail "${fallbackThumbnail}"`, {
+        stdio: 'inherit'
+      });
+      chosenThumbnail = fallbackThumbnail;
+    } else {
+      console.log(`🖼️ Using standard MrBeast-style thumbnail: ${chosenThumbnail}
+`);
+    }
 
     // 3. Upload to YouTube with custom thumbnail
     console.log(`📤 [Step 3/3] Uploading long-form video to YouTube with thumbnail...`);
@@ -48,7 +60,7 @@ async function runLongform() {
       data.title,
       data.description,
       data.tags,
-      thumbnailPath
+      chosenThumbnail
     );
 
     // Save video URL to longform history
@@ -59,18 +71,21 @@ async function runLongform() {
         if (hist.length > 0) {
           hist[hist.length - 1].videoUrl = videoUrl;
           hist[hist.length - 1].videoFile = videoFileName;
-          hist[hist.length - 1].thumbnail = thumbnailPath;
+          hist[hist.length - 1].thumbnail = chosenThumbnail;
           fs.writeFileSync(historyPath, JSON.stringify(hist, null, 2));
         }
       } catch (e) {}
     }
 
-    console.log('\n====================================');
+    console.log('
+====================================');
     console.log('🎉 LONG-FORM EPISODE PRODUCTION COMPLETE!');
     console.log(`📺 Video URL: ${videoUrl}`);
-    console.log('====================================\n');
+    console.log('====================================
+');
   } catch (error) {
-    console.error('\n❌ Long-form pipeline failed with error:', error);
+    console.error('
+❌ Long-form pipeline failed with error:', error);
     process.exit(1);
   }
 }

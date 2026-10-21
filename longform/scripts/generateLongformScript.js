@@ -94,6 +94,7 @@ Return ONLY raw JSON with this exact structure:
   "title": "Napoleon's Fake Horse Scandal... 💀",
   "description": "Beluga exposes a 200-year-old historical scandal on Discord with Hecker, ExplodingTNT, and MrBeast. #beluga #discord #meme #comedy",
   "tags": ["beluga", "discord", "history", "meme", "hecker", "skittle", "mrbeast", "explodingtnt"],
+  "mrbeastThumbnailPrompt": "A viral high-CTR YouTube thumbnail in 16:9 widescreen format. On the right, an energetic content creator with an exaggerated shocked open-mouth expression, pointing enthusiastically towards the center. In the center, a dramatic visual spectacle of the subject wearing a royal golden crown next to a glowing $1,000,000 sign. In the bottom left, the iconic polite smiling white cat Beluga looking in disbelief. Saturated electric cyan and fiery orange lighting, ultra-sharp contrast, dramatic glossy finish.",
   "thumbnail": {
     "author": "MrBeast",
     "authorColor": "#00d2d3",
@@ -147,6 +148,23 @@ Return ONLY raw JSON with this exact structure:
           console.log(`📎 Attached in-chat image to message index ${att.messageIndex}: ${attUrl}`);
         }
       }
+    }
+
+    // Generate standard MrBeast-style YouTube thumbnail
+    try {
+      const thumbPrompt = data.mrbeastThumbnailPrompt || `A viral high-CTR YouTube thumbnail in 16:9 widescreen format for "${data.title}". On the right, an energetic content creator with an exaggerated shocked open-mouth expression, pointing enthusiastically towards the center. In the center, a dramatic visual spectacle with glowing royal crowns, prize chests and bold neon $1,000,000 text. In the bottom corner, the iconic polite smiling white cat Beluga looking on in disbelief. Hyper-saturated electric cyan and fiery orange lighting, ultra-sharp contrast.`;
+      const outDir = path.join(process.cwd(), 'out');
+      if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+      const thumbPath = path.join(outDir, `thumbnail_mrbeast_${Date.now()}.jpg`);
+      const thumbUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(thumbPrompt)}?width=1280&height=720&nologo=true`;
+      console.log('🖼️ Generating standard MrBeast-style thumbnail for future longform...');
+      const success = await downloadAsset(thumbUrl, thumbPath);
+      if (success) {
+        data.customThumbnailPath = thumbPath;
+        console.log(`✅ Standard MrBeast thumbnail generated: ${thumbPath}`);
+      }
+    } catch (thErr) {
+      console.warn('⚠️ MrBeast thumbnail generation notice:', thErr.message);
     }
 
     // Save to longform data
