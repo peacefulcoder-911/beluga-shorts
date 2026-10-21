@@ -54,6 +54,8 @@ const getAvatar = (name: string, customAvatar?: string) => {
   if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return staticFile("ai.jpg");
   if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return staticFile("billionaire.jpg");
   if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
+  if (n.includes("exploding") || n.includes("tnt")) return staticFile("characters/explodingtnt.jpg");
+  if (n.includes("mrbeast") || n.includes("beast")) return staticFile("characters/mrbeast.jpg");
 
   // Dynamic guest character avatar in public/characters/
   return staticFile(`characters/${clean}.jpg`);
@@ -83,7 +85,9 @@ const getColor = (name: string, customColor?: string) => {
   if (n.includes("google")) return "#4285F4";
   if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return "#00e5ff";
   if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return "#d4af37";
-  if (n.includes("system") || n.includes("server") || n.includes("terminal")) return "#ff5252";
+  if (n.includes("system") || n.includes("server") || n.includes("terminal")) return "#f1c40f";
+  if (n.includes("exploding") || n.includes("tnt")) return "#ff4757";
+  if (n.includes("mrbeast") || n.includes("beast")) return "#00d2d3";
 
   // Deterministic color assignment for new characters
   let hash = 0;

@@ -33,8 +33,8 @@ async function ensureAttachmentImage(slug, imagePrompt) {
     return `attachments/${clean}.jpg`;
   }
 
-  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt)}?width=640&height=400&nologo=true`;
-  console.log(`🖼️ Generating longform attachment for "${clean}"...`);
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt)}?width=800&height=500&nologo=true`;
+  console.log(`🖼️ Generating in-chat attachment for "${clean}"...`);
   const success = await downloadAsset(url, destPath);
   return success ? `attachments/${clean}.jpg` : null;
 }
@@ -62,68 +62,59 @@ export async function generateLongformScript() {
 
   const prompt = `
 You are the master comedy writer for the Beluga YouTube channel (10M+ subscribers).
-You are writing a full-length (2.5 to 4 minute) 3-Act episodic Discord comedy video (1920x1080 Landscape).
+You are writing a full-length, highly engaging ONE-ACT episodic Discord comedy video centered around a FAMOUS HISTORICAL IMAGE, PAINTING, OR VIRAL CONSPIRACY (1920x1080 Landscape).
 
-### CRITICAL ANTI-REPETITION RULES:
-- DO NOT START THE TITLE WITH "Beluga Accidentally...". Banned phrase: "Beluga Accidentally".
-- Use varied viral titles:
-  - "When [Situation]..." (e.g. "When A Hacker Finds Your Password...", "When A Scammer Calls You...")
-  - "Beluga Lied On [Something]..."
-  - "The [Thing] That Broke The Internet..."
-  - "The Court Trial of [Character]..."
-  - "Hecker Sold My Discord Account..."
+### CORE CONCEPT: ONE COMPLETE COHESIVE ACT ON A SPECIFIC TOPIC
+- The entire episode takes place in ONE continuous channel (#general).
+- No channel jumping, no separate voice/admin acts. A single, focused, escalating comedic storyline.
+- Topic MUST be a real, famous painting, historical photo, monument, or pop-culture scandal that Beluga "exposes":
+  - Examples: Napoleon Crossing the Alps on a Mule, Mona Lisa having no eyebrows / being fake, George Washington's wooden teeth, The Statue of Liberty secretly holding something weird, The Declaration of Independence treasure map, Einstein's famous tongue photo, Michelangelo's hidden brain anatomy, The Leaning Tower of Pisa falling over.
 
-### 3-ACT STRUCTURE (DIVIDED ACROSS 3 SCENES):
-- Act 1 (Scene 1: #general): The absurd inciting incident or terrible mistake by Beluga.
-- Act 2 (Scene 2: 🔊 voice-lounge): Emergency voice call with Hecker. Voice call banter where Hecker tries a ridiculous counter-hack.
-- Act 3 (Scene 3: 🔒 admin-only or #courtroom): The dramatic escalation with Admin, Police (FBI), or Authority, resolved by Beluga's innocent deadpan stupidity.
+### THE 2 IN-CHAT IMAGE ATTACHMENTS:
+1. **Opening Image (Message 3 to 6)**: The real, famous painting or historical photograph that Beluga drops as "proof" of the scandal.
+2. **Climax Revelation Image (Message 35 to 45)**: A hilarious, absurd, or bizarre parody version of the image created/hacked by Hecker or Beluga (e.g., Napoleon on a giant crowned mule, Mona Lisa with Beluga's face, Washington with vampire fangs).
 
-### MANDATORY IN-CHAT IMAGE ATTACHMENT:
-- At least ONE message must include a hilarious in-chat photo/screenshot/proof attachment.
-- Provide 'attachment': { 'sceneIndex': 0, 'messageIndex': 8, 'slug': 'short_name', 'imagePrompt': 'detailed funny meme or photo prompt' }.
+### CAST DYNAMICS:
+- **Beluga**: Discovers the scandal, takes everything literally, delivers deadpan absurd theories in ALL CAPS ("NAPOLEON WAS USING A FILTER IN 1801", "BRO MADE A LINKEDIN PROFILE OUT OF A MOUNTAIN").
+- **Skittle**: The frustrated straight-man attempting to use common sense ("did you fail history again", "YOU CANNOT HACK A PAINTING").
+- **ExplodingTNT**: The hyperactive meme-roaster ("WHY IS THAT HORSE LEVITATING", "BRO USED A RENTAL HORSE FOR HIS PFP", "CEO OF CROSSING ALPS").
+- **Hecker**: The ultra-calm hacker who takes absurd requests dead seriously ("confirmed", "hacked the painting", "skill issue", "the mule has a bank account now").
+- **Guest Star (MrBeast, Billionaire, or Elon)**: Enters midway with an absurd $1,000,000 reward/offer, but ends up awarding the money to the ridiculous entity (e.g. the mule or a pigeon).
+- **Server Event**: Near the end, the server icon changes or a chaotic announcement happens: "[SERVER ICON CHANGED TO A MULE WEARING A CROWN]".
 
-### CLEAN MINIMALIST THUMBNAIL (THE 2-MESSAGE BELUGA PUNCHLINE):
-- Provide a 'thumbnail' object with the 2-message setup and punchline:
-  "thumbnail": {
-    "author": "Police",
-    "authorColor": "#5865F2",
-    "authorAvatar": "police.jpg",
-    "authorTime": "Today at 3:14 AM",
-    "authorMessage": "Short dramatic setup line (max 6-8 words)",
-    "belugaTime": "Today at 3:14 AM",
-    "belugaMessage": "Beluga's hilarious deadpan 1-line reply"
-  }
-
-### CAST:
-- Core: 'Beluga', 'Skittle', 'Hecker', 'Admin', 'Police', 'Mom', 'Vladimir', 'Billionaire', 'SYSTEM'.
-
-### PACING:
-- Total 35 to 55 lines across the 3 scenes.
-- 70% ultra-short lines (1-4 words: 'WAIT', 'no', 'i did', 'done', 'HOW', 'TO WHO', 'technically').
-- Shouting in ALL CAPS for shock.
+### PACING & LENGTH:
+- Total: 45 to 55 lines.
+- Rapid-fire Discord dialogue: 75% short lines (1 to 5 words).
+- Shouting in ALL CAPS for shock and comedic timing.
 
 Avoid past topics: [${pastTitles || 'None yet'}]
 
-Return ONLY raw JSON in this structure:
+Return ONLY raw JSON with this exact structure:
 {
-  "title": "When A Hacker Threatens Beluga 💀",
-  "description": "Beluga receives a mysterious threat on Discord, but his deadpan replies defeat the hacker. #beluga #discord #comedy #hecker",
-  "tags": ["beluga", "discord", "comedy", "funny", "memes", "hecker", "skittle"],
+  "title": "Napoleon's Fake Horse Scandal... 💀",
+  "description": "Beluga exposes a 200-year-old historical scandal on Discord with Hecker, ExplodingTNT, and MrBeast. #beluga #discord #meme #comedy",
+  "tags": ["beluga", "discord", "history", "meme", "hecker", "skittle", "mrbeast", "explodingtnt"],
   "thumbnail": {
-    "author": "Hecker",
-    "authorColor": "#57F287",
-    "authorAvatar": "hecker.jpg",
-    "authorTime": "Today at 8:39 AM",
-    "authorMessage": "I have your exact home coordinates.",
-    "belugaTime": "Today at 8:39 AM",
-    "belugaMessage": "can you send pizza there please"
+    "author": "MrBeast",
+    "authorColor": "#00d2d3",
+    "authorAvatar": "characters/mrbeast.jpg",
+    "authorTime": "Today at 4:18 PM",
+    "authorMessage": "I gave $1,000,000 to the mule.",
+    "belugaTime": "Today at 4:18 PM",
+    "belugaMessage": "you can't give money to a mule"
   },
-  "attachment": {
-    "sceneIndex": 0,
-    "messageIndex": 5,
-    "slug": "hacker_satellite",
-    "imagePrompt": "A glowing red tactical radar map tracking a suburban house, high tech meme style"
-  },
+  "attachments": [
+    {
+      "messageIndex": 2,
+      "slug": "historical_painting_original",
+      "imagePrompt": "High-resolution classical fine art oil painting of the historical subject, ornate gallery framing, dramatic 19th century masterpiece"
+    },
+    {
+      "messageIndex": 38,
+      "slug": "hacked_parody_revelation",
+      "imagePrompt": "Humorous classical oil painting parody of the subject with an absurd comical twist, high art quality, majestic and funny"
+    }
+  ],
   "scenes": [
     {
       "sceneId": 1,
@@ -131,7 +122,7 @@ Return ONLY raw JSON in this structure:
       "channelType": "text",
       "topic": "Welcome to #general",
       "messages": [
-        { "id": 1, "author": "Beluga", "time": "3:10 PM", "content": "guys who sent me this email" }
+        { "id": 1, "author": "Beluga", "time": "4:02 PM", "content": "GUYS I FOUND A HISTORICAL SCANDAL" }
       ]
     }
   ]
@@ -143,17 +134,17 @@ Return ONLY raw JSON in this structure:
     const text = result.response.text();
     const data = JSON.parse(text);
 
-    // Handle attachment image if provided
-    if (data.attachment && data.attachment.imagePrompt) {
-      const attUrl = await ensureAttachmentImage(
-        data.attachment.slug || 'longform_attachment',
-        data.attachment.imagePrompt
-      );
-      if (attUrl && data.scenes[data.attachment.sceneIndex]) {
-        const targetScene = data.scenes[data.attachment.sceneIndex];
-        if (targetScene.messages[data.attachment.messageIndex]) {
-          targetScene.messages[data.attachment.messageIndex].attachmentUrl = attUrl;
-          console.log(`📎 Attached longform image to scene ${data.attachment.sceneIndex}, message ${data.attachment.messageIndex}`);
+    // Handle multiple attachment images
+    const attachments = data.attachments || (data.attachment ? [data.attachment] : []);
+    for (const att of attachments) {
+      if (att && att.imagePrompt) {
+        const attUrl = await ensureAttachmentImage(
+          att.slug || `longform_att_${Date.now()}`,
+          att.imagePrompt
+        );
+        if (attUrl && data.scenes && data.scenes[0] && data.scenes[0].messages[att.messageIndex]) {
+          data.scenes[0].messages[att.messageIndex].attachmentUrl = attUrl;
+          console.log(`📎 Attached in-chat image to message index ${att.messageIndex}: ${attUrl}`);
         }
       }
     }
@@ -172,9 +163,9 @@ Return ONLY raw JSON in this structure:
     });
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
-    console.log('✅ Successfully generated authentic Long-Form Beluga Episode!');
+    console.log('✅ Successfully generated authentic One-Act Beluga Episode!');
     console.log('🎬 Title: ' + data.title);
-    console.log('📜 Scenes: ' + data.scenes.length);
+    console.log('📜 Total Messages in Act: ' + data.scenes[0].messages.length);
     return data;
   } catch (e) {
     console.error('❌ Failed to generate long-form script:', e);
