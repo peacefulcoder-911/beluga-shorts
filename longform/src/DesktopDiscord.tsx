@@ -27,6 +27,8 @@ const getAvatar = (name: string): string => {
   if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return staticFile("ai.jpg");
   if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return staticFile("billionaire.jpg");
   if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
+  if (n.includes("exploding") || n.includes("tnt")) return staticFile("characters/explodingtnt.jpg");
+  if (n.includes("mrbeast") || n.includes("beast")) return staticFile("characters/mrbeast.jpg");
   return staticFile("default_user.jpg");
 };
 
@@ -34,7 +36,10 @@ const getAuthorColor = (name: string): string => {
   const n = name.toLowerCase();
   if (n.includes("unknown") || n.includes("shadow") || n.includes("entity")) return "#ff4d4d";
   if (n.includes("police") || n.includes("fbi") || n.includes("agent") || n.includes("miller")) return "#00a8ff";
-  if (n.includes("system")) return "#ff3838";
+  if (n.includes("system") || n.includes("server")) return "#f1c40f";
+  if (n.includes("beluga") || n.includes("belu")) return "#ed4245";
+  if (n.includes("exploding") || n.includes("tnt")) return "#ff4757";
+  if (n.includes("mrbeast") || n.includes("beast")) return "#00d2d3";
   if (n.includes("vladimir") || n.includes("vlad")) return "#ff9f1a";
   if (n.includes("hecker")) return "#2ecc71";
   if (n.includes("skittle")) return "#f1c40f";

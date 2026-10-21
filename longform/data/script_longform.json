@@ -1,105 +1,354 @@
 {
-  "title": "When Beluga Accidentally Hacked The Pentagon... 🚨",
-  "description": "Beluga clicks a suspicious link promising free cookies, only to accidentally override military satellites and trigger a full FBI tactical raid on his house. #beluga #discord #comedy #fbi #hecker #memes",
-  "tags": ["beluga", "discord", "fbi", "police", "comedy", "hecker", "skittle", "vladimir", "funny", "memes", "animation", "swat"],
+  "title": "When Beluga Found Napoleon's Fake Horse... \ud83d\udc80 (Full Episode)",
+  "description": "Beluga exposes a 200-year-old historical scandal on Discord with Skittle, ExplodingTNT, Hecker, and MrBeast. #beluga #discord #meme #comedy #mrbeast #explodingtnt",
+  "tags": [
+    "beluga",
+    "discord",
+    "history",
+    "meme",
+    "hecker",
+    "skittle",
+    "mrbeast",
+    "explodingtnt",
+    "comedy",
+    "animation"
+  ],
+  "thumbnail": {
+    "author": "MrBeast",
+    "authorColor": "#00d2d3",
+    "authorAvatar": "characters/mrbeast.jpg",
+    "authorTime": "Today at 4:18 PM",
+    "authorMessage": "I just transferred ,000,000 to the mule.",
+    "belugaTime": "Today at 4:18 PM",
+    "belugaMessage": "you can't give money to a mule"
+  },
   "scenes": [
     {
       "sceneId": 1,
       "channelName": "general",
       "channelType": "text",
-      "topic": "high intensity cyber crisis",
+      "topic": "HISTORICAL SCANDAL INVESTIGATION",
       "messages": [
-        { "id": 1, "author": "Beluga", "time": "2:14 PM", "content": "guys my discord is lagging so bad" },
-        { "id": 2, "author": "Skittle", "time": "2:14 PM", "content": "restart your wifi router bro" },
-        { "id": 3, "author": "Beluga", "time": "2:14 PM", "content": "i already kicked it twice" },
-        { "id": 4, "author": "Vladimir", "time": "2:15 PM", "content": "Beluga my friend, do not despair" },
-        { "id": 5, "author": "Beluga", "time": "2:15 PM", "content": "vladimir can you fix my internet" },
-        { "id": 6, "author": "Vladimir", "time": "2:15 PM", "content": "click this special link for 10,000 Gbps speed accelerator and free cookies" },
-        { "id": 7, "author": "Skittle", "time": "2:15 PM", "content": "BELUGA DO NOT CLICK RANDOM RUSSIAN LINKS" },
-        { "id": 8, "author": "Beluga", "time": "2:16 PM", "content": "he said free cookies skittle. chocolate chip." },
-        { "id": 9, "author": "Skittle", "time": "2:16 PM", "content": "THAT IS NOT HOW COOKIES WORK" },
-        { "id": 10, "author": "Beluga", "time": "2:16 PM", "content": "too late i already clicked download" },
-        { "id": 11, "author": "Beluga", "time": "2:17 PM", "content": "it asked for administrator privileges so i clicked allow" },
-        { "id": 12, "author": "Skittle", "time": "2:17 PM", "content": "YOU GAVE ROOT PERMISSION TO AN EXE FILE?!" },
-        { "id": 13, "author": "Beluga", "time": "2:17 PM", "content": "my screen just flashed bright red" },
-        { "id": 14, "author": "SYSTEM", "time": "2:18 PM", "content": "[CRITICAL ALERT: LEVEL 5 FIREWALL BREACH DETECTED]" },
-        { "id": 15, "author": "SYSTEM", "time": "2:18 PM", "content": "[UNAUTHORIZED ACCESS TO PENTAGON DEFENSE MAINFRAME]" },
-        { "id": 16, "author": "Beluga", "time": "2:18 PM", "content": "did the cookies download?" },
-        { "id": 17, "author": "Skittle", "time": "2:18 PM", "content": "BELUGA YOU HACKED THE DEPARTMENT OF DEFENSE" },
-        { "id": 18, "author": "Beluga", "time": "2:19 PM", "content": "i just wanted chocolate chip" },
-        { "id": 19, "author": "Police", "time": "2:19 PM", "content": "THIS IS SPECIAL AGENT MILLER, FBI CYBER DIVISION." },
-        { "id": 20, "author": "Police", "time": "2:19 PM", "content": "DO NOT CLOSE THIS DISCORD WINDOW." },
-        { "id": 21, "author": "Beluga", "time": "2:20 PM", "content": "can i minimize it?" },
-        { "id": 22, "author": "Police", "time": "2:20 PM", "content": "NO. STEP AWAY FROM THE KEYBOARD." },
-        { "id": 23, "author": "Skittle", "time": "2:20 PM", "content": "OFFICER IT WAS AN ACCIDENT HE IS JUST A CAT" },
-        { "id": 24, "author": "Police", "time": "2:20 PM", "content": "SECURITY BREACH VERIFIED ON SECTOR 4 SATELLITE", "attachmentUrl": "fbi_alert.jpg" },
-        { "id": 25, "author": "Beluga", "time": "2:21 PM", "content": "WHY IS MY IP ADDRESS ON A TOP SECRET MONITOR" },
-        { "id": 26, "author": "Police", "time": "2:21 PM", "content": "YOUR TERMINAL OVERRODE SATELLITE OMEGA-4 ORBITAL COMMAND." },
-        { "id": 27, "author": "Beluga", "time": "2:21 PM", "content": "hecker please wake up" },
-        { "id": 28, "author": "Hecker", "time": "2:22 PM", "content": "WHO PINGED ME 47 TIMES" },
-        { "id": 29, "author": "Skittle", "time": "2:22 PM", "content": "HECKER BELUGA LAUNCHED A MILITARY CYBERSTRIKE" },
-        { "id": 30, "author": "Hecker", "time": "2:22 PM", "content": "HE DID WHAT?!" },
-        { "id": 31, "author": "Hecker", "time": "2:23 PM", "content": "CHECKING FIREWALL LOGS..." },
-        { "id": 32, "author": "Hecker", "time": "2:23 PM", "content": "OH NO" },
-        { "id": 33, "author": "Beluga", "time": "2:23 PM", "content": "is it bad hecker" },
-        { "id": 34, "author": "Hecker", "time": "2:23 PM", "content": "BELUGA YOU DISARMED THE ENTIRE WEST COAST RADAR DEFENSE SYSTEM" },
-        { "id": 35, "author": "Beluga", "time": "2:24 PM", "content": "can i press undo" },
-        { "id": 36, "author": "Hecker", "time": "2:24 PM", "content": "THERE IS NO UNDO BUTTON FOR NATIONAL SECURITY" },
-        { "id": 37, "author": "Police", "time": "2:24 PM", "content": "SUSPECT TRACE COMPLETE." },
-        { "id": 38, "author": "Police", "time": "2:25 PM", "content": "NAME: BELUGA. LOCATION: RESIDENTIAL SUBDIVISION 7." },
-        { "id": 39, "author": "Beluga", "time": "2:25 PM", "content": "how did you find my house" },
-        { "id": 40, "author": "Police", "time": "2:25 PM", "content": "YOU ACCEPTED LOCATION TRACKING FOR THE COOKIES." },
-        { "id": 41, "author": "Skittle", "time": "2:25 PM", "content": "BRO TRADED HIS FREEDOM FOR FAKE BISCUITS 💀" },
-        { "id": 42, "author": "Beluga", "time": "2:26 PM", "content": "i hear a helicopter outside" },
-        { "id": 43, "author": "Skittle", "time": "2:26 PM", "content": "LOOK OUT YOUR WINDOW" },
-        { "id": 44, "author": "Beluga", "time": "2:26 PM", "content": "there is a laser pointer on my forehead" },
-        { "id": 45, "author": "Hecker", "time": "2:27 PM", "content": "THAT IS A SNIPER SCOPE BELUGA GET DOWN" },
-        { "id": 46, "author": "Beluga", "time": "2:27 PM", "content": "but the red dot is so fun to chase" },
-        { "id": 47, "author": "Hecker", "time": "2:27 PM", "content": "DO NOT CHASE THE SNIPER DOT" },
-        { "id": 48, "author": "Police", "time": "2:28 PM", "content": "TACTICAL UNITS MOVING IN TO SECURE THE PREMISES.", "attachmentUrl": "swat_arrival.jpg" },
-        { "id": 49, "author": "Beluga", "time": "2:28 PM", "content": "WHY ARE THERE 5 ARMORED TRUCKS ON MY GRASS" },
-        { "id": 50, "author": "Skittle", "time": "2:28 PM", "content": "YOUR MOM'S PRIZED PETUNIAS ARE RUINED" },
-        { "id": 51, "author": "Beluga", "time": "2:29 PM", "content": "she will kill me before the FBI does" },
-        { "id": 52, "author": "Hecker", "time": "2:29 PM", "content": "I AM TRYING TO REROUTE THE TRAFFIC TO A CANADIAN PROXY" },
-        { "id": 53, "author": "Police", "time": "2:29 PM", "content": "PROXY DETECTED. OVERRIDE FAILED." },
-        { "id": 54, "author": "Hecker", "time": "2:30 PM", "content": "BELUGA DESTROY THE EVIDENCE" },
-        { "id": 55, "author": "Beluga", "time": "2:30 PM", "content": "HOW" },
-        { "id": 56, "author": "Hecker", "time": "2:30 PM", "content": "EAT YOUR SOLID STATE DRIVE" },
-        { "id": 57, "author": "Beluga", "time": "2:30 PM", "content": "it tastes like silicon and regret" },
-        { "id": 58, "author": "Skittle", "time": "2:31 PM", "content": "DELETE SYSTEM32" },
-        { "id": 59, "author": "Beluga", "time": "2:31 PM", "content": "i accidentally deleted Google Chrome" },
-        { "id": 60, "author": "Skittle", "time": "2:31 PM", "content": "WE ARE WITNESSING A GENERATIONAL DISASTER" },
-        { "id": 61, "author": "Police", "time": "2:32 PM", "content": "BREACH TEAM AT FRONT DOOR." },
-        { "id": 62, "author": "Police", "time": "2:32 PM", "content": "COMMENCING FORCED ENTRY IN 10 SECONDS." },
-        { "id": 63, "author": "Beluga", "time": "2:32 PM", "content": "i am hiding in the laundry hamper" },
-        { "id": 64, "author": "Police", "time": "2:33 PM", "content": "THERMAL SCANNERS DETECT A FELINE IN THE DIRTY LAUNDRY." },
-        { "id": 65, "author": "Beluga", "time": "2:33 PM", "content": "my socks are confidential" },
-        { "id": 66, "author": "Police", "time": "2:33 PM", "content": "3..." },
-        { "id": 67, "author": "Police", "time": "2:33 PM", "content": "2..." },
-        { "id": 68, "author": "Police", "time": "2:34 PM", "content": "1..." },
-        { "id": 69, "author": "Police", "time": "2:34 PM", "content": "BATTERING RAM ENGAGED." },
-        { "id": 70, "author": "Beluga", "time": "2:34 PM", "content": "I HEAR MY FRONT DOOR SPLINTERING" },
-        { "id": 71, "author": "Mom", "time": "2:35 PM", "content": "WHAT IN GOD'S NAME IS HAPPENING TO MY FRONT DOOR" },
-        { "id": 72, "author": "Beluga", "time": "2:35 PM", "content": "MOM DON'T SHOOT I AM UNARMED" },
-        { "id": 73, "author": "Mom", "time": "2:35 PM", "content": "WHO BROKE MY MAHOGANY DOOR" },
-        { "id": 74, "author": "Police", "time": "2:36 PM", "content": "MA'AM STEP ASIDE WE HAVE A WARRANT FOR A CYBERTERRORIST" },
-        { "id": 75, "author": "Mom", "time": "2:36 PM", "content": "I DON'T CARE IF YOU ARE THE PRESIDENT YOU WIPED YOUR DIRTY BOOTS ON MY RUG" },
-        { "id": 76, "author": "Skittle", "time": "2:36 PM", "content": "MOM IS CURRENTLY SCOLDING THE ENTIRE SWAT TEAM 💀" },
-        { "id": 77, "author": "Vladimir", "time": "2:37 PM", "content": "Privet comrades, is everyone enjoying the cookies?" },
-        { "id": 78, "author": "Hecker", "time": "2:37 PM", "content": "VLADIMIR WHAT DID THAT LINK ACTUALLY DO" },
-        { "id": 79, "author": "Vladimir", "time": "2:37 PM", "content": "ah... I was trying to download Shrek 2 in 4K resolution" },
-        { "id": 80, "author": "Hecker", "time": "2:38 PM", "content": "AND YOU ROUTED YOUR TORRENT THROUGH BELUGA'S TOASTER?!" },
-        { "id": 81, "author": "Vladimir", "time": "2:38 PM", "content": "it had the fastest upload bandwidth in the neighborhood" },
-        { "id": 82, "author": "Police", "time": "2:38 PM", "content": "STAND DOWN TEAM. THE SATELLITE WAS JUST STREAMING SHREK." },
-        { "id": 83, "author": "Beluga", "time": "2:39 PM", "content": "so i am not going to federal prison?" },
-        { "id": 84, "author": "Police", "time": "2:39 PM", "content": "You are cleared of all federal charges." },
-        { "id": 85, "author": "Beluga", "time": "2:39 PM", "content": "PHEW" },
-        { "id": 86, "author": "Mom", "time": "2:40 PM", "content": "HE IS NOT CLEARED OF MY CHARGES" },
-        { "id": 87, "author": "Mom", "time": "2:40 PM", "content": "YOU WILL PAY FOR THIS DOOR WITH YOUR ALLOWANCE FOR THE NEXT 40 YEARS" },
-        { "id": 88, "author": "Beluga", "time": "2:40 PM", "content": "agent miller please arrest me" },
-        { "id": 89, "author": "Police", "time": "2:41 PM", "content": "We cannot protect you from your mother, son. Good luck." },
-        { "id": 90, "author": "Skittle", "time": "2:41 PM", "content": "LMAOOOOOO" },
-        { "id": 91, "author": "Beluga", "time": "2:41 PM", "content": "federal prison was the safe option" }
+        {
+          "id": 1,
+          "author": "Beluga",
+          "time": "4:02 PM",
+          "content": "GUYS I FOUND A HISTORICAL SCANDAL"
+        },
+        {
+          "id": 2,
+          "author": "Skittle",
+          "time": "4:02 PM",
+          "content": "did you fail history again"
+        },
+        {
+          "id": 3,
+          "author": "Beluga",
+          "time": "4:02 PM",
+          "content": "LOOK AT THIS PAINTING",
+          "attachmentUrl": "attachments/napoleon_crossing_alps.jpg"
+        },
+        {
+          "id": 4,
+          "author": "ExplodingTNT",
+          "time": "4:02 PM",
+          "content": "WHY IS THAT HORSE LEVITATING"
+        },
+        {
+          "id": 5,
+          "author": "Skittle",
+          "time": "4:03 PM",
+          "content": "that's napoleon"
+        },
+        {
+          "id": 6,
+          "author": "Beluga",
+          "time": "4:03 PM",
+          "content": "I KNOW WHO NAPOLEON IS"
+        },
+        {
+          "id": 7,
+          "author": "Beluga",
+          "time": "4:03 PM",
+          "content": "BUT HE DIDN'T EVEN RIDE THAT HORSE"
+        },
+        {
+          "id": 8,
+          "author": "Skittle",
+          "time": "4:03 PM",
+          "content": "what"
+        },
+        {
+          "id": 9,
+          "author": "Beluga",
+          "time": "4:04 PM",
+          "content": "HE CROSSED THE ALPS ON A MULE"
+        },
+        {
+          "id": 10,
+          "author": "ExplodingTNT",
+          "time": "4:04 PM",
+          "content": "BRO USED A RENTAL HORSE FOR HIS PROFILE PICTURE"
+        },
+        {
+          "id": 11,
+          "author": "Hecker",
+          "time": "4:04 PM",
+          "content": "confirmed"
+        },
+        {
+          "id": 12,
+          "author": "Beluga",
+          "time": "4:04 PM",
+          "content": "HECKER HOW DO YOU KNOW"
+        },
+        {
+          "id": 13,
+          "author": "Hecker",
+          "time": "4:05 PM",
+          "content": "hacked the painting"
+        },
+        {
+          "id": 14,
+          "author": "Skittle",
+          "time": "4:05 PM",
+          "content": "YOU CANNOT HACK A PAINTING"
+        },
+        {
+          "id": 15,
+          "author": "Hecker",
+          "time": "4:05 PM",
+          "content": "skill issue"
+        },
+        {
+          "id": 16,
+          "author": "Beluga",
+          "time": "4:05 PM",
+          "content": "WHY WOULD THE ARTIST LIE"
+        },
+        {
+          "id": 17,
+          "author": "Skittle",
+          "time": "4:06 PM",
+          "content": "it's called art"
+        },
+        {
+          "id": 18,
+          "author": "ExplodingTNT",
+          "time": "4:06 PM",
+          "content": "it's called catfishing"
+        },
+        {
+          "id": 19,
+          "author": "Beluga",
+          "time": "4:06 PM",
+          "content": "NAPOLEON WAS USING A FILTER IN 1801"
+        },
+        {
+          "id": 20,
+          "author": "Hecker",
+          "time": "4:06 PM",
+          "content": "found something else"
+        },
+        {
+          "id": 21,
+          "author": "Beluga",
+          "time": "4:07 PM",
+          "content": "WHAT"
+        },
+        {
+          "id": 22,
+          "author": "Hecker",
+          "time": "4:07 PM",
+          "content": "the painting has his name carved into the rocks"
+        },
+        {
+          "id": 23,
+          "author": "Skittle",
+          "time": "4:07 PM",
+          "content": "that's normal"
+        },
+        {
+          "id": 24,
+          "author": "ExplodingTNT",
+          "time": "4:07 PM",
+          "content": "HE SIGNED THE MOUNTAIN"
+        },
+        {
+          "id": 25,
+          "author": "Beluga",
+          "time": "4:08 PM",
+          "content": "WAIT"
+        },
+        {
+          "id": 26,
+          "author": "Beluga",
+          "time": "4:08 PM",
+          "content": "HE PUT HIS NAME NEXT TO HANNIBAL AND CHARLEMAGNE"
+        },
+        {
+          "id": 27,
+          "author": "Skittle",
+          "time": "4:08 PM",
+          "content": "he's trying to look legendary"
+        },
+        {
+          "id": 28,
+          "author": "Beluga",
+          "time": "4:08 PM",
+          "content": "BRO MADE A LINKEDIN PROFILE OUT OF A MOUNTAIN"
+        },
+        {
+          "id": 29,
+          "author": "ExplodingTNT",
+          "time": "4:09 PM",
+          "content": "\"CEO OF CROSSING ALPS\""
+        },
+        {
+          "id": 30,
+          "author": "MrBeast",
+          "time": "4:09 PM",
+          "content": "I WILL GIVE $1 MILLION TO WHOEVER FINDS NAPOLEON'S REAL HORSE"
+        },
+        {
+          "id": 31,
+          "author": "Beluga",
+          "time": "4:09 PM",
+          "content": "I'M IN"
+        },
+        {
+          "id": 32,
+          "author": "Skittle",
+          "time": "4:09 PM",
+          "content": "it's a mule"
+        },
+        {
+          "id": 33,
+          "author": "MrBeast",
+          "time": "4:10 PM",
+          "content": "THEN FIND THE MULE"
+        },
+        {
+          "id": 34,
+          "author": "ExplodingTNT",
+          "time": "4:10 PM",
+          "content": "I'M ALREADY AT THE ZOO"
+        },
+        {
+          "id": 35,
+          "author": "Hecker",
+          "time": "4:10 PM",
+          "content": "found it"
+        },
+        {
+          "id": 36,
+          "author": "Beluga",
+          "time": "4:10 PM",
+          "content": "WHERE"
+        },
+        {
+          "id": 37,
+          "author": "Hecker",
+          "time": "4:11 PM",
+          "content": "in the painting"
+        },
+        {
+          "id": 38,
+          "author": "Beluga",
+          "time": "4:11 PM",
+          "content": "THAT'S NOT THE REAL ONE"
+        },
+        {
+          "id": 39,
+          "author": "Hecker",
+          "time": "4:11 PM",
+          "content": "too late",
+          "attachmentUrl": "attachments/napoleon_crowned_mule.jpg"
+        },
+        {
+          "id": 40,
+          "author": "Skittle",
+          "time": "4:11 PM",
+          "content": "WHY IS THE MULE BIGGER THAN NAPOLEON"
+        },
+        {
+          "id": 41,
+          "author": "ExplodingTNT",
+          "time": "4:12 PM",
+          "content": "BECAUSE IT CARRIED THE EMPIRE"
+        },
+        {
+          "id": 42,
+          "author": "MrBeast",
+          "time": "4:12 PM",
+          "content": "the mule wins"
+        },
+        {
+          "id": 43,
+          "author": "Beluga",
+          "time": "4:12 PM",
+          "content": "WHAT"
+        },
+        {
+          "id": 44,
+          "author": "MrBeast",
+          "time": "4:12 PM",
+          "content": "$1 million to the mule"
+        },
+        {
+          "id": 45,
+          "author": "Beluga",
+          "time": "4:13 PM",
+          "content": "YOU CAN'T GIVE MONEY TO A MULE"
+        },
+        {
+          "id": 46,
+          "author": "Hecker",
+          "time": "4:13 PM",
+          "content": "already transferred"
+        },
+        {
+          "id": 47,
+          "author": "Beluga",
+          "time": "4:13 PM",
+          "content": "HECKER"
+        },
+        {
+          "id": 48,
+          "author": "Hecker",
+          "time": "4:13 PM",
+          "content": "the mule has a bank account now"
+        },
+        {
+          "id": 49,
+          "author": "ExplodingTNT",
+          "time": "4:14 PM",
+          "content": "LONG LIVE THE MULE"
+        },
+        {
+          "id": 50,
+          "author": "Server",
+          "time": "4:14 PM",
+          "content": "[SERVER ICON CHANGED TO A MULE WEARING A CROWN]"
+        },
+        {
+          "id": 51,
+          "author": "Beluga",
+          "time": "4:14 PM",
+          "content": "I'M LEAVING THIS SERVER"
+        },
+        {
+          "id": 52,
+          "author": "Skittle",
+          "time": "4:14 PM",
+          "content": "napoleon would be proud"
+        },
+        {
+          "id": 53,
+          "author": "Beluga",
+          "time": "4:15 PM",
+          "content": "I'M BLOCKING ALL OF YOU"
+        }
       ]
     }
   ]
