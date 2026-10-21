@@ -1,18 +1,14 @@
-name: 10x Daily Beluga Shorts Automation
+name: 6x Daily Beluga Shorts Automation (2K QHD)
 
 on:
   schedule:
-    # 10 Peak Global Slots (Spaced every ~1h45m across peak viewing windows)
-    - cron: '30 2 * * *'   # Slot 1:  08:00 AM IST (Asia morning wakeup)
-    - cron: '15 4 * * *'   # Slot 2:  09:45 AM IST (Mid-morning surge)
-    - cron: '0 6 * * *'    # Slot 3:  11:30 AM IST (Pre-lunch / Europe morning)
-    - cron: '45 7 * * *'   # Slot 4:  01:15 PM IST (Lunchtime peak / Europe commute)
-    - cron: '30 9 * * *'   # Slot 5:  03:00 PM IST (Afternoon break / Europe lunch)
-    - cron: '15 11 * * *'  # Slot 6:  04:45 PM IST (School out / US East morning)
-    - cron: '0 13 * * *'   # Slot 7:  06:30 PM IST (Evening commute / US East lunch)
-    - cron: '45 14 * * *'  # Slot 8:  08:15 PM IST (Prime evening / Europe evening)
-    - cron: '30 16 * * *'  # Slot 9:  10:00 PM IST (Night relaxation / US East afternoon)
-    - cron: '15 18 * * *'  # Slot 10: 11:45 PM IST (Midnight scroll / US peak prime)
+    # 6 Peak Global YouTube Shorts Windows (Optimally Spaced Every 3-4 Hours)
+    - cron: '30 2 * * *'   # Slot 1: 08:00 AM IST (02:30 UTC) - Asia morning wakeup & commute
+    - cron: '30 7 * * *'   # Slot 2: 01:00 PM IST (07:30 UTC) - Asia lunchtime & Europe morning wakeup
+    - cron: '0 11 * * *'   # Slot 3: 04:30 PM IST (11:00 UTC) - Europe afternoon & UK school out
+    - cron: '30 14 * * *'  # Slot 4: 08:00 PM IST (14:30 UTC) - Europe prime evening & US East morning
+    - cron: '0 18 * * *'   # Slot 5: 11:30 PM IST (18:00 UTC) - US East lunchtime & US West morning
+    - cron: '30 20 * * *'  # Slot 6: 02:00 AM IST (20:30 UTC) - US peak prime evening
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:
@@ -38,7 +34,7 @@ jobs:
       - name: Install Node Dependencies
         run: npm ci
 
-      - name: Run Daily Generation, Render & Upload
+      - name: Run Daily 2K Generation, Render & Upload
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -47,11 +43,11 @@ jobs:
           YOUTUBE_PRIVACY: public
         run: node runDaily.js
 
-      - name: Commit and Push Updated Story History
+      - name: Commit and Push Updated Story History & Generated Assets
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull --rebase origin main || true
-          git add history.json
-          git commit -m "chore: record uploaded short to history [skip ci]" || echo "No changes to commit"
+          git add history.json public/characters/ public/attachments/ || true
+          git commit -m "chore: record uploaded 2K short to history [skip ci]" || echo "No changes to commit"
           git push origin main

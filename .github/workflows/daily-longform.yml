@@ -1,9 +1,9 @@
-name: Weekly Beluga Long-Form Automation
+name: Daily Beluga Long-Form Automation (Full Episode)
 
 on:
   schedule:
-    # Every Wednesday & Saturday at 6:00 PM IST (12:30 UTC)
-    - cron: '30 12 * * 3,6'
+    # Daily at 12:00 PM UTC (5:30 PM IST) - Prime Global Long-Form Release Window
+    - cron: '0 12 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:
@@ -29,7 +29,7 @@ jobs:
       - name: Install Node Dependencies
         run: npm ci
 
-      - name: Run Long-Form Generation, Render & Upload
+      - name: Run Daily Long-Form Generation, Render & Upload
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
@@ -38,11 +38,11 @@ jobs:
           YOUTUBE_PRIVACY: public
         run: node longform/scripts/runLongform.js
 
-      - name: Commit and Push Updated Long-Form History
+      - name: Commit and Push Updated Long-Form History & Assets
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull --rebase origin main || true
-          git add longform/data/history_longform.json
+          git add longform/data/history_longform.json public/attachments/ public/characters/ || true
           git commit -m "chore: record uploaded long-form episode to history [skip ci]" || echo "No changes to commit"
           git push origin main

@@ -18,7 +18,7 @@ async function runLongform() {
     }
     console.log(`✅ Episode Generated: "${data.title}"\n`);
 
-    // 2. Render 1920x1080 Video
+    // 2. Render 1920x1080 Video & Clean High-CTR Thumbnail
     const outDir = path.join(process.cwd(), 'out');
     if (!fs.existsSync(outDir)) {
       fs.mkdirSync(outDir, { recursive: true });
@@ -27,16 +27,29 @@ async function runLongform() {
     const timestamp = Date.now();
     const videoFileName = `longform_${timestamp}.mp4`;
     const outputPath = path.join(outDir, videoFileName);
+    const thumbnailPath = path.join(outDir, `thumbnail_longform_${timestamp}.png`);
 
     console.log(`🎬 [Step 2/3] Rendering 1920x1080 Landscape video with Remotion to ${videoFileName}...`);
-    execSync(`npx remotion render src/index.ts LongformDiscord "${outputPath}"`, {
+    execSync(`npx remotion render src/index.ts LongformDiscord "${outputPath}" --concurrency=4`, {
       stdio: 'inherit'
     });
-    console.log(`✅ Long-form video rendered successfully!\n`);
+    console.log(`✅ Long-form video rendered successfully!`);
 
-    // 3. Upload to YouTube
-    console.log(`📤 [Step 3/3] Uploading long-form video to YouTube...`);
-    const videoUrl = await uploadLongformVideo(outputPath, data.title, data.description, data.tags);
+    console.log(`🖼️ Rendering authentic clean Beluga thumbnail to ${thumbnailPath}...`);
+    execSync(`npx remotion still src/index.ts BelugaThumbnail "${thumbnailPath}"`, {
+      stdio: 'inherit'
+    });
+    console.log(`✅ Clean thumbnail generated successfully!\n`);
+
+    // 3. Upload to YouTube with custom thumbnail
+    console.log(`📤 [Step 3/3] Uploading long-form video to YouTube with thumbnail...`);
+    const videoUrl = await uploadLongformVideo(
+      outputPath,
+      data.title,
+      data.description,
+      data.tags,
+      thumbnailPath
+    );
 
     // Save video URL to longform history
     const historyPath = path.join(process.cwd(), 'longform', 'data', 'history_longform.json');
@@ -46,6 +59,7 @@ async function runLongform() {
         if (hist.length > 0) {
           hist[hist.length - 1].videoUrl = videoUrl;
           hist[hist.length - 1].videoFile = videoFileName;
+          hist[hist.length - 1].thumbnail = thumbnailPath;
           fs.writeFileSync(historyPath, JSON.stringify(hist, null, 2));
         }
       } catch (e) {}
