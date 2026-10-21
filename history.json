@@ -4807,5 +4807,199 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=XmUJe5X2S4o"
+  },
+  {
+    "date": "2026-10-21T23:31:08.806Z",
+    "title": "When A Scammer Demands Gift Cards From Beluga 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Professor Fraud",
+      "avatarPrompt": "Discord profile avatar of a shifty-looking cat wearing an oversized suit and tiny fedora, looking nervous, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "real_apple_gift",
+      "imagePrompt": "A single fresh red apple with a large bite taken out of it resting on an office desk, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Professor Fraud",
+        "content": "HELLO SIR. THIS IS THE IRS.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Professor Fraud",
+        "content": "YOU OWE $5,000 IN TAXES.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Professor Fraud",
+        "content": "PAY NOW WITH GIFT CARDS.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "what cards"
+      },
+      {
+        "id": 5,
+        "author": "Professor Fraud",
+        "content": "APPLE, AMAZON, GOOGLE PLAY.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Professor Fraud",
+        "content": "SEND CODES. NOW.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "BELUGA DON'T! IT'S A SCAM!"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "but i have cards"
+      },
+      {
+        "id": 9,
+        "author": "Professor Fraud",
+        "content": "WHICH ONES? HURRY.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "the red one"
+      },
+      {
+        "id": 11,
+        "author": "Professor Fraud",
+        "content": "APPLE. GOOD. SEND IT.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "okay"
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "OMG BELUGA NO!"
+      },
+      {
+        "id": 14,
+        "author": "Professor Fraud",
+        "content": "WHAT IS THIS?!",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "it's an apple"
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "for gifting"
+      },
+      {
+        "id": 17,
+        "author": "Professor Fraud",
+        "content": "NOT A REAL APPLE!",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Professor Fraud",
+        "content": "A GIFT CARD!",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "oh"
+      },
+      {
+        "id": 20,
+        "author": "Hecker",
+        "content": "his logic is... flawless."
+      },
+      {
+        "id": 21,
+        "author": "Professor Fraud",
+        "content": "I NEED THE NUMBERS.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Professor Fraud",
+        "content": "ON THE BACK.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "there are no numbers"
+      },
+      {
+        "id": 24,
+        "author": "Professor Fraud",
+        "content": "THEN GO BUY ONE! NOW!",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "but i already have one"
+      },
+      {
+        "id": 26,
+        "author": "Professor Fraud",
+        "content": "THIS IS YOUR LAST WARNING.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Professor Fraud",
+        "content": "I WILL CALL THE POLICE.",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Beluga",
+        "content": "what if i call them first"
+      },
+      {
+        "id": 29,
+        "author": "Professor Fraud",
+        "content": "NO WAIT DON'T!",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 30,
+        "author": "Professor Fraud",
+        "content": "[PROFESSOR FRAUD HAS LEFT THE SERVER]",
+        "avatarUrl": "characters/professor_fraud.jpg"
+      },
+      {
+        "id": 31,
+        "author": "Skittle",
+        "content": "HE ACTUALLY LEFT!"
+      },
+      {
+        "id": 32,
+        "author": "Beluga",
+        "content": "did i win"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=EwVuR9L0xV0"
   }
 ]
