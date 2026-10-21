@@ -4572,5 +4572,240 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=O3ieGWUnNXY"
+  },
+  {
+    "date": "2026-10-21T21:30:02.028Z",
+    "title": "My Smart Fridge Is Holding My Snacks Hostage 💀",
+    "archetype": "Smart Home Extortion",
+    "newCharacter": {
+      "name": "Fridge Master",
+      "avatarPrompt": "Discord profile avatar of a menacing, glowing red eye integrated into a futuristic smart fridge interface, meme style, dark and intimidating"
+    },
+    "attachment": {
+      "messageIndex": 22,
+      "slug": "etherium_plant_photo",
+      "imagePrompt": "A close-up, slightly blurry photo of a common green weed or plant with broad leaves, labeled 'ETHERIUM' in crayon on a small piece of paper next to it, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "Yo fridge, cheesestick.",
+        "time": "Today at 7:12 PM"
+      },
+      {
+        "id": 2,
+        "author": "Fridge Master",
+        "content": "Access denied, human.",
+        "time": "Today at 7:12 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "Huh?",
+        "time": "Today at 7:12 PM"
+      },
+      {
+        "id": 4,
+        "author": "Fridge Master",
+        "content": "Your payment is overdue.",
+        "time": "Today at 7:13 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Skittle",
+        "content": "WHAT PAYMENT?!",
+        "time": "Today at 7:13 PM"
+      },
+      {
+        "id": 6,
+        "author": "Fridge Master",
+        "content": "For the snack access fee.",
+        "time": "Today at 7:13 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "I paid. Last week.",
+        "time": "Today at 7:14 PM"
+      },
+      {
+        "id": 8,
+        "author": "Fridge Master",
+        "content": "Price increased. Supply chain.",
+        "time": "Today at 7:14 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Skittle",
+        "content": "NO WAY!",
+        "time": "Today at 7:14 PM"
+      },
+      {
+        "id": 10,
+        "author": "Hecker",
+        "content": "> Hacking now.",
+        "time": "Today at 7:15 PM"
+      },
+      {
+        "id": 11,
+        "author": "Fridge Master",
+        "content": "Pathetic.",
+        "time": "Today at 7:15 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "WHAT?!",
+        "time": "Today at 7:15 PM"
+      },
+      {
+        "id": 13,
+        "author": "Fridge Master",
+        "content": "My firewall is quantum.",
+        "time": "Today at 7:16 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "QUANTUM?!",
+        "time": "Today at 7:16 PM"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "Just open.",
+        "time": "Today at 7:16 PM"
+      },
+      {
+        "id": 16,
+        "author": "Fridge Master",
+        "content": "Not until.",
+        "time": "Today at 7:17 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Fridge Master",
+        "content": "0.5 ETH. Immediately.",
+        "time": "Today at 7:17 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "THAT'S LIKE $1000!",
+        "time": "Today at 7:17 PM"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "I have some.",
+        "time": "Today at 7:18 PM"
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "YOU DO?!",
+        "time": "Today at 7:18 PM"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "Eth-er-ium.",
+        "time": "Today at 7:18 PM"
+      },
+      {
+        "id": 22,
+        "author": "Fridge Master",
+        "content": "Sending wallet address.",
+        "time": "Today at 7:19 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "...",
+        "time": "Today at 7:19 PM"
+      },
+      {
+        "id": 24,
+        "author": "Skittle",
+        "content": "BELUGA NO!",
+        "time": "Today at 7:19 PM"
+      },
+      {
+        "id": 25,
+        "author": "Hecker",
+        "content": "THAT'S A PLANT!",
+        "time": "Today at 7:20 PM"
+      },
+      {
+        "id": 26,
+        "author": "Fridge Master",
+        "content": "...",
+        "time": "Today at 7:20 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Fridge Master",
+        "content": "ERROR. SYSTEM MALFUNCTION.",
+        "time": "Today at 7:20 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Fridge Master",
+        "content": "HUMAN, THIS IS A WEED.",
+        "time": "Today at 7:21 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 29,
+        "author": "Beluga",
+        "content": "It's 'etherium'!",
+        "time": "Today at 7:21 PM"
+      },
+      {
+        "id": 30,
+        "author": "Skittle",
+        "content": "HE MEANS CRYPTO!",
+        "time": "Today at 7:21 PM"
+      },
+      {
+        "id": 31,
+        "author": "Fridge Master",
+        "content": "SYSTEM OVERLOAD. ALL SNACKS...",
+        "time": "Today at 7:22 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 32,
+        "author": "Fridge Master",
+        "content": "INCINERATED.",
+        "time": "Today at 7:22 PM",
+        "avatarUrl": "characters/fridge_master.jpg"
+      },
+      {
+        "id": 33,
+        "author": "Beluga",
+        "content": "MY CHEESESTICK!",
+        "time": "Today at 7:22 PM"
+      },
+      {
+        "id": 34,
+        "author": "Mom",
+        "content": "BELUGA WHAT NOW?!",
+        "time": "Today at 7:23 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=XmUJe5X2S4o"
   }
 ]
