@@ -61,7 +61,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
             flexShrink: 0,
             display: "flex",
             alignItems: "center",
-            padding: "0 280px 0 40px",
+            padding: "0 80px 0 80px",
             backgroundColor: "#2b2d31",
             borderBottom: "2px solid rgba(255, 255, 255, 0.08)",
             boxShadow: "0 4px 20px rgba(0, 0, 0, 0.35)",
@@ -86,7 +86,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
           {/* Hashtag Icon */}
           <span
             style={{
-              fontSize: "64px",
+              fontSize: "68px",
               fontWeight: 700,
               color: "#80848e",
               marginRight: "20px",
@@ -100,7 +100,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
           <div style={{ display: "flex", flexDirection: "column", flex: 1 }}>
             <span
               style={{
-                fontSize: "56px",
+                fontSize: "60px",
                 fontWeight: 700,
                 color: "#f2f3f5",
                 letterSpacing: "-0.5px",
@@ -110,7 +110,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
             </span>
             <span
               style={{
-                fontSize: "28px",
+                fontSize: "30px",
                 color: "#949ba4",
                 fontWeight: 500,
                 marginTop: "-2px",
@@ -162,8 +162,8 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
             display: "flex",
             flexDirection: "column",
             justifyContent: "flex-end",
-            padding: "50px 280px 50px 40px", // 280px right padding keeps text clear of YouTube Shorts UI buttons
-            gap: "42px",
+            padding: "50px 100px 50px 80px", // 80px left safe margin, 100px right margin eliminating dead space
+            gap: "46px",
             overflow: "hidden",
           }}
         >
@@ -189,12 +189,12 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                 }}
               >
                 {/* Avatar with authentic Discord online badge */}
-                <div style={{ position: "relative", width: "136px", height: "136px", flexShrink: 0 }}>
+                <div style={{ position: "relative", width: "152px", height: "152px", flexShrink: 0 }}>
                   <img
                     src={msg.avatarUrl}
                     style={{
-                      width: "136px",
-                      height: "136px",
+                      width: "152px",
+                      height: "152px",
                       borderRadius: "50%",
                       objectFit: "cover",
                       backgroundColor: "#2b2d31",
@@ -207,8 +207,8 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                       position: "absolute",
                       bottom: "-2px",
                       right: "-2px",
-                      width: "38px",
-                      height: "38px",
+                      width: "42px",
+                      height: "42px",
                       backgroundColor: "#23a55a",
                       borderRadius: "50%",
                       border: "6px solid #1e1f22",
@@ -219,12 +219,12 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                 {/* Message Body */}
                 <div style={{ display: "flex", flexDirection: "column", marginTop: "2px", flex: 1 }}>
                   {/* Author Name and Timestamp */}
-                  <div style={{ display: "flex", alignItems: "baseline", gap: "18px" }}>
+                  <div style={{ display: "flex", alignItems: "baseline", gap: "20px" }}>
                     <span
                       style={{
                         color: msg.color || "#f2f3f5",
                         fontWeight: 700,
-                        fontSize: "48px",
+                        fontSize: "58px",
                         letterSpacing: "0.2px",
                       }}
                     >
@@ -233,7 +233,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                     <span
                       style={{
                         color: "#949ba4",
-                        fontSize: "32px",
+                        fontSize: "38px",
                         fontWeight: 500,
                       }}
                     >
@@ -241,16 +241,16 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                     </span>
                   </div>
 
-                  {/* Message Content */}
+                  {/* Message Content - Large, bold and punchy for mobile Shorts */}
                   <div
                     style={{
-                      color: "#dbdee1",
-                      fontSize: "48px",
-                      marginTop: "6px",
-                      lineHeight: "1.32",
-                      letterSpacing: "0.1px",
+                      color: "#f2f3f5",
+                      fontSize: "66px",
+                      marginTop: "8px",
+                      lineHeight: "1.36",
+                      letterSpacing: "0.2px",
                       wordBreak: "break-word",
-                      fontWeight: 400,
+                      fontWeight: 500,
                       textShadow: "0 1px 3px rgba(0,0,0,0.5)",
                     }}
                   >
@@ -262,10 +262,10 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                     <div
                       style={{
                         marginTop: "20px",
-                        borderRadius: "24px",
+                        borderRadius: "28px",
                         overflow: "hidden",
                         border: "3px solid rgba(255, 255, 255, 0.12)",
-                        maxWidth: "820px",
+                        maxWidth: "1000px",
                         boxShadow: "0 12px 40px rgba(0,0,0,0.7)",
                         backgroundColor: "#2b2d31",
                       }}
@@ -278,7 +278,7 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
                         }
                         style={{
                           width: "100%",
-                          maxHeight: "560px",
+                          maxHeight: "680px",
                           objectFit: "cover",
                           display: "block",
                         }}
@@ -294,11 +294,11 @@ export const DiscordChat: React.FC<{ script: MessageData[] }> = ({ script }) => 
         {/* Bottom Input Area: Authentic Discord Mobile Bar */}
         <div
           style={{
-            height: "240px",
+            height: "260px",
             flexShrink: 0,
             display: "flex",
             alignItems: "center",
-            padding: "0 280px 40px 40px",
+            padding: "0 100px 45px 80px",
             gap: "28px",
             backgroundColor: "#2b2d31",
             borderTop: "2px solid rgba(255, 255, 255, 0.06)",
