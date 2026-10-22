@@ -5923,5 +5923,207 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=rwDAogRZLV4"
+  },
+  {
+    "date": "2026-10-22T21:20:04.444Z",
+    "title": "When Beluga's 'Bank' Texted Him 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Fraud Dept. Bob",
+      "avatarPrompt": "Discord profile avatar of an anxious-looking cat wearing a cheap suit and a smirking expression, behind a blurry office desk, meme style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "actual_safety_pin",
+      "imagePrompt": "Close-up photo of a small, shiny metal safety pin on a white background, meme photo style"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Fraud Dept. Bob",
+        "content": "URGENT: Suspicious activity detected on your account.",
+        "time": "Today at 2:00 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Fraud Dept. Bob",
+        "content": "Reply 'YES' to verify identity.",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "Is this real?",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "Beluga, don't!",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 5,
+        "author": "Fraud Dept. Bob",
+        "content": "YES. This is your bank.",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "Okay. YES.",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "BRO WHAT",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 8,
+        "author": "Fraud Dept. Bob",
+        "content": "Excellent. To resolve this, we need your 4-digit PIN.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "My PIN?",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 10,
+        "author": "Fraud Dept. Bob",
+        "content": "YES. Your Personal Identification Number.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "Oh, a pin!",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "Got one right here.",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "NO BELUGA",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 14,
+        "author": "Fraud Dept. Bob",
+        "content": "...",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Fraud Dept. Bob",
+        "content": "That is a... safety pin.",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "Yeah. It's metal.",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 17,
+        "author": "Fraud Dept. Bob",
+        "content": "I meant your BANK PIN.",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "Oh, those.",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "You want a bowling pin?",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "STOP IT",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 21,
+        "author": "Fraud Dept. Bob",
+        "content": "NO! Just give me your 4-digit code!",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "Okay. It's 1-2-3-4.",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "NOOOOOOOOO",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 24,
+        "author": "Hecker",
+        "content": "  That's Beluga's Netflix code too.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 25,
+        "author": "Fraud Dept. Bob",
+        "content": "You... you actually gave it.",
+        "time": "Today at 2:14 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 26,
+        "author": "Beluga",
+        "content": "What now?",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 27,
+        "author": "Fraud Dept. Bob",
+        "content": "I'm calling my mom.",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "characters/fraud_dept__bob.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Skittle",
+        "content": "HE'S CRYING",
+        "time": "Today at 2:15 PM"
+      },
+      {
+        "id": 29,
+        "author": "Hecker",
+        "content": "  Scammer failed successfully.",
+        "time": "Today at 2:16 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=Y-M5ui8bO34"
   }
 ]
