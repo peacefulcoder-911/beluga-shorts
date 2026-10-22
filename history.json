@@ -5001,5 +5001,228 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=EwVuR9L0xV0"
+  },
+  {
+    "date": "2026-10-22T07:49:32.218Z",
+    "title": "When Beluga's 'IRS Agent' Was Sus 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Agent Taxington",
+      "avatarPrompt": "Discord profile avatar of a stern cat wearing a suit and glasses, holding a clipboard, looking very official but slightly meme-like"
+    },
+    "attachment": {
+      "messageIndex": 11,
+      "slug": "apple_giftcard_real",
+      "imagePrompt": "A single fresh red apple with a large bite taken out of it resting on an office desk, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Agent Taxington",
+        "content": "BELUGA. This is the IRS.",
+        "time": "Today at 3:15 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "oh hi",
+        "time": "Today at 3:15 PM"
+      },
+      {
+        "id": 3,
+        "author": "Agent Taxington",
+        "content": "You owe $5000 in overdue taxes.",
+        "time": "Today at 3:16 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "BELUGA WHAT",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "i do?",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 6,
+        "author": "Agent Taxington",
+        "content": "Failure to comply means arrest.",
+        "time": "Today at 3:17 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "arrest me?",
+        "time": "Today at 3:17 PM"
+      },
+      {
+        "id": 8,
+        "author": "Agent Taxington",
+        "content": "Pay NOW to avoid arrest.",
+        "time": "Today at 3:17 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "how pay?",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 10,
+        "author": "Agent Taxington",
+        "content": "We accept Apple Gift Cards.",
+        "time": "Today at 3:18 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Skittle",
+        "content": "IT'S A SCAM BELUGA",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "like this?",
+        "time": "Today at 3:19 PM"
+      },
+      {
+        "id": 13,
+        "author": "Agent Taxington",
+        "content": "WHAT IS THAT.",
+        "time": "Today at 3:19 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "an apple. bit taken.",
+        "time": "Today at 3:19 PM"
+      },
+      {
+        "id": 15,
+        "author": "Agent Taxington",
+        "content": "NOT A REAL APPLE.",
+        "time": "Today at 3:20 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Agent Taxington",
+        "content": "DIGITAL CODE. FROM A STORE.",
+        "time": "Today at 3:20 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "ohhhh",
+        "time": "Today at 3:20 PM"
+      },
+      {
+        "id": 18,
+        "author": "Hecker",
+        "content": "LMAO",
+        "time": "Today at 3:21 PM"
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "BELUGA NO",
+        "time": "Today at 3:21 PM"
+      },
+      {
+        "id": 20,
+        "author": "Agent Taxington",
+        "content": "Go to store. Buy $5000.",
+        "time": "Today at 3:21 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "too expensive",
+        "time": "Today at 3:22 PM"
+      },
+      {
+        "id": 22,
+        "author": "Agent Taxington",
+        "content": "THEN PAY WITH AMAZON.",
+        "time": "Today at 3:22 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "i have amazon.",
+        "time": "Today at 3:22 PM"
+      },
+      {
+        "id": 24,
+        "author": "Agent Taxington",
+        "content": "Good. Send codes now.",
+        "time": "Today at 3:23 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "sent",
+        "time": "Today at 3:23 PM"
+      },
+      {
+        "id": 26,
+        "author": "Agent Taxington",
+        "content": "...",
+        "time": "Today at 3:23 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Agent Taxington",
+        "content": "PHOTO OF AMAZON RIVER.",
+        "time": "Today at 3:24 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Beluga",
+        "content": "that's amazon right?",
+        "time": "Today at 3:24 PM"
+      },
+      {
+        "id": 29,
+        "author": "Skittle",
+        "content": "HE ACTUALLY DID IT",
+        "time": "Today at 3:24 PM"
+      },
+      {
+        "id": 30,
+        "author": "Hecker",
+        "content": "My turn.",
+        "time": "Today at 3:25 PM"
+      },
+      {
+        "id": 31,
+        "author": "Agent Taxington",
+        "content": "I QUIT THIS JOB.",
+        "time": "Today at 3:25 PM",
+        "avatarUrl": "characters/agent_taxington.jpg"
+      },
+      {
+        "id": 32,
+        "author": "Mom",
+        "content": "BELUGA WHAT DID YOU DO",
+        "time": "Today at 3:25 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=yFpmnQYfW7I"
   }
 ]
