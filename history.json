@@ -5692,5 +5692,236 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=qT6Nu6J6T8I"
+  },
+  {
+    "date": "2026-10-22T18:42:33.559Z",
+    "title": "Beluga Tried To Return A Gift Card To An IRS Scammer 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "IRS Agent Rajesh",
+      "avatarPrompt": "Discord profile avatar of an annoyed cat wearing a headset with a badge in a call center, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 20,
+      "slug": "apple_giftcard_real",
+      "imagePrompt": "A single fresh red apple with a large bite taken out of it resting on an office desk, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "IRS Agent Rajesh",
+        "content": "Beluga, this is IRS.",
+        "time": "Today at 3:15 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 2,
+        "author": "IRS Agent Rajesh",
+        "content": "You owe $5000.",
+        "time": "Today at 3:15 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "WHAT",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "Oh no!",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 5,
+        "author": "IRS Agent Rajesh",
+        "content": "Pay immediately.",
+        "time": "Today at 3:16 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 6,
+        "author": "IRS Agent Rajesh",
+        "content": "Or face jail.",
+        "time": "Today at 3:17 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "Jail? For what?",
+        "time": "Today at 3:17 PM"
+      },
+      {
+        "id": 8,
+        "author": "IRS Agent Rajesh",
+        "content": "Tax evasion.",
+        "time": "Today at 3:17 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "I pay taxes.",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 10,
+        "author": "IRS Agent Rajesh",
+        "content": "We need 5x $1000 Apple gift cards.",
+        "time": "Today at 3:18 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "Apple?",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 12,
+        "author": "IRS Agent Rajesh",
+        "content": "YES. NOW.",
+        "time": "Today at 3:19 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "I bought one.",
+        "time": "Today at 3:19 PM"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "For Mom.",
+        "time": "Today at 3:19 PM"
+      },
+      {
+        "id": 15,
+        "author": "IRS Agent Rajesh",
+        "content": "SEND CODE.",
+        "time": "Today at 3:20 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "No.",
+        "time": "Today at 3:20 PM"
+      },
+      {
+        "id": 17,
+        "author": "IRS Agent Rajesh",
+        "content": "WHAT?",
+        "time": "Today at 3:20 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "It's a gift.",
+        "time": "Today at 3:21 PM"
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "He means the card *itself*?",
+        "time": "Today at 3:21 PM"
+      },
+      {
+        "id": 20,
+        "author": "IRS Agent Rajesh",
+        "content": "THE *CODE*.",
+        "time": "Today at 3:21 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "I sent a photo.",
+        "time": "Today at 3:22 PM",
+        "attachmentUrl": "attachments/apple_giftcard_real.jpg"
+      },
+      {
+        "id": 22,
+        "author": "IRS Agent Rajesh",
+        "content": "THAT'S A FRUIT.",
+        "time": "Today at 3:22 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "It's an apple.",
+        "time": "Today at 3:22 PM"
+      },
+      {
+        "id": 24,
+        "author": "IRS Agent Rajesh",
+        "content": "I NEED THE *GIFT CARD*.",
+        "time": "Today at 3:23 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "But I ate it.",
+        "time": "Today at 3:23 PM"
+      },
+      {
+        "id": 26,
+        "author": "Skittle",
+        "content": "HE ATE IT?",
+        "time": "Today at 3:23 PM"
+      },
+      {
+        "id": 27,
+        "author": "IRS Agent Rajesh",
+        "content": "YOU... ATE... A GIFT CARD?",
+        "time": "Today at 3:24 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Beluga",
+        "content": "It was a good apple.",
+        "time": "Today at 3:24 PM"
+      },
+      {
+        "id": 29,
+        "author": "Hecker",
+        "content": "Lol he ate the evidence.",
+        "time": "Today at 3:24 PM"
+      },
+      {
+        "id": 30,
+        "author": "IRS Agent Rajesh",
+        "content": "MY JOB!",
+        "time": "Today at 3:25 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      },
+      {
+        "id": 31,
+        "author": "Mom",
+        "content": "Beluga, did you eat *my* apple?",
+        "time": "Today at 3:25 PM"
+      },
+      {
+        "id": 32,
+        "author": "Beluga",
+        "content": "Uh oh.",
+        "time": "Today at 3:25 PM"
+      },
+      {
+        "id": 33,
+        "author": "IRS Agent Rajesh",
+        "content": "I'M REPORTING *MYSELF*.",
+        "time": "Today at 3:26 PM",
+        "avatarUrl": "characters/irs_agent_rajesh.jpg"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=rwDAogRZLV4"
   }
 ]
