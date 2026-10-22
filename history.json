@@ -5458,5 +5458,239 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=fF55JWQHAws"
+  },
+  {
+    "date": "2026-10-22T15:46:17.390Z",
+    "title": "When A 'Tax Auditor' Met Beluga 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "IRS Agent Chad",
+      "avatarPrompt": "Discord profile avatar of a frustrated cat wearing a cheap suit and a fedora, with a fake badge, looking stressed, meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "steam_giftcards_literal",
+      "imagePrompt": "A literal interpretation of 'Steam gift cards': a cup of hot steaming coffee next to a stack of playing cards on a desk, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "IRS Agent Chad",
+        "content": "BELUGA. You owe taxes.",
+        "time": "Today at 3:15 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "...me?",
+        "time": "Today at 3:15 PM"
+      },
+      {
+        "id": 3,
+        "author": "IRS Agent Chad",
+        "content": "YES. $5,000. NOW.",
+        "time": "Today at 3:16 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "oh. okay.",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 5,
+        "author": "Skittle",
+        "content": "BRO WHAT",
+        "time": "Today at 3:16 PM"
+      },
+      {
+        "id": 6,
+        "author": "IRS Agent Chad",
+        "content": "Or face ARREST.",
+        "time": "Today at 3:17 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "no arrest plz",
+        "time": "Today at 3:17 PM"
+      },
+      {
+        "id": 8,
+        "author": "IRS Agent Chad",
+        "content": "Get me five $1000 Steam Gift Cards.",
+        "time": "Today at 3:17 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "steam?",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "HE WANTS GIFT CARDS BELUGA.",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "i have steam.",
+        "time": "Today at 3:18 PM"
+      },
+      {
+        "id": 12,
+        "author": "IRS Agent Chad",
+        "content": "GOOD. Send codes. NOW.",
+        "time": "Today at 3:19 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "[Image attachment: steam_giftcards_literal]",
+        "time": "Today at 3:19 PM"
+      },
+      {
+        "id": 14,
+        "author": "IRS Agent Chad",
+        "content": "WHAT IS THIS.",
+        "time": "Today at 3:19 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "my steam cards.",
+        "time": "Today at 3:20 PM"
+      },
+      {
+        "id": 16,
+        "author": "IRS Agent Chad",
+        "content": "THIS IS A PHOTO OF STEAM. AND PLAYING CARDS.",
+        "time": "Today at 3:20 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "yes.",
+        "time": "Today at 3:20 PM"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "OH MY GOSH.",
+        "time": "Today at 3:21 PM"
+      },
+      {
+        "id": 19,
+        "author": "IRS Agent Chad",
+        "content": "YOU THINK THIS IS FUNNY?!",
+        "time": "Today at 3:21 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "they're fresh.",
+        "time": "Today at 3:21 PM"
+      },
+      {
+        "id": 21,
+        "author": "Hecker",
+        "content": "IP is 192.168.1.1. Backend access granted.",
+        "time": "Today at 3:22 PM"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "who asked",
+        "time": "Today at 3:22 PM"
+      },
+      {
+        "id": 23,
+        "author": "IRS Agent Chad",
+        "content": "HE'S HACKING ME!",
+        "time": "Today at 3:22 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "hacker?",
+        "time": "Today at 3:23 PM"
+      },
+      {
+        "id": 25,
+        "author": "IRS Agent Chad",
+        "content": "MY BANK ACCOUNT IS EMPTY!",
+        "time": "Today at 3:23 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 26,
+        "author": "Skittle",
+        "content": "HE SAID IP.",
+        "time": "Today at 3:23 PM"
+      },
+      {
+        "id": 27,
+        "author": "Beluga",
+        "content": "oh.",
+        "time": "Today at 3:24 PM"
+      },
+      {
+        "id": 28,
+        "author": "IRS Agent Chad",
+        "content": "YOU RUINED MY LIFE!",
+        "time": "Today at 3:24 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 29,
+        "author": "Beluga",
+        "content": "taxes are paid?",
+        "time": "Today at 3:24 PM"
+      },
+      {
+        "id": 30,
+        "author": "IRS Agent Chad",
+        "content": "NO. I AM THE SCAMMER.",
+        "time": "Today at 3:25 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 31,
+        "author": "Beluga",
+        "content": "no u not.",
+        "time": "Today at 3:25 PM"
+      },
+      {
+        "id": 32,
+        "author": "IRS Agent Chad",
+        "content": "I HATE MY JOB.",
+        "time": "Today at 3:25 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 33,
+        "author": "Skittle",
+        "content": "crisis averted.",
+        "time": "Today at 3:26 PM"
+      },
+      {
+        "id": 34,
+        "author": "Beluga",
+        "content": "you're welcome.",
+        "time": "Today at 3:26 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=qT6Nu6J6T8I"
   }
 ]
