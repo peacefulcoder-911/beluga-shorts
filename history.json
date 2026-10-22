@@ -5224,5 +5224,239 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=yFpmnQYfW7I"
+  },
+  {
+    "date": "2026-10-22T13:05:58.773Z",
+    "title": "When A Scammer Demands Beluga's 'Steam Cards' 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Scam Lord Vishnu",
+      "avatarPrompt": "Discord profile avatar of a sophisticated-looking cat in a headset, slightly smirking, with a blurred background of a busy call center, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 10,
+      "slug": "steamy_shower",
+      "imagePrompt": "A very steamy shower with blurred outlines, looking like a hot bathroom, funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Scam Lord Vishnu",
+        "content": "Greetings, this is the IRS.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Scam Lord Vishnu",
+        "content": "You owe taxes.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "WHAT",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 4,
+        "author": "Scam Lord Vishnu",
+        "content": "Send us $500 in Steam cards.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "STEAM?",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "BRO DO NOT SEND THEM ANYTHING",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 7,
+        "author": "Scam Lord Vishnu",
+        "content": "Immediately.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "But... why steam?",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 9,
+        "author": "Scam Lord Vishnu",
+        "content": "For *processing*.",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "ok",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "(Image attached: steamy_shower.png)",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 12,
+        "author": "Scam Lord Vishnu",
+        "content": "WHAT IS THIS",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "AHAHAHAH",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "Steam?",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 15,
+        "author": "Scam Lord Vishnu",
+        "content": "NOT THIS STEAM",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Hecker",
+        "content": "you sent a picture of a hot shower lmao",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "it was very steamy",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 18,
+        "author": "Scam Lord Vishnu",
+        "content": "I NEED $500 IN GIFT CARDS",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "i dont have that",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 20,
+        "author": "Scam Lord Vishnu",
+        "content": "Your account will be FROZEN.",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "my freezer is broken",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "HE MEANS YOUR MONEY",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 23,
+        "author": "Scam Lord Vishnu",
+        "content": "YES YOUR MONEY",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "oh.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "my bank says -$200.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 26,
+        "author": "Scam Lord Vishnu",
+        "content": "NEGATIVE!?",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Mom",
+        "content": "BELUGA YOU OWE ME $200",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 28,
+        "author": "Beluga",
+        "content": "OH THATS IT",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 29,
+        "author": "Scam Lord Vishnu",
+        "content": "I am ending this call.",
+        "time": "Today at 2:14 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 30,
+        "author": "Hecker",
+        "content": "L bozo",
+        "time": "Today at 2:15 PM"
+      },
+      {
+        "id": 31,
+        "author": "Scam Lord Vishnu",
+        "content": "My commission...",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "characters/scam_lord_vishnu.jpg"
+      },
+      {
+        "id": 32,
+        "author": "Beluga",
+        "content": "so no steam?",
+        "time": "Today at 2:15 PM"
+      },
+      {
+        "id": 33,
+        "author": "Skittle",
+        "content": "BRO I CANT BELIEVE YOU",
+        "time": "Today at 2:16 PM"
+      },
+      {
+        "id": 34,
+        "author": "Mom",
+        "content": "YOU ARE GROUNDED.",
+        "time": "Today at 2:16 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=fF55JWQHAws"
   }
 ]
