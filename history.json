@@ -6125,5 +6125,216 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=Y-M5ui8bO34"
+  },
+  {
+    "date": "2026-10-22T23:30:49.047Z",
+    "title": "My Bank Account Just Disappeared. Thanks, Beluga. 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Bank Rep. Chad",
+      "avatarPrompt": "Discord profile avatar of an anthropomorphic cat wearing a blue bank uniform and a nametag 'Chad', looking stressed and exasperated, meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 14,
+      "slug": "piggy_bank_destroyed",
+      "imagePrompt": "A ceramic piggy bank, cartoonish pink pig, shattered into several pieces on a table with a few coins scattered around, with 'MY SAVINGS' crudely written on it with a marker. Funny meme photo."
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Bank Rep. Chad",
+        "content": "Good afternoon, this is Chad from *Elite Bank* Fraud Prevention.",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Bank Rep. Chad",
+        "content": "We've detected suspicious activity on your account.",
+        "time": "Today at 2:02 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "WHO",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 4,
+        "author": "Bank Rep. Chad",
+        "content": "Your account has been flagged for unusual transfers.",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "transfers?",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 6,
+        "author": "Bank Rep. Chad",
+        "content": "Yes. Several large sums to an unknown entity.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "oh. i know him",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "BELUGA NO",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 9,
+        "author": "Bank Rep. Chad",
+        "content": "Who is 'him'?",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "MY FRIEND",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 11,
+        "author": "Bank Rep. Chad",
+        "content": "Sir, this is a serious matter. We need to verify.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Bank Rep. Chad",
+        "content": "Could you provide details of your savings?",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "OK",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "HE'S A SCAMMER",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "here",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 16,
+        "author": "Bank Rep. Chad",
+        "content": "I... what is this?",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "my bank",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 18,
+        "author": "Bank Rep. Chad",
+        "content": "A shattered ceramic pig?",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "yes. i broke it",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 20,
+        "author": "Bank Rep. Chad",
+        "content": "Why would you do that?",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "u said transfer",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "OMG",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 23,
+        "author": "Bank Rep. Chad",
+        "content": "You smashed your piggy bank for me?!",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "yeah. now it's in the bin.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 25,
+        "author": "Bank Rep. Chad",
+        "content": "NOOOOOO",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 26,
+        "author": "Bank Rep. Chad",
+        "content": "My commission!",
+        "time": "Today at 2:14 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Skittle",
+        "content": "COMMISSION?",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 28,
+        "author": "Hecker",
+        "content": "Scammer confirmed. IP address traced to 'Elite Bank' which is actually a basement in Idaho.",
+        "time": "Today at 2:15 PM"
+      },
+      {
+        "id": 29,
+        "author": "Bank Rep. Chad",
+        "content": "Dang it, Hecker!",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "characters/bank_rep__chad.jpg"
+      },
+      {
+        "id": 30,
+        "author": "Beluga",
+        "content": "who's hecker?",
+        "time": "Today at 2:16 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=34HMCffYg54"
   }
 ]
