@@ -6336,5 +6336,220 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=34HMCffYg54"
+  },
+  {
+    "date": "2026-10-23T07:48:31.211Z",
+    "title": "Beluga Paid His 'Taxes' With Dogecoin 😭",
+    "archetype": "SCAM REVENGE",
+    "newCharacter": {
+      "name": "IRS Agent Chad",
+      "avatarPrompt": "Discord profile avatar of a smug cat in a cheap suit and sunglasses, holding a fake badge, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 14,
+      "slug": "seed_packet",
+      "imagePrompt": "A close-up photo of a colorful packet of generic garden seeds, like \"Carrot Seeds\" or \"Tomato Seeds\", funny meme photo"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "IRS Agent Chad",
+        "content": "BELUGA. THIS IS THE IRS.",
+        "time": "Today at 2:30 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 2,
+        "author": "IRS Agent Chad",
+        "content": "YOUR TAXES ARE PENDING.",
+        "time": "Today at 2:30 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "oh",
+        "time": "Today at 2:31 PM"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "what taxes",
+        "time": "Today at 2:31 PM"
+      },
+      {
+        "id": 5,
+        "author": "IRS Agent Chad",
+        "content": "THE TAXES. YOU OWE $5,000.",
+        "time": "Today at 2:32 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "WHAT",
+        "time": "Today at 2:32 PM"
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "BELUGA YOU DID YOUR TAXES RIGHT?",
+        "time": "Today at 2:32 PM"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "uhh",
+        "time": "Today at 2:33 PM"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "i paid with dogecoin",
+        "time": "Today at 2:33 PM"
+      },
+      {
+        "id": 10,
+        "author": "IRS Agent Chad",
+        "content": "DOGECOIN IS NOT A CURRENCY.",
+        "time": "Today at 2:34 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 11,
+        "author": "IRS Agent Chad",
+        "content": "WE NEED YOUR CRYPTO WALLET.",
+        "time": "Today at 2:34 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 12,
+        "author": "IRS Agent Chad",
+        "content": "AND THE SEED PHRASE. IMMEDIATELY.",
+        "time": "Today at 2:34 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "oh",
+        "time": "Today at 2:35 PM"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "the seeds",
+        "time": "Today at 2:35 PM"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "ok",
+        "time": "Today at 2:35 PM",
+        "attachmentUrl": "attachments/seed_packet.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "BELUGA WHAT IS THAT",
+        "time": "Today at 2:36 PM"
+      },
+      {
+        "id": 17,
+        "author": "IRS Agent Chad",
+        "content": "WHAT IS THIS.",
+        "time": "Today at 2:36 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 18,
+        "author": "IRS Agent Chad",
+        "content": "ARE THESE... GARDEN SEEDS?!",
+        "time": "Today at 2:36 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "yeah",
+        "time": "Today at 2:37 PM"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "my favorite kind",
+        "time": "Today at 2:37 PM"
+      },
+      {
+        "id": 21,
+        "author": "Hecker",
+        "content": "WRONG, TAX BOY.",
+        "time": "Today at 2:38 PM"
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "you're getting tracked.",
+        "time": "Today at 2:38 PM"
+      },
+      {
+        "id": 23,
+        "author": "IRS Agent Chad",
+        "content": "HECKER NO!",
+        "time": "Today at 2:38 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 24,
+        "author": "IRS Agent Chad",
+        "content": "WAIT YOU TRACKED ME?!",
+        "time": "Today at 2:39 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "oh no",
+        "time": "Today at 2:39 PM"
+      },
+      {
+        "id": 26,
+        "author": "IRS Agent Chad",
+        "content": "I'M A FATHER OF THREE!",
+        "time": "Today at 2:39 PM",
+        "avatarUrl": "characters/irs_agent_chad.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Skittle",
+        "content": "Beluga you broke him.",
+        "time": "Today at 2:40 PM"
+      },
+      {
+        "id": 28,
+        "author": "Hecker",
+        "content": "his router is now a toaster.",
+        "time": "Today at 2:40 PM"
+      },
+      {
+        "id": 29,
+        "author": "Beluga",
+        "content": "oops",
+        "time": "Today at 2:41 PM"
+      },
+      {
+        "id": 30,
+        "author": "Mom",
+        "content": "BELUGA I NEED MY INTERNET.",
+        "time": "Today at 2:41 PM"
+      },
+      {
+        "id": 31,
+        "author": "Beluga",
+        "content": "sorry mom",
+        "time": "Today at 2:42 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=Z4C0d0RsjZg"
   }
 ]
