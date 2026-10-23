@@ -6753,5 +6753,241 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=dQlBUrOaNh8"
+  },
+  {
+    "date": "2026-10-23T15:38:23.239Z",
+    "title": "Beluga Tried To Pay His 'Taxes' With A House 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "IRS Auditor Reginald",
+      "avatarPrompt": "Discord profile avatar of a very stressed, slightly balding cat in a cheap suit, juggling papers, funny meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 17,
+      "slug": "house_deed_drawing",
+      "imagePrompt": "A blurry smartphone photo of a crudely drawn house with crayons on a piece of paper labeled 'OFFICIAL DEED' in messy handwriting, funny meme style"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "IRS Auditor Reginald",
+        "content": "Greetings, taxpayer.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 2,
+        "author": "IRS Auditor Reginald",
+        "content": "You owe back taxes.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 3,
+        "author": "IRS Auditor Reginald",
+        "content": "$50,000. Immediately.",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "$50K?! WHAT",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "I'm 12.",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 6,
+        "author": "IRS Auditor Reginald",
+        "content": "Age is irrelevant.",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 7,
+        "author": "IRS Auditor Reginald",
+        "content": "We require assets.",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "Uh oh.",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 9,
+        "author": "Hecker",
+        "content": "This is a scam.",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "A scam?",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 11,
+        "author": "IRS Auditor Reginald",
+        "content": "Silence, cat.",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 12,
+        "author": "IRS Auditor Reginald",
+        "content": "Send us proof of assets.",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "OH. ASSETS.",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "I have a house.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 15,
+        "author": "Skittle",
+        "content": "BELUGA NO.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 16,
+        "author": "IRS Auditor Reginald",
+        "content": "A HOUSE?",
+        "time": "Today at 2:14 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 17,
+        "author": "IRS Auditor Reginald",
+        "content": "Proof. NOW.",
+        "time": "Today at 2:14 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "ATTACHMENT: house_deed_drawing.png",
+        "time": "Today at 2:15 PM",
+        "attachmentUrl": "attachments/house_deed_drawing.jpg"
+      },
+      {
+        "id": 19,
+        "author": "IRS Auditor Reginald",
+        "content": "WHAT IS THIS?!",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "MY HOUSE DEED.",
+        "time": "Today at 2:16 PM"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "I drew it myself.",
+        "time": "Today at 2:16 PM"
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "He's serious.",
+        "time": "Today at 2:17 PM"
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "HE ACTUALLY DID.",
+        "time": "Today at 2:17 PM"
+      },
+      {
+        "id": 24,
+        "author": "IRS Auditor Reginald",
+        "content": "This is NOT proof.",
+        "time": "Today at 2:18 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 25,
+        "author": "IRS Auditor Reginald",
+        "content": "This is... crayon.",
+        "time": "Today at 2:18 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 26,
+        "author": "Beluga",
+        "content": "BEST HOUSE EVER.",
+        "time": "Today at 2:19 PM"
+      },
+      {
+        "id": 27,
+        "author": "IRS Auditor Reginald",
+        "content": "I QUIT.",
+        "time": "Today at 2:19 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 28,
+        "author": "IRS Auditor Reginald",
+        "content": "My life is over.",
+        "time": "Today at 2:19 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 29,
+        "author": "Mom",
+        "content": "BELUGA.",
+        "time": "Today at 2:20 PM"
+      },
+      {
+        "id": 30,
+        "author": "Mom",
+        "content": "WHO OWNS THAT HOUSE?",
+        "time": "Today at 2:20 PM"
+      },
+      {
+        "id": 31,
+        "author": "Beluga",
+        "content": "I DO, MOM.",
+        "time": "Today at 2:21 PM"
+      },
+      {
+        "id": 32,
+        "author": "Mom",
+        "content": "WE LIVE IN IT.",
+        "time": "Today at 2:21 PM"
+      },
+      {
+        "id": 33,
+        "author": "Beluga",
+        "content": "OUR HOUSE.",
+        "time": "Today at 2:22 PM"
+      },
+      {
+        "id": 34,
+        "author": "Skittle",
+        "content": "OH NO.",
+        "time": "Today at 2:22 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=drskt0rMig0"
   }
 ]
