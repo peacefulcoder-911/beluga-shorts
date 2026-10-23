@@ -6551,5 +6551,207 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=Z4C0d0RsjZg"
+  },
+  {
+    "date": "2026-10-23T12:44:57.161Z",
+    "title": "When A 'Discord Security Agent' Tries To Scam Beluga 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Agent Scambot",
+      "avatarPrompt": "Discord profile avatar of an annoyed cat wearing a generic call center headset, slightly pixelated, meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 11,
+      "slug": "catfood_qr_code",
+      "imagePrompt": "A very blurry, low-resolution screenshot of a QR code from the back of a generic cat food can, slightly crumpled, meme style"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "hey",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 2,
+        "author": "Agent Scambot",
+        "content": "Hello. This is Discord Security.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Skittle",
+        "content": "WHAT",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 4,
+        "author": "Agent Scambot",
+        "content": "We detected suspicious activity.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Agent Scambot",
+        "content": "Your account is compromised.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "oh no",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 7,
+        "author": "Agent Scambot",
+        "content": "Need your login details to verify.",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "BELUGA DON'T",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "ok",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "how",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 11,
+        "author": "Agent Scambot",
+        "content": "Send me your secure access code.",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "[ATTACHMENT]",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "there",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "BRO WHAT IS THAT",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "Is that a QR code?",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 16,
+        "author": "Agent Scambot",
+        "content": "WHAT IS THIS.",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Agent Scambot",
+        "content": "This is NOT an access code.",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "it scanned",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "it works",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 20,
+        "author": "Agent Scambot",
+        "content": "My phone just logged into... PURRFECT PALATE APP?",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Skittle",
+        "content": "NO WAY",
+        "time": "Today at 2:15 PM"
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "He just bought cat food.",
+        "time": "Today at 2:16 PM"
+      },
+      {
+        "id": 23,
+        "author": "Agent Scambot",
+        "content": "My card was charged.",
+        "time": "Today at 2:16 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Agent Scambot",
+        "content": "FOR 500 CANS OF TUNA FLAKES.",
+        "time": "Today at 2:17 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "you're welcome",
+        "time": "Today at 2:17 PM"
+      },
+      {
+        "id": 26,
+        "author": "Skittle",
+        "content": "BELUGA WHY",
+        "time": "Today at 2:18 PM"
+      },
+      {
+        "id": 27,
+        "author": "Agent Scambot",
+        "content": "I HATE TUNA FLAKES.",
+        "time": "Today at 2:18 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Hecker",
+        "content": "Scammer got scammed.",
+        "time": "Today at 2:19 PM"
+      },
+      {
+        "id": 29,
+        "author": "Beluga",
+        "content": "free food",
+        "time": "Today at 2:19 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=dQlBUrOaNh8"
   }
 ]
