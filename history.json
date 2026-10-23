@@ -6989,5 +6989,221 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=drskt0rMig0"
+  },
+  {
+    "date": "2026-10-23T21:08:43.956Z",
+    "title": "When A Tech Support Scammer Asks Beluga For 'Gift Cards' 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Tech Support Agent Kevin",
+      "avatarPrompt": "Discord profile avatar of an overly confident cat wearing a headset with a suspicious grin, meme cat style. Background is a cluttered call center desk."
+    },
+    "attachment": {
+      "messageIndex": 14,
+      "slug": "real_apple_gift",
+      "imagePrompt": "A single shiny red apple with a small red ribbon tied around its stem, presented on a wooden table like a simple gift. Funny meme photo style."
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Tech Support Agent Kevin",
+        "content": "ALERT: Your computer has critical virus.",
+        "time": "Today at 2:00 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Tech Support Agent Kevin",
+        "content": "Immediate action required.",
+        "time": "Today at 2:00 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "Oh no.",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "WHAT DID YOU CLICK?!",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 5,
+        "author": "Tech Support Agent Kevin",
+        "content": "I am from Microsoft.",
+        "time": "Today at 2:02 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "The window people?",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 7,
+        "author": "Tech Support Agent Kevin",
+        "content": "Yes. Very serious. Need access.",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "DON'T TRUST HIM!",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 9,
+        "author": "Tech Support Agent Kevin",
+        "content": "We require payment for antivirus.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Tech Support Agent Kevin",
+        "content": "Gift cards.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "Gift cards?",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 12,
+        "author": "Tech Support Agent Kevin",
+        "content": "Yes. Apple or Steam.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "Okay. One moment.",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "BELUGA NO!",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "Here.",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 16,
+        "author": "Tech Support Agent Kevin",
+        "content": "...Is that a fruit?",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "It's an Apple. For your gift.",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 18,
+        "author": "Tech Support Agent Kevin",
+        "content": "NOT A GIFT CARD!",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "Oh. You want a card *with* the apple?",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 20,
+        "author": "Tech Support Agent Kevin",
+        "content": "NOOOOO!",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Hecker",
+        "content": "His IP is in Bangalore.",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "HECKER!",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 23,
+        "author": "Tech Support Agent Kevin",
+        "content": "How did you know my location?!",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "You owe me now.",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "For the apple.",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 26,
+        "author": "Tech Support Agent Kevin",
+        "content": "WHAT?!",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Hecker",
+        "content": "Scammer's network just crashed.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 28,
+        "author": "Hecker",
+        "content": "DDoS'd by a fruit.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 29,
+        "author": "Skittle",
+        "content": "IMPOSSIBLE!",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 30,
+        "author": "Beluga",
+        "content": "You didn't like it?",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 31,
+        "author": "Tech Support Agent Kevin",
+        "content": "(User disconnected)",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "characters/tech_support_agent_kevin.jpg"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=NoevL_kX0qU"
   }
 ]
