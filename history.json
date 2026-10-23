@@ -7205,5 +7205,197 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=NoevL_kX0qU"
+  },
+  {
+    "date": "2026-10-23T23:18:15.230Z",
+    "title": "My 'Bank' Just Demanded My Life Savings 💀",
+    "archetype": "Scam Revenge",
+    "newCharacter": {
+      "name": "Bank Agent Cheryl",
+      "avatarPrompt": "Discord profile avatar of a stern cat wearing a formal suit with a headset, looking annoyed and professional, meme cat style"
+    },
+    "attachment": {
+      "messageIndex": 16,
+      "slug": "negative_balance_screenshot",
+      "imagePrompt": "A meme screenshot of a bank account balance showing -$1,500.00 in bold red text, with a cartoon cat paw cursor hovering over it"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Bank Agent Cheryl",
+        "content": "Hello, this is your bank.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Bank Agent Cheryl",
+        "content": "We detected suspicious activity.",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "Oh no.",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 4,
+        "author": "Bank Agent Cheryl",
+        "content": "We need to verify your account.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "How?",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 6,
+        "author": "Bank Agent Cheryl",
+        "content": "Please send your full account number.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "My whole one?",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 8,
+        "author": "Bank Agent Cheryl",
+        "content": "YES.",
+        "time": "Today at 2:08 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "5.",
+        "time": "Today at 2:08 PM"
+      },
+      {
+        "id": 10,
+        "author": "Bank Agent Cheryl",
+        "content": "...What?",
+        "time": "Today at 2:09 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "My account number is 5.",
+        "time": "Today at 2:09 PM"
+      },
+      {
+        "id": 12,
+        "author": "Bank Agent Cheryl",
+        "content": "Sir, that is not possible.",
+        "time": "Today at 2:10 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "It's my lucky number.",
+        "time": "Today at 2:10 PM"
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "BELUGA NO.",
+        "time": "Today at 2:11 PM"
+      },
+      {
+        "id": 15,
+        "author": "Bank Agent Cheryl",
+        "content": "We also need proof of current funds.",
+        "time": "Today at 2:11 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "Okay.",
+        "time": "Today at 2:12 PM"
+      },
+      {
+        "id": 17,
+        "author": "Bank Agent Cheryl",
+        "content": "WHAT IS THIS.",
+        "time": "Today at 2:12 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "HE HAS NEGATIVE MONEY.",
+        "time": "Today at 2:13 PM"
+      },
+      {
+        "id": 19,
+        "author": "Bank Agent Cheryl",
+        "content": "-$1,500.00?!",
+        "time": "Today at 2:13 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "Yes. Very current.",
+        "time": "Today at 2:14 PM"
+      },
+      {
+        "id": 21,
+        "author": "Bank Agent Cheryl",
+        "content": "You owe *us* money!",
+        "time": "Today at 2:14 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "He just scammed the scammer.",
+        "time": "Today at 2:15 PM"
+      },
+      {
+        "id": 23,
+        "author": "Bank Agent Cheryl",
+        "content": "Sir, this is not funny.",
+        "time": "Today at 2:15 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "So, no suspicious activity?",
+        "time": "Today at 2:16 PM"
+      },
+      {
+        "id": 25,
+        "author": "Bank Agent Cheryl",
+        "content": "No, just... debt.",
+        "time": "Today at 2:16 PM",
+        "avatarUrl": "characters/bank_agent_cheryl.jpg"
+      },
+      {
+        "id": 26,
+        "author": "Mom",
+        "content": "BELUGA.",
+        "time": "Today at 2:17 PM"
+      },
+      {
+        "id": 27,
+        "author": "Mom",
+        "content": "WHOSE DEBT IS THAT.",
+        "time": "Today at 2:17 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=07B-N9Sdx9c"
   }
 ]
