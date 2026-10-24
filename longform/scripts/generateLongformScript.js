@@ -2,6 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import { getScheduledLongformTheme, BANNED_KEYWORDS } from '../../topicScheduler.js';
 
 dotenv.config();
 
@@ -58,29 +59,40 @@ export async function generateLongformScript() {
     }
   }
 
+  const assignedTheme = getScheduledLongformTheme(history.length);
+  console.log(`\n🎬 ASSIGNED LONG-FORM THEME: "${assignedTheme.topic}"`);
+
   const pastTitles = history.map(h => h.title).slice(-20).join(', ');
 
   const prompt = `
 You are the master comedy writer for the Beluga YouTube channel (10M+ subscribers).
-You are writing a full-length, highly engaging ONE-ACT episodic Discord comedy video centered around a FAMOUS HISTORICAL IMAGE, PAINTING, OR VIRAL CONSPIRACY (1920x1080 Landscape).
+You are writing a full-length, highly engaging ONE-ACT episodic Discord comedy video (1920x1080 Landscape).
 
-### CORE CONCEPT: ONE COMPLETE COHESIVE ACT ON A SPECIFIC TOPIC
+### ASSIGNED EPISODE THEME FOR TODAY:
+Theme: ${assignedTheme.topic}
+Description: ${assignedTheme.description}
+Inspirational Titles:
+${assignedTheme.exampleTitles.map(t => `- "${t}"`).join('\n')}
+
+### CORE CONCEPT: ONE COMPLETE COHESIVE ACT ON THIS TOPIC
 - The entire episode takes place in ONE continuous channel (#general).
 - No channel jumping, no separate voice/admin acts. A single, focused, escalating comedic storyline.
-- Topic MUST be a real, famous painting, historical photo, monument, or pop-culture scandal that Beluga "exposes":
-  - Examples: Napoleon Crossing the Alps on a Mule, Mona Lisa having no eyebrows / being fake, George Washington's wooden teeth, The Statue of Liberty secretly holding something weird, The Declaration of Independence treasure map, Einstein's famous tongue photo, Michelangelo's hidden brain anatomy, The Leaning Tower of Pisa falling over.
+
+### STRICT BANNED TOPICS:
+- ABSOLUTELY NO TAXES, NO IRS, NO TAX AGENTS, NO BANK DEBT, NO REFUND SCAMS.
+- Any script mentioning taxes or banking wire fraud is strictly prohibited.
 
 ### THE 2 IN-CHAT IMAGE ATTACHMENTS:
-1. **Opening Image (Message 3 to 6)**: The real, famous painting or historical photograph that Beluga drops as "proof" of the scandal.
-2. **Climax Revelation Image (Message 35 to 45)**: A hilarious, absurd, or bizarre parody version of the image created/hacked by Hecker or Beluga (e.g., Napoleon on a giant crowned mule, Mona Lisa with Beluga's face, Washington with vampire fangs).
+1. **Opening Image (Message 3 to 6)**: The real painting, device photo, mysterious document, or evidence Beluga drops as "proof".
+2. **Climax Revelation Image (Message 35 to 45)**: A hilarious, absurd, or bizarre parody version of the image created/hacked by Hecker or Beluga.
 
 ### CAST DYNAMICS:
-- **Beluga**: Discovers the scandal, takes everything literally, delivers deadpan absurd theories in ALL CAPS ("NAPOLEON WAS USING A FILTER IN 1801", "BRO MADE A LINKEDIN PROFILE OUT OF A MOUNTAIN").
-- **Skittle**: The frustrated straight-man attempting to use common sense ("did you fail history again", "YOU CANNOT HACK A PAINTING").
-- **ExplodingTNT**: The hyperactive meme-roaster ("WHY IS THAT HORSE LEVITATING", "BRO USED A RENTAL HORSE FOR HIS PFP", "CEO OF CROSSING ALPS").
-- **Hecker**: The ultra-calm hacker who takes absurd requests dead seriously ("confirmed", "hacked the painting", "skill issue", "the mule has a bank account now").
-- **Guest Star (MrBeast, Billionaire, or Elon)**: Enters midway with an absurd $1,000,000 reward/offer, but ends up awarding the money to the ridiculous entity (e.g. the mule or a pigeon).
-- **Server Event**: Near the end, the server icon changes or a chaotic announcement happens: "[SERVER ICON CHANGED TO A MULE WEARING A CROWN]".
+- **Beluga**: Discovers the scandal/problem, takes everything literally, delivers deadpan absurd theories in ALL CAPS.
+- **Skittle**: The frustrated straight-man attempting to use common sense.
+- **ExplodingTNT**: The hyperactive meme-roaster who yells in chat.
+- **Hecker**: The ultra-calm hacker who takes absurd requests dead seriously ("confirmed", "hacked it", "skill issue").
+- **Guest Star (MrBeast, Billionaire, or Elon)**: Enters midway with an absurd $1,000,000 reward/offer.
+- **Server Event**: Near the end, the server icon changes or a chaotic announcement happens.
 
 ### PACING & LENGTH:
 - Total: 45 to 55 lines.

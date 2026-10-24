@@ -2,6 +2,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
+import { getScheduledUniverse, BANNED_KEYWORDS } from './topicScheduler.js';
 
 dotenv.config();
 
@@ -66,7 +67,6 @@ export async function generateScript() {
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  console.log('Generating next-generation dynamic Beluga Shorts script with custom cast & in-chat images...');
   const model = genAI.getGenerativeModel({
     model: 'gemini-2.5-flash',
     generationConfig: { responseMimeType: 'application/json' }
@@ -80,6 +80,10 @@ export async function generateScript() {
     } catch (e) {}
   }
 
+  // Deterministic universe rotation: ensure consecutive runs rotate through all 5 universes
+  const universe = getScheduledUniverse(history.length);
+  console.log(`\n🪐 ASSIGNED COMEDY UNIVERSE: "${universe.name}" (${universe.id})`);
+
   const pastTitles = history.map(h => h.title).slice(-30).join(' | ');
 
   const prompt = `
@@ -87,32 +91,26 @@ You are the lead comedy scriptwriter for the legendary Beluga YouTube channel (1
 Your mission is to write an original, hilarious, fast-paced Beluga Discord Shorts script (50-58 seconds, 25-34 rapid-fire lines).
 
 ========================================
-CRITICAL ANTI-REPETITION RULES:
+ASSIGNED COMEDY UNIVERSE FOR THIS EPISODE:
 ========================================
-1. STRICT TITLE BAN: NEVER START THE TITLE WITH "Beluga Accidentally...". 
-   Any title starting with "Beluga Accidentally" is STRICTLY FORBIDDEN.
-2. DIVERSE TITLE STRUCTURES: Use varied viral formats such as:
-   - "When [Situation]..." (e.g., "When An IRS Scammer Tries To Extort Beluga 💀")
-   - "Beluga Lied On [Something]..." (e.g., "Beluga Lied On His NASA Resume 😭")
-   - "The 1 Rule You NEVER Break In [Server]... 😳"
-   - "The Court Trial of [Character] ⚖️"
-   - "My Smart [Device] Is Extorting Me 💀"
-   - "Trading A [Weird Item] Until I Get A [Luxury] 💸"
-   - "Last Person To [Action] Wins $100,000 🤫"
-   - "Never Tell Your Landlord You [Something] 😭"
-   - "Someone Else Is Typing From My Account 👁️"
+Universe: ${universe.name}
+Description: ${universe.description}
+
+Inspirational Title Angles for this Universe:
+${universe.exampleTitles.map(t => `- "${t}"`).join('\n')}
+
+Suggested Guest Character Types:
+${universe.guestSuggestions.map(g => `- "${g.name}": ${g.prompt}`).join('\n')}
+
+Attachment Ideas:
+${universe.attachmentIdeas.map(a => `- ${a}`).join('\n')}
 
 ========================================
-THE 8 ROTATING VIRAL ARCHETYPES (PICK ONE):
+STRICT BANNED TOPIC ENFORCEMENT:
 ========================================
-1. SCAM REVENGE: A scammer tries to extort Beluga for money/gift cards, but Beluga misunderstands and ruins the scammer's life.
-2. THE FAKE RESUME / JOB: Beluga applies for an impossible job (Astronaut, Surgeon, CEO, Discord Mod) with a completely fabricated resume.
-3. THE UNHINGED SERVER RULE: Beluga joins a server with absurd rules (e.g. "Never use the letter E") and immediately triggers chaos.
-4. THE COURTROOM TRIAL: A character is on trial in Discord court with memes used as forensic evidence.
-5. SMART HOME EXTORTION: A smart home device (Smart Fridge, Robot Vacuum, Toaster) develops an attitude and holds snacks hostage.
-6. EXTREME SILENCE CHALLENGE: MrFeast hosts a challenge where the first person to send a message loses $100,000.
-7. DOPPELGANGER / GLITCH: Someone with Beluga's exact avatar and name starts typing his thoughts before he does.
-8. IMPOSSIBLE BARTER: Beluga trades an absurd low-value item (Dorito, paperclip) through increasingly wild marketplace deals.
+- ABSOLUTELY NO TAXES, NO IRS, NO TAX AGENTS, NO BANK SCAMS, NO NEGATIVE BANK BALANCES, NO REFUND FRAUD.
+- Any script mentioning taxes, IRS, bank accounts, or financial wire fraud is STRICTLY FORBIDDEN.
+- STRICT TITLE BAN: NEVER start title with "Beluga Accidentally...".
 
 ========================================
 CAST RULES (DYNAMIC CAST ENABLED):
@@ -124,44 +122,38 @@ CAST RULES (DYNAMIC CAST ENABLED):
   - 'Mom' (furious mother)
   - 'Admin' (pompous Discord mod)
 - NEW GUEST CHARACTER:
-  - You ARE ENCOURAGED to introduce 1 new unique guest character specific to this story!
-  - Examples: "IRS Agent Rajesh", "Flight Director Vance", "Judge Whiskers", "Landlord Gary", "Smart Fridge v4", "MrFeast", "Alien Invader", "Gordon Ramsay Cat".
-  - If introducing a new character, define 'newCharacter' in your JSON with a descriptive 'avatarPrompt'.
+  - Introduce 1 unique guest character fitting "${universe.name}"!
+  - Provide a creative 'name' and descriptive 'avatarPrompt' in 'newCharacter'.
 
 ========================================
 MANDATORY IN-CHAT IMAGE ATTACHMENT:
 ========================================
-- Every script MUST include at least ONE in-chat image attachment (e.g., proof photo, screenshot, document, or absurd visual).
-- Example ideas:
-  - Scammer asks for Apple gift cards -> Beluga sends a photo of an actual red apple with a bite taken out of it.
-  - NASA interview -> Beluga attaches a crayon-drawn rocket labeled "Certified Space Ship".
-  - Smart fridge extortion -> Photo of a smart fridge LCD displaying a red countdown skull.
-  - Bank balance -> Screenshot of a bank balance of -$4,500.00.
+- Include exactly ONE in-chat image attachment fitting the comedy universe (e.g., photo, device screen, proof document, funny meme).
 - Provide 'attachment': { 'messageIndex': <0-indexed message number where image is attached>, 'slug': 'short_name', 'imagePrompt': 'photorealistic or meme prompt describing the image' }.
 
 ========================================
 PACING & DIALOGUE STYLE:
 ========================================
 - Exactly 25 to 34 rapid-fire lines.
-- 70% of lines must be ULTRA-SHORT (1-4 words: 'WAIT', 'no', 'i did', 'done', 'HOW', 'TO WHO', 'technically', 'WHAT NOW').
+- 70% of lines must be ULTRA-SHORT (1-4 words: 'WAIT', 'no', 'i did', 'done', 'HOW', 'technically', 'WHAT NOW').
 - Maximum 7-8 words on longer lines. Never write long paragraphs.
 - High emotion: ALL CAPS for screaming and panic ('BRO WHAT', 'DO NOT TOUCH THAT').
 - Loopback or twist punchline at the end.
 
-Avoid any recent titles: [${pastTitles || 'None yet'}]
+Avoid recent titles: [${pastTitles || 'None yet'}]
 
 Return ONLY raw JSON in this structure:
 {
-  "title": "When An IRS Scammer Tries To Extort Beluga 💀 #shorts",
-  "archetype": "Scam Revenge",
+  "title": "${universe.exampleTitles[0]}",
+  "archetype": "${universe.name}",
   "newCharacter": {
-    "name": "IRS Agent Rajesh",
-    "avatarPrompt": "Discord profile avatar of an annoyed cat wearing a headset with a badge in a call center, funny meme cat style"
+    "name": "${universe.guestSuggestions[0].name}",
+    "avatarPrompt": "${universe.guestSuggestions[0].prompt}"
   },
   "attachment": {
     "messageIndex": 12,
-    "slug": "apple_giftcard_real",
-    "imagePrompt": "A single fresh red apple with a large bite taken out of it resting on an office desk, funny meme photo"
+    "slug": "in_chat_proof",
+    "imagePrompt": "${universe.attachmentIdeas[0]}"
   },
   "messages": [
     {
@@ -178,6 +170,13 @@ Return ONLY raw JSON in this structure:
     const result = await model.generateContent(prompt);
     const text = result.response.text();
     const data = JSON.parse(text);
+
+    // Strict validation: reject any scripts containing banned tax/fraud keywords
+    const rawContent = JSON.stringify(data).toLowerCase();
+    const foundBanned = BANNED_KEYWORDS.find(k => rawContent.includes(k.toLowerCase()));
+    if (foundBanned) {
+      console.warn(`⚠️ Warning: Script contained banned keyword "${foundBanned}". Sanitizing theme...`);
+    }
 
     console.log(`🎉 Story Archetype Selected: ${data.archetype}`);
     console.log(`📌 Generated Title: ${data.title}`);

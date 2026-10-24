@@ -1,11 +1,13 @@
-name: 3x Daily Beluga Shorts Autopilot (2K QHD)
+name: 5x Daily Beluga Shorts Autopilot (2K QHD)
 
 on:
   schedule:
-    # 3 Peak Global YouTube Shorts Windows (Evenly Spaced for Maximum Worldwide Reach)
-    - cron: '30 7 * * *'   # Slot 1: 01:00 PM IST (07:30 UTC) - Asia lunchtime & Europe morning wakeup
-    - cron: '30 14 * * *'  # Slot 2: 08:00 PM IST (14:30 UTC) - Europe prime evening & US East morning
-    - cron: '30 20 * * *'  # Slot 3: 02:00 AM IST (20:30 UTC) - US peak prime evening
+    # 5 Global Peak YouTube Shorts Windows (Evenly Spaced for Continuous Viral Reach)
+    - cron: '0 3 * * *'   # Slot 1: 08:30 AM IST (03:00 UTC) - Asia morning wakeup & Australia afternoon
+    - cron: '0 7 * * *'   # Slot 2: 12:30 PM IST (07:00 UTC) - Asia lunch & Europe early morning
+    - cron: '0 12 * * *'  # Slot 3: 05:30 PM IST (12:00 UTC) - Europe lunch & US East morning wakeup
+    - cron: '0 16 * * *'  # Slot 4: 09:30 PM IST (16:00 UTC) - Europe prime evening & US East lunch
+    - cron: '0 20 * * *'  # Slot 5: 01:30 AM IST (20:00 UTC) - US peak prime evening
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:

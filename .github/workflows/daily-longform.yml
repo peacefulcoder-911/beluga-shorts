@@ -1,9 +1,9 @@
 name: Daily Beluga Long-Form Automation (Full Episode)
 
 on:
-  # Schedule disabled per user request: long-form videos on hold
-  # schedule:
-  #   - cron: '0 12 * * *'
+  schedule:
+    # 1 Episode Daily: 07:30 PM IST (14:00 UTC) - Prime Worldwide Evening Viewing Window
+    - cron: '0 14 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime if needed
 
 permissions:
