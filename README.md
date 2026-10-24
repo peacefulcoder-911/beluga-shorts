@@ -1,54 +1,47 @@
-# Remotion video
+# 🐱 Beluga Discord Chat Comedy Studio (`beluga-shorts`)
 
-<p align="center">
-  <a href="https://github.com/remotion-dev/logo">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-dark.apng">
-      <img alt="Animated Remotion Logo" src="https://github.com/remotion-dev/logo/raw/main/animated-logo-banner-light.gif">
-    </picture>
-  </a>
-</p>
+Automated AI short-form and long-form video engine for viral **Beluga-style Discord comedy skits, meme battles, and stories**.
 
-Welcome to your Remotion project!
+## 🌟 Features
+- **Accurate Discord UI Simulator**: Pixel-perfect Discord dark theme message rendering via Remotion & CSS.
+- **Dynamic Character Cast**: Beluga, Skittle, Hecker, Pablo, Lester, Fraud Agent Fiona, Pierre, and custom bots.
+- **Sound Effects Engine**: Message pop, typing sounds, join/leave chime, notification alerts.
+- **Automated AI Script Generation**: AI scriptwriter powered by Gemini for witty, punchy, meme-rich dialogue.
+- **Multi-Format Support**:
+  - Vertical 9:16 Shorts (1080x1920) for YouTube Shorts / TikTok / Reels.
+  - Horizontal 16:9 Long-form videos with custom pacing and music.
+- **Built-in Web Simulator**: Standalone interactive HTML/JS Discord chat player in `simulator/`.
 
-## Commands
-
-**Install Dependencies**
-
-```console
-npm i
+## 📁 Repository Structure
+```
+beluga-shorts/
+├── src/                    # Remotion React components & composition logic
+├── public/                 # Character avatars, audio SFX, attachments, fonts
+├── simulator/              # Standalone interactive Discord chat simulator
+├── tools/                  # Script extractors and migration utilities
+├── longform/               # Long-form video configs, scripts, and compositions
+├── history.json            # Archive of all generated video scripts & episodes
+├── generateScript.js       # AI script generation engine
+├── runDaily.js             # Automated daily batch video generator
+└── uploadToYoutube.js      # Automated YouTube uploader integration
 ```
 
-**Start Preview**
+## 🚀 Quick Start
 
-```console
+### 1. Install Dependencies
+```bash
+npm install
+```
+
+### 2. Preview the Studio
+```bash
 npm run dev
 ```
 
-**Render video**
-
-```console
-npx remotion render
+### 3. Render a Short
+```bash
+npx remotion render MyComp out/beluga_video.mp4
 ```
 
-**Upgrade Remotion**
-
-```console
-npx remotion upgrade
-```
-
-## Docs
-
-Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
-
-## Help
-
-We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
-
-## Issues
-
-Found an issue with Remotion? [File an issue here](https://github.com/remotion-dev/remotion/issues/new).
-
-## License
-
-Note that for some entities a company license is needed. [Read the terms here](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md).
+### 4. Interactive Simulator
+Open `simulator/index.html` in any web browser to test and preview chat sequences interactively.

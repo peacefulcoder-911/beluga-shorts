@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beluga Simulator</title>
+    <link rel="stylesheet" href="css/main.css?v=3">
+</head>
+<body>
+    <div class="app-container">
+        <!-- LEFT PANEL -->
+        <div class="left-panel">
+            <button id="load-example" class="btn btn-green">⚡ Load Example Script</button>
+            <div style="margin: 10px 0; background: #2b2d31; padding: 10px; border-radius: 8px;">
+                <label style="margin-bottom: 0; display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                    <input type="checkbox" id="setting-shorts" style="width: 20px; height: 20px;">
+                    <strong>📱 Enable Shorts Mode (9:16)</strong>
+                </label>
+            </div>
+            
+            <textarea id="script-input" rows="12" placeholder="Paste your script here..."></textarea>
+            
+            <div class="btn-group">
+                <button id="parse-script" class="btn btn-blue">✓ Parse Script</button>
+                <button id="clear-script" class="btn btn-gray">🗑 Clear</button>
+            </div>
+
+            <!-- Playback Controls -->
+            <div class="playback-controls">
+                <button id="btn-play">▶ Play</button>
+                <button id="btn-pause">⏸ Pause</button>
+                <button id="btn-stop">■ Stop</button>
+                <button id="btn-record" class="btn btn-red" style="background: #ed4245;">🔴 Record</button>
+                <select id="playback-speed">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1x</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+
+            <!-- Character Manager -->
+            <div class="section character-manager">
+                <h3>Characters</h3>
+                <div id="character-list" class="character-list"></div>
+                <form id="add-character-form">
+                    <input type="text" id="char-name" placeholder="Name" required>
+                    <input type="text" id="char-pic" placeholder="Pic URL">
+                    <input type="text" id="char-emoji" placeholder="Emoji (if no pic)">
+                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 5px;">
+                        <input type="color" id="char-color" value="#ffffff" style="width: 40px; height: 30px; padding: 0;">
+                        <span style="font-size: 12px;">Name Color</span>
+                        <input type="text" id="char-badge" placeholder="Badge (e.g. BOT)" style="flex: 1;">
+                    </div>
+                    <button type="submit" class="btn btn-gray">Add Character</button>
+                </form>
+            </div>
+
+            <!-- Custom Meme URLs -->
+            <div class="section meme-manager">
+                <h3>Custom Memes</h3>
+                <div id="meme-list" class="meme-list"></div>
+                <form id="add-meme-form">
+                    <input type="text" id="meme-key" placeholder="Key (e.g. crying)" required>
+                    <input type="text" id="meme-url" placeholder="Image URL" required>
+                    <button type="submit" class="btn btn-gray">Add Meme</button>
+                </form>
+            </div>
+
+            <!-- Timing Sliders -->
+            <div class="section timing-manager">
+                <h3>Timing Settings</h3>
+                <label>
+                    Default Display (<span id="val-display">3000</span>ms)
+                    <input type="range" id="setting-display" min="1000" max="10000" value="3000" step="100">
+                </label>
+                <label>
+                    Typing Duration (<span id="val-typing">900</span>ms)
+                    <input type="range" id="setting-typing" min="300" max="3000" value="900" step="100">
+                </label>
+                <label>
+                    Meme Hold Time (<span id="val-meme">4000</span>ms)
+                    <input type="range" id="setting-meme" min="1000" max="10000" value="4000" step="100">
+                </label>
+            </div>
+
+            <div class="section toggle-settings">
+                <label style="margin-bottom: 0;">
+                    <input type="checkbox" id="setting-sound" checked> Play Discord Ping Sound
+                </label>
+            </div>
+
+            <div class="section syntax-reference">
+                <h3>Syntax Guide</h3>
+                <pre>
+Hecker: hello
+Hecker|3500: hold for 3.5s
+Beluga: [meme:crying]
+Hecker: [react:😂:47]
+[pause:2000]
+[system: 30 minutes later]
+edited text (edited)
+                </pre>
+            </div>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+            <div class="discord-app-wrapper" id="discord-app-wrapper">
+                <div class="discord-container" id="discord-container">
+                    <div id="message-container" class="message-container">
+                        <!-- Message goes here dynamically -->
+                    </div>
+                    
+                    <div class="chat-input-wrapper">
+                        <div class="typing-indicator" id="typing-indicator" style="display: none;"></div>
+                        <div class="chat-input-box">
+                            <span class="plus-icon">⊕</span>
+                            <div class="input-text" id="chat-input-text">Message #general</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js?v=5"></script>
+</body>
+</html>
