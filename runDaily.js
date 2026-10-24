@@ -51,6 +51,15 @@ async function runDaily() {
       } catch (e) {}
     }
 
+    // Save metadata for GitHub verification and notifications
+    const latestUploadPath = path.join(process.cwd(), "latest_upload.json");
+    fs.writeFileSync(latestUploadPath, JSON.stringify({
+      title: data.title,
+      videoTitle: videoTitle,
+      videoUrl: videoUrl,
+      uploadedAt: new Date().toISOString()
+    }, null, 2));
+
     console.log('\n====================================');
     console.log('🎉 24/7 DAILY SHORT UPLOAD COMPLETE!');
     console.log(`📺 Video URL: ${videoUrl}`);

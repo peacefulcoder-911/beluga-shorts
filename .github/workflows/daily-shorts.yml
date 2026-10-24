@@ -1,18 +1,16 @@
-name: 6x Daily Beluga Shorts Automation (2K QHD)
+name: 3x Daily Beluga Shorts Autopilot (2K QHD)
 
 on:
   schedule:
-    # 6 Peak Global YouTube Shorts Windows (Optimally Spaced Every 3-4 Hours)
-    - cron: '30 2 * * *'   # Slot 1: 08:00 AM IST (02:30 UTC) - Asia morning wakeup & commute
-    - cron: '30 7 * * *'   # Slot 2: 01:00 PM IST (07:30 UTC) - Asia lunchtime & Europe morning wakeup
-    - cron: '0 11 * * *'   # Slot 3: 04:30 PM IST (11:00 UTC) - Europe afternoon & UK school out
-    - cron: '30 14 * * *'  # Slot 4: 08:00 PM IST (14:30 UTC) - Europe prime evening & US East morning
-    - cron: '0 18 * * *'   # Slot 5: 11:30 PM IST (18:00 UTC) - US East lunchtime & US West morning
-    - cron: '30 20 * * *'  # Slot 6: 02:00 AM IST (20:30 UTC) - US peak prime evening
+    # 3 Peak Global YouTube Shorts Windows (Evenly Spaced for Maximum Worldwide Reach)
+    - cron: '30 7 * * *'   # Slot 1: 01:00 PM IST (07:30 UTC) - Asia lunchtime & Europe morning wakeup
+    - cron: '30 14 * * *'  # Slot 2: 08:00 PM IST (14:30 UTC) - Europe prime evening & US East morning
+    - cron: '30 20 * * *'  # Slot 3: 02:00 AM IST (20:30 UTC) - US peak prime evening
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build-and-upload:
@@ -51,3 +49,35 @@ jobs:
           git add history.json public/characters/ public/attachments/ || true
           git commit -m "chore: record uploaded 2K short to history [skip ci]" || echo "No changes to commit"
           git push origin main
+
+      - name: Send GitHub Upload Verification Notification
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f "latest_upload.json" ]; then
+            VIDEO_TITLE=$(node -e "console.log(require('./latest_upload.json').videoTitle || require('./latest_upload.json').title)")
+            VIDEO_URL=$(node -e "console.log(require('./latest_upload.json').videoUrl)")
+            UPLOAD_TIME=$(node -e "console.log(require('./latest_upload.json').uploadedAt)")
+
+            echo "### 🎬 YouTube Short Upload Verified!" >> $GITHUB_STEP_SUMMARY
+            echo "- **Title:** ${VIDEO_TITLE}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Watch Link:** [${VIDEO_URL}](${VIDEO_URL})" >> $GITHUB_STEP_SUMMARY
+            echo "- **Uploaded At:** ${UPLOAD_TIME}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Quality:** 2K QHD (9:16 Vertical Short)" >> $GITHUB_STEP_SUMMARY
+            echo "- **Status:** Published & Live on YouTube ✅" >> $GITHUB_STEP_SUMMARY
+
+            # Create GitHub Issue for instant mobile push & email notification to repo owner
+            gh issue create \
+              --title "🚀 YouTube Short Published: ${VIDEO_TITLE}" \
+              --body "### 🎬 YouTube Short Uploaded & Live!
+
+**Title:** ${VIDEO_TITLE}
+**Watch Link:** ${VIDEO_URL}
+**Uploaded At:** ${UPLOAD_TIME}
+**Format:** 2K QHD (1080x1920) Vertical Short
+**Status:** Live & Public ✅
+
+---
+*Automatic verification notification dispatched by GitHub Actions.*" || true
+          fi

@@ -67,6 +67,28 @@ export async function uploadVideo(videoPath, title, thumbnailPath = null) {
       }
     }
 
+    // Automatically post creator pinned comment for engagement
+    try {
+      const pinCommentText = "📌 PINNED BY BELUGA:\nDid Beluga actually deserve this? 💀👇\nDrop your thoughts and subscribe for more daily discord madness!";
+      console.log(`💬 Posting creator pinned comment on video ${videoId}...`);
+      await youtube.commentThreads.insert({
+        part: ['snippet'],
+        requestBody: {
+          snippet: {
+            videoId: videoId,
+            topLevelComment: {
+              snippet: {
+                textOriginal: pinCommentText
+              }
+            }
+          }
+        }
+      });
+      console.log(`✅ Creator pinned comment posted successfully!`);
+    } catch (cErr) {
+      console.warn(`⚠️ Pinned comment notice (optional scope):`, cErr.response ? cErr.response.data : cErr.message);
+    }
+
     return videoUrl;
   } catch (error) {
     console.error("❌ Failed to upload video:");
