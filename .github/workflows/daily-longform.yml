@@ -1,9 +1,9 @@
-name: Daily Beluga Long-Form Automation (Full Episode)
+name: Single Beluga Long-Form Manual / Fallback Runner
 
 on:
-  schedule:
-    # 1 Episode Daily: 07:30 PM IST (14:00 UTC) - Prime Worldwide Evening Viewing Window
-    - cron: '0 14 * * *'
+  # Automated schedule is now consolidated into .github/workflows/daily-batch-autopilot.yml (runs daily at 6:00 AM IST)
+  # schedule:
+  #   - cron: '0 14 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime if needed
 
 permissions:

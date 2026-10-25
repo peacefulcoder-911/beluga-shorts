@@ -7,8 +7,7 @@ import fs from 'fs';
 async function runLongform() {
   console.log('====================================');
   console.log('🎬 BELUGA LONG-FORM VIDEO PIPELINE');
-  console.log('====================================
-');
+  console.log('====================================\n');
 
   try {
     // 1. Generate Multi-Scene Story
@@ -17,8 +16,7 @@ async function runLongform() {
     if (!data || !data.title) {
       throw new Error('Failed to generate script from AI');
     }
-    console.log(`✅ Episode Generated: "${data.title}"
-`);
+    console.log(`✅ Episode Generated: "${data.title}"\n`);
 
     // 2. Render 1920x1080 Video & Thumbnail
     const outDir = path.join(process.cwd(), 'out');
@@ -44,13 +42,16 @@ async function runLongform() {
 
     if (!chosenThumbnail) {
       console.log(`🖼️ Rendering fallback thumbnail to ${fallbackThumbnail}...`);
-      execSync(`npx remotion still src/index.ts BelugaThumbnail "${fallbackThumbnail}"`, {
-        stdio: 'inherit'
-      });
-      chosenThumbnail = fallbackThumbnail;
+      try {
+        execSync(`npx remotion still src/index.ts BelugaThumbnail "${fallbackThumbnail}"`, {
+          stdio: 'inherit'
+        });
+        chosenThumbnail = fallbackThumbnail;
+      } catch (tErr) {
+        console.warn('Fallback thumbnail notice:', tErr.message);
+      }
     } else {
-      console.log(`🖼️ Using standard MrBeast-style thumbnail: ${chosenThumbnail}
-`);
+      console.log(`🖼️ Using thumbnail: ${chosenThumbnail}\n`);
     }
 
     // 3. Upload to YouTube with custom thumbnail
@@ -77,17 +78,19 @@ async function runLongform() {
       } catch (e) {}
     }
 
-    console.log('
-====================================');
+    console.log('\n====================================');
     console.log('🎉 LONG-FORM EPISODE PRODUCTION COMPLETE!');
     console.log(`📺 Video URL: ${videoUrl}`);
-    console.log('====================================
-');
+    console.log('====================================\n');
+    return videoUrl;
   } catch (error) {
-    console.error('
-❌ Long-form pipeline failed with error:', error);
+    console.error('\n❌ Long-form pipeline failed with error:', error);
     process.exit(1);
   }
 }
 
-runLongform();
+if (process.argv[1] && process.argv[1].endsWith('runLongform.js')) {
+  runLongform();
+}
+
+export { runLongform };

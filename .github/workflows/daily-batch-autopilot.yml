@@ -1,0 +1,48 @@
+name: Master Daily 6:00 AM Autopilot (All Videos)
+
+on:
+  schedule:
+    # Triggers every morning at 06:00 AM IST (00:30 UTC)
+    - cron: '30 0 * * *'
+  workflow_dispatch: # Allows manual run from GitHub UI anytime
+
+permissions:
+  contents: write
+
+jobs:
+  run-daily-batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Node Dependencies
+        run: npm ci
+
+      - name: Run Master Daily Batch (5 Shorts + 1 Long-Form Scheduled)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_PRIVACY: scheduled
+        run: node runDailyBatch.js
+
+      - name: Commit and Push History & New Character Assets
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main || true
+          git add history.json longform/data/history_longform.json public/characters/ public/attachments/ || true
+          git commit -m "chore: record daily batch videos to history [skip ci]" || echo "No changes to commit"
+          git push origin main

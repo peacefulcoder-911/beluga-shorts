@@ -4,9 +4,12 @@ import { google } from 'googleapis';
 import dotenv from 'dotenv';
 dotenv.config();
 
-export async function uploadLongformVideo(videoPath, title, customDescription, customTags, thumbnailPath = null) {
+export async function uploadLongformVideo(videoPath, title, customDescription, customTags, thumbnailPath = null, publishAt = null) {
   try {
     console.log(`Starting Long-Form Upload for: "${title}"`);
+    if (publishAt) {
+      console.log(`⏰ Scheduled Publish Time: ${publishAt}`);
+    }
 
     const oauth2Client = new google.auth.OAuth2(
       process.env.YOUTUBE_CLIENT_ID,
@@ -38,7 +41,8 @@ export async function uploadLongformVideo(videoPath, title, customDescription, c
           categoryId: '24' // Entertainment
         },
         status: {
-          privacyStatus: process.env.YOUTUBE_PRIVACY || 'public',
+          privacyStatus: publishAt ? 'private' : (process.env.YOUTUBE_PRIVACY || 'public'),
+          publishAt: publishAt || undefined,
           selfDeclaredMadeForKids: false,
         },
       },

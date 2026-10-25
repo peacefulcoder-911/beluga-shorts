@@ -1,6 +1,6 @@
 {
-  "title": "When Beluga Found Napoleon's Fake Horse... \ud83d\udc80 (Full Episode)",
-  "description": "Beluga exposes a 200-year-old historical scandal on Discord with Skittle, ExplodingTNT, Hecker, and MrBeast. #beluga #discord #meme #comedy #mrbeast #explodingtnt",
+  "title": "Napoleon's Fake Horse Scandal... 💀 (Full Episode)",
+  "description": "Beluga exposes a 200-year-old historical scandal on Discord with Hecker, ExplodingTNT, and MrBeast. #beluga #discord #meme #comedy",
   "tags": [
     "beluga",
     "discord",
@@ -9,25 +9,36 @@
     "hecker",
     "skittle",
     "mrbeast",
-    "explodingtnt",
-    "comedy",
-    "animation"
+    "explodingtnt"
   ],
+  "mrbeastThumbnailPrompt": "A viral high-CTR YouTube thumbnail in 16:9 widescreen format. On the right, an energetic content creator with an exaggerated shocked open-mouth expression, pointing enthusiastically towards the center. In the center, a dramatic visual spectacle of Napoleon on a tiny mule wearing a royal golden crown next to a glowing $1,000,000 sign. In the bottom left, the iconic polite smiling white cat Beluga looking in disbelief. Saturated electric cyan and fiery orange lighting, ultra-sharp contrast, dramatic glossy finish.",
   "thumbnail": {
     "author": "MrBeast",
     "authorColor": "#00d2d3",
     "authorAvatar": "characters/mrbeast.jpg",
-    "authorTime": "Today at 4:18 PM",
-    "authorMessage": "I just transferred ,000,000 to the mule.",
-    "belugaTime": "Today at 4:18 PM",
-    "belugaMessage": "you can't give money to a mule"
+    "authorTime": "Today at 4:17 PM",
+    "authorMessage": "Giving the money to the mule.",
+    "belugaTime": "Today at 4:17 PM",
+    "belugaMessage": "NO YOU CAN'T GIVE MONEY TO A MULE"
   },
+  "attachments": [
+    {
+      "messageIndex": 2,
+      "slug": "historical_painting_original",
+      "imagePrompt": "High-resolution classical fine art oil painting of Jacques-Louis David's 'Napoleon Crossing the Alps', ornate gallery framing, dramatic 19th century masterpiece, showing Napoleon on a majestic horse"
+    },
+    {
+      "messageIndex": 37,
+      "slug": "hacked_parody_revelation",
+      "imagePrompt": "Humorous classical oil painting parody of 'Napoleon Crossing the Alps' by Jacques-Louis David, but Napoleon is comically riding a tiny, stubborn brown mule or donkey instead of a majestic horse, high art quality, majestic and funny"
+    }
+  ],
   "scenes": [
     {
       "sceneId": 1,
       "channelName": "general",
       "channelType": "text",
-      "topic": "HISTORICAL SCANDAL INVESTIGATION",
+      "topic": "Welcome to #general",
       "messages": [
         {
           "id": 1,
@@ -39,318 +50,328 @@
           "id": 2,
           "author": "Skittle",
           "time": "4:02 PM",
-          "content": "did you fail history again"
+          "content": "What now Beluga? Another conspiracy?"
         },
         {
           "id": 3,
           "author": "Beluga",
-          "time": "4:02 PM",
-          "content": "LOOK AT THIS PAINTING",
-          "attachmentUrl": "attachments/napoleon_crossing_alps.jpg"
+          "time": "4:03 PM",
+          "content": "(Attachment: historical_painting_original.png)",
+          "attachmentUrl": "attachments/historical_painting_original.jpg"
         },
         {
           "id": 4,
-          "author": "ExplodingTNT",
-          "time": "4:02 PM",
-          "content": "WHY IS THAT HORSE LEVITATING"
+          "author": "Beluga",
+          "time": "4:03 PM",
+          "content": "LOOK AT THIS PAINTING"
         },
         {
           "id": 5,
-          "author": "Skittle",
+          "author": "ExplodingTNT",
           "time": "4:03 PM",
-          "content": "that's napoleon"
+          "content": "WOOOOOOAH NAPOLEON ON A HORSE"
         },
         {
           "id": 6,
           "author": "Beluga",
-          "time": "4:03 PM",
-          "content": "I KNOW WHO NAPOLEON IS"
+          "time": "4:04 PM",
+          "content": "IT'S NOT A HORSE"
         },
         {
           "id": 7,
-          "author": "Beluga",
-          "time": "4:03 PM",
-          "content": "BUT HE DIDN'T EVEN RIDE THAT HORSE"
+          "author": "Skittle",
+          "time": "4:04 PM",
+          "content": "What do you mean it's not a horse? It clearly is."
         },
         {
           "id": 8,
-          "author": "Skittle",
-          "time": "4:03 PM",
-          "content": "what"
+          "author": "Beluga",
+          "time": "4:04 PM",
+          "content": "IT'S A MULE. A TINY, SHAMEFUL MULE."
         },
         {
           "id": 9,
-          "author": "Beluga",
-          "time": "4:04 PM",
-          "content": "HE CROSSED THE ALPS ON A MULE"
+          "author": "ExplodingTNT",
+          "time": "4:05 PM",
+          "content": "A MULE?! NO WAY LOL"
         },
         {
           "id": 10,
-          "author": "ExplodingTNT",
-          "time": "4:04 PM",
-          "content": "BRO USED A RENTAL HORSE FOR HIS PROFILE PICTURE"
+          "author": "Beluga",
+          "time": "4:05 PM",
+          "content": "THE ARTIST LIED TO US. FOR 200 YEARS."
         },
         {
           "id": 11,
-          "author": "Hecker",
-          "time": "4:04 PM",
-          "content": "confirmed"
+          "author": "Skittle",
+          "time": "4:05 PM",
+          "content": "Beluga, it's artistic license. Nobody cares."
         },
         {
           "id": 12,
           "author": "Beluga",
-          "time": "4:04 PM",
-          "content": "HECKER HOW DO YOU KNOW"
+          "time": "4:06 PM",
+          "content": "I CARE. HISTORY IS A LIE."
         },
         {
           "id": 13,
-          "author": "Hecker",
-          "time": "4:05 PM",
-          "content": "hacked the painting"
+          "author": "ExplodingTNT",
+          "time": "4:06 PM",
+          "content": "THE LIES! THE DECEIT!"
         },
         {
           "id": 14,
-          "author": "Skittle",
-          "time": "4:05 PM",
-          "content": "YOU CANNOT HACK A PAINTING"
+          "author": "Beluga",
+          "time": "4:06 PM",
+          "content": "HE WAS TOO SHORT TO REACH A REAL HORSE."
         },
         {
           "id": 15,
-          "author": "Hecker",
-          "time": "4:05 PM",
-          "content": "skill issue"
+          "author": "Skittle",
+          "time": "4:07 PM",
+          "content": "That's a myth, Beluga. And it's still a horse in the painting."
         },
         {
           "id": 16,
           "author": "Beluga",
-          "time": "4:05 PM",
-          "content": "WHY WOULD THE ARTIST LIE"
+          "time": "4:07 PM",
+          "content": "BUT THE ORIGINAL SKETCHES. THEY SHOW A MULE."
         },
         {
           "id": 17,
-          "author": "Skittle",
-          "time": "4:06 PM",
-          "content": "it's called art"
+          "author": "ExplodingTNT",
+          "time": "4:07 PM",
+          "content": "SKETCHES?! PROOF OR IT DIDN'T HAPPEN"
         },
         {
           "id": 18,
-          "author": "ExplodingTNT",
-          "time": "4:06 PM",
-          "content": "it's called catfishing"
+          "author": "Beluga",
+          "time": "4:08 PM",
+          "content": "HECKER. I NEED YOU TO HACK THE NATIONAL ARCHIVES."
         },
         {
           "id": 19,
           "author": "Beluga",
-          "time": "4:06 PM",
-          "content": "NAPOLEON WAS USING A FILTER IN 1801"
+          "time": "4:08 PM",
+          "content": "FIND THE ORIGINAL SKETCHES."
         },
         {
           "id": 20,
           "author": "Hecker",
-          "time": "4:06 PM",
-          "content": "found something else"
+          "time": "4:08 PM",
+          "content": "confirmed."
         },
         {
           "id": 21,
-          "author": "Beluga",
-          "time": "4:07 PM",
-          "content": "WHAT"
+          "author": "Skittle",
+          "time": "4:09 PM",
+          "content": "Hecker, don't encourage him!"
         },
         {
           "id": 22,
-          "author": "Hecker",
-          "time": "4:07 PM",
-          "content": "the painting has his name carved into the rocks"
+          "author": "MrBeast",
+          "time": "4:09 PM",
+          "content": "Did someone say historical scandal?"
         },
         {
           "id": 23,
-          "author": "Skittle",
-          "time": "4:07 PM",
-          "content": "that's normal"
+          "author": "MrBeast",
+          "time": "4:09 PM",
+          "content": "If Beluga proves Napoleon rode a mule, I'll give him $1,000,000."
         },
         {
           "id": 24,
           "author": "ExplodingTNT",
-          "time": "4:07 PM",
-          "content": "HE SIGNED THE MOUNTAIN"
+          "time": "4:10 PM",
+          "content": "ONE MILLION DOLLARS?! FOR A MULE?!"
         },
         {
           "id": 25,
           "author": "Beluga",
-          "time": "4:08 PM",
-          "content": "WAIT"
+          "time": "4:10 PM",
+          "content": "SEE SKITTLE? IT'S IMPORTANT."
         },
         {
           "id": 26,
-          "author": "Beluga",
-          "time": "4:08 PM",
-          "content": "HE PUT HIS NAME NEXT TO HANNIBAL AND CHARLEMAGNE"
+          "author": "Skittle",
+          "time": "4:10 PM",
+          "content": "MrBeast, you can't just throw money at every historical inaccuracy."
         },
         {
           "id": 27,
-          "author": "Skittle",
-          "time": "4:08 PM",
-          "content": "he's trying to look legendary"
+          "author": "MrBeast",
+          "time": "4:11 PM",
+          "content": "Why not? Good content."
         },
         {
           "id": 28,
-          "author": "Beluga",
-          "time": "4:08 PM",
-          "content": "BRO MADE A LINKEDIN PROFILE OUT OF A MOUNTAIN"
+          "author": "Hecker",
+          "time": "4:11 PM",
+          "content": "archives accessed."
         },
         {
           "id": 29,
-          "author": "ExplodingTNT",
-          "time": "4:09 PM",
-          "content": "\"CEO OF CROSSING ALPS\""
+          "author": "Beluga",
+          "time": "4:11 PM",
+          "content": "WHAT DID YOU FIND HECKER?"
         },
         {
           "id": 30,
-          "author": "MrBeast",
-          "time": "4:09 PM",
-          "content": "I WILL GIVE $1 MILLION TO WHOEVER FINDS NAPOLEON'S REAL HORSE"
+          "author": "Hecker",
+          "time": "4:12 PM",
+          "content": "early drafts depict a donkey."
         },
         {
           "id": 31,
-          "author": "Beluga",
-          "time": "4:09 PM",
-          "content": "I'M IN"
+          "author": "Skittle",
+          "time": "4:12 PM",
+          "content": "A donkey is not a mule, Hecker."
         },
         {
           "id": 32,
-          "author": "Skittle",
-          "time": "4:09 PM",
-          "content": "it's a mule"
+          "author": "Hecker",
+          "time": "4:12 PM",
+          "content": "close enough."
         },
         {
           "id": 33,
-          "author": "MrBeast",
-          "time": "4:10 PM",
-          "content": "THEN FIND THE MULE"
+          "author": "ExplodingTNT",
+          "time": "4:13 PM",
+          "content": "CLOSE ENOUGH FOR A MILLION BUCKS!"
         },
         {
           "id": 34,
-          "author": "ExplodingTNT",
-          "time": "4:10 PM",
-          "content": "I'M ALREADY AT THE ZOO"
+          "author": "Beluga",
+          "time": "4:13 PM",
+          "content": "HECKER. CAN YOU... FIX THE PAINTING?"
         },
         {
           "id": 35,
-          "author": "Hecker",
-          "time": "4:10 PM",
-          "content": "found it"
+          "author": "Beluga",
+          "time": "4:13 PM",
+          "content": "MAKE IT... ACCURATE."
         },
         {
           "id": 36,
-          "author": "Beluga",
-          "time": "4:10 PM",
-          "content": "WHERE"
+          "author": "Hecker",
+          "time": "4:14 PM",
+          "content": "skill issue for the original artist."
         },
         {
           "id": 37,
           "author": "Hecker",
-          "time": "4:11 PM",
-          "content": "in the painting"
+          "time": "4:14 PM",
+          "content": "hacked it."
         },
         {
           "id": 38,
           "author": "Beluga",
-          "time": "4:11 PM",
-          "content": "THAT'S NOT THE REAL ONE"
+          "time": "4:14 PM",
+          "content": "(Attachment: hacked_parody_revelation.png)"
         },
         {
           "id": 39,
-          "author": "Hecker",
-          "time": "4:11 PM",
-          "content": "too late",
-          "attachmentUrl": "attachments/napoleon_crowned_mule.jpg"
+          "author": "ExplodingTNT",
+          "time": "4:15 PM",
+          "content": "LMAOOOOOOO NAPOLEON ON A DONKEYYYY"
         },
         {
           "id": 40,
           "author": "Skittle",
-          "time": "4:11 PM",
-          "content": "WHY IS THE MULE BIGGER THAN NAPOLEON"
+          "time": "4:15 PM",
+          "content": "OH MY GOD. HECKER."
         },
         {
           "id": 41,
-          "author": "ExplodingTNT",
-          "time": "4:12 PM",
-          "content": "BECAUSE IT CARRIED THE EMPIRE"
+          "author": "MrBeast",
+          "time": "4:15 PM",
+          "content": "That's... surprisingly compelling."
         },
         {
           "id": 42,
           "author": "MrBeast",
-          "time": "4:12 PM",
-          "content": "the mule wins"
+          "time": "4:16 PM",
+          "content": "Beluga, you earned your $1,000,000."
         },
         {
           "id": 43,
           "author": "Beluga",
-          "time": "4:12 PM",
-          "content": "WHAT"
+          "time": "4:16 PM",
+          "content": "I KNEW IT. MULE-POLEON."
         },
         {
           "id": 44,
-          "author": "MrBeast",
-          "time": "4:12 PM",
-          "content": "$1 million to the mule"
+          "author": "ExplodingTNT",
+          "time": "4:16 PM",
+          "content": "MULE-POLEON NEW MEME"
         },
         {
           "id": 45,
-          "author": "Beluga",
-          "time": "4:13 PM",
-          "content": "YOU CAN'T GIVE MONEY TO A MULE"
+          "author": "Skittle",
+          "time": "4:17 PM",
+          "content": "This is a disaster."
         },
         {
           "id": 46,
-          "author": "Hecker",
-          "time": "4:13 PM",
-          "content": "already transferred"
+          "author": "MrBeast",
+          "time": "4:17 PM",
+          "content": "Giving the money to the mule."
         },
         {
           "id": 47,
           "author": "Beluga",
-          "time": "4:13 PM",
-          "content": "HECKER"
+          "time": "4:17 PM",
+          "content": "NO YOU CAN'T GIVE MONEY TO A MULE"
         },
         {
           "id": 48,
-          "author": "Hecker",
-          "time": "4:13 PM",
-          "content": "the mule has a bank account now"
+          "author": "Skittle",
+          "time": "4:18 PM",
+          "content": "Hecker, undo it!"
         },
         {
           "id": 49,
-          "author": "ExplodingTNT",
-          "time": "4:14 PM",
-          "content": "LONG LIVE THE MULE"
+          "author": "Hecker",
+          "time": "4:18 PM",
+          "content": "cannot undo reality."
         },
         {
           "id": 50,
           "author": "Server",
-          "time": "4:14 PM",
-          "content": "[SERVER ICON CHANGED TO A MULE WEARING A CROWN]"
+          "time": "4:18 PM",
+          "content": "The server icon has been updated to 'Napoleon on a Mule'."
         },
         {
           "id": 51,
-          "author": "Beluga",
-          "time": "4:14 PM",
-          "content": "I'M LEAVING THIS SERVER"
+          "author": "ExplodingTNT",
+          "time": "4:19 PM",
+          "content": "THE SERVER ICON LMAO"
         },
         {
           "id": 52,
-          "author": "Skittle",
-          "time": "4:14 PM",
-          "content": "napoleon would be proud"
+          "author": "Beluga",
+          "time": "4:19 PM",
+          "content": "OUR HISTORY IS CHANGED FOREVER."
         },
         {
           "id": 53,
-          "author": "Beluga",
-          "time": "4:15 PM",
-          "content": "I'M BLOCKING ALL OF YOU"
+          "author": "Skittle",
+          "time": "4:19 PM",
+          "content": "I need a new server."
+        },
+        {
+          "id": 54,
+          "author": "MrBeast",
+          "time": "4:20 PM",
+          "content": "Worth it."
+        },
+        {
+          "id": 55,
+          "author": "Hecker",
+          "time": "4:20 PM",
+          "content": "confirmed."
         }
       ]
     }
-  ],
-  "customThumbnailPath": "out/thumbnail_mrbeast_mule.jpg"
+  ]
 }

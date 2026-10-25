@@ -4,9 +4,12 @@ import { google } from 'googleapis';
 import dotenv from 'dotenv';
 dotenv.config();
 
-export async function uploadVideo(videoPath, title, thumbnailPath = null) {
+export async function uploadVideo(videoPath, title, thumbnailPath = null, publishAt = null) {
   try {
     console.log(`Starting upload for: ${title}`);
+    if (publishAt) {
+      console.log(`⏰ Scheduled Publish Time: ${publishAt}`);
+    }
 
     const oauth2Client = new google.auth.OAuth2(
       process.env.YOUTUBE_CLIENT_ID,
@@ -34,7 +37,8 @@ export async function uploadVideo(videoPath, title, thumbnailPath = null) {
           categoryId: '24' // 24 is Entertainment
         },
         status: {
-          privacyStatus: process.env.YOUTUBE_PRIVACY || 'public',
+          privacyStatus: publishAt ? 'private' : (process.env.YOUTUBE_PRIVACY || 'public'),
+          publishAt: publishAt || undefined,
           selfDeclaredMadeForKids: false,
         },
       },
