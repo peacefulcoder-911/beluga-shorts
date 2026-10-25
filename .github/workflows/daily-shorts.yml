@@ -1,9 +1,14 @@
-name: Single Beluga Short Manual / Fallback Runner
+name: Beluga 3x Daily Automated 2K Short Publisher
 
 on:
-  # Automated schedule is now consolidated into .github/workflows/daily-batch-autopilot.yml (runs daily at 6:00 AM IST)
-  # schedule:
-  #   - cron: '0 3 * * *'
+  schedule:
+    # 3 Daily Uploads at peak engagement hours (IST):
+    # 1. 01:00 PM IST (07:30 UTC) - Lunch / Afternoon Peak
+    - cron: '30 7 * * *'
+    # 2. 08:00 PM IST (14:30 UTC) - Evening Prime Time Peak
+    - cron: '30 14 * * *'
+    # 3. 02:00 AM IST (20:30 UTC) - Late Night / US Morning Peak
+    - cron: '30 20 * * *'
   workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:

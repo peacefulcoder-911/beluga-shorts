@@ -60,6 +60,35 @@ async function ensureAttachmentImage(slug, imagePrompt) {
   return success ? `attachments/${clean}.jpg` : null;
 }
 
+async function generateWithFallback(genAI, prompt) {
+  const candidateModels = [
+    'gemini-3-flash-preview',
+    'gemini-2.5-flash',
+    'gemini-flash-latest',
+    'gemini-3.5-flash'
+  ];
+
+  let lastError = null;
+  for (const modelName of candidateModels) {
+    try {
+      console.log(`🤖 Requesting script from Gemini (${modelName})...`);
+      const model = genAI.getGenerativeModel({
+        model: modelName,
+        generationConfig: { responseMimeType: 'application/json' }
+      });
+      const result = await model.generateContent(prompt);
+      const text = result.response.text();
+      const data = JSON.parse(text);
+      console.log(`✅ Script generation succeeded with ${modelName}!`);
+      return data;
+    } catch (err) {
+      console.warn(`⚠️ Model ${modelName} encountered error: ${err.message || err}. Falling back to next model...`);
+      lastError = err;
+    }
+  }
+  throw lastError || new Error('All candidate Gemini models failed.');
+}
+
 export async function generateScript() {
   if (!apiKey) {
     console.error('Please provide GEMINI_API_KEY in .env');
@@ -67,10 +96,6 @@ export async function generateScript() {
   }
 
   const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash',
-    generationConfig: { responseMimeType: 'application/json' }
-  });
 
   const historyPath = path.join(process.cwd(), 'history.json');
   let history = [];
@@ -167,9 +192,7 @@ Return ONLY raw JSON in this structure:
 `;
 
   try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
-    const data = JSON.parse(text);
+    const data = await generateWithFallback(genAI, prompt);
 
     // Strict validation: reject any scripts containing banned tax/fraud keywords
     const rawContent = JSON.stringify(data).toLowerCase();

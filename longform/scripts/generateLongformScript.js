@@ -40,14 +40,39 @@ async function ensureAttachmentImage(slug, imagePrompt) {
   return success ? `attachments/${clean}.jpg` : null;
 }
 
-export async function generateLongformScript() {
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash',
-    generationConfig: {
-      responseMimeType: 'application/json',
-      temperature: 0.85
+async function generateWithFallback(prompt) {
+  const candidateModels = [
+    'gemini-3-flash-preview',
+    'gemini-2.5-flash',
+    'gemini-flash-latest',
+    'gemini-3.5-flash'
+  ];
+
+  let lastError = null;
+  for (const modelName of candidateModels) {
+    try {
+      console.log(`🤖 Requesting long-form script from Gemini (${modelName})...`);
+      const model = genAI.getGenerativeModel({
+        model: modelName,
+        generationConfig: {
+          responseMimeType: 'application/json',
+          temperature: 0.85
+        }
+      });
+      const result = await model.generateContent(prompt);
+      const text = result.response.text();
+      const data = JSON.parse(text);
+      console.log(`✅ Long-form generation succeeded with ${modelName}!`);
+      return data;
+    } catch (err) {
+      console.warn(`⚠️ Model ${modelName} encountered error: ${err.message || err}. Falling back to next model...`);
+      lastError = err;
     }
-  });
+  }
+  throw lastError || new Error('All candidate Gemini models failed.');
+}
+
+export async function generateLongformScript() {
 
   const historyPath = path.join(process.cwd(), 'longform', 'data', 'history_longform.json');
   let history = [];
@@ -143,9 +168,7 @@ Return ONLY raw JSON with this exact structure:
 `;
 
   try {
-    const result = await model.generateContent(prompt);
-    const text = result.response.text();
-    const data = JSON.parse(text);
+    const data = await generateWithFallback(prompt);
 
     // Handle multiple attachment images
     const attachments = data.attachments || (data.attachment ? [data.attachment] : []);
