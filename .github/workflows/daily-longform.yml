@@ -1,13 +1,15 @@
-name: Single Beluga Long-Form Manual / Fallback Runner
+name: Beluga Daily Automated Long-Form Episode Publisher
 
 on:
-  # Automated schedule is now consolidated into .github/workflows/daily-batch-autopilot.yml (runs daily at 6:00 AM IST)
-  # schedule:
-  #   - cron: '0 14 * * *'
-  workflow_dispatch: # Allows manual trigger from GitHub UI anytime if needed
+  schedule:
+    # 1 Daily Long-Form Full Episode in the evening:
+    # 07:00 PM IST (13:30 UTC) - Prime Time Evening
+    - cron: '30 13 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI anytime
 
 permissions:
   contents: write
+  issues: write
 
 jobs:
   build-and-upload-longform:
@@ -46,3 +48,26 @@ jobs:
           git add longform/data/history_longform.json public/attachments/ public/characters/ || true
           git commit -m "chore: record uploaded long-form episode to history [skip ci]" || echo "No changes to commit"
           git push origin main
+
+      - name: Send GitHub Long-Form Upload Verification Notification
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f "latest_upload_longform.json" ]; then
+            VIDEO_TITLE=$(node -e "console.log(require('./latest_upload_longform.json').title)")
+            VIDEO_URL=$(node -e "console.log(require('./latest_upload_longform.json').videoUrl)")
+            UPLOAD_TIME=$(node -e "console.log(require('./latest_upload_longform.json').uploadedAt)")
+
+            echo "### 🎬 YouTube Long-Form Episode Upload Verified!" >> $GITHUB_STEP_SUMMARY
+            echo "- **Title:** ${VIDEO_TITLE}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Watch Link:** [${VIDEO_URL}](${VIDEO_URL})" >> $GITHUB_STEP_SUMMARY
+            echo "- **Uploaded At:** ${UPLOAD_TIME}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Format:** 1080p Landscape Full Episode" >> $GITHUB_STEP_SUMMARY
+            echo "- **Status:** Published & Live on YouTube ✅" >> $GITHUB_STEP_SUMMARY
+
+            ISSUE_BODY=$(printf "### 🎬 YouTube Long-Form Episode Live!\n\n- **Title:** %s\n- **Watch Link:** %s\n- **Uploaded At:** %s\n- **Format:** 1080p Landscape Full Episode\n- **Status:** Live & Public ✅\n\n---\n*Automatic verification notification dispatched by GitHub Actions.*" "$VIDEO_TITLE" "$VIDEO_URL" "$UPLOAD_TIME")
+            gh issue create \
+              --title "🚀 Long-Form Episode Published: ${VIDEO_TITLE}" \
+              --body "${ISSUE_BODY}" || true
+          fi

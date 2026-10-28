@@ -78,6 +78,15 @@ async function runLongform() {
       } catch (e) {}
     }
 
+    // Save metadata for GitHub verification and notifications
+    const latestUploadPath = path.join(process.cwd(), 'latest_upload_longform.json');
+    fs.writeFileSync(latestUploadPath, JSON.stringify({
+      title: data.title,
+      videoUrl: videoUrl,
+      thumbnail: chosenThumbnail,
+      uploadedAt: new Date().toISOString()
+    }, null, 2));
+
     console.log('\n====================================');
     console.log('🎉 LONG-FORM EPISODE PRODUCTION COMPLETE!');
     console.log(`📺 Video URL: ${videoUrl}`);
