@@ -30,7 +30,7 @@ async function runLongform() {
     const fallbackThumbnail = path.join(outDir, `thumbnail_longform_${timestamp}.png`);
 
     console.log(`🎬 [Step 2/3] Rendering 1920x1080 Landscape video with Remotion to ${videoFileName}...`);
-    execSync(`npx remotion render src/index.ts LongformDiscord "${outputPath}" --concurrency=4`, {
+    execSync(`npx remotion render src/index.ts LongformDiscord "${outputPath}"`, {
       stdio: 'inherit'
     });
     console.log(`✅ Long-form video rendered successfully!`);

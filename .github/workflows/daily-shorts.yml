@@ -70,17 +70,9 @@ jobs:
             echo "- **Quality:** 2K QHD (9:16 Vertical Short)" >> $GITHUB_STEP_SUMMARY
             echo "- **Status:** Published & Live on YouTube ✅" >> $GITHUB_STEP_SUMMARY
 
+            ISSUE_BODY=$(printf "### 🎬 YouTube Short Uploaded & Live!\n\n- **Title:** %s\n- **Watch Link:** %s\n- **Uploaded At:** %s\n- **Format:** 2K QHD (1080x1920) Vertical Short\n- **Status:** Live & Public ✅\n\n---\n*Automatic verification notification dispatched by GitHub Actions.*" "$VIDEO_TITLE" "$VIDEO_URL" "$UPLOAD_TIME")
             # Create GitHub Issue for instant mobile push & email notification to repo owner
             gh issue create \
               --title "🚀 YouTube Short Published: ${VIDEO_TITLE}" \
-              --body "### 🎬 YouTube Short Uploaded & Live!
-
-**Title:** ${VIDEO_TITLE}
-**Watch Link:** ${VIDEO_URL}
-**Uploaded At:** ${UPLOAD_TIME}
-**Format:** 2K QHD (1080x1920) Vertical Short
-**Status:** Live & Public ✅
-
----
-*Automatic verification notification dispatched by GitHub Actions.*" || true
+              --body "${ISSUE_BODY}" || true
           fi
