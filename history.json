@@ -8275,5 +8275,238 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=iamTpIH2Cx0"
+  },
+  {
+    "date": "2026-10-28T14:13:54.852Z",
+    "title": "Beluga Lied On His NASA Astronaut Application 🚀",
+    "archetype": "Absurd Job Application & Interview Catastrophe",
+    "newCharacter": {
+      "name": "Flight Director Vance",
+      "avatarPrompt": "Discord profile avatar of a stressed cat in a space mission control headset looking panicky, meme style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "rocket_schematic",
+      "imagePrompt": "Crayon-drawn schematic of a rocket labeled '100% Certified Space Ship' with a smiling sun in the corner"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Flight Director Vance",
+        "content": "BELUGA.",
+        "time": "Today at 4:20 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "yes?",
+        "time": "Today at 4:20 PM"
+      },
+      {
+        "id": 3,
+        "author": "Flight Director Vance",
+        "content": "NASA NEEDS YOU.",
+        "time": "Today at 4:20 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "im busy.",
+        "time": "Today at 4:20 PM"
+      },
+      {
+        "id": 5,
+        "author": "Flight Director Vance",
+        "content": "WE NEED PILOTS.",
+        "time": "Today at 4:21 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "i am pilot.",
+        "time": "Today at 4:21 PM"
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "WAIT.",
+        "time": "Today at 4:21 PM"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "u cant fly.",
+        "time": "Today at 4:21 PM"
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "shhh.",
+        "time": "Today at 4:21 PM"
+      },
+      {
+        "id": 10,
+        "author": "Flight Director Vance",
+        "content": "SEND CREDENTIALS.",
+        "time": "Today at 4:22 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "ok one sec.",
+        "time": "Today at 4:22 PM"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "it is blueprints.",
+        "time": "Today at 4:22 PM"
+      },
+      {
+        "id": 13,
+        "author": "Flight Director Vance",
+        "content": "IS THAT CRAYON?",
+        "time": "Today at 4:22 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "it is math.",
+        "time": "Today at 4:23 PM"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "verified.",
+        "time": "Today at 4:23 PM"
+      },
+      {
+        "id": 16,
+        "author": "Hecker",
+        "content": "he is elite.",
+        "time": "Today at 4:23 PM"
+      },
+      {
+        "id": 17,
+        "author": "Flight Director Vance",
+        "content": "OKAY HURRY.",
+        "time": "Today at 4:23 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Flight Director Vance",
+        "content": "MARS IS WAITING.",
+        "time": "Today at 4:24 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "BELUGA NO.",
+        "time": "Today at 4:24 PM"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "ignition.",
+        "time": "Today at 4:24 PM"
+      },
+      {
+        "id": 21,
+        "author": "Flight Director Vance",
+        "content": "3... 2... 1...",
+        "time": "Today at 4:24 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "VROOOOOM.",
+        "time": "Today at 4:25 PM"
+      },
+      {
+        "id": 23,
+        "author": "Flight Director Vance",
+        "content": "SENSORS ARE RED.",
+        "time": "Today at 4:25 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Flight Director Vance",
+        "content": "OXYGEN DROPPING.",
+        "time": "Today at 4:25 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Skittle",
+        "content": "HE IS DYING.",
+        "time": "Today at 4:25 PM"
+      },
+      {
+        "id": 26,
+        "author": "Beluga",
+        "content": "sorry.",
+        "time": "Today at 4:26 PM"
+      },
+      {
+        "id": 27,
+        "author": "Beluga",
+        "content": "i f@rted.",
+        "time": "Today at 4:26 PM"
+      },
+      {
+        "id": 28,
+        "author": "Flight Director Vance",
+        "content": "WHAT.",
+        "time": "Today at 4:26 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 29,
+        "author": "Admin",
+        "content": "STOP.",
+        "time": "Today at 4:26 PM"
+      },
+      {
+        "id": 30,
+        "author": "Admin",
+        "content": "u are banned.",
+        "time": "Today at 4:27 PM"
+      },
+      {
+        "id": 31,
+        "author": "Flight Director Vance",
+        "content": "FROM SPACE?",
+        "time": "Today at 4:27 PM",
+        "avatarUrl": "characters/flight_director_vance.jpg"
+      },
+      {
+        "id": 32,
+        "author": "Admin",
+        "content": "from life.",
+        "time": "Today at 4:27 PM"
+      },
+      {
+        "id": 33,
+        "author": "Beluga",
+        "content": "rip.",
+        "time": "Today at 4:27 PM"
+      },
+      {
+        "id": 34,
+        "author": "Skittle",
+        "content": "technically.",
+        "time": "Today at 4:27 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=-NNxmb9wgjw"
   }
 ]
