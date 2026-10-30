@@ -9646,5 +9646,240 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=sTvAdw6aFmk"
+  },
+  {
+    "date": "2026-10-30T14:25:07.249Z",
+    "title": "Beluga Lied On His Air Traffic Controller Resume ✈️",
+    "archetype": "Absurd Job Application & Interview Catastrophe",
+    "newCharacter": {
+      "name": "Controller Dave",
+      "avatarPrompt": "Discord profile avatar of a stressed cat with a pilot headset and a radar screen background, meme style"
+    },
+    "attachment": {
+      "messageIndex": 13,
+      "slug": "crayon_map",
+      "imagePrompt": "A messy crayon drawing on a napkin showing a plane flying directly into a volcano labeled 'FAST SHORTCUT' with a smiling sun in the corner."
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Controller Dave",
+        "content": "Beluga?",
+        "time": "Today at 2:00 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "yes",
+        "time": "Today at 2:00 PM"
+      },
+      {
+        "id": 3,
+        "author": "Controller Dave",
+        "content": "You're hired.",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "epic",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 5,
+        "author": "Controller Dave",
+        "content": "Flight 99 is stalling!",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "tell him 'L'",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 7,
+        "author": "Controller Dave",
+        "content": "'L'??",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "ratio",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 9,
+        "author": "Controller Dave",
+        "content": "BELUGA HE IS FALLING.",
+        "time": "Today at 2:02 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "open the door",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 11,
+        "author": "Controller Dave",
+        "content": "WHAT??",
+        "time": "Today at 2:02 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "wind resistance",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "physics hacked.",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "look",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 15,
+        "author": "Controller Dave",
+        "content": "IS THAT CRAYON??",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "map",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 17,
+        "author": "Controller Dave",
+        "content": "YOU DREW A VOLCANO?",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "shortcut",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 19,
+        "author": "Controller Dave",
+        "content": "IT IS ON FIRE.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "spicy",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 21,
+        "author": "Skittle",
+        "content": "BELUGA NO",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "don't worry",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "press 'E'",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 24,
+        "author": "Controller Dave",
+        "content": "FOR WHAT??",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "eject",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 26,
+        "author": "Controller Dave",
+        "content": "THERE ARE 300 PEOPLE!",
+        "time": "Today at 2:05 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Beluga",
+        "content": "oops",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 28,
+        "author": "Controller Dave",
+        "content": "WAIT.",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 29,
+        "author": "Controller Dave",
+        "content": "They have parachutes?",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 30,
+        "author": "Beluga",
+        "content": "yes",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 31,
+        "author": "Controller Dave",
+        "content": "Where from?",
+        "time": "Today at 2:06 PM",
+        "avatarUrl": "default_user.jpg"
+      },
+      {
+        "id": 32,
+        "author": "Beluga",
+        "content": "hecker",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 33,
+        "author": "Hecker",
+        "content": "they are umbrellas.",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 34,
+        "author": "Beluga",
+        "content": "close enough",
+        "time": "Today at 2:07 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=WOlUJPrfBnE"
   }
 ]
