@@ -10107,5 +10107,235 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=YOTTxVhTH0M"
+  },
+  {
+    "date": "2026-10-30T23:55:50.930Z",
+    "title": "The Server With The Most Illegal Rules 💀",
+    "archetype": "Unbearable Server Rules & Mod Chaos",
+    "newCharacter": {
+      "name": "Supreme Mod Lester",
+      "avatarPrompt": "Discord profile avatar of an overweight pompous cat with fedora and glowing neon mod badge, meme style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "server_rules",
+      "imagePrompt": "Discord screenshot of server rules showing Rule 74: Breathing too loudly in voice chat = 20-year mute, with 999 strike counts next to it."
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "hello?",
+        "time": "Today at 12:00 PM"
+      },
+      {
+        "id": 2,
+        "author": "Admin",
+        "content": "STOP.",
+        "time": "Today at 12:00 PM"
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "what?",
+        "time": "Today at 12:00 PM"
+      },
+      {
+        "id": 4,
+        "author": "Supreme Mod Lester",
+        "content": "WRONG FORMAT.",
+        "time": "Today at 12:01 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "i just said hi",
+        "time": "Today at 12:01 PM"
+      },
+      {
+        "id": 6,
+        "author": "Supreme Mod Lester",
+        "content": "READ THE RULES.",
+        "time": "Today at 12:01 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Admin",
+        "content": "RULE 1: NO BREATHING.",
+        "time": "Today at 12:01 PM"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "HOW?",
+        "time": "Today at 12:01 PM"
+      },
+      {
+        "id": 9,
+        "author": "Supreme Mod Lester",
+        "content": "HOLD IT.",
+        "time": "Today at 12:02 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "i'm literally typing",
+        "time": "Today at 12:02 PM"
+      },
+      {
+        "id": 11,
+        "author": "Admin",
+        "content": "NO TYPING EITHER.",
+        "time": "Today at 12:02 PM"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "then how...",
+        "time": "Today at 12:02 PM"
+      },
+      {
+        "id": 13,
+        "author": "Admin",
+        "content": "LOOK AT THIS.",
+        "time": "Today at 12:03 PM"
+      },
+      {
+        "id": 14,
+        "author": "Supreme Mod Lester",
+        "content": "SEE RULE 74.",
+        "time": "Today at 12:03 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "20 YEAR MUTE?",
+        "time": "Today at 12:03 PM"
+      },
+      {
+        "id": 16,
+        "author": "RuleEnforcerBot",
+        "content": "WARNING: LUNG ACTIVITY.",
+        "time": "Today at 12:03 PM"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "BRO WHAT",
+        "time": "Today at 12:03 PM"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "beluga dont inhale",
+        "time": "Today at 12:04 PM"
+      },
+      {
+        "id": 19,
+        "author": "Admin",
+        "content": "SKITTLE BANNED.",
+        "time": "Today at 12:04 PM"
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "why??",
+        "time": "Today at 12:04 PM"
+      },
+      {
+        "id": 21,
+        "author": "Supreme Mod Lester",
+        "content": "FOR INHALING.",
+        "time": "Today at 12:04 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "HE LIVES.",
+        "time": "Today at 12:04 PM"
+      },
+      {
+        "id": 23,
+        "author": "Supreme Mod Lester",
+        "content": "NOT ANYMORE.",
+        "time": "Today at 12:05 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Hecker",
+        "content": "hold on",
+        "time": "Today at 12:05 PM"
+      },
+      {
+        "id": 25,
+        "author": "Hecker",
+        "content": "hacking the lungs",
+        "time": "Today at 12:05 PM"
+      },
+      {
+        "id": 26,
+        "author": "Admin",
+        "content": "HECKER STOP.",
+        "time": "Today at 12:05 PM"
+      },
+      {
+        "id": 27,
+        "author": "Supreme Mod Lester",
+        "content": "NEW RULE.",
+        "time": "Today at 12:05 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 28,
+        "author": "Beluga",
+        "content": "what now?",
+        "time": "Today at 12:06 PM"
+      },
+      {
+        "id": 29,
+        "author": "Supreme Mod Lester",
+        "content": "NO GREEN TEXT.",
+        "time": "Today at 12:06 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 30,
+        "author": "Hecker",
+        "content": "oops",
+        "time": "Today at 12:06 PM"
+      },
+      {
+        "id": 31,
+        "author": "RuleEnforcerBot",
+        "content": "HECKER DELETED.",
+        "time": "Today at 12:06 PM"
+      },
+      {
+        "id": 32,
+        "author": "Beluga",
+        "content": "I'M LEAVING.",
+        "time": "Today at 12:07 PM"
+      },
+      {
+        "id": 33,
+        "author": "Supreme Mod Lester",
+        "content": "RULE 99: NO LEAVING.",
+        "time": "Today at 12:07 PM",
+        "avatarUrl": "characters/supreme_mod_lester.jpg"
+      },
+      {
+        "id": 34,
+        "author": "Beluga",
+        "content": "PAIN.",
+        "time": "Today at 12:07 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=o-83owxuhZ8"
   }
 ]
