@@ -9881,5 +9881,231 @@
       }
     ],
     "videoUrl": "https://youtube.com/watch?v=WOlUJPrfBnE"
+  },
+  {
+    "date": "2026-10-30T19:59:04.991Z",
+    "title": "The Discord Courtroom Trial of Pablo ⚖️",
+    "archetype": "Discord Courtroom Trial & Server Lawsuit",
+    "newCharacter": {
+      "name": "Judge Whiskers",
+      "avatarPrompt": "Discord profile avatar of a stern cat wearing an 18th century British judicial wig and robes with a gavel, meme style"
+    },
+    "attachment": {
+      "messageIndex": 12,
+      "slug": "sock_theft_evidence",
+      "imagePrompt": "CCTV screenshot of a shadowy cat paw snatching a neon green sock from a laundry basket at 3:14 AM"
+    },
+    "messages": [
+      {
+        "id": 1,
+        "author": "Skittle",
+        "content": "COURT IS SESSION.",
+        "time": "Today at 2:00 PM"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "huh?",
+        "time": "Today at 2:00 PM"
+      },
+      {
+        "id": 3,
+        "author": "Skittle",
+        "content": "YOU STOLE IT.",
+        "time": "Today at 2:00 PM"
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "stole what?",
+        "time": "Today at 2:00 PM"
+      },
+      {
+        "id": 5,
+        "author": "Skittle",
+        "content": "MY LEFT SOCK.",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "i didn't.",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 7,
+        "author": "Judge Whiskers",
+        "content": "ORDER!",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "characters/judge_whiskers.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "who r u?",
+        "time": "Today at 2:01 PM"
+      },
+      {
+        "id": 9,
+        "author": "Judge Whiskers",
+        "content": "THE JUDGE.",
+        "time": "Today at 2:01 PM",
+        "avatarUrl": "characters/judge_whiskers.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "Prosecution, proceed.",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "I have proof.",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "what proof?",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "Look.",
+        "time": "Today at 2:02 PM"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "THAT ISN'T ME.",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "It is.",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "EXPOSED.",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 17,
+        "author": "Judge Whiskers",
+        "content": "GUILTY.",
+        "time": "Today at 2:03 PM",
+        "avatarUrl": "characters/judge_whiskers.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "WAIT.",
+        "time": "Today at 2:03 PM"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "it was self-defense.",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 20,
+        "author": "Judge Whiskers",
+        "content": "EXPLAIN.",
+        "time": "Today at 2:04 PM",
+        "avatarUrl": "characters/judge_whiskers.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "it attacked me.",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "it's a sock.",
+        "time": "Today at 2:04 PM"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "it looked scary.",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 24,
+        "author": "Hecker",
+        "content": "LIES.",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 25,
+        "author": "Hecker",
+        "content": "He used it.",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 26,
+        "author": "Beluga",
+        "content": "for what?",
+        "time": "Today at 2:05 PM"
+      },
+      {
+        "id": 27,
+        "author": "Hecker",
+        "content": "As a puppet.",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 28,
+        "author": "Skittle",
+        "content": "BRO WHAT.",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 29,
+        "author": "Mom",
+        "content": "BELUGA!!",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 30,
+        "author": "Beluga",
+        "content": "SHE FOUND ME.",
+        "time": "Today at 2:06 PM"
+      },
+      {
+        "id": 31,
+        "author": "Mom",
+        "content": "WHERE IS IT?",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 32,
+        "author": "Beluga",
+        "content": "i flushed it.",
+        "time": "Today at 2:07 PM"
+      },
+      {
+        "id": 33,
+        "author": "Judge Whiskers",
+        "content": "PERMABAN.",
+        "time": "Today at 2:07 PM",
+        "avatarUrl": "characters/judge_whiskers.jpg"
+      },
+      {
+        "id": 34,
+        "author": "Beluga",
+        "content": "worth it.",
+        "time": "Today at 2:07 PM"
+      }
+    ],
+    "videoUrl": "https://youtube.com/watch?v=YOTTxVhTH0M"
   }
 ]
