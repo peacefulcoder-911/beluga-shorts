@@ -87,7 +87,12 @@ async function runDailyBatch() {
       let videoUrl = 'https://youtube.com/watch?v=simulated';
 
       if (process.env.YOUTUBE_REFRESH_TOKEN) {
-        videoUrl = await uploadVideo(outputPath, videoTitle, null, slotTime);
+        try {
+          videoUrl = await uploadVideo(outputPath, videoTitle, null, slotTime);
+        } catch (upErr) {
+          console.warn(`⚠️ YouTube upload failed for Short ${i + 1} (${upErr.message}). Recording simulation entry.`);
+          videoUrl = `https://youtube.com/watch?v=offline_${Date.now()}`;
+        }
       } else {
         console.log('ℹ️ Running in simulation mode (no YOUTUBE_REFRESH_TOKEN).');
       }
@@ -159,14 +164,19 @@ async function runDailyBatch() {
       let longformUrl = 'https://youtube.com/watch?v=simulated_longform';
 
       if (process.env.YOUTUBE_REFRESH_TOKEN) {
-        longformUrl = await uploadLongformVideo(
-          longformOutputPath,
-          longformData.title,
-          longformData.description,
-          longformData.tags,
-          null,
-          slots.longform
-        );
+        try {
+          longformUrl = await uploadLongformVideo(
+            longformOutputPath,
+            longformData.title,
+            longformData.description,
+            longformData.tags,
+            null,
+            slots.longform
+          );
+        } catch (longformUpErr) {
+          console.warn(`⚠️ YouTube longform upload failed (${longformUpErr.message}). Recording simulation entry.`);
+          longformUrl = `https://youtube.com/watch?v=offline_longform_${Date.now()}`;
+        }
       } else {
         console.log('ℹ️ Running in simulation mode (no YOUTUBE_REFRESH_TOKEN).');
       }

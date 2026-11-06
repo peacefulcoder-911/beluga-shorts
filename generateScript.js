@@ -323,6 +323,29 @@ export async function generateScript(params = null) {
       // STRICT REQUIREMENT: Delete any reaction pills
       delete updated.reactions;
 
+      // Ensure physical asset existence so Remotion renderer never encounters 404s
+      if (updated.avatarUrl) {
+        const fullPath = path.join(process.cwd(), 'public', updated.avatarUrl);
+        if (!fs.existsSync(fullPath)) {
+          console.warn(`⚠️ Avatar asset not found on disk: "${updated.avatarUrl}". Safe fallback to default_user.jpg.`);
+          updated.avatarUrl = 'default_user.jpg';
+        }
+      }
+      if (updated.attachmentUrl) {
+        const fullPath = path.join(process.cwd(), 'public', updated.attachmentUrl);
+        if (!fs.existsSync(fullPath)) {
+          console.warn(`⚠️ Attachment asset not found on disk: "${updated.attachmentUrl}". Safe fallback to attachments/deposit_penny.jpg.`);
+          updated.attachmentUrl = 'attachments/deposit_penny.jpg';
+        }
+      }
+      if (updated.hookThumbnailUrl) {
+        const fullPath = path.join(process.cwd(), 'public', updated.hookThumbnailUrl);
+        if (!fs.existsSync(fullPath)) {
+          console.warn(`⚠️ Hook thumbnail not found on disk: "${updated.hookThumbnailUrl}". Safe fallback to thumbnail_mrbeast_mule.jpg.`);
+          updated.hookThumbnailUrl = 'thumbnail_mrbeast_mule.jpg';
+        }
+      }
+
       return updated;
     });
 

@@ -159,6 +159,24 @@ export async function generateLongformScript() {
       }
     }
 
+    // Ensure physical existence of all assets across scenes to avoid Remotion 404s
+    for (const scene of data.scenes) {
+      for (const msg of (scene.messages || [])) {
+        if (msg.avatarUrl) {
+          const fullPath = path.join(process.cwd(), 'public', msg.avatarUrl);
+          if (!fs.existsSync(fullPath)) {
+            msg.avatarUrl = 'default_user.jpg';
+          }
+        }
+        if (msg.attachmentUrl) {
+          const fullPath = path.join(process.cwd(), 'public', msg.attachmentUrl);
+          if (!fs.existsSync(fullPath)) {
+            msg.attachmentUrl = 'attachments/deposit_penny.jpg';
+          }
+        }
+      }
+    }
+
     // Generate standard MrBeast-style YouTube thumbnail
     try {
       const thumbPrompt = data.mrbeastThumbnailPrompt || `A viral high-CTR YouTube thumbnail in 16:9 widescreen format for "${data.title}". On the right, an energetic content creator with an exaggerated shocked open-mouth expression, pointing enthusiastically towards the center. In the center, a dramatic visual spectacle with glowing royal crowns, prize chests and bold neon $1,000,000 text. In the bottom corner, the iconic polite smiling white cat Beluga looking on in disbelief. Hyper-saturated electric cyan and fiery orange lighting, ultra-sharp contrast.`;
