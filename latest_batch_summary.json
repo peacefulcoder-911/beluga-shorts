@@ -1,0 +1,38 @@
+{
+  "batchDate": "2026-11-06T21:20:14.446Z",
+  "totalQueued": 4,
+  "videos": [
+    {
+      "type": "Short",
+      "index": 1,
+      "title": "ChatGPT 5 Voice Mode Roasted Beluga 🎙️ #shorts",
+      "slotLabel": "01:00 PM IST (Lunch Peak)",
+      "publishAt": "2026-11-07T07:30:00.000Z",
+      "url": "https://youtube.com/watch?v=offline_1793999417650"
+    },
+    {
+      "type": "Short",
+      "index": 2,
+      "title": "Valve Banned Hecker's $10,000 Steam Account 🎮 #shorts",
+      "slotLabel": "05:00 PM IST (After-School Peak)",
+      "publishAt": "2026-11-07T11:30:00.000Z",
+      "url": "https://youtube.com/watch?v=offline_1793999503757"
+    },
+    {
+      "type": "Short",
+      "index": 3,
+      "title": "The Duolingo Owl Infiltrated Discord At 3 AM 🦉 #shorts",
+      "slotLabel": "08:30 PM IST (Night Peak)",
+      "publishAt": "2026-11-07T15:00:00.000Z",
+      "url": "https://youtube.com/watch?v=offline_1793999888955"
+    },
+    {
+      "type": "Long-Form",
+      "index": 1,
+      "title": "The 3 AM Channel That Shouldn't Exist... 👁️ (Full Episode)",
+      "slotLabel": "07:00 PM IST (Evening Prime)",
+      "publishAt": "2026-11-07T13:30:00.000Z",
+      "url": "https://youtube.com/watch?v=offline_longform_1794000014445"
+    }
+  ]
+}

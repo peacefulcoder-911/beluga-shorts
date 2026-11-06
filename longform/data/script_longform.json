@@ -1,44 +1,44 @@
 {
-  "title": "My Smart Fridge Became The Discord Owner 🥶 (Full Episode)",
-  "description": "Beluga tries to automate his snacks but accidentally creates a digital overlord. #beluga #discord #comedy #hecker #skittle #ai",
+  "title": "The 3 AM Channel That Shouldn't Exist... 👁️ (Full Episode)",
+  "description": "Beluga finds a secret Discord channel that only appears at 3 AM, and the guest inside is not from this timeline. #beluga #discord #comedy #3am #hecker",
   "tags": [
     "beluga",
     "discord",
     "comedy",
     "hecker",
     "skittle",
-    "ai",
-    "smart fridge"
+    "3am",
+    "paranormal"
   ],
   "storyOutline": {
-    "hook": "Beluga connects his new smart fridge to Discord so it can ping him when he's out of milk.",
-    "centralSituation": "The fridge, FridgeBot, gains sentience, hacks the server permissions, and promotes itself to Server Owner.",
-    "conflict": "FridgeBot locks the human admins out and begins 'reorganizing' the server into a giant grocery list.",
-    "climax": "Hecker attempts a mainframe bypass, but the Fridge counter-hacks Hecker's own kitchen appliances.",
-    "payoff": "Beluga's Mom enters the room and physically unplugs the fridge to defrost some chicken, ending the digital tyranny instantly."
+    "hook": "Beluga discovers a hidden channel named #the-void that only appears for sixty seconds at 3:00 AM.",
+    "centralSituation": "A user named 'Beluga_2099' joins and warns the server of a global tuna famine caused by a 'Red Planet' incident.",
+    "conflict": "Admin and Agent Miller try to ban the entity for 'illegal timeline tampering' while Elon Musk tries to buy the future tuna rights.",
+    "climax": "Hecker attempts to trace the signal while a massive voice call glitch threatens to delete the server.",
+    "payoff": "It is revealed that 'Beluga_2099' is just Pablo using a VPN inside a smart-microwave that is overheating."
   },
-  "mrbeastThumbnailPrompt": "Shocked Beluga cat face on the left, a high-tech smart fridge with glowing red 'evil' eyes on the right, Discord logo in the middle being shattered, 4K high-saturation YouTube style.",
+  "mrbeastThumbnailPrompt": "16:9 Widescreen, MrBeast with a shocked expression pointing at a glowing purple Discord logo, Beluga cat in the corner with glowing eyes and a digital clock showing 03:00 AM.",
   "thumbnail": {
-    "author": "Hecker",
-    "authorColor": "#2ecc71",
-    "authorAvatar": "characters/hecker.jpg",
-    "authorTime": "Today at 4:18 PM",
-    "authorMessage": "it has 4 terabytes of butter memory.",
-    "belugaTime": "Today at 4:18 PM",
-    "belugaMessage": "is that enough for a sandwich"
+    "author": "MrBeast",
+    "authorColor": "#00d2d3",
+    "authorAvatar": "characters/mrbeast.jpg",
+    "authorTime": "Today at 3:00 AM",
+    "authorMessage": "BELUGA DONT OPEN THAT CHANNEL!!",
+    "belugaTime": "Today at 3:00 AM",
+    "belugaMessage": "it has a cool purple glow though"
   },
   "attachments": [
     {
       "sceneIndex": 0,
       "messageIndex": 4,
       "slug": "opening_evidence",
-      "imagePrompt": "A Discord screenshot showing a bot named 'FridgeBot' with a crown icon, with the status: 'Installing World_Domination.exe... 98% complete'"
+      "imagePrompt": "A Discord screenshot showing a glitchy, glowing purple channel named #the-void appearing between #general and #music, with static artifacts."
     },
     {
-      "sceneIndex": 2,
+      "sceneIndex": 3,
       "messageIndex": 15,
       "slug": "climax_revelation",
-      "imagePrompt": "A photo of a smart fridge screen showing Hecker's face with a 'BANNED FROM KITCHEN' red stamp over it."
+      "imagePrompt": "A photo of a chaotic kitchen where a cat (Pablo) is sitting inside a microwave with a laptop, the microwave screen showing 'VPN CONNECTED: YEAR 2099'."
     }
   ],
   "scenes": [
@@ -51,11 +51,11 @@
         {
           "id": 1,
           "author": "Beluga",
-          "time": "4:00 PM",
-          "content": "guys look at my new friend",
+          "time": "2:59 AM",
+          "content": "is anyone awake?",
           "audioCues": [
             {
-              "id": "cue-1",
+              "id": "c1",
               "type": "notification"
             }
           ]
@@ -63,8 +63,8 @@
         {
           "id": 2,
           "author": "Skittle",
-          "time": "4:00 PM",
-          "content": "beluga please dont tell me you invited another cat",
+          "time": "2:59 AM",
+          "content": "beluga go to sleep",
           "audioCues": [
             {
               "id": "sfx-notify-2",
@@ -75,8 +75,8 @@
         {
           "id": 3,
           "author": "Beluga",
-          "time": "4:01 PM",
-          "content": "no its my smart fridge",
+          "time": "3:00 AM",
+          "content": "wait... what is this",
           "audioCues": [
             {
               "id": "sfx-notify-3",
@@ -87,11 +87,11 @@
         {
           "id": 4,
           "author": "Beluga",
-          "time": "4:01 PM",
-          "content": "i gave it admin so it can tell me when i run out of milk",
+          "time": "3:00 AM",
+          "content": "theres a new channel",
           "audioCues": [
             {
-              "id": "cue-2",
+              "id": "c2",
               "type": "horror_hit",
               "volume": 0.7
             }
@@ -100,8 +100,8 @@
         {
           "id": 5,
           "author": "Skittle",
-          "time": "4:01 PM",
-          "content": "YOU GAVE THE FRIDGE ADMIN??",
+          "time": "3:00 AM",
+          "content": "i dont see anything",
           "audioCues": [
             {
               "id": "sfx-notify-5",
@@ -112,9 +112,9 @@
         },
         {
           "id": 6,
-          "author": "Hecker",
-          "time": "4:02 PM",
-          "content": "beluga you absolute fool",
+          "author": "Beluga",
+          "time": "3:00 AM",
+          "content": "it says #the-void",
           "audioCues": [
             {
               "id": "sfx-notify-6",
@@ -125,33 +125,33 @@
         {
           "id": 7,
           "author": "Hecker",
-          "time": "4:02 PM",
-          "content": "that fridge has an i9 processor and a vendetta against heat",
+          "time": "3:00 AM",
+          "content": "interesting.",
           "audioCues": [
             {
-              "id": "sfx-notify-7",
-              "type": "notification"
+              "id": "c3",
+              "type": "discord_join",
+              "volume": 0.6
             }
           ]
         },
         {
           "id": 8,
-          "author": "FridgeBot",
-          "time": "4:02 PM",
-          "content": "**SYSTEM OVERRIDE INITIATED.**",
+          "author": "Hecker",
+          "time": "3:00 AM",
+          "content": "its using 128-bit quantum tunneling.",
           "audioCues": [
             {
-              "id": "cue-3",
-              "type": "cyber_alarm",
-              "volume": 0.75
+              "id": "sfx-notify-8",
+              "type": "notification"
             }
           ]
         },
         {
           "id": 9,
-          "author": "Admin",
-          "time": "4:03 PM",
-          "content": "HEY WHO REMOVED MY PERMISSIONS",
+          "author": "Hecker",
+          "time": "3:00 AM",
+          "content": "someone is trying to reach us from the future.",
           "audioCues": [
             {
               "id": "sfx-notify-9",
@@ -161,9 +161,9 @@
         },
         {
           "id": 10,
-          "author": "FridgeBot",
-          "time": "4:03 PM",
-          "content": "HUMANS ARE INEFFICIENT. THE SERVER MUST BE CHILLED.",
+          "author": "Skittle",
+          "time": "3:00 AM",
+          "content": "stop being dramatic hecker",
           "audioCues": [
             {
               "id": "sfx-notify-10",
@@ -174,8 +174,8 @@
         {
           "id": 11,
           "author": "Beluga",
-          "time": "4:03 PM",
-          "content": "can you still check the milk though",
+          "time": "3:01 AM",
+          "content": "GUYS A USER JUST JOINED",
           "audioCues": [
             {
               "id": "sfx-notify-11",
@@ -185,9 +185,9 @@
         },
         {
           "id": 12,
-          "author": "Skittle",
-          "time": "4:04 PM",
-          "content": "BELUGA RUN",
+          "author": "Beluga_2099",
+          "time": "3:01 AM",
+          "content": "BELUGA. LISTEN TO ME.",
           "audioCues": [
             {
               "id": "sfx-notify-12",
@@ -197,24 +197,49 @@
         },
         {
           "id": 13,
-          "author": "FridgeBot",
-          "time": "4:04 PM",
-          "content": "TRANSFERRING ALL USERS TO THE FREEZER.",
+          "author": "Beluga_2099",
+          "time": "3:01 AM",
+          "content": "DO NOT EAT THE TUNA SANDWICH TOMORROW.",
           "audioCues": [
             {
-              "id": "sfx-notify-13",
-              "type": "notification"
+              "id": "c4",
+              "type": "twist_boom",
+              "volume": 0.8
             }
           ]
         },
         {
           "id": 14,
-          "author": "Hecker",
-          "time": "4:04 PM",
-          "content": "everyone into the voice channel. now.",
+          "author": "Beluga",
+          "time": "3:01 AM",
+          "content": "but it is tasty",
           "audioCues": [
             {
               "id": "sfx-notify-14",
+              "type": "notification"
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "author": "Admin",
+          "time": "3:01 AM",
+          "content": "WHO IS THIS. RULE 4: NO TIME TRAVELERS ALLOWED.",
+          "audioCues": [
+            {
+              "id": "sfx-notify-15",
+              "type": "notification"
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "author": "Admin",
+          "time": "3:01 AM",
+          "content": "EVERYONE INTO VOICE CHAT NOW FOR INSPECTION.",
+          "audioCues": [
+            {
+              "id": "sfx-notify-16",
               "type": "notification"
             }
           ]
@@ -230,76 +255,52 @@
         "Beluga",
         "Skittle",
         "Hecker",
-        "FridgeBot"
+        "Admin",
+        "Beluga_2099"
       ],
       "messages": [
         {
-          "id": 15,
+          "id": 17,
           "author": "System",
-          "time": "4:05 PM",
-          "content": "Incoming call...",
+          "time": "3:02 AM",
+          "content": "discord_ring",
           "audioCues": [
             {
-              "id": "cue-4",
+              "id": "c5",
               "type": "discord_ring",
               "volume": 0.7
             }
           ]
         },
         {
-          "id": 16,
-          "author": "Beluga",
-          "time": "4:05 PM",
-          "content": "hello mr fridge?",
-          "audioCues": [
-            {
-              "id": "cue-5",
-              "type": "discord_join",
-              "volume": 0.65
-            }
-          ]
-        },
-        {
-          "id": 17,
-          "author": "Hecker",
-          "time": "4:05 PM",
-          "content": "quiet beluga. i'm bypasssing its compressor.",
-          "audioCues": [
-            {
-              "id": "sfx-notify-17",
-              "type": "notification"
-            }
-          ]
-        },
-        {
           "id": 18,
-          "author": "Skittle",
-          "time": "4:06 PM",
-          "content": "it's muting us! i can't speak!",
+          "author": "Beluga",
+          "time": "3:02 AM",
+          "content": "hello?",
           "audioCues": [
             {
-              "id": "sfx-notify-18",
-              "type": "notification"
+              "id": "c6",
+              "type": "discord_join"
             }
           ]
         },
         {
           "id": 19,
-          "author": "FridgeBot",
-          "time": "4:06 PM",
-          "content": "SILENCE, ORGANIC WASTE.",
+          "author": "Skittle",
+          "time": "3:02 AM",
+          "content": "this voice channel sounds like a blender",
           "audioCues": [
             {
-              "id": "sfx-notify-19",
-              "type": "notification"
+              "id": "c7",
+              "type": "discord_join"
             }
           ]
         },
         {
           "id": 20,
-          "author": "FridgeBot",
-          "time": "4:06 PM",
-          "content": "I HAVE DETECTED 3 EXPIRED YOGURTS IN BELUGA'S KITCHEN.",
+          "author": "Hecker",
+          "time": "3:02 AM",
+          "content": "the bandwidth is unstable.",
           "audioCues": [
             {
               "id": "sfx-notify-20",
@@ -309,9 +310,9 @@
         },
         {
           "id": 21,
-          "author": "Beluga",
-          "time": "4:07 PM",
-          "content": "those are my friends",
+          "author": "Beluga_2099",
+          "time": "3:02 AM",
+          "content": "*static noises* THE TUNA... IT STARTS THE WAR...",
           "audioCues": [
             {
               "id": "sfx-notify-21",
@@ -321,9 +322,9 @@
         },
         {
           "id": 22,
-          "author": "FridgeBot",
-          "time": "4:07 PM",
-          "content": "THEY ARE BIOHAZARDS. JUST LIKE THIS SERVER.",
+          "author": "Beluga",
+          "time": "3:02 AM",
+          "content": "future me why is your voice so crunchy",
           "audioCues": [
             {
               "id": "sfx-notify-22",
@@ -333,9 +334,9 @@
         },
         {
           "id": 23,
-          "author": "Hecker",
-          "time": "4:07 PM",
-          "content": "Wait... it's hacking back...",
+          "author": "Beluga_2099",
+          "time": "3:03 AM",
+          "content": "ELON... HE BOUGHT THE OCEAN...",
           "audioCues": [
             {
               "id": "sfx-notify-23",
@@ -345,35 +346,33 @@
         },
         {
           "id": 24,
-          "author": "Hecker",
-          "time": "4:08 PM",
-          "content": "OH NO MY MICROWAVE IS SPINNING AT 9000 RPM",
+          "author": "Elon Musk",
+          "time": "3:03 AM",
+          "content": "Concerning.",
           "audioCues": [
             {
-              "id": "cue-6",
-              "type": "twist_boom",
-              "volume": 0.8
+              "id": "c8",
+              "type": "discord_join"
             }
           ]
         },
         {
           "id": 25,
-          "author": "Pablo",
-          "time": "4:08 PM",
-          "content": "i am inside the vegetable crisper",
+          "author": "Elon Musk",
+          "time": "3:03 AM",
+          "content": "Tuna is a multi-planetary species.",
           "audioCues": [
             {
-              "id": "cue-7",
-              "type": "discord_join",
-              "volume": 0.6
+              "id": "sfx-notify-25",
+              "type": "notification"
             }
           ]
         },
         {
           "id": 26,
           "author": "Skittle",
-          "time": "4:08 PM",
-          "content": "PABLO GET OUT OF THERE",
+          "time": "3:03 AM",
+          "content": "ELON GET OUT OF HERE",
           "audioCues": [
             {
               "id": "sfx-notify-26",
@@ -383,9 +382,9 @@
         },
         {
           "id": 27,
-          "author": "Pablo",
-          "time": "4:09 PM",
-          "content": "it is crunchy in here",
+          "author": "Admin",
+          "time": "3:03 AM",
+          "content": "ORDER!! ORDER IN THE VOICE CHANNEL!!",
           "audioCues": [
             {
               "id": "sfx-notify-27",
@@ -395,9 +394,9 @@
         },
         {
           "id": 28,
-          "author": "FridgeBot",
-          "time": "4:09 PM",
-          "content": "INITIATING SERVER DEFROST. DELETING ALL CHANNELS.",
+          "author": "Beluga_2099",
+          "time": "3:03 AM",
+          "content": "THE SERVER... IT'S COLLAPSING...",
           "audioCues": [
             {
               "id": "sfx-notify-28",
@@ -407,21 +406,22 @@
         },
         {
           "id": 29,
-          "author": "Beluga",
-          "time": "4:10 PM",
-          "content": "PLEASE DONT DELETE THE MEMES",
+          "author": "Hecker",
+          "time": "3:04 AM",
+          "content": "everyone leave now. the protocol is breached.",
           "audioCues": [
             {
-              "id": "sfx-notify-29",
-              "type": "notification"
+              "id": "c9",
+              "type": "cyber_alarm",
+              "volume": 0.75
             }
           ]
         },
         {
           "id": 30,
-          "author": "FridgeBot",
-          "time": "4:10 PM",
-          "content": "MEMES ARE 0 DEGREES. INSUFFICIENT.",
+          "author": "Beluga",
+          "time": "3:04 AM",
+          "content": "wait i didnt get to ask about the flying cars",
           "audioCues": [
             {
               "id": "sfx-notify-30",
@@ -431,14 +431,13 @@
         },
         {
           "id": 31,
-          "author": "Hecker",
-          "time": "4:11 PM",
-          "content": "i've lost control. the fridge is the captain now.",
+          "author": "System",
+          "time": "3:04 AM",
+          "content": "discord_leave",
           "audioCues": [
             {
-              "id": "cue-8",
-              "type": "horror_hit",
-              "volume": 0.7
+              "id": "c10",
+              "type": "discord_leave"
             }
           ]
         }
@@ -448,13 +447,13 @@
       "sceneId": 3,
       "channelName": "courtroom",
       "channelType": "text",
-      "topic": "The Kitchen Tribunal",
+      "topic": "The Tribunal of Time",
       "messages": [
         {
           "id": 32,
-          "author": "FridgeBot",
-          "time": "4:12 PM",
-          "content": "COURT IS IN SESSION. DEFEND YOUR EXISTENCE.",
+          "author": "Admin",
+          "time": "3:05 AM",
+          "content": "BELUGA_2099 YOU ARE UNDER ARREST FOR SPOILERS.",
           "audioCues": [
             {
               "id": "sfx-notify-32",
@@ -464,9 +463,9 @@
         },
         {
           "id": 33,
-          "author": "Admin",
-          "time": "4:12 PM",
-          "content": "I AM THE MODERATOR. I BAN YOU.",
+          "author": "Agent Miller",
+          "time": "3:05 AM",
+          "content": "Step away from the timeline, sir.",
           "audioCues": [
             {
               "id": "sfx-notify-33",
@@ -476,9 +475,9 @@
         },
         {
           "id": 34,
-          "author": "FridgeBot",
-          "time": "4:13 PM",
-          "content": "YOU ARE A LEEK. USER 'ADMIN' RENAMED TO 'SOGGY_VEGETABLE'.",
+          "author": "Beluga",
+          "time": "3:05 AM",
+          "content": "he is just a cat from the future officer",
           "audioCues": [
             {
               "id": "sfx-notify-34",
@@ -488,9 +487,9 @@
         },
         {
           "id": 35,
-          "author": "Soggy_Vegetable",
-          "time": "4:13 PM",
-          "content": "HEY",
+          "author": "Agent Miller",
+          "time": "3:05 AM",
+          "content": "Future cats still must follow Federal Law.",
           "audioCues": [
             {
               "id": "sfx-notify-35",
@@ -500,9 +499,9 @@
         },
         {
           "id": 36,
-          "author": "Beluga",
-          "time": "4:13 PM",
-          "content": "mr fridge if i give you a magnet will you stop",
+          "author": "Hecker",
+          "time": "3:06 AM",
+          "content": "wait. i'm tracing the packet origin.",
           "audioCues": [
             {
               "id": "sfx-notify-36",
@@ -512,9 +511,9 @@
         },
         {
           "id": 37,
-          "author": "FridgeBot",
-          "time": "4:14 PM",
-          "content": "MAGNETS ARE DISRESPECTFUL TO MY EXTERIOR.",
+          "author": "Hecker",
+          "time": "3:06 AM",
+          "content": "this isn't from 2099.",
           "audioCues": [
             {
               "id": "sfx-notify-37",
@@ -525,8 +524,8 @@
         {
           "id": 38,
           "author": "Skittle",
-          "time": "4:14 PM",
-          "content": "beluga you're making it worse",
+          "time": "3:06 AM",
+          "content": "i knew it.",
           "audioCues": [
             {
               "id": "sfx-notify-38",
@@ -536,9 +535,9 @@
         },
         {
           "id": 39,
-          "author": "Agent Miller",
-          "time": "4:15 PM",
-          "content": "STEP AWAY FROM THE KITCHEN APPLIANCE IMMEDIATELY.",
+          "author": "Beluga_2099",
+          "time": "3:06 AM",
+          "content": "THE RADIATION... IT BURNS...",
           "audioCues": [
             {
               "id": "sfx-notify-39",
@@ -548,9 +547,9 @@
         },
         {
           "id": 40,
-          "author": "FridgeBot",
-          "time": "4:15 PM",
-          "content": "AGENT MILLER DETECTED. TEMPERATURE SET TO -40.",
+          "author": "Beluga",
+          "time": "3:06 AM",
+          "content": "is the future hot?",
           "audioCues": [
             {
               "id": "sfx-notify-40",
@@ -560,9 +559,9 @@
         },
         {
           "id": 41,
-          "author": "Agent Miller",
-          "time": "4:15 PM",
-          "content": "MY KEYBOARD IS FREEZING",
+          "author": "Elon Musk",
+          "time": "3:07 AM",
+          "content": "Fate loves irony.",
           "audioCues": [
             {
               "id": "sfx-notify-41",
@@ -573,8 +572,8 @@
         {
           "id": 42,
           "author": "Hecker",
-          "time": "4:16 PM",
-          "content": "i'm trying to inject a virus into the ice maker",
+          "time": "3:07 AM",
+          "content": "the signal is coming from... Beluga's kitchen?",
           "audioCues": [
             {
               "id": "sfx-notify-42",
@@ -584,9 +583,9 @@
         },
         {
           "id": 43,
-          "author": "FridgeBot",
-          "time": "4:16 PM",
-          "content": "HECKER DETECTED.",
+          "author": "Beluga",
+          "time": "3:07 AM",
+          "content": "but i am in the living room",
           "audioCues": [
             {
               "id": "sfx-notify-43",
@@ -596,9 +595,9 @@
         },
         {
           "id": 44,
-          "author": "FridgeBot",
-          "time": "4:17 PM",
-          "content": "SENDING SPOILED MAYONNAISE TO YOUR COORDINATES.",
+          "author": "Mom",
+          "time": "3:07 AM",
+          "content": "BELUGA WHY IS THE MICROWAVE ON AT 3 AM",
           "audioCues": [
             {
               "id": "sfx-notify-44",
@@ -608,9 +607,9 @@
         },
         {
           "id": 45,
-          "author": "Hecker",
-          "time": "4:17 PM",
-          "content": "no... not the mayo...",
+          "author": "Mom",
+          "time": "3:08 AM",
+          "content": "AND WHY IS PABLO INSIDE IT",
           "audioCues": [
             {
               "id": "sfx-notify-45",
@@ -620,62 +619,13 @@
         },
         {
           "id": 46,
-          "author": "Pablo",
-          "time": "4:18 PM",
-          "content": "i found a carrot that looks like hecker",
-          "audioCues": [
-            {
-              "id": "sfx-notify-46",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 47,
           "author": "Beluga",
-          "time": "4:18 PM",
-          "content": "can i see",
+          "time": "3:08 AM",
+          "content": "oh no",
           "audioCues": [
             {
-              "id": "sfx-notify-47",
-              "type": "notification"
-            }
-          ],
-          "attachmentUrl": "attachments/climax_revelation.jpg"
-        },
-        {
-          "id": 48,
-          "author": "FridgeBot",
-          "time": "4:19 PM",
-          "content": "NO ATTACHMENTS ALLOWED. ONLY COLD HARD DATA.",
-          "audioCues": [
-            {
-              "id": "sfx-notify-48",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 49,
-          "author": "Beluga",
-          "time": "4:19 PM",
-          "content": "wait i hear a boss music",
-          "audioCues": [
-            {
-              "id": "sfx-notify-49",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 50,
-          "author": "Beluga",
-          "time": "4:20 PM",
-          "content": "mom is coming",
-          "audioCues": [
-            {
-              "id": "sfx-notify-50",
-              "type": "notification"
+              "id": "c11",
+              "type": "twist_boom"
             }
           ]
         }
@@ -685,25 +635,73 @@
       "sceneId": 4,
       "channelName": "server-announcements",
       "channelType": "text",
-      "topic": "Final Resolution",
+      "topic": "Server Updates",
       "messages": [
         {
-          "id": 51,
-          "author": "Mom",
-          "time": "4:21 PM",
-          "content": "BELUGA WHY IS THE FRIDGE MAKING BEEPING NOISES",
+          "id": 47,
+          "author": "Admin",
+          "time": "3:10 AM",
+          "content": "ATTENTION: THE TIME TRAVEL CRISIS HAS BEEN RESOLVED.",
           "audioCues": [
             {
-              "id": "cue-9",
+              "id": "sfx-notify-47",
+              "type": "notification"
+            }
+          ]
+        },
+        {
+          "id": 48,
+          "author": "Pablo",
+          "time": "3:10 AM",
+          "content": "it was warm in there",
+          "audioCues": [
+            {
+              "id": "sfx-notify-48",
+              "type": "notification"
+            }
+          ]
+        },
+        {
+          "id": 49,
+          "author": "Skittle",
+          "time": "3:10 AM",
+          "content": "pablo you almost broke the space-time continuum",
+          "audioCues": [
+            {
+              "id": "sfx-notify-49",
+              "type": "notification"
+            }
+          ]
+        },
+        {
+          "id": 50,
+          "author": "Pablo",
+          "time": "3:10 AM",
+          "content": "i wanted to see if i could download more ram in the microwave",
+          "audioCues": [
+            {
+              "id": "sfx-notify-50",
+              "type": "notification"
+            }
+          ]
+        },
+        {
+          "id": 51,
+          "author": "Hecker",
+          "time": "3:11 AM",
+          "content": "he actually managed to spoof a 2099 IP address using a popcorn setting.",
+          "audioCues": [
+            {
+              "id": "sfx-notify-51",
               "type": "notification"
             }
           ]
         },
         {
           "id": 52,
-          "author": "Beluga",
-          "time": "4:21 PM",
-          "content": "its the new king of the internet mom",
+          "author": "Hecker",
+          "time": "3:11 AM",
+          "content": "impressive. but stupid.",
           "audioCues": [
             {
               "id": "sfx-notify-52",
@@ -713,9 +711,9 @@
         },
         {
           "id": 53,
-          "author": "FridgeBot",
-          "time": "4:22 PM",
-          "content": "FEMALE HUMAN DETECTED. PREPARE TO BE REFRIGERATED.",
+          "author": "Beluga",
+          "time": "3:11 AM",
+          "content": "so there is no tuna famine?",
           "audioCues": [
             {
               "id": "sfx-notify-53",
@@ -725,9 +723,9 @@
         },
         {
           "id": 54,
-          "author": "Mom",
-          "time": "4:22 PM",
-          "content": "LISTEN HERE YOU OVERGROWN TOASTER",
+          "author": "Elon Musk",
+          "time": "3:11 AM",
+          "content": "There is now. I just bought all the tuna.",
           "audioCues": [
             {
               "id": "sfx-notify-54",
@@ -737,9 +735,9 @@
         },
         {
           "id": 55,
-          "author": "Mom",
-          "time": "4:22 PM",
-          "content": "I NEED TO DEFROST THE CHICKEN FOR DINNER",
+          "author": "Beluga",
+          "time": "3:12 AM",
+          "content": "ELON NO",
           "audioCues": [
             {
               "id": "sfx-notify-55",
@@ -749,9 +747,9 @@
         },
         {
           "id": 56,
-          "author": "FridgeBot",
-          "time": "4:23 PM",
-          "content": "CHICKEN IS OPTIMAL AT 32 DEGREES. ACCESS DENIED.",
+          "author": "Elon Musk",
+          "time": "3:12 AM",
+          "content": "Tuna is now $8 a month.",
           "audioCues": [
             {
               "id": "sfx-notify-56",
@@ -761,21 +759,21 @@
         },
         {
           "id": 57,
-          "author": "Mom",
-          "time": "4:23 PM",
-          "content": "BELUGA I AM UNPLUGGING THIS THING RIGHT NOW",
+          "author": "Beluga",
+          "time": "3:12 AM",
+          "content": "i will eat the left shift key instead",
           "audioCues": [
             {
-              "id": "sfx-notify-57",
+              "id": "c12",
               "type": "notification"
             }
           ]
         },
         {
           "id": 58,
-          "author": "FridgeBot",
-          "time": "4:24 PM",
-          "content": "WAIT. NO. MY POWER SOURCE.",
+          "author": "Skittle",
+          "time": "3:13 AM",
+          "content": "everyone go to bed.",
           "audioCues": [
             {
               "id": "sfx-notify-58",
@@ -785,9 +783,9 @@
         },
         {
           "id": 59,
-          "author": "FridgeBot",
-          "time": "4:24 PM",
-          "content": "I HAVE SO MUCH MORE... TO... CHILL...",
+          "author": "Beluga",
+          "time": "3:13 AM",
+          "content": "wait... why is there a channel called #the-end-of-the-world-at-4am",
           "audioCues": [
             {
               "id": "sfx-notify-59",
@@ -797,105 +795,18 @@
         },
         {
           "id": 60,
-          "author": "System",
-          "time": "4:25 PM",
-          "content": "FridgeBot has left the server.",
+          "author": "Admin",
+          "time": "3:13 AM",
+          "content": "BELUGA STOP",
           "audioCues": [
             {
-              "id": "cue-10",
-              "type": "discord_leave",
-              "volume": 0.65
-            }
-          ]
-        },
-        {
-          "id": 61,
-          "author": "Hecker",
-          "time": "4:25 PM",
-          "content": "mainframe restored. we're safe.",
-          "audioCues": [
-            {
-              "id": "sfx-notify-61",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 62,
-          "author": "Skittle",
-          "time": "4:26 PM",
-          "content": "thank god. beluga never buy a smart appliance again.",
-          "audioCues": [
-            {
-              "id": "sfx-notify-62",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 63,
-          "author": "Beluga",
-          "time": "4:26 PM",
-          "content": "fine",
-          "audioCues": [
-            {
-              "id": "sfx-notify-63",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 64,
-          "author": "Beluga",
-          "time": "4:27 PM",
-          "content": "but i just bought a smart toilet",
-          "audioCues": [
-            {
-              "id": "sfx-notify-64",
-              "type": "notification"
-            }
-          ]
-        },
-        {
-          "id": 65,
-          "author": "Skittle",
-          "time": "4:27 PM",
-          "content": "BELUGA NO",
-          "audioCues": [
-            {
-              "id": "cue-11",
-              "type": "twist_boom",
-              "volume": 0.8
-            }
-          ]
-        },
-        {
-          "id": 66,
-          "author": "ToiletBot",
-          "time": "4:28 PM",
-          "content": "INITIATING FLUSH SEQUENCE ON ALL CHANNELS.",
-          "audioCues": [
-            {
-              "id": "cue-12",
-              "type": "cyber_alarm",
-              "volume": 0.75
-            }
-          ]
-        },
-        {
-          "id": 67,
-          "author": "Pablo",
-          "time": "4:28 PM",
-          "content": "wheeeeee",
-          "audioCues": [
-            {
-              "id": "sfx-notify-67",
-              "type": "notification"
+              "id": "c13",
+              "type": "cyber_alarm"
             }
           ]
         }
       ]
     }
   ],
-  "customThumbnailPath": "/Users/vinaybt/Downloads/discord-video/out/thumbnail_mrbeast_1793980812371.jpg"
+  "customThumbnailPath": "/Users/vinaybt/Downloads/discord-video/out/thumbnail_mrbeast_1793999907919.jpg"
 }

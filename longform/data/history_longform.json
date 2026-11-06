@@ -137,5 +137,36 @@
       "belugaMessage": "mr beast please i need that for cat nip"
     },
     "durationSeconds": 175
+  },
+  {
+    "date": "2026-11-06T21:18:33.951Z",
+    "title": "The 3 AM Channel That Shouldn't Exist... 👁️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a hidden channel named #the-void that only appears for sixty seconds at 3:00 AM.",
+      "centralSituation": "A user named 'Beluga_2099' joins and warns the server of a global tuna famine caused by a 'Red Planet' incident.",
+      "conflict": "Admin and Agent Miller try to ban the entity for 'illegal timeline tampering' while Elon Musk tries to buy the future tuna rights.",
+      "climax": "Hecker attempts to trace the signal while a massive voice call glitch threatens to delete the server.",
+      "payoff": "It is revealed that 'Beluga_2099' is just Pablo using a VPN inside a smart-microwave that is overheating."
+    },
+    "scenes": 4,
+    "totalMessages": 60,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 3:00 AM",
+      "authorMessage": "BELUGA DONT OPEN THAT CHANNEL!!",
+      "belugaTime": "Today at 3:00 AM",
+      "belugaMessage": "it has a cool purple glow though"
+    },
+    "durationSeconds": 147.6
+  },
+  {
+    "date": "2026-11-06T21:20:14.445Z",
+    "title": "The 3 AM Channel That Shouldn't Exist... 👁️ (Full Episode)",
+    "videoId": "offline_longform_1794000014445",
+    "videoUrl": "https://youtube.com/watch?v=offline_longform_1794000014445",
+    "publishAt": "2026-11-07T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]

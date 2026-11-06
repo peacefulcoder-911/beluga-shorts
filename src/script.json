@@ -2,222 +2,370 @@
   {
     "id": 1,
     "author": "Beluga",
-    "content": "guys i just DMed elon musk asking for 1 billion dollars",
-    "time": "Today at 4:20 PM",
+    "content": "guys i think i messed up",
+    "time": "3:00 AM",
     "audioCues": [
       {
-        "id": "c1",
+        "id": "cue-1",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0,
+    "systemAlert": "",
+    "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+    "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀"
   },
   {
     "id": 2,
     "author": "Skittle",
-    "content": "beluga he is launching rockets why would he care about you",
-    "time": "Today at 4:20 PM",
+    "content": "what now",
+    "time": "3:00 AM",
     "audioCues": [
       {
-        "id": "c2",
+        "id": "cue-2",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 3,
     "author": "Beluga",
-    "content": "because i used polite manners and said pretty please",
-    "time": "Today at 4:21 PM",
+    "content": "i missed my spanish lesson today",
+    "time": "3:00 AM",
     "audioCues": [
       {
-        "id": "c3",
+        "id": "cue-3",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 4,
     "author": "Skittle",
-    "content": "you are literally a talking cat on discord",
-    "time": "Today at 4:21 PM",
+    "content": "BELUGA NO",
+    "time": "3:00 AM",
     "audioCues": [
       {
-        "id": "c4",
+        "id": "cue-4",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": true,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 5,
     "author": "Beluga",
-    "content": "explain this then",
-    "time": "Today at 4:22 PM",
-    "attachmentUrl": "attachments/elon_dm_billion.jpg",
-    "screenShake": true,
-    "punchZoom": true,
+    "content": "its just a bird skittle lol",
+    "time": "3:01 AM",
     "audioCues": [
       {
-        "id": "c5_hit",
-        "type": "horror_hit",
-        "volume": 0.8
-      },
-      {
-        "id": "c5_boom",
-        "type": "twist_boom",
-        "volume": 0.7,
-        "delayFrames": 10
+        "id": "cue-5",
+        "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 6,
-    "author": "Skittle",
-    "content": "WAIT IS THAT HIS VERIFIED BLUE CHECKMARK",
-    "time": "Today at 4:22 PM",
-    "screenShake": true,
+    "author": "System",
+    "content": "Duo The Owl has joined the server.",
+    "time": "3:01 AM",
     "audioCues": [
       {
-        "id": "c6",
-        "type": "twist_boom",
-        "volume": 0.6
+        "id": "cue-6",
+        "type": "discord_join"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 7,
-    "author": "Beluga",
-    "content": "he said if i guess his secret number he sends the wire",
-    "time": "Today at 4:23 PM",
+    "author": "Duo The Owl",
+    "content": "¡Hola, Beluga! I noticed you were lonely.",
+    "time": "3:01 AM",
     "audioCues": [
       {
-        "id": "c7",
-        "type": "notification"
+        "id": "cue-7",
+        "type": "horror_hit"
       }
-    ]
+    ],
+    "punchZoom": true,
+    "avatarUrl": "default_user.jpg",
+    "screenShake": false,
+    "typingFrames": 0
   },
   {
     "id": 8,
-    "author": "Hecker",
-    "content": "beluga what number did you guess",
-    "time": "Today at 4:23 PM",
+    "author": "Lester",
+    "content": "WHO INVITED THE BIRD",
+    "time": "3:01 AM",
     "audioCues": [
       {
-        "id": "c8",
+        "id": "cue-8",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 9,
-    "author": "Beluga",
-    "content": "42",
-    "time": "Today at 4:24 PM",
+    "author": "Lester",
+    "content": "MODS BAN HIM",
+    "time": "3:01 AM",
     "audioCues": [
       {
-        "id": "c9",
+        "id": "cue-9",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 10,
-    "author": "Beluga",
-    "content": "why is my phone glowing",
-    "time": "Today at 4:24 PM",
-    "systemAlert": "WIRE TRANSFER RECEIVED: +$1,000,000,000.00 FROM THE BORING COMPANY",
-    "screenShake": true,
-    "punchZoom": true,
+    "author": "System",
+    "content": "Duo The Owl is now SERVER OWNER.",
+    "time": "3:02 AM",
     "audioCues": [
       {
-        "id": "c10",
-        "type": "cyber_alarm",
-        "volume": 0.8
+        "id": "cue-10",
+        "type": "cyber_alarm"
       }
-    ]
+    ],
+    "systemAlert": "OWNERSHIP TRANSFERRED BY FORCE",
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 11,
-    "author": "Elon Musk",
-    "avatarUrl": "characters/elon_musk.jpg",
-    "content": "Concerning.",
-    "time": "Today at 4:25 PM",
-    "color": "#d4af37",
-    "screenShake": true,
+    "author": "Duo The Owl",
+    "content": "Lester, conjugate 'morir' or you are banned.",
+    "time": "3:02 AM",
     "audioCues": [
       {
-        "id": "c11",
-        "type": "discord_join",
-        "volume": 0.95
+        "id": "cue-11",
+        "type": "notification"
       }
-    ]
+    ],
+    "avatarUrl": "default_user.jpg",
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 12,
-    "author": "Beluga",
-    "content": "wait who is that and why is his name gold",
-    "time": "Today at 4:25 PM",
+    "author": "Lester",
+    "content": "i dont know spanish!!",
+    "time": "3:02 AM",
     "audioCues": [
       {
-        "id": "c12",
+        "id": "cue-12",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 13,
-    "author": "Elon Musk",
-    "avatarUrl": "characters/elon_musk.jpg",
-    "content": "You did not receive a donation, Beluga. You just bought Twitter.",
-    "time": "Today at 4:26 PM",
-    "color": "#d4af37",
-    "screenShake": true,
+    "author": "System",
+    "content": "Lester has been vanished.",
+    "time": "3:02 AM",
     "audioCues": [
       {
-        "id": "c13",
-        "type": "twist_boom",
-        "volume": 0.85
+        "id": "cue-13",
+        "type": "twist_boom"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 14,
-    "author": "Beluga",
-    "content": "can i return it for a roblox giftcard",
-    "time": "Today at 4:26 PM",
+    "author": "Hecker",
+    "content": "stand back. im deleting his feathers.",
+    "time": "3:03 AM",
     "audioCues": [
       {
-        "id": "c14",
+        "id": "cue-14",
         "type": "notification"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
   },
   {
     "id": 15,
-    "author": "Elon Musk",
-    "avatarUrl": "characters/elon_musk.jpg",
-    "content": "No. Hardcore engineering begins now. Fix the servers.",
-    "time": "Today at 4:27 PM",
-    "color": "#d4af37",
+    "author": "Hecker",
+    "content": "wait... why is my keyboard in spanish",
+    "time": "3:03 AM",
     "audioCues": [
       {
-        "id": "c15",
-        "type": "horror_hit",
-        "volume": 0.75
+        "id": "cue-15",
+        "type": "notification"
       }
-    ]
+    ],
+    "typingFrames": 20,
+    "screenShake": false,
+    "punchZoom": false
   },
   {
     "id": 16,
     "author": "Beluga",
-    "content": "wait... i don't even have hands.",
-    "time": "Today at 4:27 PM",
-    "screenShake": true,
+    "content": "u guys... look at this",
+    "time": "3:03 AM",
     "audioCues": [
       {
-        "id": "c16",
-        "type": "discord_leave",
-        "volume": 0.85
+        "id": "cue-16",
+        "type": "horror_hit"
       }
-    ]
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 17,
+    "author": "Skittle",
+    "content": "SPANISH OR VANISH??",
+    "time": "3:03 AM",
+    "audioCues": [
+      {
+        "id": "cue-17",
+        "type": "notification"
+      }
+    ],
+    "screenShake": true,
+    "attachmentUrl": "attachments/duolingo_streak_alert.jpg",
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 18,
+    "author": "Pablo",
+    "content": "mi casa es su casa owl guy",
+    "time": "3:04 AM",
+    "audioCues": [
+      {
+        "id": "cue-18",
+        "type": "notification"
+      }
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 19,
+    "author": "Duo The Owl",
+    "content": "Beluga, your family is in my nest.",
+    "time": "3:04 AM",
+    "audioCues": [
+      {
+        "id": "cue-19",
+        "type": "notification"
+      }
+    ],
+    "avatarUrl": "default_user.jpg",
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 20,
+    "author": "Duo The Owl",
+    "content": "Conjugate 'haber' in 14 tenses now.",
+    "time": "3:04 AM",
+    "audioCues": [
+      {
+        "id": "cue-20",
+        "type": "notification"
+      }
+    ],
+    "avatarUrl": "default_user.jpg",
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 21,
+    "author": "Beluga",
+    "content": "is that a lot",
+    "time": "3:04 AM",
+    "audioCues": [
+      {
+        "id": "cue-21",
+        "type": "notification"
+      }
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 22,
+    "author": "Hecker",
+    "content": "i am trapped in a conjugation chamber help",
+    "time": "3:05 AM",
+    "audioCues": [
+      {
+        "id": "cue-22",
+        "type": "notification"
+      }
+    ],
+    "screenShake": true,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 23,
+    "author": "Skittle",
+    "content": "BELUGA SAY SOMETHING SPANISH QUICK",
+    "time": "3:05 AM",
+    "audioCues": [
+      {
+        "id": "cue-23",
+        "type": "notification"
+      }
+    ],
+    "screenShake": false,
+    "punchZoom": false,
+    "typingFrames": 0
+  },
+  {
+    "id": 24,
+    "author": "Beluga",
+    "content": "donde esta la biblioteca senor owl i am literally a cat",
+    "time": "3:05 AM",
+    "audioCues": [
+      {
+        "id": "cue-24",
+        "type": "twist_boom"
+      }
+    ],
+    "punchZoom": true,
+    "typingFrames": 25,
+    "screenShake": false
   }
 ]
