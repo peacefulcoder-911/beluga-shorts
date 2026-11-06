@@ -1,67 +1,29 @@
 import React from "react";
 import { Composition } from "remotion";
 import { DesktopDiscord } from "./DesktopDiscord";
-import { LongformScene, LongformMessage } from "./types";
+import { LongformScene } from "./types";
 import scriptData from "../data/script_longform.json";
+import { calculateLongformTiming } from "../../src/core/timingEngine.ts";
+import type { StudioScene } from "../../src/core/types.ts";
 
 const fps = 30;
 
-// Dynamic timing algorithm for 16:9 desktop long-form reading pacing
-let currentFrame = 15; // 0.5s initial channel fade-in
+// Pure, deterministic timing calculation via core timing engine
+const timingResult = calculateLongformTiming(scriptData.scenes as unknown as StudioScene[], {
+  fps,
+  initialFadeInSeconds: 0.5,
+  sceneGapSeconds: 1.2,
+  endPaddingSeconds: 4.0,
+});
 
-const parsedScenes: LongformScene[] = (scriptData.scenes as LongformScene[]).map(
-  (scene, sceneIdx) => {
-    // Add small scene transition gap between scenes
-    if (sceneIdx > 0) {
-      currentFrame += Math.floor(1.2 * fps);
-    }
-
-    const parsedMessages: LongformMessage[] = scene.messages.map((msg) => {
-      const startFrame = currentFrame;
-
-      // Calculate natural reading duration based on word count and length
-      const words = msg.content.trim().split(/\s+/).length;
-      let durationSec = 1.8;
-      if (words <= 2) durationSec = 1.4;
-      else if (words <= 5) durationSec = 2.0;
-      else if (words <= 9) durationSec = 2.7;
-      else durationSec = 3.6;
-
-      // Special event pacing
-      if (msg.cutaway) {
-        durationSec = msg.cutaway.type === "youtube_channel" ? 3.6 : 2.6;
-      } else if (msg.attachmentUrl) {
-        durationSec = 4.0; // Audience absorbs chilling photos
-      } else if (msg.voiceEvent === "call_ringing") {
-        durationSec = 2.4;
-      }
-
-      const frameDuration = Math.floor(durationSec * fps);
-      currentFrame += frameDuration;
-
-      return {
-        ...msg,
-        startFrame,
-        durationInFrames: frameDuration,
-      };
-    });
-
-    return {
-      ...scene,
-      messages: parsedMessages,
-    };
-  }
-);
-
-// End padding for the punchline to sink in
-currentFrame += Math.floor(4.0 * fps);
-const totalDurationInFrames = currentFrame;
+const parsedScenes = timingResult.timedScenes as unknown as LongformScene[];
+const totalDurationInFrames = timingResult.totalDurationInFrames;
 
 export const LongformComposition: React.FC = () => {
   return (
     <Composition
       id="LongformDiscord"
-      component={DesktopDiscord as React.ComponentType<any>}
+      component={DesktopDiscord}
       defaultProps={{
         scenes: parsedScenes,
         title: scriptData.title,

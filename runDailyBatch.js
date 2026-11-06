@@ -7,61 +7,69 @@ import { generateLongformScript } from './longform/scripts/generateLongformScrip
 import { uploadLongformVideo } from './longform/scripts/uploadLongform.js';
 
 /**
- * 🌅 Master Beluga Daily Batch Runner (6:00 AM IST)
- * Generates all 5 Shorts + 1 Long-form episode for the day in one go,
- * and schedules them on YouTube using exact publishAt timestamps.
+ * 🌅 Master Beluga Daily Batch Runner (5:00 AM IST / 23:30 UTC)
+ * Generates 3 Shorts + 1 Long-form episode for the day in one morning batch,
+ * and schedules them on YouTube for optimal audience peak watch hours:
+ * 
+ * 1. Short 1: 01:00 PM IST (07:30 UTC) - Midday / Lunch Peak
+ * 2. Short 2: 05:00 PM IST (11:30 UTC) - After-School / Post-Work Peak
+ * 3. Long-Form: 07:00 PM IST (13:30 UTC) - Prime Evening Living Room Feature
+ * 4. Short 3: 08:30 PM IST (15:00 UTC) - Night-time Screen Time Peak
  */
-function getTodaySlots() {
+export function getTodaySlots() {
   const now = new Date();
-  
-  // Base day in UTC
-  const year = now.getUTCFullYear();
-  const month = now.getUTCMonth();
-  const date = now.getUTCDate();
+  // Compute date in Indian Standard Time (UTC + 5 hours 30 mins)
+  const istOffsetMs = 5.5 * 60 * 60 * 1000;
+  const istNow = new Date(now.getTime() + istOffsetMs);
 
-  // Slots in UTC matching our global audience target windows:
-  // Slot 1: 03:00 UTC (08:30 AM IST)
-  // Slot 2: 07:00 UTC (12:30 PM IST)
-  // Slot 3: 12:00 UTC (05:30 PM IST)
-  // Long-form: 14:00 UTC (07:30 PM IST)
-  // Slot 4: 16:00 UTC (09:30 PM IST)
-  // Slot 5: 20:00 UTC (01:30 AM IST next day)
+  const year = istNow.getUTCFullYear();
+  const month = istNow.getUTCMonth();
+  const date = istNow.getUTCDate();
+
   return {
     shorts: [
-      new Date(Date.UTC(year, month, date, 3, 0, 0)).toISOString(),
-      new Date(Date.UTC(year, month, date, 7, 0, 0)).toISOString(),
-      new Date(Date.UTC(year, month, date, 12, 0, 0)).toISOString(),
-      new Date(Date.UTC(year, month, date, 16, 0, 0)).toISOString(),
-      new Date(Date.UTC(year, month, date, 20, 0, 0)).toISOString(),
+      new Date(Date.UTC(year, month, date, 7, 30, 0)).toISOString(),  // 01:00 PM IST (07:30 UTC)
+      new Date(Date.UTC(year, month, date, 11, 30, 0)).toISOString(), // 05:00 PM IST (11:30 UTC)
+      new Date(Date.UTC(year, month, date, 15, 0, 0)).toISOString(),  // 08:30 PM IST (15:00 UTC)
     ],
-    longform: new Date(Date.UTC(year, month, date, 14, 0, 0)).toISOString()
+    longform: new Date(Date.UTC(year, month, date, 13, 30, 0)).toISOString(), // 07:00 PM IST (13:30 UTC)
   };
 }
 
 async function runDailyBatch() {
-  console.log('====================================================');
-  console.log('🚀 BELUGA MASTER 6:00 AM DAILY BATCH AUTOMATION');
-  console.log('====================================================\n');
+  console.log('================================================================');
+  console.log('🚀 BELUGA MASTER 5:00 AM DAILY AUTOPILOT (3 SHORTS + 1 LONG-FORM)');
+  console.log('================================================================\n');
 
   const slots = getTodaySlots();
   const outDir = path.join(process.cwd(), 'out');
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
   const publishedVideos = [];
+  const usedTopicIds = [];
 
   // ==========================================
-  // PHASE 1: GENERATE & SCHEDULE 5 SHORTS
+  // PHASE 1: GENERATE & SCHEDULE 3 SHORTS
   // ==========================================
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 3; i++) {
     const slotTime = slots.shorts[i];
+    const slotLabels = ['01:00 PM IST (Lunch Peak)', '05:00 PM IST (After-School Peak)', '08:30 PM IST (Night Peak)'];
     console.log(`\n----------------------------------------------------`);
-    console.log(`📱 [Short ${i + 1}/5] Preparing for slot: ${slotTime}`);
+    console.log(`📱 [Short ${i + 1}/3] Slot: ${slotLabels[i]} (${slotTime})`);
     console.log(`----------------------------------------------------`);
 
     try {
-      // 1. Generate Script
-      console.log('📝 Generating AI script with comedy universe rotation...');
-      const scriptData = await generateScript();
+      // 1. Generate Script with slot-specific category diversity & anti-repetition
+      console.log('📝 Generating script with diverse non-repeating category...');
+      const scriptData = await generateScript({
+        slotIndex: i,
+        totalSlots: 3,
+        excludeIds: usedTopicIds,
+      });
+
+      if (scriptData && scriptData.trendingTopic) {
+        usedTopicIds.push(scriptData.trendingTopic);
+      }
 
       // 2. Render Video
       const timestamp = Date.now();
@@ -70,13 +78,19 @@ async function runDailyBatch() {
 
       console.log(`🎬 Rendering 9:16 Short to ${videoFileName}...`);
       execSync(`npx remotion render src/index.ts DiscordChat "${outputPath}"`, {
-        stdio: 'inherit'
+        stdio: 'inherit',
       });
 
       // 3. Upload with Scheduled Publish Time
       console.log(`📤 Uploading and scheduling publish for ${slotTime}...`);
       const videoTitle = `${scriptData.title} #shorts`;
-      const videoUrl = await uploadVideo(outputPath, videoTitle, null, slotTime);
+      let videoUrl = 'https://youtube.com/watch?v=simulated';
+
+      if (process.env.YOUTUBE_REFRESH_TOKEN) {
+        videoUrl = await uploadVideo(outputPath, videoTitle, null, slotTime);
+      } else {
+        console.log('ℹ️ Running in simulation mode (no YOUTUBE_REFRESH_TOKEN).');
+      }
 
       // 4. Update history.json
       const historyPath = path.join(process.cwd(), 'history.json');
@@ -88,17 +102,28 @@ async function runDailyBatch() {
             hist[hist.length - 1].publishAt = slotTime;
             fs.writeFileSync(historyPath, JSON.stringify(hist, null, 2));
           }
-        } catch (e) {}
+        } catch (e) {
+          console.warn('⚠️ Could not update history record with URL:', e.message);
+        }
+      }
+
+      // Clean up rendered video file to preserve disk space
+      if (fs.existsSync(outputPath)) {
+        try {
+          fs.unlinkSync(outputPath);
+          console.log(`🧹 Cleaned up temporary video artifact: ${videoFileName}`);
+        } catch {}
       }
 
       publishedVideos.push({
         type: 'Short',
         index: i + 1,
         title: videoTitle,
+        slotLabel: slotLabels[i],
         publishAt: slotTime,
-        url: videoUrl
+        url: videoUrl,
       });
-      console.log(`✅ Short ${i + 1}/5 queued successfully: ${videoUrl}`);
+      console.log(`✅ Short ${i + 1}/3 queued successfully: ${videoUrl}`);
     } catch (err) {
       console.error(`❌ Error in Short ${i + 1}:`, err.message);
     }
@@ -108,12 +133,12 @@ async function runDailyBatch() {
   // PHASE 2: GENERATE & SCHEDULE 1 LONG-FORM
   // ==========================================
   console.log(`\n====================================================`);
-  console.log(`📺 [Long-Form Episode] Preparing for slot: ${slots.longform}`);
+  console.log(`📺 [Long-Form Episode] Slot: 07:00 PM IST (Evening Prime Time) (${slots.longform})`);
   console.log(`====================================================`);
 
   try {
     // 1. Generate Long-form Script
-    console.log('📝 Generating AI long-form episode with rotating theme...');
+    console.log('📝 Generating long-form episode with rotating multi-scene mystery...');
     await generateLongformScript();
 
     const scriptPath = path.join(process.cwd(), 'longform', 'data', 'script_longform.json');
@@ -126,19 +151,25 @@ async function runDailyBatch() {
       // 2. Render Long-form Video
       console.log(`🎬 Rendering 16:9 Long-Form episode to ${longformVideoFile}...`);
       execSync(`npx remotion render src/index.ts LongformDiscord "${longformOutputPath}"`, {
-        stdio: 'inherit'
+        stdio: 'inherit',
       });
 
       // 3. Upload with Scheduled Publish Time
       console.log(`📤 Uploading and scheduling long-form for ${slots.longform}...`);
-      const longformUrl = await uploadLongformVideo(
-        longformOutputPath,
-        longformData.title,
-        longformData.description,
-        longformData.tags,
-        null,
-        slots.longform
-      );
+      let longformUrl = 'https://youtube.com/watch?v=simulated_longform';
+
+      if (process.env.YOUTUBE_REFRESH_TOKEN) {
+        longformUrl = await uploadLongformVideo(
+          longformOutputPath,
+          longformData.title,
+          longformData.description,
+          longformData.tags,
+          null,
+          slots.longform
+        );
+      } else {
+        console.log('ℹ️ Running in simulation mode (no YOUTUBE_REFRESH_TOKEN).');
+      }
 
       // 4. Update history_longform.json
       const historyLongformPath = path.join(process.cwd(), 'longform', 'data', 'history_longform.json');
@@ -151,17 +182,29 @@ async function runDailyBatch() {
             videoId: longformUrl.split('v=')[1] || null,
             videoUrl: longformUrl,
             publishAt: slots.longform,
-            privacy: 'scheduled'
+            privacy: 'scheduled',
           });
           fs.writeFileSync(historyLongformPath, JSON.stringify(lHist, null, 2));
-        } catch (e) {}
+        } catch (e) {
+          console.warn('⚠️ Could not update longform history with URL:', e.message);
+        }
+      }
+
+      // Clean up rendered video file to preserve disk space
+      if (fs.existsSync(longformOutputPath)) {
+        try {
+          fs.unlinkSync(longformOutputPath);
+          console.log(`🧹 Cleaned up temporary video artifact: ${longformVideoFile}`);
+        } catch {}
       }
 
       publishedVideos.push({
         type: 'Long-Form',
+        index: 1,
         title: longformData.title,
+        slotLabel: '07:00 PM IST (Evening Prime)',
         publishAt: slots.longform,
-        url: longformUrl
+        url: longformUrl,
       });
       console.log(`✅ Long-Form episode queued successfully: ${longformUrl}`);
     }
@@ -169,10 +212,26 @@ async function runDailyBatch() {
     console.error('❌ Error generating long-form episode:', lErr.message);
   }
 
+  // Save latest batch summary for GitHub Actions reporting
+  const summaryPath = path.join(process.cwd(), 'latest_batch_summary.json');
+  fs.writeFileSync(
+    summaryPath,
+    JSON.stringify(
+      {
+        batchDate: new Date().toISOString(),
+        totalQueued: publishedVideos.length,
+        videos: publishedVideos,
+      },
+      null,
+      2
+    )
+  );
+
   console.log('\n====================================================');
-  console.log('🎉 6:00 AM DAILY BATCH COMPLETE! ALL VIDEOS QUEUED');
+  console.log('🎉 5:00 AM DAILY BATCH COMPLETE! ALL VIDEOS QUEUED & SCHEDULED');
   console.log('====================================================');
   console.table(publishedVideos);
+  return publishedVideos;
 }
 
 if (process.argv[1] && process.argv[1].endsWith('runDailyBatch.js')) {

@@ -1,10 +1,36 @@
 import React from "react";
-import { staticFile } from "remotion";
+import { staticFile, Img } from "remotion";
 import scriptData from "../data/script_longform.json";
+
+interface ThumbnailMeta {
+  author?: string;
+  authorColor?: string;
+  authorAvatar?: string;
+  authorTime?: string;
+  authorMessage?: string;
+  belugaTime?: string;
+  belugaMessage?: string;
+  highlightWord?: string;
+}
+
+const resolveAvatar = (name?: string, avatar?: string): string => {
+  if (avatar && !avatar.includes("example.com")) {
+    return avatar.startsWith("http") ? avatar : staticFile(avatar);
+  }
+  const n = (name || "").toLowerCase();
+  if (n.includes("mrbeast") || n.includes("beast")) return staticFile("characters/mrbeast.jpg");
+  if (n.includes("hecker")) return staticFile("hecker.jpg");
+  if (n.includes("skittle")) return staticFile("skittle.jpg");
+  if (n.includes("pablo")) return staticFile("pablo.jpg");
+  if (n.includes("mom") || n.includes("mother")) return staticFile("mom.jpg");
+  if (n.includes("admin") || n.includes("mod") || n.includes("lester")) return staticFile("admin.jpg");
+  if (n.includes("unknown") || n.includes("shadow") || n.includes("entity") || n.includes("void")) return staticFile("unknown.jpg");
+  return staticFile("police.jpg");
+};
 
 export const Thumbnail: React.FC = () => {
   // Support custom thumbnail metadata if present in script, or default to the iconic episode punchline
-  const thumbMeta = (scriptData as any).thumbnail || {
+  const thumbMeta: ThumbnailMeta = (scriptData as { thumbnail?: ThumbnailMeta }).thumbnail || {
     author: "Police",
     authorColor: "#5865F2",
     authorAvatar: "police.jpg",
@@ -14,6 +40,8 @@ export const Thumbnail: React.FC = () => {
     belugaMessage: "can i at least finish downloading Shrek 2 first?",
     highlightWord: "KEYBOARD.",
   };
+
+  const authorAvatarSrc = resolveAvatar(thumbMeta.author, thumbMeta.authorAvatar);
 
   return (
     <div
@@ -68,8 +96,8 @@ export const Thumbnail: React.FC = () => {
               boxShadow: "0 8px 30px rgba(0, 0, 0, 0.6)",
             }}
           >
-            <img
-              src={staticFile(thumbMeta.authorAvatar || "police.jpg")}
+            <Img
+              src={authorAvatarSrc}
               style={{
                 width: "100%",
                 height: "100%",
@@ -141,7 +169,7 @@ export const Thumbnail: React.FC = () => {
                 boxShadow: "0 8px 30px rgba(0, 0, 0, 0.6)",
               }}
             >
-              <img
+              <Img
                 src={staticFile("beluga.jpg")}
                 style={{
                   width: "100%",

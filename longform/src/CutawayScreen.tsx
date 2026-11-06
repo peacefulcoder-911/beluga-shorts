@@ -1,6 +1,6 @@
 import React from "react";
 import { CutawayData } from "./types";
-import { staticFile } from "remotion";
+import { staticFile, Img } from "remotion";
 
 export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; startFrame: number }> = ({
   cutaway,
@@ -149,7 +149,7 @@ export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; star
               border: "3px solid #333333",
             }}
           >
-            <img
+            <Img
               src={cutaway.avatarUrl || staticFile("egg.png")}
               style={{
                 width: "90%",
@@ -280,7 +280,7 @@ export const CutawayScreen: React.FC<{ cutaway: CutawayData; frame: number; star
           overflow: "hidden",
         }}
       >
-        <img
+        <Img
           src={imgSrc}
           style={{
             maxWidth: "100%",

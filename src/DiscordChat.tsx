@@ -1,5 +1,7 @@
-import { useCurrentFrame, Audio, Sequence, staticFile } from "remotion";
+import { useCurrentFrame, Audio, Sequence, staticFile, Img } from "remotion";
 import React from "react";
+import { resolveAudioCue } from "./core/audioRegistry.ts";
+import type { AudioCue } from "./core/types.ts";
 
 export type MessageData = {
   id: number;
@@ -9,36 +11,95 @@ export type MessageData = {
   time: string;
   color: string;
   startFrame?: number;
+  durationInFrames?: number;
   attachmentUrl?: string;
+  audioCues?: AudioCue[];
+  screenShake?: boolean;
+  punchZoom?: boolean;
+  typingFrames?: number;
+  systemAlert?: string;
 };
 
-export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: string }> = ({ script, hookThumbnailUrl }) => {
+export interface DiscordChatProps {
+  script: MessageData[];
+  hookThumbnailUrl?: string;
+  hookHeadline?: string;
+  hookDurationFrames?: number;
+}
+
+export const DiscordChat: React.FC<DiscordChatProps> = ({
+  script,
+}) => {
   const frame = useCurrentFrame();
 
   // Show messages up to current frame
   const visibleMessages = script.filter((msg) => frame >= (msg.startFrame || 0));
+
+  // Dynamic Camera Transform (Screen Shake & Punch Zoom)
+  let shakeX = 0;
+  let shakeY = 0;
+  let currentZoom = 1;
+
+  const activeShakingMsg = script.find((m) => {
+    const start = m.startFrame || 0;
+    return m.screenShake && frame >= start && frame < start + 12;
+  });
+
+  if (activeShakingMsg) {
+    const shakeFrame = frame - (activeShakingMsg.startFrame || 0);
+    const intensity = Math.max(0, 14 - shakeFrame);
+    shakeX = Math.sin(frame * 1.5) * intensity;
+    shakeY = Math.cos(frame * 2.0) * intensity;
+  }
+
+  const activePunchMsg = script.find((m) => {
+    const start = m.startFrame || 0;
+    const dur = m.durationInFrames || 45;
+    return m.punchZoom && frame >= start && frame < start + dur;
+  });
+
+  if (activePunchMsg) {
+    currentZoom = 1.04;
+  }
+
+  // Active Typing Indicator Detection
+  const upcomingTypingMsg = script.find((m) => {
+    const start = m.startFrame || 0;
+    const tf = m.typingFrames || 0;
+    return tf > 0 && frame >= start - tf && frame < start;
+  });
 
   return (
     <>
       {/* Dynamic Sound Effects */}
       {script.map((msg) => {
         const appearanceFrame = msg.startFrame || 0;
+        const cues: AudioCue[] =
+          msg.audioCues && msg.audioCues.length > 0
+            ? msg.audioCues
+            : [
+                { id: `sfx-notify-${msg.id}`, type: "notification" },
+                ...(msg.attachmentUrl
+                  ? [{ id: `sfx-hit-${msg.id}`, type: "horror_hit" as const, volume: 0.65 }]
+                  : []),
+              ];
+
         return (
           <React.Fragment key={`audio-group-${msg.id}`}>
-            {/* Standard Discord message notification chime */}
-            <Sequence from={appearanceFrame}>
-              <Audio src={staticFile("notification.mp3")} volume={0.5} />
-            </Sequence>
-
-            {/* Impact SFX when an in-chat image attachment appears */}
-            {msg.attachmentUrl && (
-              <Sequence from={appearanceFrame}>
-                <Audio src={staticFile("audio/horror_hit.wav")} volume={0.65} />
-              </Sequence>
-            )}
+            {cues.map((cue, cueIdx) => {
+              const resolved = resolveAudioCue(cue);
+              const cueStart = appearanceFrame + (resolved.delayFrames || 0);
+              return (
+                <Sequence key={`cue-${msg.id}-${cueIdx}-${cue.type}`} from={cueStart}>
+                  <Audio src={staticFile(resolved.src)} volume={() => resolved.volume} />
+                </Sequence>
+              );
+            })}
           </React.Fragment>
         );
       })}
+
+
 
       <div
         style={{
@@ -53,31 +114,11 @@ export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: s
           WebkitFontSmoothing: "antialiased",
           position: "relative",
           overflow: "hidden",
+          transform: `scale(${currentZoom}) translate(${shakeX}px, ${shakeY}px)`,
+          transformOrigin: "center center",
         }}
       >
-        {/* Baked-in Thumbnail Hook Card (Frames 0 to 18 / 0.6s) */}
-        {/* Guarantees YouTube selects this high-CTR vertical card as the Shorts cover! */}
-        {hookThumbnailUrl && frame < 20 && (
-          <div
-            style={{
-              position: "absolute",
-              inset: 0,
-              zIndex: 9999,
-              backgroundColor: "#1e1f22",
-              opacity: frame < 15 ? 1 : Math.max(0, 1 - (frame - 15) / 5),
-              pointerEvents: "none",
-            }}
-          >
-            <img
-              src={hookThumbnailUrl.startsWith("http") ? hookThumbnailUrl : staticFile(hookThumbnailUrl)}
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-              }}
-            />
-          </div>
-        )}
+
 
         {/* Top Header: Authentic Mobile Discord Top Bar */}
         <div
@@ -215,7 +256,7 @@ export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: s
               >
                 {/* Avatar with authentic Discord online badge */}
                 <div style={{ position: "relative", width: "152px", height: "152px", flexShrink: 0 }}>
-                  <img
+                  <Img
                     src={msg.avatarUrl}
                     style={{
                       width: "152px",
@@ -282,6 +323,31 @@ export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: s
                     {msg.content}
                   </div>
 
+                  {/* System Alert Banner */}
+                  {msg.systemAlert && (
+                    <div
+                      style={{
+                        marginTop: "16px",
+                        marginBottom: "10px",
+                        padding: "20px 28px",
+                        borderRadius: "18px",
+                        backgroundColor: "rgba(237, 66, 69, 0.16)",
+                        border: "3px solid #ed4245",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "18px",
+                        color: "#ff7675",
+                        fontSize: "40px",
+                        fontWeight: 700,
+                        letterSpacing: "0.5px",
+                        boxShadow: "0 8px 30px rgba(237, 66, 69, 0.35)",
+                      }}
+                    >
+                      <span style={{ fontSize: "44px", flexShrink: 0 }}>⚠️</span>
+                      <span>{msg.systemAlert}</span>
+                    </div>
+                  )}
+
                   {/* Authentic Discord In-Chat Image Attachment */}
                   {msg.attachmentUrl && (
                     <div
@@ -295,7 +361,7 @@ export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: s
                         backgroundColor: "#2b2d31",
                       }}
                     >
-                      <img
+                      <Img
                         src={
                           msg.attachmentUrl.startsWith("http")
                             ? msg.attachmentUrl
@@ -315,6 +381,49 @@ export const DiscordChat: React.FC<{ script: MessageData[]; hookThumbnailUrl?: s
             );
           })}
         </div>
+
+        {/* Animated Discord Mobile Typing Indicator */}
+        {upcomingTypingMsg && (
+          <div
+            style={{
+              height: "76px",
+              flexShrink: 0,
+              display: "flex",
+              alignItems: "center",
+              gap: "20px",
+              padding: "0 80px",
+              backgroundColor: "rgba(30, 31, 34, 0.98)",
+              borderTop: "2px solid rgba(255, 255, 255, 0.05)",
+              zIndex: 5,
+            }}
+          >
+            <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
+              {[0, 1, 2].map((dotIdx) => {
+                const dotBounce = Math.sin(frame * 0.35 + dotIdx * 1.3);
+                return (
+                  <span
+                    key={`typing-dot-${dotIdx}`}
+                    style={{
+                      width: "16px",
+                      height: "16px",
+                      backgroundColor: "#dbdee1",
+                      borderRadius: "50%",
+                      display: "inline-block",
+                      transform: `translateY(${dotBounce * 6}px)`,
+                      opacity: 0.4 + Math.max(0, dotBounce * 0.6),
+                    }}
+                  />
+                );
+              })}
+            </div>
+            <span style={{ fontSize: "38px", color: "#b5bac1", fontWeight: 600 }}>
+              <span style={{ color: upcomingTypingMsg.color || "#f2f3f5", fontWeight: 700 }}>
+                {upcomingTypingMsg.author}
+              </span>{" "}
+              is typing...
+            </span>
+          </div>
+        )}
 
         {/* Bottom Input Area: Authentic Discord Mobile Bar */}
         <div

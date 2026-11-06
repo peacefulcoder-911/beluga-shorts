@@ -30,6 +30,7 @@
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
     "start": "node runDaily.js",
     "batch": "node runDailyBatch.js",
     "longform:generate": "node longform/scripts/generateLongformScript.js",

@@ -3,6 +3,13 @@ import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
 import { getScheduledLongformTheme, BANNED_KEYWORDS } from '../../topicScheduler.js';
+import {
+  buildLongformStoryPrompt,
+  cleanAndParseJson,
+  extractAntiRepetitionContext,
+  validateNarrativeQuality,
+  fromLegacyLongformScript,
+} from '../../src/core/index.ts';
 
 dotenv.config();
 
@@ -40,12 +47,12 @@ async function ensureAttachmentImage(slug, imagePrompt) {
   return success ? `attachments/${clean}.jpg` : null;
 }
 
-async function generateWithFallback(prompt) {
+export async function generateWithFallback(prompt) {
   const candidateModels = [
     'gemini-3-flash-preview',
     'gemini-2.5-flash',
     'gemini-flash-latest',
-    'gemini-3.5-flash'
+    'gemini-3.5-flash',
   ];
 
   let lastError = null;
@@ -56,12 +63,12 @@ async function generateWithFallback(prompt) {
         model: modelName,
         generationConfig: {
           responseMimeType: 'application/json',
-          temperature: 0.85
-        }
+          temperature: 0.85,
+        },
       });
       const result = await model.generateContent(prompt);
       const text = result.response.text();
-      const data = JSON.parse(text);
+      const data = cleanAndParseJson(text);
       console.log(`✅ Long-form generation succeeded with ${modelName}!`);
       return data;
     } catch (err) {
@@ -73,13 +80,12 @@ async function generateWithFallback(prompt) {
 }
 
 export async function generateLongformScript() {
-
   const historyPath = path.join(process.cwd(), 'longform', 'data', 'history_longform.json');
   let history = [];
   if (fs.existsSync(historyPath)) {
     try {
       history = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
-    } catch (e) {
+    } catch {
       history = [];
     }
   }
@@ -87,90 +93,56 @@ export async function generateLongformScript() {
   const assignedTheme = getScheduledLongformTheme(history.length);
   console.log(`\n🎬 ASSIGNED LONG-FORM THEME: "${assignedTheme.topic}"`);
 
-  const pastTitles = history.map(h => h.title).slice(-20).join(', ');
+  // Extract rich anti-repetition context
+  const antiRepetition = extractAntiRepetitionContext(history);
 
-  const prompt = `
-You are the master comedy writer for the Beluga YouTube channel (10M+ subscribers).
-You are writing a full-length, highly engaging ONE-ACT episodic Discord comedy video (1920x1080 Landscape).
-
-### ASSIGNED EPISODE THEME FOR TODAY:
-Theme: ${assignedTheme.topic}
-Description: ${assignedTheme.description}
-Inspirational Titles:
-${assignedTheme.exampleTitles.map(t => `- "${t}"`).join('\n')}
-
-### CORE CONCEPT: ONE COMPLETE COHESIVE ACT ON THIS TOPIC
-- The entire episode takes place in ONE continuous channel (#general).
-- No channel jumping, no separate voice/admin acts. A single, focused, escalating comedic storyline.
-
-### STRICT BANNED TOPICS:
-- ABSOLUTELY NO TAXES, NO IRS, NO TAX AGENTS, NO BANK DEBT, NO REFUND SCAMS.
-- Any script mentioning taxes or banking wire fraud is strictly prohibited.
-
-### THE 2 IN-CHAT IMAGE ATTACHMENTS:
-1. **Opening Image (Message 3 to 6)**: The real painting, device photo, mysterious document, or evidence Beluga drops as "proof".
-2. **Climax Revelation Image (Message 35 to 45)**: A hilarious, absurd, or bizarre parody version of the image created/hacked by Hecker or Beluga.
-
-### CAST DYNAMICS:
-- **Beluga**: Discovers the scandal/problem, takes everything literally, delivers deadpan absurd theories in ALL CAPS.
-- **Skittle**: The frustrated straight-man attempting to use common sense.
-- **ExplodingTNT**: The hyperactive meme-roaster who yells in chat.
-- **Hecker**: The ultra-calm hacker who takes absurd requests dead seriously ("confirmed", "hacked it", "skill issue").
-- **Guest Star (MrBeast, Billionaire, or Elon)**: Enters midway with an absurd $1,000,000 reward/offer.
-- **Server Event**: Near the end, the server icon changes or a chaotic announcement happens.
-
-### PACING & LENGTH:
-- Total: 45 to 55 lines.
-- Rapid-fire Discord dialogue: 75% short lines (1 to 5 words).
-- Shouting in ALL CAPS for shock and comedic timing.
-
-Avoid past topics: [${pastTitles || 'None yet'}]
-
-Return ONLY raw JSON with this exact structure:
-{
-  "title": "Napoleon's Fake Horse Scandal... 💀",
-  "description": "Beluga exposes a 200-year-old historical scandal on Discord with Hecker, ExplodingTNT, and MrBeast. #beluga #discord #meme #comedy",
-  "tags": ["beluga", "discord", "history", "meme", "hecker", "skittle", "mrbeast", "explodingtnt"],
-  "mrbeastThumbnailPrompt": "A viral high-CTR YouTube thumbnail in 16:9 widescreen format. On the right, an energetic content creator with an exaggerated shocked open-mouth expression, pointing enthusiastically towards the center. In the center, a dramatic visual spectacle of the subject wearing a royal golden crown next to a glowing $1,000,000 sign. In the bottom left, the iconic polite smiling white cat Beluga looking in disbelief. Saturated electric cyan and fiery orange lighting, ultra-sharp contrast, dramatic glossy finish.",
-  "thumbnail": {
-    "author": "MrBeast",
-    "authorColor": "#00d2d3",
-    "authorAvatar": "characters/mrbeast.jpg",
-    "authorTime": "Today at 4:18 PM",
-    "authorMessage": "I gave $1,000,000 to the mule.",
-    "belugaTime": "Today at 4:18 PM",
-    "belugaMessage": "you can't give money to a mule"
-  },
-  "attachments": [
-    {
-      "messageIndex": 2,
-      "slug": "historical_painting_original",
-      "imagePrompt": "High-resolution classical fine art oil painting of the historical subject, ornate gallery framing, dramatic 19th century masterpiece"
-    },
-    {
-      "messageIndex": 38,
-      "slug": "hacked_parody_revelation",
-      "imagePrompt": "Humorous classical oil painting parody of the subject with an absurd comical twist, high art quality, majestic and funny"
-    }
-  ],
-  "scenes": [
-    {
-      "sceneId": 1,
-      "channelName": "general",
-      "channelType": "text",
-      "topic": "Welcome to #general",
-      "messages": [
-        { "id": 1, "author": "Beluga", "time": "4:02 PM", "content": "GUYS I FOUND A HISTORICAL SCANDAL" }
-      ]
-    }
-  ]
-}
-`;
+  // Build dynamic multi-scene narrative prompt
+  const prompt = buildLongformStoryPrompt({
+    theme: assignedTheme,
+    antiRepetition,
+    bannedKeywords: BANNED_KEYWORDS,
+  });
 
   try {
     const data = await generateWithFallback(prompt);
 
-    // Handle multiple attachment images
+    // Verify multi-scene structure: default to at least 1 scene if omitted
+    if (!data.scenes || !Array.isArray(data.scenes) || data.scenes.length === 0) {
+      throw new Error('LLM generated invalid response without scenes array.');
+    }
+
+    console.log(`🎬 Generated Title: ${data.title}`);
+    console.log(`🎭 Total Scenes Planned: ${data.scenes.length}`);
+    if (data.storyOutline) {
+      console.log(`📖 Central Conflict: ${data.storyOutline.conflict}`);
+      console.log(`⚡ Climax: ${data.storyOutline.climax}`);
+      console.log(`🎯 Payoff: ${data.storyOutline.payoff}`);
+    }
+
+    // Ensure sequential message IDs and default explicit audio cues across scenes
+    let globalMsgId = 1;
+    for (const scene of data.scenes) {
+      if (!scene.messages || !Array.isArray(scene.messages)) {
+        scene.messages = [];
+      }
+      for (const msg of scene.messages) {
+        msg.id = globalMsgId++;
+
+        // Ensure explicit audio cues are present
+        if (!msg.audioCues || msg.audioCues.length === 0) {
+          const cues = [{ id: `sfx-notify-${msg.id}`, type: 'notification' }];
+          if (msg.attachmentUrl) {
+            cues.push({ id: `sfx-hit-${msg.id}`, type: 'horror_hit', volume: 0.7 });
+          }
+          if (msg.voiceEvent === 'call_ringing') {
+            cues.push({ id: `sfx-ring-${msg.id}`, type: 'discord_ring', volume: 0.7 });
+          }
+          msg.audioCues = cues;
+        }
+      }
+    }
+
+    // Handle multiple attachment images across scenes
     const attachments = data.attachments || (data.attachment ? [data.attachment] : []);
     for (const att of attachments) {
       if (att && att.imagePrompt) {
@@ -178,9 +150,11 @@ Return ONLY raw JSON with this exact structure:
           att.slug || `longform_att_${Date.now()}`,
           att.imagePrompt
         );
-        if (attUrl && data.scenes && data.scenes[0] && data.scenes[0].messages[att.messageIndex]) {
-          data.scenes[0].messages[att.messageIndex].attachmentUrl = attUrl;
-          console.log(`📎 Attached in-chat image to message index ${att.messageIndex}: ${attUrl}`);
+        const targetSceneIdx = att.sceneIndex !== undefined && data.scenes[att.sceneIndex] ? att.sceneIndex : 0;
+        const targetScene = data.scenes[targetSceneIdx];
+        if (attUrl && targetScene && targetScene.messages && targetScene.messages[att.messageIndex]) {
+          targetScene.messages[att.messageIndex].attachmentUrl = attUrl;
+          console.log(`📎 Attached in-chat image to Scene ${targetSceneIdx + 1} message index ${att.messageIndex}: ${attUrl}`);
         }
       }
     }
@@ -202,6 +176,19 @@ Return ONLY raw JSON with this exact structure:
       console.warn('⚠️ MrBeast thumbnail generation notice:', thErr.message);
     }
 
+    // Validate narrative quality using Core Validation framework
+    const canonicalScript = fromLegacyLongformScript(data);
+    const qualityResult = validateNarrativeQuality(canonicalScript, {
+      minMessages: 50,
+      maxMessages: 95,
+    });
+
+    if (!qualityResult.isValid) {
+      console.warn(`⚠️ Narrative Quality Notice (${qualityResult.errors.length} checks):`, qualityResult.errors.join('; '));
+    } else {
+      console.log(`⏱️ Estimated Long-form Duration: ${qualityResult.durationSeconds?.toFixed(1)}s across ${data.scenes.length} scenes`);
+    }
+
     // Save to longform data
     const scriptOutPath = path.join(process.cwd(), 'longform', 'data', 'script_longform.json');
     fs.writeFileSync(scriptOutPath, JSON.stringify(data, null, 2));
@@ -210,15 +197,17 @@ Return ONLY raw JSON with this exact structure:
     history.push({
       date: new Date().toISOString(),
       title: data.title,
+      storyOutline: data.storyOutline || null,
       scenes: data.scenes.length,
-      totalMessages: data.scenes.reduce((acc, s) => acc + s.messages.length, 0),
-      thumbnail: data.thumbnail || null
+      totalMessages: data.scenes.reduce((acc, s) => acc + (s.messages ? s.messages.length : 0), 0),
+      thumbnail: data.thumbnail || null,
+      durationSeconds: qualityResult.durationSeconds || null,
     });
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
 
-    console.log('✅ Successfully generated authentic One-Act Beluga Episode!');
+    const totalMessagesCount = data.scenes.reduce((acc, s) => acc + (s.messages ? s.messages.length : 0), 0);
+    console.log(`✅ Successfully generated authentic Multi-Scene Beluga Episode (${data.scenes.length} scenes, ${totalMessagesCount} messages)!`);
     console.log('🎬 Title: ' + data.title);
-    console.log('📜 Total Messages in Act: ' + data.scenes[0].messages.length);
     return data;
   } catch (e) {
     console.error('❌ Failed to generate long-form script:', e);

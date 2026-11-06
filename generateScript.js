@@ -3,12 +3,24 @@ import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
 import { getScheduledUniverse, BANNED_KEYWORDS } from './topicScheduler.js';
+import {
+  buildShortsStoryPrompt,
+  cleanAndParseJson,
+  extractAntiRepetitionContext,
+  validateNarrativeQuality,
+  resolveHookCard,
+  fromLegacyShortsScript,
+  getTrendingTopic,
+  getTrendingTopicForSlot,
+  ensureTrendingAssets,
+  productionDb,
+} from './src/core/index.ts';
 
 dotenv.config();
 
 const apiKey = process.env.GEMINI_API_KEY;
 
-// Autonomous image downloader for new characters and attachments
+// Autonomous image downloader for new characters, attachments, and dynamic hook cards
 async function downloadImage(url, destPath) {
   try {
     const res = await fetch(url);
@@ -36,7 +48,7 @@ async function ensureCharacterAvatar(charName, avatarPrompt) {
   }
 
   const prompt = avatarPrompt || `Discord profile avatar of ${charName} in funny cat meme style, centered, high quality, square portrait`;
-  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=512&height=512&nologo=true`;
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=512&height=512`;
   console.log(`🎨 Generating new character avatar for "${charName}"...`);
   const success = await downloadImage(url, destPath);
   return success ? `characters/${clean}.jpg` : 'default_user.jpg';
@@ -54,18 +66,35 @@ async function ensureAttachmentImage(slug, imagePrompt) {
     return `attachments/${clean}.jpg`;
   }
 
-  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt)}?width=640&height=400&nologo=true`;
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(imagePrompt)}?width=640&height=400`;
   console.log(`🖼️ Generating in-chat attachment for "${clean}"...`);
   const success = await downloadImage(url, destPath);
   return success ? `attachments/${clean}.jpg` : null;
 }
 
-async function generateWithFallback(genAI, prompt) {
+async function ensureHookCardThumbnail(slug, hookPrompt) {
+  if (!slug || !hookPrompt) return null;
+  const clean = slug.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  const destDir = path.join(process.cwd(), 'public', 'attachments');
+  if (!fs.existsSync(destDir)) fs.mkdirSync(destDir, { recursive: true });
+  const destPath = path.join(destDir, `${clean}.jpg`);
+
+  if (fs.existsSync(destPath)) {
+    return `attachments/${clean}.jpg`;
+  }
+
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(hookPrompt)}?width=1080&height=1920`;
+  console.log(`🪝 Generating dynamic hook card image for "${clean}"...`);
+  const success = await downloadImage(url, destPath);
+  return success ? `attachments/${clean}.jpg` : null;
+}
+
+export async function generateWithFallback(genAI, prompt) {
   const candidateModels = [
     'gemini-3-flash-preview',
     'gemini-2.5-flash',
     'gemini-flash-latest',
-    'gemini-3.5-flash'
+    'gemini-3.5-flash',
   ];
 
   let lastError = null;
@@ -74,11 +103,11 @@ async function generateWithFallback(genAI, prompt) {
       console.log(`🤖 Requesting script from Gemini (${modelName})...`);
       const model = genAI.getGenerativeModel({
         model: modelName,
-        generationConfig: { responseMimeType: 'application/json' }
+        generationConfig: { responseMimeType: 'application/json' },
       });
       const result = await model.generateContent(prompt);
       const text = result.response.text();
-      const data = JSON.parse(text);
+      const data = cleanAndParseJson(text);
       console.log(`✅ Script generation succeeded with ${modelName}!`);
       return data;
     } catch (err) {
@@ -89,7 +118,7 @@ async function generateWithFallback(genAI, prompt) {
   throw lastError || new Error('All candidate Gemini models failed.');
 }
 
-export async function generateScript() {
+export async function generateScript(params = null) {
   if (!apiKey) {
     console.error('Please provide GEMINI_API_KEY in .env');
     process.exit(1);
@@ -97,148 +126,232 @@ export async function generateScript() {
 
   const genAI = new GoogleGenerativeAI(apiKey);
 
+  // Normalize options
+  let topicOverride = null;
+  let slotIndex = undefined;
+  let totalSlots = 3;
+  let excludeIds = [];
+
+  if (typeof params === 'string') {
+    topicOverride = params;
+  } else if (params && typeof params === 'object') {
+    topicOverride = params.topicOverride || null;
+    slotIndex = params.slotIndex;
+    totalSlots = params.totalSlots || 3;
+    excludeIds = Array.isArray(params.excludeIds) ? params.excludeIds : [];
+  }
+
   const historyPath = path.join(process.cwd(), 'history.json');
   let history = [];
   if (fs.existsSync(historyPath)) {
     try {
       history = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
-    } catch (e) {}
+    } catch {
+      history = [];
+    }
   }
 
-  // Deterministic universe rotation: ensure consecutive runs rotate through all 5 universes
-  const universe = getScheduledUniverse(history.length);
-  console.log(`\n🪐 ASSIGNED COMEDY UNIVERSE: "${universe.name}" (${universe.id})`);
+  // Parse command line arguments
+  let requestedTopic = topicOverride;
+  let useLegacyUniverse = false;
+  const args = process.argv.slice(2);
+  for (const arg of args) {
+    if (arg.startsWith('--topic=')) requestedTopic = arg.split('=')[1];
+    else if (arg.startsWith('--trend=')) requestedTopic = arg.split('=')[1];
+    else if (arg.startsWith('--slot=')) slotIndex = parseInt(arg.split('=')[1], 10);
+    else if (arg === '--universe') useLegacyUniverse = true;
+    else if (!arg.startsWith('--') && !requestedTopic) requestedTopic = arg;
+  }
 
-  const pastTitles = history.map(h => h.title).slice(-30).join(' | ');
+  // Extract rich anti-repetition context
+  const antiRepetition = extractAntiRepetitionContext(history);
 
-  const prompt = `
-You are the lead comedy scriptwriter for the legendary Beluga YouTube channel (10M+ subscribers).
-Your mission is to write an original, hilarious, fast-paced Beluga Discord Shorts script (50-58 seconds, 25-34 rapid-fire lines).
+  let prompt;
+  let trendingTopic = null;
+  let topicAssets = null;
 
-========================================
-ASSIGNED COMEDY UNIVERSE FOR THIS EPISODE:
-========================================
-Universe: ${universe.name}
-Description: ${universe.description}
-
-Inspirational Title Angles for this Universe:
-${universe.exampleTitles.map(t => `- "${t}"`).join('\n')}
-
-Suggested Guest Character Types:
-${universe.guestSuggestions.map(g => `- "${g.name}": ${g.prompt}`).join('\n')}
-
-Attachment Ideas:
-${universe.attachmentIdeas.map(a => `- ${a}`).join('\n')}
-
-========================================
-STRICT BANNED TOPIC ENFORCEMENT:
-========================================
-- ABSOLUTELY NO TAXES, NO IRS, NO TAX AGENTS, NO BANK SCAMS, NO NEGATIVE BANK BALANCES, NO REFUND FRAUD.
-- Any script mentioning taxes, IRS, bank accounts, or financial wire fraud is STRICTLY FORBIDDEN.
-- STRICT TITLE BAN: NEVER start title with "Beluga Accidentally...".
-
-========================================
-CAST RULES (DYNAMIC CAST ENABLED):
-========================================
-- Core recurring characters:
-  - 'Beluga' (chaotic, awkward, deadpan main cat)
-  - 'Skittle' (skeptical, easily panicked kitten)
-  - 'Hecker' (Floppa elite hacker with green text)
-  - 'Mom' (furious mother)
-  - 'Admin' (pompous Discord mod)
-- NEW GUEST CHARACTER:
-  - Introduce 1 unique guest character fitting "${universe.name}"!
-  - Provide a creative 'name' and descriptive 'avatarPrompt' in 'newCharacter'.
-
-========================================
-MANDATORY IN-CHAT IMAGE ATTACHMENT:
-========================================
-- Include exactly ONE in-chat image attachment fitting the comedy universe (e.g., photo, device screen, proof document, funny meme).
-- Provide 'attachment': { 'messageIndex': <0-indexed message number where image is attached>, 'slug': 'short_name', 'imagePrompt': 'photorealistic or meme prompt describing the image' }.
-
-========================================
-PACING & DIALOGUE STYLE:
-========================================
-- Exactly 25 to 34 rapid-fire lines.
-- 70% of lines must be ULTRA-SHORT (1-4 words: 'WAIT', 'no', 'i did', 'done', 'HOW', 'technically', 'WHAT NOW').
-- Maximum 7-8 words on longer lines. Never write long paragraphs.
-- High emotion: ALL CAPS for screaming and panic ('BRO WHAT', 'DO NOT TOUCH THAT').
-- Loopback or twist punchline at the end.
-
-Avoid recent titles: [${pastTitles || 'None yet'}]
-
-Return ONLY raw JSON in this structure:
-{
-  "title": "${universe.exampleTitles[0]}",
-  "archetype": "${universe.name}",
-  "newCharacter": {
-    "name": "${universe.guestSuggestions[0].name}",
-    "avatarPrompt": "${universe.guestSuggestions[0].prompt}"
-  },
-  "attachment": {
-    "messageIndex": 12,
-    "slug": "in_chat_proof",
-    "imagePrompt": "${universe.attachmentIdeas[0]}"
-  },
-  "messages": [
-    {
-      "id": 1,
-      "author": "Beluga",
-      "content": "Message content",
-      "time": "Today at 3:15 PM"
+  if (useLegacyUniverse) {
+    const universe = getScheduledUniverse(history.length);
+    console.log(`\n🪐 ASSIGNED COMEDY UNIVERSE: "${universe.name}" (${universe.id})`);
+    prompt = buildShortsStoryPrompt({
+      universe,
+      antiRepetition,
+      bannedKeywords: BANNED_KEYWORDS,
+    });
+  } else {
+    // Select trending topic: use slot-based non-repeating picker if slotIndex provided, else getTrendingTopic
+    if (slotIndex !== undefined && !requestedTopic) {
+      trendingTopic = getTrendingTopicForSlot(slotIndex, excludeIds);
+    } else {
+      trendingTopic = getTrendingTopic(requestedTopic);
     }
-  ]
-}
-`;
+    console.log(`\n🔥 ACTIVE DAILY TRENDING TOPIC: "${trendingTopic.title}" (ID: ${trendingTopic.id})`);
+    console.log(`📂 Category: [${trendingTopic.category.toUpperCase()}]`);
+    console.log(`⚡ Headline: "${trendingTopic.headline}"`);
+    console.log(`🪝 Hook Headline: "${trendingTopic.hookHeadline}"`);
+    console.log(`👤 Guest Character: "${trendingTopic.guestCharacter.name}" (${trendingTopic.guestCharacter.role})`);
+
+    // Verify and ensure physical topic assets exist
+    topicAssets = await ensureTrendingAssets(trendingTopic);
+    console.log(`🖼️ Verified Hook Image: ${topicAssets.hookImagePath}`);
+    console.log(`🎭 Verified Guest Avatar: ${topicAssets.guestAvatarPath}`);
+    console.log(`📎 Verified Evidence: ${topicAssets.evidenceImagePath}`);
+
+    prompt = buildShortsStoryPrompt({
+      trendingTopic,
+      antiRepetition,
+      bannedKeywords: BANNED_KEYWORDS,
+      targetDurationSeconds: 52,
+    });
+  }
 
   try {
     const data = await generateWithFallback(genAI, prompt);
 
     // Strict validation: reject any scripts containing banned tax/fraud keywords
     const rawContent = JSON.stringify(data).toLowerCase();
-    const foundBanned = BANNED_KEYWORDS.find(k => rawContent.includes(k.toLowerCase()));
+    const foundBanned = BANNED_KEYWORDS.find((k) => rawContent.includes(k.toLowerCase()));
     if (foundBanned) {
       console.warn(`⚠️ Warning: Script contained banned keyword "${foundBanned}". Sanitizing theme...`);
     }
 
     console.log(`🎉 Story Archetype Selected: ${data.archetype}`);
     console.log(`📌 Generated Title: ${data.title}`);
+    if (data.storyOutline) {
+      console.log(`📖 Story Hook: ${data.storyOutline.hook}`);
+      console.log(`⚡ Climax: ${data.storyOutline.climax}`);
+      console.log(`🎯 Payoff: ${data.storyOutline.payoff}`);
+    }
 
-    // Handle new guest character avatar
+    // Handle legacy guest character avatar if not using trending assets
     let guestAvatarUrl = null;
-    if (data.newCharacter && data.newCharacter.name) {
+    if (!trendingTopic && data.newCharacter && data.newCharacter.name) {
       guestAvatarUrl = await ensureCharacterAvatar(
         data.newCharacter.name,
         data.newCharacter.avatarPrompt
       );
     }
 
-    // Handle in-chat attachment
+    // Handle legacy in-chat attachment if not using trending assets
     let attachmentUrl = null;
-    if (data.attachment && data.attachment.imagePrompt) {
+    if (!trendingTopic && data.attachment && data.attachment.imagePrompt) {
       attachmentUrl = await ensureAttachmentImage(
         data.attachment.slug || 'chat_attachment',
         data.attachment.imagePrompt
       );
     }
 
-    // Inject avatarUrl and attachmentUrl into the messages array
-    const finalMessages = data.messages.map((msg, index) => {
+    // Handle dynamic hook card for legacy mode
+    let hookThumbnailUrl = null;
+    if (!trendingTopic) {
+      const resolvedHook = resolveHookCard(data.title, data.archetype, data.hookCard);
+      if (resolvedHook.shouldShowHookCard) {
+        if (resolvedHook.hookThumbnailUrl && fs.existsSync(path.join(process.cwd(), 'public', resolvedHook.hookThumbnailUrl))) {
+          hookThumbnailUrl = resolvedHook.hookThumbnailUrl;
+        } else if (data.hookCard?.headline) {
+          hookThumbnailUrl = await ensureHookCardThumbnail(
+            `hook_${Date.now()}`,
+            `YouTube Shorts high-CTR opening title card: "${resolvedHook.headline || data.title}", meme style`
+          );
+        }
+        if (hookThumbnailUrl) {
+          console.log(`🪝 Dynamic Hook Card enabled: ${hookThumbnailUrl}`);
+        }
+      }
+    }
+
+    // Inject avatarUrl, attachmentUrl, hookThumbnailUrl, and visual/camera cues into messages
+    const guestNameLower = trendingTopic ? trendingTopic.guestCharacter.name.toLowerCase() : null;
+    const attachmentTargetIdx = data.attachment?.messageIndex ?? Math.floor((data.messages || []).length * 0.55);
+
+    const finalMessages = (data.messages || []).map((msg, index) => {
       const updated = { ...msg };
-      
-      // If message is sent by the new character, assign the custom avatar
-      if (data.newCharacter && msg.author.toLowerCase() === data.newCharacter.name.toLowerCase() && guestAvatarUrl) {
+
+      // Re-index to ensure sequential 1-based IDs
+      updated.id = index + 1;
+
+      // Assign custom avatar if sent by guest character
+      if (trendingTopic && topicAssets) {
+        if (msg.author.toLowerCase() === guestNameLower || msg.author.toLowerCase().includes(guestNameLower)) {
+          updated.avatarUrl = topicAssets.guestAvatarPath;
+        }
+      } else if (guestAvatarUrl && data.newCharacter && msg.author.toLowerCase() === data.newCharacter.name.toLowerCase()) {
         updated.avatarUrl = guestAvatarUrl;
       }
 
-      // If this message index has the attachment, attach it!
-      if (data.attachment && data.attachment.messageIndex === index && attachmentUrl) {
+      // Attach in-chat image attachment
+      if (trendingTopic && topicAssets) {
+        if (index === attachmentTargetIdx) {
+          updated.attachmentUrl = topicAssets.evidenceImagePath;
+          console.log(`📎 Attached verified evidence to message ${index + 1} (${msg.author}): ${topicAssets.evidenceImagePath}`);
+        }
+      } else if (attachmentUrl && data.attachment && data.attachment.messageIndex === index) {
         updated.attachmentUrl = attachmentUrl;
-        console.log(`📎 Attached image to message ${index} (${msg.author}): ${attachmentUrl}`);
+        console.log(`📎 Attached image to message ${index + 1} (${msg.author}): ${attachmentUrl}`);
       }
+
+      // Attach dynamic hook card and headline to first message for renderer detection
+      if (index === 0) {
+        if (trendingTopic && topicAssets) {
+          updated.hookThumbnailUrl = topicAssets.hookImagePath;
+          updated.hookHeadline = trendingTopic.hookHeadline;
+        } else if (hookThumbnailUrl) {
+          updated.hookThumbnailUrl = hookThumbnailUrl;
+        }
+      }
+
+      // Camera & System effects
+      updated.screenShake = Boolean(msg.screenShake);
+      updated.punchZoom = Boolean(msg.punchZoom);
+      updated.typingFrames = typeof msg.typingFrames === 'number' ? msg.typingFrames : 0;
+      if (msg.systemAlert && typeof msg.systemAlert === 'string' && msg.systemAlert.trim().length > 0) {
+        updated.systemAlert = msg.systemAlert.trim();
+      }
+
+      // Ensure explicit audio cues structure
+      if (!updated.audioCues || updated.audioCues.length === 0) {
+        const cues = [{ id: `sfx-notify-${updated.id}`, type: 'notification' }];
+        if (updated.attachmentUrl) {
+          cues.push({ id: `sfx-hit-${updated.id}`, type: 'horror_hit', volume: 0.7 });
+        }
+        if (updated.screenShake) {
+          cues.push({ id: `sfx-shake-${updated.id}`, type: 'twist_boom', volume: 0.75 });
+        }
+        updated.audioCues = cues;
+      }
+
+      // STRICT REQUIREMENT: Delete any reaction pills
+      delete updated.reactions;
 
       return updated;
     });
+
+    // Validate narrative quality & duration using Core Validation & Timing Engine
+    const canonicalScript = fromLegacyShortsScript(finalMessages, {
+      title: data.title,
+      archetype: data.archetype,
+    });
+    const qualityResult = validateNarrativeQuality(canonicalScript, {
+      minMessages: 18,
+      maxMessages: 34,
+      maxDurationSec: 58,
+      minDurationSec: 46,
+      initialDelayFrames: trendingTopic ? 60 : 0,
+    });
+
+    if (!qualityResult.isValid) {
+      console.warn(`⚠️ Narrative Quality Notice (${qualityResult.errors.length} checks):`, qualityResult.errors.join('; '));
+    } else {
+      console.log(`⏱️ Shorts Duration: ${qualityResult.durationSeconds?.toFixed(1)}s (within 50–55s target)`);
+    }
+
+    // Strict Anti-Repetition Database Check: Ensure title is unique across history
+    if (productionDb.isTitleDuplicate(data.title)) {
+      console.warn(`⚠️ Title "${data.title}" matches previously produced video in database. Generating unique title variation...`);
+      const baseClean = data.title.replace(/[\u{1F600}-\u{1F64F}\u{1F300}-\u{1F5FF}\u{1F680}-\u{1F6FF}\u{1F700}-\u{1F77F}\u{1F780}-\u{1F7FF}\u{1F800}-\u{1F8FF}\u{1F900}-\u{1F9FF}\u{1FA00}-\u{1FA6F}\u{1FA70}-\u{1FAFF}\u{2600}-\u{26FF}\u{2700}-\u{27BF}]/gu, '').trim();
+      data.title = `${baseClean} (Part ${Math.floor(Date.now() / 1000) % 100}) 💀`;
+      console.log(`📌 Unique Title Assigned: "${data.title}"`);
+    }
 
     // Write to src/script.json
     fs.writeFileSync(
@@ -246,23 +359,32 @@ Return ONLY raw JSON in this structure:
       JSON.stringify(finalMessages, null, 2)
     );
 
-    // Save to history.json
+    // Save rich metadata to history.json
     history.push({
       date: new Date().toISOString(),
       title: data.title,
       archetype: data.archetype,
-      newCharacter: data.newCharacter || null,
-      attachment: data.attachment || null,
-      messages: finalMessages
+      trendingTopic: trendingTopic ? trendingTopic.id : null,
+      category: trendingTopic ? trendingTopic.category : null,
+      headline: trendingTopic ? trendingTopic.headline : null,
+      hookHeadline: trendingTopic ? trendingTopic.hookHeadline : null,
+      storyOutline: data.storyOutline || null,
+      hookCard: data.hookCard || null,
+      guestCharacter: trendingTopic ? trendingTopic.guestCharacter.name : (data.newCharacter?.name || null),
+      attachment: trendingTopic ? topicAssets.evidenceImagePath : (data.attachment || null),
+      messages: finalMessages,
+      durationSeconds: qualityResult.durationSeconds || null,
     });
     fs.writeFileSync(historyPath, JSON.stringify(history, null, 2));
+    productionDb.reload();
 
-    console.log('✅ Successfully generated fresh Beluga script with dynamic cast & attachment!');
+    console.log('✅ Successfully generated fresh story-first Beluga script with dynamic cast & hook card!');
     console.log(`Total messages: ${finalMessages.length}`);
     return {
       title: data.title,
       archetype: data.archetype,
-      messages: finalMessages
+      messages: finalMessages,
+      storyOutline: data.storyOutline,
     };
   } catch (e) {
     console.error('❌ Failed to generate script:', e);

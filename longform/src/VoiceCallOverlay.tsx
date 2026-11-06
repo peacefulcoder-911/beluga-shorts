@@ -1,5 +1,5 @@
 import React from "react";
-import { staticFile } from "remotion";
+import { staticFile, Img } from "remotion";
 
 export interface VoiceCallOverlayProps {
   channelName: string;
@@ -153,10 +153,9 @@ export const VoiceCallOverlay: React.FC<VoiceCallOverlayProps> = ({
                 boxShadow: isSpeaking
                   ? "0 0 20px rgba(59, 165, 92, 0.7)"
                   : "none",
-                transition: "all 0.15s ease-in-out",
               }}
             >
-              <img
+              <Img
                 src={getAvatar(member)}
                 style={{
                   width: "74px",

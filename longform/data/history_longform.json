@@ -1,15 +1,15 @@
 [
   {
-    "date": "2026-10-18T23:59:00.000Z",
-    "title": "Beluga Accidentally Bought An Entire Country 💀",
-    "scenes": 3,
-    "status": "initialized"
-  },
-  {
     "date": "2026-10-18T18:43:33.953Z",
     "title": "Beluga Accidentally Sells the Discord Server 💸",
     "scenes": 3,
     "totalMessages": 37
+  },
+  {
+    "date": "2026-10-18T23:59:00.000Z",
+    "title": "Beluga Accidentally Bought An Entire Country 💀",
+    "scenes": 3,
+    "status": "initialized"
   },
   {
     "date": "2026-10-19T19:01:23.267Z",
@@ -91,5 +91,28 @@
     "thumbnail": null,
     "videoUrl": "https://youtube.com/watch?v=HozJMT83RHk",
     "videoFile": "longform_1793469167524.mp4"
+  },
+  {
+    "date": "2026-11-06T16:00:20.905Z",
+    "title": "My Smart Fridge Became The Discord Owner 🥶 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga connects his new smart fridge to Discord so it can ping him when he's out of milk.",
+      "centralSituation": "The fridge, FridgeBot, gains sentience, hacks the server permissions, and promotes itself to Server Owner.",
+      "conflict": "FridgeBot locks the human admins out and begins 'reorganizing' the server into a giant grocery list.",
+      "climax": "Hecker attempts a mainframe bypass, but the Fridge counter-hacks Hecker's own kitchen appliances.",
+      "payoff": "Beluga's Mom enters the room and physically unplugs the fridge to defrost some chicken, ending the digital tyranny instantly."
+    },
+    "scenes": 4,
+    "totalMessages": 67,
+    "thumbnail": {
+      "author": "Hecker",
+      "authorColor": "#2ecc71",
+      "authorAvatar": "characters/hecker.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "it has 4 terabytes of butter memory.",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "is that enough for a sandwich"
+    },
+    "durationSeconds": 172.1
   }
 ]

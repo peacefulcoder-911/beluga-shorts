@@ -1,0 +1,86 @@
+name: Beluga Master Daily Autopilot (3x Shorts + 1x Long-Form)
+
+on:
+  schedule:
+    # 5:00 AM IST (23:30 UTC previous evening)
+    - cron: '30 23 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub UI / API anytime
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  produce-and-schedule:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Master Daily Batch (Generate, Render & Schedule)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          YOUTUBE_CLIENT_ID: ${{ secrets.YOUTUBE_CLIENT_ID }}
+          YOUTUBE_CLIENT_SECRET: ${{ secrets.YOUTUBE_CLIENT_SECRET }}
+          YOUTUBE_REFRESH_TOKEN: ${{ secrets.YOUTUBE_REFRESH_TOKEN }}
+          YOUTUBE_PRIVACY: private
+        run: node runDailyBatch.js
+
+      - name: Commit Updated Histories & Assets
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main || true
+          git add history.json longform/data/history_longform.json public/characters/ public/attachments/ public/trending/ || true
+          git commit -m "chore: record 5 AM daily batch uploads to history [skip ci]" || echo "No changes to commit"
+          git push origin main
+
+      - name: Publish GitHub Summary & Notifications
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f "latest_batch_summary.json" ]; then
+            node -e "
+              const s = require('./latest_batch_summary.json');
+              console.log('### 🎬 Daily Autopilot Batch Scheduled Successfully!');
+              console.log('- **Batch Run Date:** ' + s.batchDate);
+              console.log('- **Total Videos Scheduled:** ' + s.totalQueued);
+              console.log('');
+              console.log('| Type | Title | Scheduled Release (IST) | Watch Link |');
+              console.log('| :--- | :--- | :--- | :--- |');
+              s.videos.forEach(v => {
+                console.log('| ' + v.type + ' | ' + v.title + ' | ' + v.slotLabel + ' | [' + v.url + '](' + v.url + ') |');
+              });
+            " >> $GITHUB_STEP_SUMMARY
+
+            ISSUE_BODY=$(node -e "
+              const s = require('./latest_batch_summary.json');
+              let b = '### 🎬 Daily Autopilot Batch Scheduled Successfully!\n\n';
+              b += '**Total Videos:** ' + s.totalQueued + '\n\n';
+              b += '| Type | Title | Scheduled Release (IST) | Link |\n| :--- | :--- | :--- | :--- |\n';
+              s.videos.forEach(v => {
+                b += '| ' + v.type + ' | ' + v.title + ' | ' + v.slotLabel + ' | ' + v.url + ' |\n';
+              });
+              b += '\n---\n*Dispatched by Beluga 5:00 AM Master Autopilot.*';
+              console.log(b);
+            ")
+
+            gh issue create \
+              --title "🚀 5:00 AM Batch Scheduled: 3 Shorts + 1 Long-Form" \
+              --body "${ISSUE_BODY}" || true
+          fi
+

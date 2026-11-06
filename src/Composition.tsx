@@ -1,35 +1,28 @@
 import { Composition, staticFile } from "remotion";
 import { DiscordChat, MessageData } from "./DiscordChat";
 import scriptJson from "./script.json";
+import { calculateShortsTiming } from "./core/timingEngine.ts";
+import type { AudioCue } from "./core/types.ts";
 
 const fps = 30;
-const MAX_FRAMES = 58 * fps; // 58 seconds safe limit for YouTube Shorts
 
-// Calculate per-message frames with natural reading time and attachment viewing pauses
-const rawTimes = (scriptJson as any[]).map((msg, idx) => {
-  const isLast = idx === scriptJson.length - 1;
-  if (isLast) return Math.floor(3.5 * fps);
-
-  const words = (msg.content || "").trim().split(/\s+/).length;
-  let baseSec = 1.1;
-  if (words <= 2) baseSec = 1.0;
-  else if (words <= 5) baseSec = 1.35;
-  else if (words <= 8) baseSec = 1.75;
-  else baseSec = 2.4;
-
-  // Add 1.8 seconds extra pause so viewers can absorb in-chat image attachments
-  if (msg.attachmentUrl) {
-    baseSec += 1.8;
-  }
-
-  const totalSeconds = baseSec + (msg.content || "").length * 0.015;
-  return Math.floor(totalSeconds * fps);
-});
-
-let rawTotalFrames = rawTimes.reduce((a, b) => a + b, 0) + Math.floor(fps * 1.5); // End padding
-
-// Scale factor only if it exceeds 58 seconds
-const scaleFactor = rawTotalFrames > MAX_FRAMES ? MAX_FRAMES / rawTotalFrames : 1;
+export interface RawScriptMessage {
+  id: number;
+  author: string;
+  content: string;
+  time: string;
+  avatarUrl?: string;
+  color?: string;
+  attachmentUrl?: string;
+  startFrame?: number;
+  audioCues?: AudioCue[];
+  hookThumbnailUrl?: string;
+  hookHeadline?: string;
+  screenShake?: boolean;
+  punchZoom?: boolean;
+  typingFrames?: number;
+  systemAlert?: string;
+}
 
 const getAvatar = (name: string, customAvatar?: string) => {
   if (customAvatar) {
@@ -52,7 +45,8 @@ const getAvatar = (name: string, customAvatar?: string) => {
   if (n.includes("nasa")) return staticFile("nasa.jpg");
   if (n.includes("google")) return staticFile("google.jpg");
   if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return staticFile("ai.jpg");
-  if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return staticFile("billionaire.jpg");
+  if (n.includes("elon") || n.includes("musk")) return staticFile("characters/elon_musk.jpg");
+  if (n.includes("billionaire") || n.includes("rich") || n.includes("money")) return staticFile("billionaire.jpg");
   if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
   if (n.includes("exploding") || n.includes("tnt")) return staticFile("characters/explodingtnt.jpg");
   if (n.includes("mrbeast") || n.includes("beast")) return staticFile("characters/mrbeast.jpg");
@@ -97,21 +91,26 @@ const getColor = (name: string, customColor?: string) => {
   return DISCORD_PALETTE[Math.abs(hash) % DISCORD_PALETTE.length];
 };
 
-let currentFrame = 0;
-const parsedScript: MessageData[] = (scriptJson as any[]).map((msg, idx) => {
-  const startFrame = currentFrame;
-  currentFrame += Math.floor(rawTimes[idx] * scaleFactor);
-  
-  return {
-    ...msg,
-    avatarUrl: getAvatar(msg.author, msg.avatarUrl),
-    color: getColor(msg.author, msg.color),
-    startFrame
-  };
-});
-const totalDuration = currentFrame + Math.floor(Math.floor(fps * 1.5) * scaleFactor);
+const getHookThumbnail = (): string | undefined => {
+  const scriptAny = scriptJson as unknown as Record<string, unknown>;
+  if (typeof scriptAny === "object" && scriptAny !== null) {
+    if (typeof scriptAny.hookThumbnailUrl === "string") {
+      return scriptAny.hookThumbnailUrl;
+    }
+    const hookCard = scriptAny.hookCard as { hookThumbnailUrl?: string; shouldShowHookCard?: boolean } | undefined;
+    if (hookCard?.shouldShowHookCard && hookCard.hookThumbnailUrl) {
+      return hookCard.hookThumbnailUrl;
+    }
+  }
 
-const getHookThumbnail = () => {
+  if (Array.isArray(scriptJson) && scriptJson.length > 0) {
+    const firstMsg = scriptJson[0] as { hookThumbnailUrl?: string };
+    if (typeof firstMsg?.hookThumbnailUrl === "string") {
+      return firstMsg.hookThumbnailUrl;
+    }
+  }
+
+  // Fallback to legacy keyword detection
   const scriptStr = JSON.stringify(scriptJson).toLowerCase();
   if (scriptStr.includes("napoleon") || scriptStr.includes("mule")) {
     return "thumbnail_napoleon_short.jpg";
@@ -122,14 +121,75 @@ const getHookThumbnail = () => {
   return undefined;
 };
 
+const getHookHeadline = (): string | undefined => {
+  const scriptAny = scriptJson as unknown as Record<string, unknown>;
+  if (typeof scriptAny === "object" && scriptAny !== null) {
+    if (typeof scriptAny.hookHeadline === "string") return scriptAny.hookHeadline;
+    const hookCard = scriptAny.hookCard as { headline?: string } | undefined;
+    if (hookCard?.headline) return hookCard.headline;
+  }
+  if (Array.isArray(scriptJson) && scriptJson.length > 0) {
+    const firstMsg = scriptJson[0] as { hookHeadline?: string };
+    if (typeof firstMsg?.hookHeadline === "string") return firstMsg.hookHeadline;
+  }
+  return undefined;
+};
+
+// Pure, deterministic timing calculation via core timing engine
+const rawMessages: RawScriptMessage[] = (
+  Array.isArray(scriptJson)
+    ? scriptJson
+    : (scriptJson as unknown as { messages?: RawScriptMessage[] }).messages || []
+) as RawScriptMessage[];
+
+const hookThumbnailUrl = getHookThumbnail();
+const hookHeadline = getHookHeadline();
+const isTrendingShort = Boolean(hookThumbnailUrl && hookHeadline);
+const initialDelayFrames = 0;
+
+const isRelaxedShort = rawMessages.length <= 18;
+const customTierMultipliers = isRelaxedShort
+  ? { short: 1.8, medium: 2.4, long: 3.0, extended: 3.5 }
+  : undefined;
+
+const timingResult = calculateShortsTiming(rawMessages, {
+  fps,
+  maxDurationSeconds: 55,
+  initialDelayFrames,
+  customTierMultipliers,
+  attachmentDwellSeconds: isRelaxedShort ? 2.2 : 1.8,
+  lastMessageDurationSeconds: isRelaxedShort ? 4.0 : 3.5,
+});
+
+const parsedScript: MessageData[] = timingResult.timedMessages.map((msg, idx) => ({
+  id: msg.id,
+  author: msg.author,
+  content: msg.content,
+  time: msg.time,
+  attachmentUrl: msg.attachmentUrl,
+  avatarUrl: getAvatar(msg.author, msg.avatarUrl),
+  color: getColor(msg.author, msg.color),
+  startFrame: msg.startFrame,
+  durationInFrames: msg.durationInFrames,
+  audioCues: rawMessages[idx]?.audioCues,
+  screenShake: rawMessages[idx]?.screenShake,
+  punchZoom: rawMessages[idx]?.punchZoom,
+  typingFrames: rawMessages[idx]?.typingFrames,
+  systemAlert: rawMessages[idx]?.systemAlert,
+}));
+
+const totalDuration = timingResult.totalDurationInFrames;
+
 export const MyComposition = () => {
   return (
     <Composition
       id="DiscordChat"
-      component={DiscordChat}
+      component={DiscordChat as unknown as React.ComponentType<Record<string, unknown>>}
       defaultProps={{
         script: parsedScript,
-        hookThumbnailUrl: getHookThumbnail(),
+        hookThumbnailUrl,
+        hookHeadline,
+        hookDurationFrames: isTrendingShort ? 60 : 20,
       }}
       durationInFrames={totalDuration}
       fps={30}

@@ -1,14 +1,21 @@
 import React from "react";
-import { useCurrentFrame, staticFile, Audio, Sequence } from "remotion";
+import { useCurrentFrame, staticFile, Audio, Sequence, Img } from "remotion";
 import { LongformScene, LongformMessage } from "./types";
 import { CutawayScreen } from "./CutawayScreen";
+import { VoiceCallOverlay } from "./VoiceCallOverlay";
+import { resolveAudioCue, getEffectiveAudioCues } from "../../src/core/audioRegistry.ts";
+import type { StudioMessage } from "../../src/core/types.ts";
 
-export interface DesktopDiscordProps {
+export type DesktopDiscordProps = {
   scenes: LongformScene[];
-  title: string;
-}
+  title?: string;
+};
 
-const getAvatar = (name: string): string => {
+const getAvatar = (name: string, customAvatar?: string): string => {
+  if (customAvatar) {
+    return customAvatar.startsWith("http") ? customAvatar : staticFile(customAvatar);
+  }
+  const clean = name.toLowerCase().replace(/[^a-z0-9]/g, "_");
   const n = name.toLowerCase();
   if (n.includes("unknown") || n.includes("shadow") || n.includes("entity")) return staticFile("unknown.jpg");
   if (n.includes("police") || n.includes("fbi") || n.includes("agent") || n.includes("miller")) return staticFile("police.jpg");
@@ -29,7 +36,7 @@ const getAvatar = (name: string): string => {
   if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
   if (n.includes("exploding") || n.includes("tnt")) return staticFile("characters/explodingtnt.jpg");
   if (n.includes("mrbeast") || n.includes("beast")) return staticFile("characters/mrbeast.jpg");
-  return staticFile("default_user.jpg");
+  return staticFile(`characters/${clean}.jpg`);
 };
 
 const getAuthorColor = (name: string): string => {
@@ -51,7 +58,7 @@ const getAuthorColor = (name: string): string => {
   return "#ffffff";
 };
 
-export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title }) => {
+export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes }) => {
   const frame = useCurrentFrame();
 
   // Collect all messages across scenes
@@ -70,6 +77,15 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
   const activeMsg = allMessages[currentMsgIndex] || allMessages[0];
   const startFrame = activeMsg.startFrame || 0;
   const age = frame - startFrame;
+
+  // Find which scene is active at this exact frame
+  let activeScene = scenes[0];
+  for (const scene of scenes) {
+    const firstMsg = scene.messages && scene.messages[0];
+    if (firstMsg && firstMsg.startFrame !== undefined && frame >= firstMsg.startFrame) {
+      activeScene = scene;
+    }
+  }
 
   const isAlertSender =
     activeMsg.author.toLowerCase().includes("police") ||
@@ -104,87 +120,22 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
     <>
       {/* Background audio REMOVED as requested. Dead-silent Discord ambience with crisp dynamic SFX. */}
 
-      {/* Dynamic Sound Effects on Message Arrival */}
+      {/* Dynamic Sound Effects on Message Arrival via Centralized Audio Registry */}
       {allMessages.map((msg) => {
         const start = msg.startFrame || 0;
-        if (msg.cutaway?.type === "subscribe_button") {
-          return null;
-        }
-
-        const isUserJoin =
-          msg.content.includes("SPECIAL AGENT MILLER") ||
-          msg.content.includes("WHAT IN GOD'S NAME");
-
-        const isTwistBoom =
-          msg.content.includes("WHAT IN GOD'S NAME") ||
-          msg.content.includes("Shrek 2") ||
-          msg.content.includes("NOT CLEARED OF MY CHARGES") ||
-          msg.content.includes("WIPED YOUR DIRTY BOOTS") ||
-          msg.content.includes("under your bed") ||
-          msg.content.includes("STREAMING SHREK") ||
-          msg.content.includes("40 YEARS") ||
-          msg.content.includes("safe option");
-
-        const isCyberAlarm =
-          msg.content.includes("BREACH") ||
-          msg.content.includes("PENTAGON") ||
-          msg.content.includes("TACTICAL UNITS") ||
-          msg.content.includes("BATTERING RAM");
-
-        const isHeavyHit =
-          msg.content.includes("DISARMED") ||
-          msg.content.includes("SNIPER") ||
-          msg.content.includes("ARMORED") ||
-          msg.content.includes("SPLINTERING") ||
-          Boolean(msg.attachmentUrl);
-
-        const isTensionSting =
-          msg.content === "3..." ||
-          msg.content === "2..." ||
-          msg.content === "1..." ||
-          msg.content.includes("laser pointer");
+        const cues = getEffectiveAudioCues(msg as unknown as StudioMessage);
 
         return (
           <React.Fragment key={`sfx-group-${msg.id}`}>
-            {/* Standard Discord message notification chime */}
-            <Sequence from={start}>
-              <Audio src={staticFile("notification.mp3")} volume={0.5} />
-            </Sequence>
-
-            {/* User joined channel chime on sudden entrance */}
-            {isUserJoin && (
-              <Sequence from={start}>
-                <Audio src={staticFile("audio/discord_join.wav")} volume={0.65} />
-              </Sequence>
-            )}
-
-            {/* Punchy comedic vine boom on major plot twists */}
-            {isTwistBoom && (
-              <Sequence from={start}>
-                <Audio src={staticFile("audio/twist_boom.wav")} volume={0.8} />
-              </Sequence>
-            )}
-
-            {/* Tactical cyber klaxon on alarms */}
-            {isCyberAlarm && !isTwistBoom && (
-              <Sequence from={start}>
-                <Audio src={staticFile("audio/cyber_alarm.wav")} volume={0.65} />
-              </Sequence>
-            )}
-
-            {/* Deep cinematic hit on door battering and image attachments */}
-            {isHeavyHit && !isTwistBoom && (
-              <Sequence from={start}>
-                <Audio src={staticFile("audio/horror_hit.wav")} volume={0.7} />
-              </Sequence>
-            )}
-
-            {/* High-frequency tension shiver during countdowns */}
-            {isTensionSting && (
-              <Sequence from={start}>
-                <Audio src={staticFile("audio/creepy_sting.wav")} volume={0.45} />
-              </Sequence>
-            )}
+            {cues.map((cue, cueIdx) => {
+              const resolved = resolveAudioCue(cue);
+              const cueStart = start + (resolved.delayFrames || 0);
+              return (
+                <Sequence key={`cue-${msg.id}-${cueIdx}-${cue.type}`} from={cueStart}>
+                  <Audio src={staticFile(resolved.src)} volume={() => resolved.volume} />
+                </Sequence>
+              );
+            })}
           </React.Fragment>
         );
       })}
@@ -203,7 +154,52 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
           overflow: "hidden",
         }}
       >
-        {/* Top Watermark / Title removed for clean Beluga aesthetic */}
+        {/* Discord Desktop Channel Header Bar */}
+        {activeScene && !activeMsg.cutaway && (
+          <div
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              right: 0,
+              height: "56px",
+              backgroundColor: "#2f3136",
+              borderBottom: "1px solid #202225",
+              display: "flex",
+              alignItems: "center",
+              padding: "0 36px",
+              gap: "14px",
+              zIndex: 10,
+            }}
+          >
+            <span style={{ color: "#8e9297", fontSize: "24px", fontWeight: 700 }}>
+              {activeScene.channelType === "voice" ? "🔊" : "#"}
+            </span>
+            <span style={{ color: "#ffffff", fontSize: "20px", fontWeight: 700 }}>
+              {activeScene.channelName || "general"}
+            </span>
+            {activeScene.topic && (
+              <>
+                <div style={{ width: "1px", height: "18px", backgroundColor: "#4f545c" }} />
+                <span style={{ color: "#b9bbbe", fontSize: "16px", fontWeight: 400 }}>
+                  {activeScene.topic}
+                </span>
+              </>
+            )}
+          </div>
+        )}
+
+        {/* Voice Call Overlay HUD when active scene is a voice channel */}
+        {activeScene?.channelType === "voice" && !activeMsg.cutaway && (
+          <div style={{ position: "absolute", top: "68px", left: 0, right: 0, zIndex: 11 }}>
+            <VoiceCallOverlay
+              channelName={activeScene.channelName}
+              voiceMembers={activeScene.voiceMembers || ["Beluga", "Skittle", "Hecker"]}
+              speakingMember={activeMsg.author}
+              callRinging={activeMsg.voiceEvent === "call_ringing"}
+            />
+          </div>
+        )}
 
         {/* If Active Item is a Cutaway Gag */}
         {activeMsg.cutaway ? (
@@ -225,7 +221,6 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
               transform: `translate(${jitterX}px, ${jitterY}px) scale(${scale})`,
               opacity: opacity,
               transformOrigin: "center center",
-              transition: "background-color 0.15s ease",
             }}
           >
             {/* Circular Avatar */}
@@ -245,8 +240,8 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
                   : "0 4px 16px rgba(0,0,0,0.3)",
               }}
             >
-              <img
-                src={getAvatar(activeMsg.author)}
+              <Img
+                src={getAvatar(activeMsg.author, activeMsg.avatarUrl)}
                 style={{
                   width: isEgg ? "80%" : "100%",
                   height: isEgg ? "80%" : "100%",
@@ -310,7 +305,7 @@ export const DesktopDiscord: React.FC<DesktopDiscordProps> = ({ scenes, title })
               {/* Optional Sent Photo / FBI Monitor / SWAT Attachment */}
               {activeMsg.attachmentUrl && (
                 <div style={{ marginTop: "24px" }}>
-                  <img
+                  <Img
                     src={
                       activeMsg.attachmentUrl.startsWith("http")
                         ? activeMsg.attachmentUrl
