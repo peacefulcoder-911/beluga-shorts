@@ -31,12 +31,17 @@ const getAvatar = (name: string, customAvatar?: string): string => {
   if (n.includes("vladimir") || n.includes("vlad")) return staticFile("vladimir.jpg");
   if (n.includes("nasa")) return staticFile("nasa.jpg");
   if (n.includes("google")) return staticFile("google.jpg");
-  if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient")) return staticFile("ai.jpg");
-  if (n.includes("billionaire") || n.includes("rich") || n.includes("elon") || n.includes("money")) return staticFile("billionaire.jpg");
+  if (n.includes("ai") || n.includes("gpt") || n.includes("robot") || n.includes("sentient") || n.includes("algorithm") || n.includes("bot")) return staticFile("ai.jpg");
+  if (n.includes("elon") || n.includes("musk")) return staticFile("characters/elon_musk.jpg");
+  if (n.includes("billionaire") || n.includes("rich") || n.includes("money")) return staticFile("billionaire.jpg");
   if (n.includes("system") || n.includes("server") || n.includes("terminal")) return staticFile("system.jpg");
   if (n.includes("exploding") || n.includes("tnt")) return staticFile("characters/explodingtnt.jpg");
   if (n.includes("mrbeast") || n.includes("beast")) return staticFile("characters/mrbeast.jpg");
-  return staticFile(`characters/${clean}.jpg`);
+  if (n.includes("fridge")) return staticFile("characters/fridgebot.jpg");
+  if (n.includes("toilet")) return staticFile("characters/toiletbot.jpg");
+  if (n.includes("vance")) return staticFile("characters/flight_director_vance.jpg");
+  if (n.includes("boom")) return staticFile("characters/commander_boom.jpg");
+  return staticFile("default_user.jpg");
 };
 
 const getAuthorColor = (name: string): string => {

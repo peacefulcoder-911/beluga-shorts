@@ -485,7 +485,7 @@ export async function ensureTrendingAssets(topic: TrendingTopic): Promise<{
   const evidenceDest = path.join(root, 'public', 'attachments', topic.evidenceFilename);
   const evidenceUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(topic.evidencePrompt)}?width=640&height=400`;
   const evidenceSuccess = await downloadAssetIfMissing(evidenceUrl, evidenceDest);
-  const resolvedEvidence = evidenceSuccess ? `attachments/${topic.evidenceFilename}` : 'deposit_penny.jpg';
+  const resolvedEvidence = evidenceSuccess ? `attachments/${topic.evidenceFilename}` : 'attachments/deposit_penny.jpg';
 
   return {
     hookImagePath: resolvedHook,
