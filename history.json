@@ -16286,5 +16286,488 @@
     ],
     "durationSeconds": 50.766666666666666,
     "videoUrl": "https://youtube.com/watch?v=F4u2nnzfcqw"
+  },
+  {
+    "date": "2026-11-07T02:54:44.662Z",
+    "title": "Asking Elon Musk For $1 Billion (Part 84) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "asking_elon_1_billion",
+    "category": "tech_ai",
+    "headline": "Beluga DMs Elon Musk Asking For $1 Billion",
+    "hookHeadline": "BRO ASKED ELON MUSK FOR 1 BILLION DOLLARS 💀",
+    "storyOutline": {
+      "hook": "Beluga DMs Elon Musk for money, leading to unexpected chaos.",
+      "centralSituation": "Beluga DMs Elon Musk asking for $1 billion using polite manners. Elon wires the money, but reveals Beluga actually bought Twitter and owes $44 billion.",
+      "characterMotivations": {
+        "Beluga": "Wants something absurd and to test the trending topic.",
+        "Skittle": "Begs everyone to stop before catastrophe.",
+        "Hecker": "Flexes cyber tools and confirms facts.",
+        "Admin": "Loses control of the server due to rule violations and escalating chaos."
+      },
+      "conflict": "The trending event spirals completely out of hand when a simple DM results in an accidental corporate takeover.",
+      "escalationStages": [
+        "Skittle mocks Beluga for expecting the richest man on Earth to reply to a talking cat on Discord.",
+        "Beluga shares the verified DM screenshot showing Elon accepted his answer to a riddle.",
+        "A system wire alert triggers for $1,000,000,000 from The Boring Company."
+      ],
+      "climax": "Elon Musk joins the voice call informing Beluga he is now the CEO of Twitter and has to fix the servers.",
+      "payoff": "Beluga asks if he can return Twitter for a Roblox gift card because he doesn't even have hands."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO ASKED ELON MUSK FOR 1 BILLION DOLLARS 💀",
+      "hookThumbnailUrl": "trending/trending_elon_billion.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Elon Musk",
+    "attachment": "attachments/elon_dm_billion.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys i just asked elon musk for one billion dollars",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_elon_billion.jpg",
+        "hookHeadline": "BRO ASKED ELON MUSK FOR 1 BILLION DOLLARS 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "BRO WHAT",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Skittle",
+        "content": "he's not going to reply to a talking cat on discord",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Hecker",
+        "content": "my sources say he might.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "he actually did though",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "NO WAY",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "WHAT IS THAT",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/elon_dm_billion.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Admin",
+        "content": "BELUGA THAT IS IMPERSONATION! RULE 3 VIOLATION!",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "he said 'answer my riddle' and i did",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Skittle",
+        "content": "HE DIDNT SEND THE MONEY THOUGH RIGHT",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "",
+        "content": "",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "INCOMING TRANSFER FROM THE BORING COMPANY"
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "WAIT WHAT",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Hecker",
+        "content": "transaction confirmed. 1,000,000,000 USD.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "did i just get a billion dollars",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Admin",
+        "content": "BELUGA WHERE DID YOU GET THAT MONEY",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "system",
+        "content": "Elon Musk joined the voice channel.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "OH MY GOD",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Elon Musk",
+        "content": "Concerning. You accepted the terms.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "what terms",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Elon Musk",
+        "content": "The riddle. Answer: 'Twitter CEO'.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "YOU BOUGHT TWITTER?!",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Elon Musk",
+        "content": "You now own it. Fix the servers. Immediately.",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "but i don't have hands",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "can i return twitter for a roblox gift card",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 26,
+        "author": "Skittle",
+        "content": "BELUGA!!!",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-26",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 27,
+        "author": "Admin",
+        "content": "SERVER OVERLOAD IMMINENT! UNPLUG IT NOW!",
+        "time": "Today at 3:27 PM",
+        "audioCues": [
+          {
+            "id": "cue-27",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL SERVER OVERHEAT"
+      }
+    ],
+    "durationSeconds": 57.03333333333333,
+    "videoUrl": "https://youtube.com/watch?v=HweFB1naPHs"
   }
 ]
