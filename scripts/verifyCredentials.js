@@ -35,9 +35,9 @@ async function verifyCredentials() {
 
   // 2. Verify YouTube OAuth Credentials
   console.log('2️⃣ Checking YouTube OAuth Credentials...');
-  const clientId = process.env.YOUTUBE_CLIENT_ID;
-  const clientSecret = process.env.YOUTUBE_CLIENT_SECRET;
-  const refreshToken = process.env.YOUTUBE_REFRESH_TOKEN;
+  const clientId = (process.env.YOUTUBE_CLIENT_ID || '').replace(/^["']|["']$/g, '').trim();
+  const clientSecret = (process.env.YOUTUBE_CLIENT_SECRET || '').replace(/^["']|["']$/g, '').trim();
+  const refreshToken = (process.env.YOUTUBE_REFRESH_TOKEN || '').replace(/^["']|["']$/g, '').trim();
 
   if (!clientId || !clientSecret || !refreshToken) {
     console.warn('⚠️ One or more YouTube OAuth credentials are missing:');

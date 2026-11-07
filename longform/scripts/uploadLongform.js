@@ -11,14 +11,18 @@ export async function uploadLongformVideo(videoPath, title, customDescription, c
       console.log(`⏰ Scheduled Publish Time: ${publishAt}`);
     }
 
+    const clientId = (process.env.YOUTUBE_CLIENT_ID || '').replace(/^["']|["']$/g, '').trim();
+    const clientSecret = (process.env.YOUTUBE_CLIENT_SECRET || '').replace(/^["']|["']$/g, '').trim();
+    const refreshToken = (process.env.YOUTUBE_REFRESH_TOKEN || '').replace(/^["']|["']$/g, '').trim();
+
     const oauth2Client = new google.auth.OAuth2(
-      process.env.YOUTUBE_CLIENT_ID,
-      process.env.YOUTUBE_CLIENT_SECRET,
+      clientId,
+      clientSecret,
       "https://developers.google.com/oauthplayground"
     );
 
     oauth2Client.setCredentials({
-      refresh_token: process.env.YOUTUBE_REFRESH_TOKEN
+      refresh_token: refreshToken
     });
 
     const youtube = google.youtube({
