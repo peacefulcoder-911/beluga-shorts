@@ -49,7 +49,7 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git pull --rebase origin main || true
-          git add history.json public/characters/ public/attachments/ || true
+          git add history.json latest_upload.json public/characters/ public/attachments/ public/trending/ || true
           git commit -m "chore: record uploaded 2K short to history [skip ci]" || echo "No changes to commit"
           git push origin main
 

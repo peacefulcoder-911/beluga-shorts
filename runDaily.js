@@ -60,6 +60,13 @@ async function runDaily() {
       uploadedAt: new Date().toISOString()
     }, null, 2));
 
+    // Clean up temporary video file to preserve disk space
+    if (fs.existsSync(outputPath)) {
+      try {
+        fs.unlinkSync(outputPath);
+      } catch {}
+    }
+
     console.log('\n====================================');
     console.log('🎉 24/7 DAILY SHORT UPLOAD COMPLETE!');
     console.log(`📺 Video URL: ${videoUrl}`);
