@@ -168,5 +168,22 @@
     "videoUrl": "https://youtube.com/watch?v=offline_longform_1794000014445",
     "publishAt": "2026-11-07T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-07T03:41:21.303Z",
+    "title": "The Statue of Liberty Secret Beluga Discovered... 🗽 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga finds a high-resolution photo showing a battery compartment on the Statue of Liberty.",
+      "centralSituation": "The world's most famous monument is revealed to be a giant flashlight meant for alien communication.",
+      "conflict": "Special Agent Miller and the Department of Historical Secrets attempt to silence the server.",
+      "climax": "Hecker hacks the Statue's 'firmware' during a live Discord trial to reveal the secret Wi-Fi password.",
+      "payoff": "Elon Musk buys the statue to use it as a signal booster for Mars, and Beluga gets banned for 'revealing government hardware'."
+    },
+    "scenes": 4,
+    "totalMessages": 64,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794022875731.jpg",
+    "durationSeconds": 158.3,
+    "videoUrl": "https://youtube.com/watch?v=8mo08ZG01m4",
+    "videoFile": "longform_1794022881304.mp4"
   }
 ]
