@@ -185,5 +185,22 @@
     "durationSeconds": 158.3,
     "videoUrl": "https://youtube.com/watch?v=8mo08ZG01m4",
     "videoFile": "longform_1794022881304.mp4"
+  },
+  {
+    "date": "2026-11-07T18:10:43.772Z",
+    "title": "The $1,000,000 Discord Tribunal of the Cosmic Meme ⚖️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a bot message alleging a server crime with a shocking $1,000,000 penalty.",
+      "centralSituation": "MrBeast offers a reward to find the culprit behind the 'Violation of Inter-dimensional Meme Act 7.b', triggering a chaotic Discord tribunal.",
+      "conflict": "The server's inhabitants, led by Admin and interrogated by Special Agent Miller, try to pinpoint who is responsible for the absurd 'cosmic meme' crime, with Pablo as the prime suspect.",
+      "climax": "Hecker reveals the true, hilarious nature of the 'violation' during the trial, turning the accusations on their head.",
+      "payoff": "MrBeast awards the $1,000,000 for an entirely unexpected reason, cementing Beluga's chaotic legacy."
+    },
+    "scenes": 4,
+    "totalMessages": 56,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794075038962.jpg",
+    "durationSeconds": 157.5,
+    "videoUrl": "https://youtube.com/watch?v=_hg0gCE3J7g",
+    "videoFile": "longform_1794075043772.mp4"
   }
 ]
