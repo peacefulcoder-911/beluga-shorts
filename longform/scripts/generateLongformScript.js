@@ -49,31 +49,39 @@ async function ensureAttachmentImage(slug, imagePrompt) {
 
 export async function generateWithFallback(prompt) {
   const candidateModels = [
-    'gemini-3-flash-preview',
     'gemini-2.5-flash',
+    'gemini-3-flash-preview',
+    'gemini-3.8-flash',
     'gemini-flash-latest',
-    'gemini-3.5-flash',
   ];
 
   let lastError = null;
   for (const modelName of candidateModels) {
-    try {
-      console.log(`🤖 Requesting long-form script from Gemini (${modelName})...`);
-      const model = genAI.getGenerativeModel({
-        model: modelName,
-        generationConfig: {
-          responseMimeType: 'application/json',
-          temperature: 0.85,
-        },
-      });
-      const result = await model.generateContent(prompt);
-      const text = result.response.text();
-      const data = cleanAndParseJson(text);
-      console.log(`✅ Long-form generation succeeded with ${modelName}!`);
-      return data;
-    } catch (err) {
-      console.warn(`⚠️ Model ${modelName} encountered error: ${err.message || err}. Falling back to next model...`);
-      lastError = err;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        console.log(`🤖 Requesting long-form script from Gemini (${modelName}, attempt ${attempt})...`);
+        const model = genAI.getGenerativeModel({
+          model: modelName,
+          generationConfig: {
+            responseMimeType: 'application/json',
+            temperature: 0.85,
+          },
+        });
+        const result = await model.generateContent(prompt);
+        const text = result.response.text();
+        const data = cleanAndParseJson(text);
+        console.log(`✅ Long-form generation succeeded with ${modelName}!`);
+        return data;
+      } catch (err) {
+        console.warn(`⚠️ Model ${modelName} attempt ${attempt} notice: ${err.message || err}`);
+        lastError = err;
+        if (err.message && (err.message.includes('Quota exceeded') || err.message.includes('404 Not Found'))) {
+          break;
+        }
+        if (attempt < 3) {
+          await new Promise((r) => setTimeout(r, 2000 * attempt));
+        }
+      }
     }
   }
   throw lastError || new Error('All candidate Gemini models failed.');
