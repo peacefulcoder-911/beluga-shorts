@@ -18165,5 +18165,842 @@
     ],
     "durationSeconds": 57.63333333333333,
     "videoUrl": "https://youtube.com/watch?v=mjpl40mhlDQ"
+  },
+  {
+    "date": "2026-11-07T04:25:23.821Z",
+    "title": "Elon Musk Bought Discord For $44 Billion 🚀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "elon_musk_buys_discord",
+    "category": "tech_ai",
+    "headline": "Elon Musk Announces $44B Hostile Discord Takeover",
+    "hookHeadline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀",
+    "storyOutline": {
+      "hook": "Elon Musk's sudden acquisition of Discord creates immediate chaos and absurd new rules.",
+      "centralSituation": "Elon Musk buys Discord overnight, renames it \"Y\", and charges $8/month just to send cat memes in general chat.",
+      "characterMotivations": {
+        "Beluga": "Wants to understand and test the absurd new rules, often making things worse.",
+        "Skittle": "Begs everyone to stop before catastrophe, trying to be the voice of reason.",
+        "Hecker": "Attempts to bypass new paywalls and system changes with his hacking tools, only to face unexpected consequences.",
+        "AdminLester": "Attempts to maintain his authority and control despite new, chaotic leadership.",
+        "Elon Musk": "Imposes radical, financially driven, and often illogical changes to Discord."
+      },
+      "conflict": "The trending event spiraled completely out of hand.",
+      "escalationStages": [
+        "Admin Lester gets fired by an automated tweet while bragging about his moderator powers.",
+        "Hecker tries to bypass the paywall, but Elon links Hecker's Tesla directly to the Discord banned list.",
+        "Skittle gets charged $16 because he typed two capital letters in a row."
+      ],
+      "climax": "Elon launches the Discord physical server rack to Mars aboard a Falcon 9 rocket.",
+      "payoff": "Beluga asks if dogecoin can be used to purchase a single emoji reaction."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀",
+      "hookThumbnailUrl": "trending/trending_elon_discord.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Elon Musk",
+    "attachment": "attachments/discord_rebrand_y.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "ELON MUSK BOUGHT DISCORD???",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_elon_discord.jpg",
+        "hookHeadline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "what no way that's cap",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "AdminLester",
+        "content": "I AM THE MOD HERE. NO FAKE NEWS.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "AdminLester",
+        "content": "I HAVE THE BAN HAMMER. TRY ME.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Hecker",
+        "content": "check his latest tweet.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 18,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "SYSTEM",
+        "content": "@AdminLester has been fired by automated tweet. Access revoked.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "ADMIN ACCESS REVOKED"
+      },
+      {
+        "id": 7,
+        "author": "AdminLester",
+        "content": "NOOOOO MY POWER",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "I KNEW IT. THIS IS BAD BELUGA.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Elon Musk",
+        "content": "Concerning.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "welcome Mr. Musk! can i still send cat memes?",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Elon Musk",
+        "content": "Cat memes are $8/month. Enterprise tier only.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "lmao paywall for memes? easy bypass.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "running script...",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "SYSTEM",
+        "content": "Hecker's Tesla Model S is now on the Discord permanent ban list.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "ACCOUNT LINKED & BANNED"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "MY TESLA???",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "NO STOP TYPING BELUGA. THIS IS GETTING EXPENSIVE.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "SYSTEM",
+        "content": "Your account has been charged $16.00 for excessive capitalization.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CAPITALIZATION FEE APPLIED"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "WHAT. I TYPED TWO CAPS.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "i just typed 'HI' quietly",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Elon Musk",
+        "content": "Rebranding underway. Prepare for launch.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 21,
+        "author": "SYSTEM",
+        "content": "DISCORD SERVERS LAUNCHING TO MARS. ALL DATA MIGRATION IN PROGRESS.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL: SERVER LAUNCH INITIATED",
+        "attachmentUrl": "attachments/discord_rebrand_y.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "wait can i use dogecoin to buy one emoji reaction?",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 54.43333333333333,
+    "videoUrl": "https://youtube.com/watch?v=Ylde4iiw55Y",
+    "publishAt": "2026-11-07T07:30:00.000Z"
+  },
+  {
+    "date": "2026-11-07T04:29:04.352Z",
+    "title": "Hecker Leaked GTA 6 In General Chat 🏎️",
+    "archetype": "trending_gaming",
+    "trendingTopic": "gta_6_leak_discord",
+    "category": "gaming",
+    "headline": "Massive GTA 6 Gameplay Build Leaked in Discord Server",
+    "hookHeadline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀",
+    "storyOutline": {
+      "hook": "Hecker casually uploads a 'GTA 6' file to general chat, leading to a hilarious cascade of chaos.",
+      "centralSituation": "Hecker casually uploads \"gta6_final_build_real_no_virus.zip\" into the server general chat, summoning Rockstar Games corporate legal SWAT.",
+      "characterMotivations": {
+        "Beluga": "Wants to play the 'leaked' game without understanding consequences",
+        "Skittle": "Begs everyone to stop before catastrophe"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Rockstar Legal joins the voice channel threatening everyone with 400 consecutive life sentences.",
+        "Beluga opens the game file, which immediately turns his monitor into a live CCTV feed of a Miami gas station.",
+        "Skittle streams the gameplay on Discord, attracting 5 million FBI agents to the server in 3 seconds."
+      ],
+      "climax": "Hecker reveals the leaked file wasn't actually GTA 6, but 800 gigabytes of Beluga's search history.",
+      "payoff": "Beluga asks if the legal team can wait until he finishes customizing his virtual Honda Civic."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀",
+      "hookThumbnailUrl": "trending/trending_gta_6.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Rockstar Legal Agent",
+    "attachment": "attachments/gta6_alpha_leak.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Hecker",
+        "content": "guys i found something",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "msg_1_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_gta_6.jpg",
+        "hookHeadline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "oh no what now",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "msg_2_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "gta6_final_build_real_no_virus.zip",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "msg_3_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Admin",
+        "content": "HECKER WHAT IS THAT",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "msg_4_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "is it real gta 6",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "msg_5_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "BELUGA DO NOT CLICK",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "msg_6_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "too late opened it",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "msg_7_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "BRO WHAT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "msg_8_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Rockstar Legal Agent",
+        "content": "Good afternoon, gentlemen. You are all in violation of 4,872 copyright laws.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "agent_join_cue",
+            "type": "discord_join"
+          },
+          {
+            "id": "msg_9_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "Rockstar Games Legal Dept. has joined the voice channel.",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Admin",
+        "content": "ROCKSTAR GAMES IS HERE??",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "msg_10_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "my monitor is a gas station",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "msg_11_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Skittle",
+        "content": "LIVE FEED OF MIAMI",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "msg_12_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "I'M STREAMING IT NOW",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "msg_13_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Hecker",
+        "content": "gta6_alpha_screenshot",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "msg_14_cue",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Admin",
+        "content": "5 MILLION FBI AGENTS JOINED",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "msg_15_cue",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/gta6_alpha_leak.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Rockstar Legal Agent",
+        "content": "We will seize all digital assets. Expect 400 consecutive life sentences.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "msg_16_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "is this gta 6 gameplay",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "msg_17_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "BELUGA NO",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "msg_18_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Hecker",
+        "content": "that wasn't gta 6",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "msg_19_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Hecker",
+        "content": "it was 800gb of Beluga's search history",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "msg_20_cue",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Admin",
+        "content": "WHAT",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "msg_21_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "OH MY GOD",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "msg_22_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Rockstar Legal Agent",
+        "content": "...Hold on. My records indicate something far more egregious.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "msg_23_cue",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "can they wait for my honda civic",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "msg_24_cue",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 50.666666666666664,
+    "videoUrl": "https://youtube.com/watch?v=yk8fSeNlGsA",
+    "publishAt": "2026-11-07T11:30:00.000Z"
   }
 ]
