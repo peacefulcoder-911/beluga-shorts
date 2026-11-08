@@ -233,5 +233,22 @@
     "videoUrl": "https://youtube.com/watch?v=gpwBF7aY-As",
     "publishAt": "2026-11-08T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-08T18:27:37.810Z",
+    "title": "The 100-Hour Extreme NO-PING Challenge 🤫 (Full Episode)",
+    "storyOutline": {
+      "hook": "MrBeast launches a chaotic '100-Hour No-Ping Challenge' with a massive cash prize, setting the server into a tense silence.",
+      "centralSituation": "A rogue bot, 'PingBot_9000', begins relentlessly pinging every server member, threatening to disqualify everyone from the challenge.",
+      "conflict": "Beluga, misunderstanding the challenge, believes the bot is 'helping' by eliminating competitors, while Skittle and Admin frantically try to stop the chaos and save the challenge.",
+      "climax": "Hecker hacks PingBot_9000, revealing its absurd creator and true, hilarious purpose during a chaotic server-wide tribunal, just as Special Agent Miller arrives.",
+      "payoff": "MrBeast declares a surprise winner based on bizarre logic, Elon Musk acquires the now-infamous bot (and its creator), and Beluga remains utterly confused by the entire ordeal."
+    },
+    "scenes": 4,
+    "totalMessages": 60,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794162451804.jpg",
+    "durationSeconds": 191.2,
+    "videoUrl": "https://youtube.com/watch?v=U28u6BWpTmI",
+    "videoFile": "longform_1794162457810.mp4"
   }
 ]
