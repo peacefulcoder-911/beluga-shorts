@@ -250,5 +250,36 @@
     "durationSeconds": 191.2,
     "videoUrl": "https://youtube.com/watch?v=U28u6BWpTmI",
     "videoFile": "longform_1794162457810.mp4"
+  },
+  {
+    "date": "2026-11-09T03:01:44.321Z",
+    "title": "The Mona Lisa's Secret Snack Stash 🍪 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a suspicious pixel anomaly in a high-resolution image of the Mona Lisa painting.",
+      "centralSituation": "This anomaly hints at a centuries-old secret, causing an international art scandal that draws the attention of federal agents and eccentric billionaires.",
+      "conflict": "The server members must prove Beluga's discovery isn't just a prank while facing accusations of historical vandalism and digital chaos.",
+      "climax": "Hecker hacks into a supposedly impenetrable archive, revealing the true, absurd nature of the Mona Lisa's hidden detail.",
+      "payoff": "Elon Musk leverages the bizarre revelation to launch a new, snack-themed museum initiative, much to Beluga's innocent delight and Skittle's exasperation."
+    },
+    "scenes": 4,
+    "totalMessages": 55,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "This Mona Lisa mystery? HUGE.",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "it was just a tiny cookie"
+    },
+    "durationSeconds": 174.1
+  },
+  {
+    "date": "2026-11-09T03:05:29.127Z",
+    "title": "The Mona Lisa's Secret Snack Stash 🍪 (Full Episode)",
+    "videoId": "aMMQUSS1rrQ",
+    "videoUrl": "https://youtube.com/watch?v=aMMQUSS1rrQ",
+    "publishAt": "2026-11-09T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
