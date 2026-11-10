@@ -298,5 +298,36 @@
     "durationSeconds": 202.7,
     "videoUrl": "https://youtube.com/watch?v=MOWHcjDcqCA",
     "videoFile": "longform_1794265651465.mp4"
+  },
+  {
+    "date": "2026-11-10T04:51:18.252Z",
+    "title": "The Hidden Channel From The Year 3000... ⏳ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a mysterious, hidden Discord channel that appears to be from the distant future.",
+      "centralSituation": "Messages in this future channel describe catastrophic events, including the disappearance of Beluga's favorite snack and the server's imminent evaporation.",
+      "conflict": "The gang attempts to understand and prevent the ominous future, while Admin tries to shut down the 'illegal' channel, and a temporal paradox threatens to unravel reality.",
+      "climax": "Special Agent Miller and Elon Musk intervene, escalating the 'glitch' into a national security crisis, demanding immediate action to close the channel before the server collapses.",
+      "payoff": "The 'temporal anomaly' is revealed to be an elaborate, yet mundane, prank orchestrated by Beluga's own forgotten ancient server, leaving everyone exasperated but the timeline (mostly) intact."
+    },
+    "scenes": 4,
+    "totalMessages": 72,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "YOU WON'T BELIEVE WHAT BELUGA FOUND!",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "it was just a channel"
+    },
+    "durationSeconds": 198.1
+  },
+  {
+    "date": "2026-11-10T04:56:36.857Z",
+    "title": "The Hidden Channel From The Year 3000... ⏳ (Full Episode)",
+    "videoId": "L_MPaIeNkBE",
+    "videoUrl": "https://youtube.com/watch?v=L_MPaIeNkBE",
+    "publishAt": "2026-11-10T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
