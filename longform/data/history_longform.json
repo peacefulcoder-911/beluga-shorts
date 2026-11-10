@@ -329,5 +329,22 @@
     "videoUrl": "https://youtube.com/watch?v=L_MPaIeNkBE",
     "publishAt": "2026-11-10T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-10T20:34:09.422Z",
+    "title": "The Leaning Tower of Pisa Was A Prank... 🗿 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga uncovers a 200-year-old architectural blueprint revealing a shocking secret about the Leaning Tower of Pisa.",
+      "centralSituation": "The blueprints show the iconic tower was originally designed to stand perfectly straight.",
+      "conflict": "This discovery triggers a chaotic server-wide debate and an 'international historical vandalism' investigation.",
+      "climax": "A formal server tribunal escalates into absurdity when Hecker reveals the true prankster's manifesto.",
+      "payoff": "Elon Musk appears with a deadpan, absurd solution to the entire 'leaning' debacle."
+    },
+    "scenes": 4,
+    "totalMessages": 44,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794342843147.jpg",
+    "durationSeconds": 124.3,
+    "videoUrl": "https://youtube.com/watch?v=D83rE9PrzL4",
+    "videoFile": "longform_1794342849428.mp4"
   }
 ]
