@@ -25337,5 +25337,534 @@
     ],
     "durationSeconds": 57.6,
     "videoUrl": "https://youtube.com/watch?v=J61YosYJMdU"
+  },
+  {
+    "date": "2026-11-10T02:51:12.087Z",
+    "title": "MrBeast Put Us In A $1,000,000 Discord Call (Part 72) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "mrbeast_100_days_discord",
+    "category": "internet_culture",
+    "headline": "MrBeast Announces $1,000,000 Last-To-Leave Discord Challenge",
+    "hookHeadline": "MRBEAST JUST TRAPPED US IN A $1,000,000 DISCORD CALL 💀",
+    "storyOutline": {
+      "hook": "Beluga discovers MrBeast is hosting a $1,000,000 last-to-leave Discord call challenge.",
+      "centralSituation": "MrBeast joins the voice channel: the last person to disconnect wins $1,000,000. But every 10 seconds, he makes the call more unbearable.",
+      "characterMotivations": {
+        "Beluga": "Wants to win the $1,000,000 prize from MrBeast.",
+        "Skittle": "Begs everyone to stop before catastrophe, trying to be the voice of reason."
+      },
+      "conflict": "The trending event spiraled completely out of hand when MrBeast's escalating tactics become unbearable and Hecker considers betrayal.",
+      "escalationStages": [
+        "MrBeast plays ear-piercing elevator jazz music directly into the microphone at 200% volume.",
+        "Hecker uses an auto-stay bot script, but MrBeast counter-offers Hecker $50,000 to betray Beluga instantly.",
+        "Pablo starts reciting 400 lines of ancient Spanish poetry without taking a single breath."
+      ],
+      "climax": "Beluga's mouse battery dies right as MrBeast asks the final trivia question.",
+      "payoff": "Beluga accidentally leaves the call because he sneezed and smashed his head on the Escape key."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "MRBEAST JUST TRAPPED US IN A $1,000,000 DISCORD CALL 💀",
+      "hookThumbnailUrl": "trending/trending_mrbeast_challenge.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "MrBeast",
+    "attachment": "attachments/mrbeast_cash_briefcase.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "i heard mrbeast is doing a $1,000,000 challenge here",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_mrbeast_challenge.jpg",
+        "hookHeadline": "MRBEAST JUST TRAPPED US IN A $1,000,000 DISCORD CALL 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "beluga that's a scam",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin",
+        "content": "THIS SERVER IS NOT AFFILIATED WITH MRBEAST. DO NOT ENGAGE.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "System",
+        "content": "MrBeast joined the voice channel.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "WAIT",
+        "time": "3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "NO WAY",
+        "time": "3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "MrBeast",
+        "content": "Alright everyone, last one to leave the call wins $1,000,000.",
+        "time": "3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Hecker",
+        "content": "challenge accepted. deploying auto-stay bot.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "i will stay here forever",
+        "time": "3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "MrBeast",
+        "content": "First rule: every 10 seconds, it gets worse.",
+        "time": "3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 11,
+        "author": "System",
+        "content": "MrBeast started playing ear-piercing elevator jazz music at 200% volume.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Skittle",
+        "content": "MY EARS ARE BLEEDING",
+        "time": "3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "bot is immune to sound. my connection is stable.",
+        "time": "3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "MrBeast",
+        "content": "Hecker, I'll give you $50,000 to disconnect Beluga right now.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg",
+        "attachmentUrl": "attachments/mrbeast_cash_briefcase.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "50k? for beluga? he was never here.",
+        "time": "3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "HECKER NO",
+        "time": "3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "IS HE SERIOUSLY OFFERING MONEY?",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "he is not lying",
+        "time": "3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Pablo",
+        "content": "Oye, Beluga. \"En un lugar de la Mancha, de cuyo nombre no quiero acordarme...\"",
+        "time": "3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "PABLO DON'T YOU DARE",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "System",
+        "content": "Pablo started reciting 400 lines of ancient Spanish poetry without taking a single breath.",
+        "time": "3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "my head hurts",
+        "time": "3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "MrBeast",
+        "content": "Final question: What's 1,000,000 divided by one?",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "uhh",
+        "time": "3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 15,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "System",
+        "content": "Beluga's mouse battery died.",
+        "time": "3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "MOUSE BATTERY CRITICAL"
+      },
+      {
+        "id": 26,
+        "author": "Skittle",
+        "content": "BELUGA ANSWER HIM QUICK",
+        "time": "3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-26",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 27,
+        "author": "Beluga",
+        "content": "i have to sneeze",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-27",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 28,
+        "author": "System",
+        "content": "Beluga left the voice channel.",
+        "time": "3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-28",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 29,
+        "author": "Skittle",
+        "content": "NOOOOOOOOOOOOO",
+        "time": "3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-29",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 30,
+        "author": "Beluga",
+        "content": "my head hit the escape key",
+        "time": "3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-30",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.56666666666667,
+    "videoUrl": "https://youtube.com/watch?v=nB6TkCPRtMU"
   }
 ]
