@@ -346,5 +346,36 @@
     "durationSeconds": 124.3,
     "videoUrl": "https://youtube.com/watch?v=D83rE9PrzL4",
     "videoFile": "longform_1794342849428.mp4"
+  },
+  {
+    "date": "2026-11-11T03:02:14.005Z",
+    "title": "The $1,000,000 Discord Court Trial of Pablo ⚖️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a legendary Golden Burger emoji in a restricted channel, triggering a server-wide manhunt.",
+      "centralSituation": "MrBeast arrives and offers $1,000,000 to anyone who can legally prove who 'stole' his digital snack.",
+      "conflict": "A chaotic courtroom trial where Pablo claims he ate the evidence, while Hecker tries to trace the digital crumbs.",
+      "climax": "Special Agent Miller presents a hacked server log that reveals the true culprit isn't a person, but a sentient bot glitch.",
+      "payoff": "MrBeast awards the $1,000,000, but it turns out to be in 'Beluga-themed' Monopoly money right before Beluga's mom pulls the plug."
+    },
+    "scenes": 4,
+    "totalMessages": 70,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "THE FIRST ONE TO FIND THE THIEF GETS $1,000,000! 🤑",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "can i buy a real burger with that"
+    },
+    "durationSeconds": 164.7
+  },
+  {
+    "date": "2026-11-11T03:05:28.713Z",
+    "title": "The $1,000,000 Discord Court Trial of Pablo ⚖️ (Full Episode)",
+    "videoId": "Y5FQkCpTwqI",
+    "videoUrl": "https://youtube.com/watch?v=Y5FQkCpTwqI",
+    "publishAt": "2026-11-11T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
