@@ -406,5 +406,22 @@
     "videoUrl": "https://youtube.com/watch?v=bMWHug2jxHs",
     "publishAt": "2026-11-12T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-12T21:00:53.859Z",
+    "title": "The Mona Lisa's Secret Gaming Setup... 🖼️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga finds a high-resolution scan of the Mona Lisa that reveals she was wearing a modern gaming headset.",
+      "centralSituation": "The gang discovers that Leonardo da Vinci didn't just paint a portrait; he painted the world's first pro-gamer.",
+      "conflict": "Special Agent Miller and the Louvre Museum admins attempt to suppress the evidence by locking down the server.",
+      "climax": "Hecker bypasses the 'Historical Firewalls' to reveal the full uncropped painting during a Discord tribunal.",
+      "payoff": "Elon Musk buys the painting for the server, only for Pablo to reveal he was the one who photoshopped it in 1503."
+    },
+    "scenes": 4,
+    "totalMessages": 69,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794517249279.jpg",
+    "durationSeconds": 181,
+    "videoUrl": "https://youtube.com/watch?v=u-dNCR1PUGU",
+    "videoFile": "longform_1794517253859.mp4"
   }
 ]
