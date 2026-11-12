@@ -377,5 +377,34 @@
     "videoUrl": "https://youtube.com/watch?v=Y5FQkCpTwqI",
     "publishAt": "2026-11-11T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-12T04:10:47.080Z",
+    "title": "The 3 AM Voice Chat That Wasn't Human... 👽 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a mysterious voice channel that appears active only at 3 AM with a user who isn't there.",
+      "centralSituation": "The gang attempts to investigate an eerily empty voice channel that seems to host a non-human entity.",
+      "conflict": "A garbled, disembodied voice from the channel begins sending cryptic warnings, escalating into a server-wide security crisis and tribunal.",
+      "climax": "Elon Musk is summoned to 'fix' the server, only to accidentally reveal the entity's bizarre true identity.",
+      "payoff": "The 'entity' is exposed as Pablo's sentient smart toaster accidentally connected to the server, demanding breakfast."
+    },
+    "scenes": 4,
+    "totalMessages": 55,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "I'll give $100,000 to whoever can explain THIS."
+    },
+    "durationSeconds": 147.8
+  },
+  {
+    "date": "2026-11-12T04:14:35.712Z",
+    "title": "The 3 AM Voice Chat That Wasn't Human... 👽 (Full Episode)",
+    "videoId": "bMWHug2jxHs",
+    "videoUrl": "https://youtube.com/watch?v=bMWHug2jxHs",
+    "publishAt": "2026-11-12T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
