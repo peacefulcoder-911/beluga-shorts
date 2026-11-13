@@ -423,5 +423,22 @@
     "durationSeconds": 181,
     "videoUrl": "https://youtube.com/watch?v=u-dNCR1PUGU",
     "videoFile": "longform_1794517253859.mp4"
+  },
+  {
+    "date": "2026-11-13T20:36:37.453Z",
+    "title": "The $1,000,000 Discord Trial: Who Sold Our Emojis? ⚖️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a mysterious 'monetize' button and accidentally sells the server's entire custom emoji collection.",
+      "centralSituation": "MrBeast's rare 'Golden Beast' emoji is among the 'sold' assets, prompting him to offer a $1,000,000 reward for its return.",
+      "conflict": "A chaotic Discord tribunal unfolds to determine who is responsible for the emoji heist and how to retrieve them, with Beluga as the prime suspect.",
+      "climax": "Hecker uncovers the true identity of the 'buyer,' leading to a surreal courtroom confrontation and an unexpected twist involving Pablo.",
+      "payoff": "The emojis are recovered, but the server faces a bizarre new 'feature' implemented by Elon Musk, adding a final comedic absurdity."
+    },
+    "scenes": 4,
+    "totalMessages": 45,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794602192086.jpg",
+    "durationSeconds": 132.5,
+    "videoUrl": "https://youtube.com/watch?v=iD9ztttYF8Q",
+    "videoFile": "longform_1794602197454.mp4"
   }
 ]
