@@ -37668,5 +37668,451 @@
     "durationSeconds": 57.53333333333333,
     "videoUrl": "https://youtube.com/watch?v=Dj0CLo9CzC0",
     "publishAt": "2026-11-14T15:00:00.000Z"
+  },
+  {
+    "date": "2026-11-14T14:24:17.342Z",
+    "title": "The Duolingo Owl Infiltrated Discord At 3 AM (Part 57) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "duolingo_owl_threat",
+    "category": "internet_culture",
+    "headline": "Duolingo Owl Unhinged Push Notifications Spark Worldwide Memes",
+    "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga accidentally ends his 400-day Spanish streak, triggering a terrifying visit from Duo the Owl.",
+      "centralSituation": "After Beluga's 400-day Spanish streak dramatically ends, Duo the Owl suddenly appears in general chat with full administrator privileges.",
+      "characterMotivations": {
+        "Beluga": "Wants to ignore consequences; naive about internet threats.",
+        "Skittle": "Panics, tries to avert disaster, but fails due to Duo's power.",
+        "Hecker": "Attempts to use cyber tools against Duo, but is easily overpowered.",
+        "Admin": "Loses control and permissions, highlighting Duo's authority."
+      },
+      "conflict": "The Duolingo Owl takes over the Discord server, enforcing extreme Spanish language learning.",
+      "escalationStages": [
+        "Duo replaces all English letters in the chat with Spanish subjunctive verbs, disrupting communication.",
+        "Pablo is thrilled and starts singing salsa, embracing the chaos, while Hecker gets locked in a digital Spanish conjugation chamber.",
+        "Skittle tries to use Google Translate for a workaround, but Duo revokes Skittle's internet license, cutting off external help."
+      ],
+      "climax": "Duo announces that Beluga's family will only be returned once Beluga conjugates \"haber\" in 14 different tenses, escalating the stakes to a personal level.",
+      "payoff": "Beluga calmly asks: 'donde esta la biblioteca, senor owl? I am literally a cat.'"
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Duo The Owl",
+    "attachment": "attachments/duolingo_streak_alert.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "i accidentally lost my 400 day spanish streak lol",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+        "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "BELUGA WHAT",
+        "time": "3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "My firewall just detected a surge of unsolicited owl data.",
+        "time": "3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Admin",
+        "content": "Beluga, Rule 4: No bringing unverified external entities into #general.",
+        "time": "3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/duolingo_streak_alert.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Duo The Owl",
+        "content": "¡Hola, Beluga! Has olvidado tu lección. ¿Necesitas un recordatorio?",
+        "time": "3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "who is this guy",
+        "time": "3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "IT'S THE DUOLINGO OWL BELUGA UNPLUG YOUR ROUTER NOW",
+        "time": "3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Admin",
+        "content": "OWL DETECTED. SERVER MALFUNCTION. ALL CHANNELS COMPROMISED.",
+        "time": "3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Duo The Owl",
+        "content": "Ahora, cada verbo en este servidor será subjuntivo.",
+        "time": "3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Hecker",
+        "content": "What the— my keyboard just switched to Spanish layout automatically.",
+        "time": "3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Pablo",
+        "content": "¡Salsa! ¡Mango! ¡La guitarra! ¡Que bailemos!",
+        "time": "3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "what is a subjunctive verb",
+        "time": "3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "BELUGA DON'T ENGAGE HIM. HE'S CHANGING THE ENTIRE LANGUAGE.",
+        "time": "3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Admin",
+        "content": "MY MOD TOOLS ARE REPLACING 'BAN' WITH 'PROHIBIR'! I CAN'T BAN HIM!",
+        "time": "3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "My terminal is displaying \"Hecker debe conjugar\" repeatedly. I'm locked in a digital conjugación chamber.",
+        "time": "3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "I'll just Google Translate what he's saying. Maybe there's a workaround.",
+        "time": "3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Duo The Owl",
+        "content": "Lo siento, Skittle. No más internet para ti. Solo español.",
+        "time": "3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "INTERNET LICENSE REVOKED",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "MY WIFI JUST DIED. HE REVOKED MY INTERNET LICENSE. I'M TYPING ON DATA!",
+        "time": "3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Admin",
+        "content": "THIS IS A CLASS A SERVER INTRUSION! I'M INITIATING EMERGENCY PROTOCOL THETA!",
+        "time": "3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Pablo",
+        "content": "Mi salsa es más fuerte que un firewall. Duo is my compadre.",
+        "time": "3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "he can't actually steal your internet right",
+        "time": "3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "Attempting to bypass the conjugation chamber... access denied by \"Duo_Firewall_v1.0.0.0\". My quantum decryption algorithms are useless.",
+        "time": "3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Admin",
+        "content": "HE JUST REVOKED MY ADMIN PERMISSIONS! I AM ONLY A 'USUARIO' NOW! SERVER INTEGRITY COMPROMISED!",
+        "time": "3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Duo The Owl",
+        "content": "Beluga, tu familia te espera. Para reunirlos, conjuga \"haber\" en catorce tiempos verbales. Ahora.",
+        "time": "3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "donde esta la biblioteca senor owl i am literally a cat.",
+        "time": "3:27 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 25,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.63333333333333,
+    "videoUrl": "https://youtube.com/watch?v=z-boWMIx-gI"
   }
 ]
