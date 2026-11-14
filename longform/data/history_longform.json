@@ -471,5 +471,22 @@
     "videoUrl": "https://youtube.com/watch?v=9w-RWGMnHl4",
     "publishAt": "2026-11-14T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-14T18:49:16.890Z",
+    "title": "The $500,000 Silence Challenge... Broken By A Cat 🤫 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers MrBeast's 'Last Person To Send A Message Wins $500,000' challenge.",
+      "centralSituation": "Beluga interprets 'send a message' literally, believing images and emojis aren't 'messages,' and starts spamming the chat with them.",
+      "conflict": "A 'Silence Enforcer Bot' appears, reacting erratically to Beluga's 'non-messages,' threatening the entire challenge and causing server-wide panic.",
+      "climax": "MrBeast and Elon Musk preside over a Discord courtroom, where Hecker reveals the bot's true, bizarre programming and Beluga's innocent rule-bending.",
+      "payoff": "Beluga's literal interpretation accidentally breaks the bot and wins the challenge, much to everyone's exasperation and Elon's amusement."
+    },
+    "scenes": 4,
+    "totalMessages": 53,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794682152245.jpg",
+    "durationSeconds": 158.8,
+    "videoUrl": "https://youtube.com/watch?v=VCKed_1-ZO4",
+    "videoFile": "longform_1794682156890.mp4"
   }
 ]
