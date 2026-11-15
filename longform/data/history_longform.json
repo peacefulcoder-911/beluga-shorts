@@ -488,5 +488,36 @@
     "durationSeconds": 158.8,
     "videoUrl": "https://youtube.com/watch?v=VCKed_1-ZO4",
     "videoFile": "longform_1794682156890.mp4"
+  },
+  {
+    "date": "2026-11-15T03:04:10.323Z",
+    "title": "The Statue of Liberty's Secret Wi-Fi Portal... 🗽 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga stumbles upon an ancient blueprint of the Statue of Liberty, revealing strange markings suggesting it's more than just a monument.",
+      "centralSituation": "The markings on the blueprint hint that the Statue of Liberty is a giant, historical Wi-Fi router, designed to broadcast a 'Liberty Signal' with a coded password.",
+      "conflict": "Federal agents and a historical society attempt to suppress Beluga's discovery, while Beluga, with Hecker's help, tries to 'activate' the Statue, attracting the attention of Elon Musk.",
+      "climax": "Hecker's attempt to 'ping' the Statue's ancient network leads to a server-wide revelation: the monument is a massive, centuries-old archive of cat memes, not a Wi-Fi portal.",
+      "payoff": "Elon Musk, fascinated by the 'ancient data storage,' attempts to buy the Statue of Liberty to relocate it to Mars for interplanetary meme archiving, leaving everyone bewildered."
+    },
+    "scenes": 4,
+    "totalMessages": 44,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "BELUGA, WHAT DID YOU UNCOVER?! 🤯",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "just some old wifi, mrbeast"
+    },
+    "durationSeconds": 152.2
+  },
+  {
+    "date": "2026-11-15T03:07:30.733Z",
+    "title": "The Statue of Liberty's Secret Wi-Fi Portal... 🗽 (Full Episode)",
+    "videoId": "hKQyaaCvQO0",
+    "videoUrl": "https://youtube.com/watch?v=hKQyaaCvQO0",
+    "publishAt": "2026-11-15T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
