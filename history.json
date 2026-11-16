@@ -42868,5 +42868,409 @@
     "durationSeconds": 55.6,
     "videoUrl": "https://youtube.com/watch?v=R65XNtH0AA0",
     "publishAt": "2026-11-16T15:00:00.000Z"
+  },
+  {
+    "date": "2026-11-16T17:14:32.791Z",
+    "title": "Hecker Plugged In An RTX 5090 (Part 72) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "rtx_5090_power_grid",
+    "category": "tech_ai",
+    "headline": "Nvidia RTX 5090 Melts Neighborhood Power Grids",
+    "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+    "storyOutline": {
+      "hook": "Hecker plugs in his new RTX 5090, causing immediate widespread power issues.",
+      "centralSituation": "Hecker finally gets a brand new RTX 5090 GPU and turns it on to play Minecraft at 10,000 FPS, instantly dimming the streetlights in three neighboring states.",
+      "characterMotivations": {
+        "Beluga": "Wants to understand the chaos and leverage the new 'feature' for absurd uses.",
+        "Skittle": "Begs everyone to stop before catastrophe hits critical levels.",
+        "Hecker": "Flexes his cyber-power and remains unbothered by the escalating destruction.",
+        "Admin": "Struggles to maintain server stability and order amid real-world energy collapse.",
+        "Pablo": "Delivers surreal updates on the RTX's far-reaching, unexpected side effects."
+      },
+      "conflict": "The trending event spiraled completely out of hand, causing a nationwide power crisis and physical infrastructure meltdown.",
+      "escalationStages": [
+        "Jensen Huang joins the voice call congratulating Hecker on buying more GPUs, while Hecker's room temperature hits 400 degrees.",
+        "Admin reports that the server lag is reaching 99,999 ms ping.",
+        "Pablo announces that his toaster in Mexico just started running Cyberpunk 2077 through the shared Wi-Fi."
+      ],
+      "climax": "The local electrical substation launches into low Earth orbit as a makeshift jet turbine.",
+      "payoff": "Beluga asks if he can fry bacon directly on the heat sink while downloading Shrek 2 in 8K."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+      "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Jensen Huang",
+    "attachment": "attachments/melted_power_meter.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Hecker",
+        "content": "ok guys its here",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+        "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "what is here",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "RTX 5090. time for 10k FPS minecraft",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "NO WAIT HECKER THAT CARD USES LIKE A WHOLE GRID",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Hecker",
+        "content": "*activates gpu*",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "HE DID IT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "why is my screen dimming",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Admin",
+        "content": "EMERGENCY: POWER SURGE DETECTED ACROSS THREE STATES",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL POWER GRID OVERLOAD"
+      },
+      {
+        "id": 9,
+        "author": "Jensen Huang",
+        "content": "Jensen Huang joined the call.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Jensen Huang",
+        "content": "Excellent. More GPUs. More power. This is the way.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "my room temp is 400 degrees celcius",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Jensen Huang",
+        "content": "Optimal thermal performance achieved. Embrace the heat.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Admin",
+        "content": "SERVER LAG REACHING 99,999 MS PING. UNACCEPTABLE.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "DISCORD NETWORK FAULT"
+      },
+      {
+        "id": 14,
+        "author": "Pablo",
+        "content": "my toaster in mexico just started running cyberpunk 2077 through the wifi",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "bro what",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Admin",
+        "content": "PROOF. EXHIBIT A.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "THATS A RADIOACTIVE METER WHAT IS HAPPENING",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/melted_power_meter.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Hecker",
+        "content": "substation go zoom",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Admin",
+        "content": "WARNING: LOCAL ELECTRICAL SUBSTATION DETACHING FROM EARTH'S GRAVITY",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "GRAVITATIONAL ANOMALY DETECTED"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "it looks like a rocket",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Skittle",
+        "content": "IT'S LAUNCHING INTO ORBIT",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "can i fry bacon on the heat sink while downloading shrek 2 in 8k",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 52.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=gkqNYexcNHY"
   }
 ]
