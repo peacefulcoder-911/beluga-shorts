@@ -567,5 +567,22 @@
     "videoUrl": "https://youtube.com/watch?v=pLw-nxew-bs",
     "publishAt": "2026-11-16T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-16T22:59:45.198Z",
+    "title": "Napoleon's Secret Mule: The French Art Scandal 🎨 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a peculiar detail in a famous painting of Napoleon, sparking a historical art scandal.",
+      "centralSituation": "The gang investigates whether Napoleon Bonaparte rode a majestic warhorse or a humble mule into battle, potentially rewriting history.",
+      "conflict": "The server erupts into a chaotic debate and a 'courtroom' trial as official historical accounts clash with Hecker's hacked 'evidence' of the mule.",
+      "climax": "Elon Musk attempts to capitalize on the 'mule discovery,' while a federal agent intervenes, treating the historical revision as a matter of national security.",
+      "payoff": "The truth about Napoleon's equine choice is revealed, leading to a ludicrous government decree and a permanent place for the 'mule truth' on the server."
+    },
+    "scenes": 4,
+    "totalMessages": 54,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794869980498.jpg",
+    "durationSeconds": 152.2,
+    "videoUrl": "https://youtube.com/watch?v=wPuve6LCtew",
+    "videoFile": "longform_1794869985199.mp4"
   }
 ]
