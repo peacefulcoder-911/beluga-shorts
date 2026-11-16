@@ -536,5 +536,36 @@
     "durationSeconds": 158,
     "videoUrl": "https://youtube.com/watch?v=ZOaOk5RyjDI",
     "videoFile": "longform_1794770858132.mp4"
+  },
+  {
+    "date": "2026-11-16T03:02:40.740Z",
+    "title": "The Voice Chat That Joined Itself At 3 AM... 👽 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a hidden voice channel named #the-void that only appears at 3:00 AM.",
+      "centralSituation": "A mysterious user named 'Beluga_2050' is sitting in the channel, sending messages that haven't happened yet.",
+      "conflict": "Admin and Special Agent Miller believe Beluga is using illegal temporal-hacking software to spoil future memes.",
+      "climax": "Hecker attempts to trace the signal while the server undergoes a 'reality collapse' sequence.",
+      "payoff": "It is revealed that Pablo was just using a laggy VPN from Mars while eating the server's clock battery."
+    },
+    "scenes": 4,
+    "totalMessages": 80,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 3:00 AM",
+      "authorMessage": "BELUGA WHY IS THE SERVER GLOWING?!",
+      "belugaTime": "Today at 3:00 AM",
+      "belugaMessage": "i think i accidentally downloaded tomorrow"
+    },
+    "durationSeconds": 200.2
+  },
+  {
+    "date": "2026-11-16T03:06:13.841Z",
+    "title": "The Voice Chat That Joined Itself At 3 AM... 👽 (Full Episode)",
+    "videoId": "pLw-nxew-bs",
+    "videoUrl": "https://youtube.com/watch?v=pLw-nxew-bs",
+    "publishAt": "2026-11-16T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
