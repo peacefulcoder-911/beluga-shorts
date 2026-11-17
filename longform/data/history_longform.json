@@ -615,5 +615,22 @@
     "videoUrl": "https://youtube.com/watch?v=765mq1yOu6Y",
     "publishAt": "2026-11-17T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-17T21:52:30.391Z",
+    "title": "When A DM From The Future Glitched Our Server... ⏳ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga stumbles upon a bizarre message in #general, seemingly sent by himself, but dated three decades into the future.",
+      "centralSituation": "The server's attempt to decipher the future message leads to panic, a chaotic voice call, and suspicions of a temporal breach.",
+      "conflict": "A federal agent and the server admin intervene, believing the future message is a dangerous temporal anomaly that could unravel reality.",
+      "climax": "Hecker 'decrypts' the true nature of the future message during a tense courtroom scene, revealing its absurd, mundane purpose.",
+      "payoff": "Elon Musk leverages the temporal anomaly for a new, ridiculous Discord feature, leaving Beluga oblivious to the chaos he caused."
+    },
+    "scenes": 4,
+    "totalMessages": 51,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1794952345129.jpg",
+    "durationSeconds": 138,
+    "videoUrl": "https://youtube.com/watch?v=c3RIjzw9t4Q",
+    "videoFile": "longform_1794952350391.mp4"
   }
 ]
