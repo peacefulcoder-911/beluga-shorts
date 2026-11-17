@@ -45452,5 +45452,459 @@
     "durationSeconds": 57.53333333333333,
     "videoUrl": "https://youtube.com/watch?v=1OZhZ5HdFo4",
     "publishAt": "2026-11-17T15:00:00.000Z"
+  },
+  {
+    "date": "2026-11-17T17:00:02.891Z",
+    "title": "Elon Musk Bought Discord For $44 Billion (Part 2) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "elon_musk_buys_discord",
+    "category": "tech_ai",
+    "headline": "Elon Musk Announces $44B Hostile Discord Takeover",
+    "hookHeadline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀",
+    "storyOutline": {
+      "hook": "Immediate visual breaking topic followed by Beluga's chaotic action.",
+      "centralSituation": "Elon Musk buys Discord overnight, renames it \"Y\", and charges $8/month just to send cat memes in general chat.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend",
+        "Skittle": "Begs everyone to stop before catastrophe",
+        "Hecker": "Flexes cyber tools to bypass restrictions",
+        "Admin": "Loses control and gets fired"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Admin Lester gets fired by an automated tweet while bragging about his moderator powers.",
+        "Hecker tries to bypass the paywall, but Elon links Hecker's Tesla directly to the Discord banned list.",
+        "Skittle gets charged $16 because he typed two capital letters in a row."
+      ],
+      "climax": "Elon launches the Discord physical server rack to Mars aboard a Falcon 9 rocket.",
+      "payoff": "Beluga asks if dogecoin can be used to purchase a single emoji reaction."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀",
+      "hookThumbnailUrl": "trending/trending_elon_discord.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Elon Musk",
+    "attachment": "attachments/discord_rebrand_y.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys elon musk just bought discord",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_elon_discord.jpg",
+        "hookHeadline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "WHAT",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "Impossible. Check your sources.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "i saw it on twitter. he renamed it Y",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Admin",
+        "content": "HAHAHAHA AS IF. I'M ADMIN LESTER. I CONTROL THIS SERVER. NO ONE FIRES ME.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "Lester, maybe don't tempt fate?",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "he also fired all mods",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Admin",
+        "content": "LIES! I'M STILL HERE. I'M GOING TO BAN YOU FOR MISINFORMATION!",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "Admin Lester has been fired by automated tweet."
+      },
+      {
+        "id": 9,
+        "author": "Elon Musk",
+        "content": "Concerning.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "OH MY GOD HE'S HERE",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "Hecker protocol activated.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Elon Musk",
+        "content": "Discord will now be 'Y'. Base subscription $8/month. Cat memes in #general are now $8/meme.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "can i send a cat meme for free",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Elon Musk",
+        "content": "Negative. Free trials lead to moral hazard.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "Bypassing paywall... engaging quantum proxy... done. Free cat memes for all.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "Hecker's Tesla Model S has been added to the global Discord banned list.",
+        "attachmentUrl": "attachments/discord_rebrand_y.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Hecker",
+        "content": "MY TESLA?!",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "BELUGA DON'T EVEN THINK ABOUT IT",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "i just typed 'LOL' in caps",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "Skittle's account charged $16.00 for excessive capitalization."
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "WHAT?! TWO CAPITAL LETTERS?!",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Elon Musk",
+        "content": "Adjusting incentives. This is the way.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "wait the servers are making weird noises",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "IT'S THE LAUNCH SEQUENCE NOISE",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Elon Musk",
+        "content": "Falcon 9 preparing for launch. Next stop: Mars.",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "Discord servers offline. Enjoy Mars.",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Hecker",
+        "content": "HE'S PHYSICALLY LAUNCHING THE SERVERS?!",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "so can i use dogecoin to buy one emoji reaction?",
+        "time": "Today at 3:27 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.56666666666667,
+    "videoUrl": "https://youtube.com/watch?v=sk-dYl4t6JA"
   }
 ]
