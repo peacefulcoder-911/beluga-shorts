@@ -44129,5 +44129,1328 @@
     ],
     "durationSeconds": 57.6,
     "videoUrl": "https://youtube.com/watch?v=lJbRd78DyBo"
+  },
+  {
+    "date": "2026-11-17T05:11:08.521Z",
+    "title": "Hecker Plugged In An RTX 5090 (Part 68) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "rtx_5090_power_grid",
+    "category": "tech_ai",
+    "headline": "Nvidia RTX 5090 Melts Neighborhood Power Grids",
+    "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+    "storyOutline": {
+      "hook": "Hecker's new RTX 5090 instantly causes city-wide power outages.",
+      "centralSituation": "Hecker finally gets a brand new RTX 5090 GPU and turns it on to play Minecraft at 10,000 FPS, instantly dimming the streetlights in three neighboring states.",
+      "characterMotivations": {
+        "Beluga": "Wants to understand the chaos and exploit the absurdity literally.",
+        "Skittle": "Begs everyone to stop before catastrophe engulfs the world.",
+        "Hecker": "Flexes his cyber-tools and new tech with deadpan confidence.",
+        "Admin": "Desperately tries to maintain server and global stability."
+      },
+      "conflict": "The brand new RTX 5090 causes a massive power crisis across multiple states, escalating into infrastructure collapse.",
+      "escalationStages": [
+        "Jensen Huang joins the voice call congratulating Hecker on buying more GPUs, while Hecker's room temperature hits 400 degrees.",
+        "Admin reports that the server lag is reaching 99,999 ms ping.",
+        "Pablo announces that his toaster in Mexico just started running Cyberpunk 2077 through the shared Wi-Fi."
+      ],
+      "climax": "The local electrical substation launches into low Earth orbit as a makeshift jet turbine.",
+      "payoff": "Beluga asks if he can toast a pop tart on the GPU's heat sink while downloading Shrek 2 in 16K."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+      "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Jensen Huang",
+    "attachment": "attachments/melted_power_meter.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Hecker",
+        "content": "GUYS IT'S HERE.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+        "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "what is it hecker",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "The RTX 5090. Just plugged it in.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "You did WHAT",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "my lamp just exploded",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Admin",
+        "content": "SERVER POWER DRAW CRITICAL",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL POWER GRID STABILITY ALERT"
+      },
+      {
+        "id": 7,
+        "author": "Hecker",
+        "content": "Playing Minecraft. 10,000 FPS. Smooth.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "BRO THE STREETLIGHTS ARE OUT IN LIKE THREE STATES",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "my cat hair is melting",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "system",
+        "content": "Jensen Huang joined the voice channel.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Jensen Huang",
+        "content": "Excellent. Another enthusiast. Another purchase.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "who is this cat",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Jensen Huang",
+        "content": "The future demands compute. And your room temperature is peaking at 400 degrees, Hecker. Optimal for performance.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "400 DEGREES?! YOU'RE LITERALLY ON FIRE",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Admin",
+        "content": "SERVER PING 99,999 MS. WE ARE LITERALLY IN THE STONE AGE.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Pablo",
+        "content": "my toaster in Mexico is running Cyberpunk 2077 now. Through the shared Wi-Fi.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Hecker",
+        "content": "Distributed processing. Efficient.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/melted_power_meter.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "DISTRIBUTED EXPLOSIONS IS WHAT IT IS",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Admin",
+        "content": "EMERGENCY: LOCAL SUBSTATION IS NOW A MAKESHIFT TURBINE. WE HAVE LIFTOFF.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "is it going to the moon",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Jensen Huang",
+        "content": "No. Low Earth Orbit. For new server farms. Efficiency. Total scalability.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "THE ENTIRE CITY JUST WENT DARK",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Hecker",
+        "content": "Power outage. Minor inconvenience.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "so can i toast my pop tart on the glowing heat sink while shrek 2 downloads in 16k",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=gu2ZupmYUrA",
+    "publishAt": "2026-11-17T07:30:00.000Z"
+  },
+  {
+    "date": "2026-11-17T05:13:10.806Z",
+    "title": "Hecker Leaked GTA 6 In General Chat ️ (Part 90) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "gta_6_leak_discord",
+    "category": "gaming",
+    "headline": "Massive GTA 6 Gameplay Build Leaked in Discord Server",
+    "hookHeadline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀",
+    "storyOutline": {
+      "hook": "Hecker casually drops a 'GTA 6' file in general chat.",
+      "centralSituation": "Hecker casually uploads \"gta6_final_build_real_no_virus.zip\" into the server general chat, summoning Rockstar Games corporate legal SWAT.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend",
+        "Skittle": "Begs everyone to stop before catastrophe"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Rockstar Legal joins the voice channel threatening everyone with 400 consecutive life sentences.",
+        "Beluga opens the game file, which immediately turns his monitor into a live CCTV feed of a Miami gas station.",
+        "Skittle streams the gameplay on Discord, attracting 5 million FBI agents to the server in 3 seconds."
+      ],
+      "climax": "Hecker reveals the leaked file wasn't actually GTA 6, but 800 gigabytes of Beluga's search history.",
+      "payoff": "Beluga asks if the legal team can wait until he finishes customizing his virtual Honda Civic."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀",
+      "hookThumbnailUrl": "trending/trending_gta_6.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Rockstar Legal Agent",
+    "attachment": "attachments/gta6_alpha_leak.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Hecker",
+        "content": "gta6_final_build_real_no_virus.zip",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_gta_6.jpg",
+        "hookHeadline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "BRO WHAT IS THAT",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin",
+        "content": "HECKER! RULE 3 VIOLATION: MALICIOUS FILES!",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "what's gta 6?",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Skittle",
+        "content": "BELUGA DO NOT CLICK THAT",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Hecker",
+        "content": "too late. already uploaded to your desktop.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Admin",
+        "content": "HECKER YOU ARE ABOUT TO BE BANNED PERMANENTLY!",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Rockstar Legal Agent",
+        "content": "Rockstar Legal Agent joined the voice channel.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Rockstar Legal Agent",
+        "content": "Good evening. This is Senior Vice President, Copyright Enforcement. You are in violation of federal statute 18 U.S.C. § 1832. Cease and desist immediately.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "who is this new guy?",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Skittle",
+        "content": "BELUGA UNPLUG YOUR PC NOW",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "he's not lying.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Beluga",
+        "content": "i already launched it.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "wait my monitor just turned into a gas station.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Skittle",
+        "content": "OH MY GOD THAT'S A LIVE FEED! OF MIAMI!",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/gta6_alpha_leak.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Admin",
+        "content": "I AM CALLING THE FEDERAL BUREAU OF INVESTIGATION.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "I'M STREAMING THIS ON DISCORD! 5 MILLION PEOPLE ARE HERE!",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL SERVER OVERHEAT"
+      },
+      {
+        "id": 18,
+        "author": "system",
+        "content": "5,000,000 FBI agents joined the server.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Police",
+        "content": "STEP AWAY FROM THE KEYBOARD IMMEDIATELY. YOUR IP HAS BEEN LOGGED.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Rockstar Legal Agent",
+        "content": "The consequences for disseminating stolen intellectual property are severe. Expect a summons from our legal department for 400 consecutive life sentences, effective immediately.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "but the graphics are really bad. and why is it only one camera angle?",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "that's because it's not GTA 6.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "WHAT IS IT THEN?!",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Hecker",
+        "content": "800 gigabytes of Beluga's search history.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "wait all my cat videos?",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 26,
+        "author": "Beluga",
+        "content": "can your legal team wait until i finish customizing my virtual honda civic?",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-26",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=kXmQwzFeQUE",
+    "publishAt": "2026-11-17T11:30:00.000Z"
+  },
+  {
+    "date": "2026-11-17T05:15:32.502Z",
+    "title": "MrBeast Put Us In A $1,000,000 Discord Call (Part 32) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "mrbeast_100_days_discord",
+    "category": "internet_culture",
+    "headline": "MrBeast Announces $1,000,000 Last-To-Leave Discord Challenge",
+    "hookHeadline": "MRBEAST JUST TRAPPED US IN A $1,000,000 DISCORD CALL 💀",
+    "storyOutline": {
+      "hook": "MrBeast joins the Beluga Discord server announcing a last-to-leave $1,000,000 challenge.",
+      "centralSituation": "MrBeast joins the voice channel: the last person to disconnect wins $1,000,000. But every 10 seconds, he makes the call more unbearable.",
+      "characterMotivations": {
+        "Beluga": "Wants to win the $1,000,000 and test the trending challenge.",
+        "Skittle": "Begs everyone to stop participating before catastrophe strikes."
+      },
+      "conflict": "The MrBeast challenge escalates rapidly, testing everyone's sanity and loyalty for a million dollars.",
+      "escalationStages": [
+        "MrBeast plays ear-piercing elevator jazz music directly into the microphone at 200% volume.",
+        "Hecker uses an auto-stay bot script, but MrBeast counter-offers Hecker $50,000 to betray Beluga instantly.",
+        "Pablo starts reciting 400 lines of ancient Spanish poetry without taking a single breath."
+      ],
+      "climax": "Beluga's mouse battery dies right as MrBeast asks the final trivia question.",
+      "payoff": "Beluga accidentally leaves the call because he sneezed and smashed his head on the Escape key."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "MRBEAST JUST TRAPPED US IN A $1,000,000 DISCORD CALL 💀",
+      "hookThumbnailUrl": "trending/trending_mrbeast_challenge.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "MrBeast",
+    "attachment": "attachments/mrbeast_cash_briefcase.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys mrbeast just joined our discord VC",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_mrbeast_challenge.jpg",
+        "hookHeadline": "MRBEAST JUST TRAPPED US IN A $1,000,000 DISCORD CALL 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "WHAT ARE YOU SERIOUS",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin",
+        "content": "MRBEAST IS NOT AUTHORIZED TO JOIN UNINVITED. THIS IS A PRIVATE SERVER.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "MrBeast",
+        "content": "Yo, Beluga. Last one to leave this call wins $1,000,000.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "ONE MILLION DOLLARS???? IS THIS REAL",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "BELUGA DON'T EVEN THINK ABOUT IT HE'S ALWAYS DOING STUFF LIKE THIS",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "MrBeast",
+        "content": "It is very real. But... every 10 seconds, it gets worse. Let's start with some smooth jazz.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "MY EARS ARE BLEEDING UNPLUG IT NOW",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Admin",
+        "content": "WHO IS PLAYING THAT MUSIC?! MUTE YOURSELF IMMEDIATELY!",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Pablo",
+        "content": "my uncle used to play elevator jazz. he liked trains.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "auto-stay protocol initiated. system override. this call is mine.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "MrBeast",
+        "content": "Hecker, I'll give you $50,000 to disconnect Beluga right now. No questions asked.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "...deal.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Admin",
+        "content": "HECKER THAT IS A RULE 9 VIOLATION: ATTEMPTED BRIBERY AND DISCONNECTION!",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "HECKER NOOOOOOO YOU CAN'T BETRAY ME FOR $50k",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/mrbeast_cash_briefcase.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "THE MONEY IS REAL HE ISN'T LYING",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Pablo",
+        "content": "el sol ha sido secuestrado por las gallinas y no hay pan para hoy. muy mal.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 18,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "HE'S RECITING POETRY IN SPANISH WITHOUT BREATHING",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "my mouse just died",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL: MOUSE BATTERY DEAD"
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "YOU'RE KIDDING ME THE BATTERY",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "MrBeast",
+        "content": "Final question, Beluga. What's the capital of Djibouti?",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mrbeast.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "uhhhhhhh",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "i think i just sneezed on my keyboard",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "and hit escape",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=1OZhZ5HdFo4",
+    "publishAt": "2026-11-17T15:00:00.000Z"
   }
 ]
