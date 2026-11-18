@@ -661,5 +661,22 @@
     "videoUrl": "https://youtube.com/watch?v=cjvrGjkKs_I",
     "publishAt": "2026-11-18T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-18T21:31:52.963Z",
+    "title": "The $1,000,000 Discord Trial: Who Replaced PeanutBot's Brain? 🥜 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga accidentally replaces MrBeast's beloved custom bot with a chaotic peanut-spamming entity.",
+      "centralSituation": "A $1,000,000 reward from MrBeast triggers a frantic, multi-scene Discord tribunal to find the culprit and restore the bot.",
+      "conflict": "Beluga, the unwitting perpetrator, faces a formal trial, while his friends try to navigate his literal interpretations and the escalating absurdity.",
+      "climax": "Hecker's forensic investigation reveals the true nature of the 'free peanuts' scam, leading to a dramatic confrontation in the courtroom.",
+      "payoff": "PeanutBot is restored, the reward is claimed, and Beluga's final, literal-minded request provides a hilarious, fitting end."
+    },
+    "scenes": 4,
+    "totalMessages": 55,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1795037507737.jpg",
+    "durationSeconds": 155,
+    "videoUrl": "https://youtube.com/watch?v=Eo9K4nl-SS8",
+    "videoFile": "longform_1795037512963.mp4"
   }
 ]
