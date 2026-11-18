@@ -632,5 +632,34 @@
     "durationSeconds": 138,
     "videoUrl": "https://youtube.com/watch?v=c3RIjzw9t4Q",
     "videoFile": "longform_1794952350391.mp4"
+  },
+  {
+    "date": "2026-11-18T04:47:57.467Z",
+    "title": "The 100-Hour MrBeast Discord Code Hunt 🔍 (Full Episode)",
+    "storyOutline": {
+      "hook": "MrBeast announces an extreme 100-hour Discord scavenger hunt challenge with a massive cash prize.",
+      "centralSituation": "Beluga discovers the first clue, a hidden 'SERVER_RESET_COMMAND_DO_NOT_USE' code, and attempts to 'present' it in the most literal, chaotic way possible.",
+      "conflict": "Beluga's actions trigger a server-wide security lockdown, an emergency tribunal, and a federal cyber interference investigation.",
+      "climax": "Special Agent Miller intervenes, accusing Beluga of a major cyber offense, just as MrBeast is about to announce the challenge winner.",
+      "payoff": "Beluga's accidental chaos turns out to be the intended solution, as MrBeast reveals the entire challenge was a test of 'unconventional thinking' and awards him the prize."
+    },
+    "scenes": 4,
+    "totalMessages": 64,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "Beluga, you just... fundamentally broke the challenge."
+    },
+    "durationSeconds": 181.1
+  },
+  {
+    "date": "2026-11-18T04:52:38.540Z",
+    "title": "The 100-Hour MrBeast Discord Code Hunt 🔍 (Full Episode)",
+    "videoId": "cjvrGjkKs_I",
+    "videoUrl": "https://youtube.com/watch?v=cjvrGjkKs_I",
+    "publishAt": "2026-11-18T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]

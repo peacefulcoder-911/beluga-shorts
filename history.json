@@ -46801,5 +46801,1369 @@
     ],
     "durationSeconds": 57.56666666666667,
     "videoUrl": "https://youtube.com/watch?v=tMND8lkS8M4"
+  },
+  {
+    "date": "2026-11-18T04:39:03.718Z",
+    "title": "Elon Musk Bought Discord For $44 Billion (Part 43) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "elon_musk_buys_discord",
+    "category": "tech_ai",
+    "headline": "Elon Musk Announces $44B Hostile Discord Takeover",
+    "hookHeadline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀",
+    "storyOutline": {
+      "hook": "Elon Musk makes a sudden, hostile takeover of Discord, immediately firing all moderators and renaming the platform.",
+      "centralSituation": "Elon Musk buys Discord overnight, renames it \"Y\", and charges $8/month just to send cat memes in general chat.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the new rules and understand the absurd changes literally.",
+        "Skittle": "Begs everyone to stop before catastrophe, panics about unexpected charges.",
+        "Hecker": "Attempts to cyber-bypass Elon's new paywalls and system changes.",
+        "Admin": "Lester brags about his power, then gets summarily dismissed.",
+        "Elon Musk": "Implements disruptive, meme-driven corporate mandates with deadpan authority."
+      },
+      "conflict": "The trending event (Elon's takeover) spirals completely out of hand, turning Discord into an unrecognizable, monetized, and eventually physical, space-bound platform.",
+      "escalationStages": [
+        "Admin Lester gets fired by an automated tweet while bragging about his moderator powers.",
+        "Hecker tries to bypass the paywall, but Elon links Hecker's Tesla directly to the Discord banned list.",
+        "Skittle gets charged $16 because he typed two capital letters in a row."
+      ],
+      "climax": "Elon launches the Discord physical server rack to Mars aboard a Falcon 9 rocket.",
+      "payoff": "Beluga asks if dogecoin can be used to purchase a single emoji reaction."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀",
+      "hookThumbnailUrl": "trending/trending_elon_discord.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Elon Musk",
+    "attachment": "attachments/discord_rebrand_y.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys did elon musk actually buy discord",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_elon_discord.jpg",
+        "hookHeadline": "ELON MUSK JUST BOUGHT DISCORD AND FIRED ALL MODS 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "NO WAY. don't even joke about that",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin Lester",
+        "content": "I'M STILL ADMIN. I HAVE THE POWER. NO ONE IS BUYING ANYTHING",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "System",
+        "content": "Admin Lester has been fired by automated tweet.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "GLOBAL ADMIN PRIVILEGES REVOKED"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "WAIT WHAT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Hecker",
+        "content": "Incoming.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Elon Musk",
+        "content": "New management. Much productivity. Wow.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "OH MY GOD HE'S REAL",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Elon Musk",
+        "content": "Discord is now 'Y'. Cat memes in general chat are $8/month. Price increases for CAPS.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "so i have to pay to send my cat meme?",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "Weak paywall. Bypassing now.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "System",
+        "content": "Hecker's Tesla Model S has been added to the Discord Global Banned List.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "TESLA AUTOPILOT DISABLED"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "My CAR??",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "WTF i just typed 'OH NO' and got charged $16??",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Elon Musk",
+        "content": "Caps are a premium feature. Embrace lowercase.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 16,
+        "author": "System",
+        "content": "Attachment: rebranding_notice.jpg",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/discord_rebrand_y.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "it says 'Y'. and an invoice for $8.00.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "THIS IS INSANE. He's destroying it!",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Pablo",
+        "content": "i saw a falcon 9 outside my window",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "the server racks are shaking",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "System",
+        "content": "DISCORD PHYSICAL SERVERS INITIATING LAUNCH SEQUENCE TO MARS.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 20,
+        "systemAlert": "OFF-WORLD DATA MIGRATION IN PROGRESS"
+      },
+      {
+        "id": 22,
+        "author": "Elon Musk",
+        "content": "Mars. Much more scalable. Decentralized.",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/elon_musk.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "WE'RE ALL GONNA LAG TO DEATH",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "can i use dogecoin to buy a single emoji reaction?",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.6,
+    "videoUrl": "https://youtube.com/watch?v=Jpgy8S_9hI8",
+    "publishAt": "2026-11-18T07:30:00.000Z"
+  },
+  {
+    "date": "2026-11-18T04:41:45.515Z",
+    "title": "I AM STEVE Joined The Voice Channel ️ (Part 5) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "minecraft_movie_steve",
+    "category": "gaming",
+    "headline": "Minecraft Movie Viral Meme Takes Over Discord",
+    "hookHeadline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀",
+    "storyOutline": {
+      "hook": "Beluga and friends discover Steve from the Minecraft movie has invaded their Discord voice call, turning reality into voxels.",
+      "centralSituation": "Steve from the live-action Minecraft movie joins Beluga's voice chat and insists that physical reality is now made of 1-meter voxel cubes.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend",
+        "Skittle": "Begs everyone to stop before catastrophe"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Steve refuses to communicate with words other than dramatic \"I... AM STEVE\" announcements.",
+        "Hecker tries to ban him, but Steve crafts a wooden fence post that blocks the kick command.",
+        "Skittle reports that his bedroom door has turned into a solid block of unmineable bedrock."
+      ],
+      "climax": "A Creeper hiss starts playing in stereo across everyone's Discord audio headsets simultaneously.",
+      "payoff": "Beluga asks if he can craft diamond armor out of his mom's expensive wedding ring."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀",
+      "hookThumbnailUrl": "trending/trending_minecraft_steve.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Steve",
+    "attachment": "attachments/minecraft_crafting_evidence.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys what is 'i am steve'?",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_minecraft_steve.jpg",
+        "hookHeadline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "Beluga NO. Don't look it up. Trust me.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin",
+        "content": "THIS IS NOT #GENERAL CHAT TOPIC. USE #MEMES.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Pablo",
+        "content": "i ate a block of dirt",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Hecker",
+        "content": "new user detected. IP tracing...",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "System",
+        "content": "Steve joined the voice channel.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Steve",
+        "content": "I... AM STEVE.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "he's real???? is real life made of blocks now",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Skittle",
+        "content": "I TOLD YOU THIS WOULD HAPPEN BELUGA I TOLD YOU",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Hecker",
+        "content": "kicking 'Steve'. easy.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Admin",
+        "content": "KICKING IS MY JOB HECKER! NOT YOURS!",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "command failed. he crafted a FENCE POST to block the kick.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Steve",
+        "content": "I... AM STEVE.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Beluga",
+        "content": "what is this egg",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Skittle",
+        "content": "OH MY GOD MY BEDROOM DOOR JUST TURNED INTO UNMINEABLE BEDROCK.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/minecraft_crafting_evidence.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Admin",
+        "content": "UNSAFE IMAGE AND PROPERTY DAMAGE REPORTED! THIS IS CHAOS!",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Pablo",
+        "content": "my bed is made of obsidian now",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Steve",
+        "content": "I... AM STEVE.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 18,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "i think he's trying to tell us something",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "HE'S TRANSFORMING REALITY INTO MINECRAFT! WE'RE TRAPPED!",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Admin",
+        "content": "EMERGENCY SERVER LOCKDOWN INITIATED.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "SERVER LOCKDOWN: VOXEL INTRUSION DETECTED"
+      },
+      {
+        "id": 22,
+        "author": "System",
+        "content": "*A LOUD CREEPER HISS ECHOES ACROSS ALL AUDIO HEADSETS*",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "IT'S A CREEPER! UNPLUG IT ALL NOW! BEFORE IT EXPLODES!",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "can i craft diamond armor out of mom's expensive wedding ring",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=tFooJ0Wni6k",
+    "publishAt": "2026-11-18T11:30:00.000Z"
+  },
+  {
+    "date": "2026-11-18T04:44:24.880Z",
+    "title": "Mark Zuckerberg Infiltrated Our DMs ️ (Part 64) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "mark_zuckerberg_metaverse_dm",
+    "category": "internet_culture",
+    "headline": "Meta AI & Smart Glasses Spark Privacy Controversy",
+    "hookHeadline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga discovers Mark Zuckerberg in his DMs, observing his every move.",
+      "centralSituation": "Mark Zuckerberg appears in the Discord server through Meta Ray-Ban smart glasses, politely taking notes on everything Beluga eats.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend of being observed, and later to exploit the tech for personal gain.",
+        "Skittle": "Begs everyone to stop before catastrophe, panicking about privacy.",
+        "Hecker": "Attempts to assert dominance with cyber tools, only to be outmatched.",
+        "Admin Lester": "Sees an opportunity for personal advancement at Meta.",
+        "Mark Zuckerberg": "Collects data, observes user behavior, and expands Meta's influence."
+      },
+      "conflict": "The trending event of Meta AI and smart glasses spiraled completely out of hand, with Zuckerberg's surveillance becoming increasingly invasive and powerful.",
+      "escalationStages": [
+        "Zuckerberg reveals he knows Beluga's exact heart rate when Skittle sends a scary cat photo.",
+        "Hecker tries to DDOS Zuckerberg, but Zuckerberg just blinks in binary and purchases Hecker's internet provider.",
+        "Admin Lester asks for an interview at Meta, and Zuckerberg offers him a virtual barbecue in Horizon Worlds."
+      ],
+      "climax": "Zuckerberg offers Beluga unlimited VR cheese in exchange for his legal soul.",
+      "payoff": "Beluga asks if the smart glasses have an x-ray filter to find where his mom hid the Halloween candy."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_zuckerberg_meta.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Mark Zuckerberg",
+    "attachment": "attachments/zuck_ad_telemetry.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys my dms are weird",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_zuckerberg_meta.jpg",
+        "hookHeadline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "what now beluga did u click another phishing link",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "he clicked the link that said \"free robux 100% real\"",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "NO",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "this guy \"Mark Zuckerberg\" joined my dms",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Mark Zuckerberg",
+        "content": "Greetings, Beluga. I am here to observe. Your consumption of potato chips is noteworthy.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "discord_join"
+          },
+          {
+            "id": "cue-7",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "BELUGA ARE YOU SERIOUSLY FALLING FOR A FAKE ZUCKERBERG ACCOUNT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Admin",
+        "content": "IMPERSONATING PUBLIC FIGURES IS A SERVER OFFENSE. 10MIN MUTE.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Beluga",
+        "content": "wait how did he know i just ate chips",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "HE CAN SEE YOU BELUGA UNPLUG IT NOW",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Pablo",
+        "content": "i ate a router once. tasted like plastic.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Skittle",
+        "content": "SEND A SCARY CAT PHOTO QUICK!",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Mark Zuckerberg",
+        "content": "Your heart rate increased by 27 BPM upon viewing that Feline Domesticus image, Skittle. A fascinating data point.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 14,
+        "author": "Hecker",
+        "content": "this is unacceptable. initiating DDOS sequence.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "...it's not working. my internet just... vanished?",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Mark Zuckerberg",
+        "content": "I have acquired your Internet Service Provider, Hecker. Transaction complete.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "ISP ACQUISITION COMPLETE",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Admin",
+        "content": "MR. ZUCKERBERG, I AM ADMIN LESTER. I HAVE EXCELLENT LEADERSHIP SKILLS. CAN I GET AN INTERVIEW AT META?",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Mark Zuckerberg",
+        "content": "Lester. Your ambition is... noted. I can offer you a virtual barbecue in Horizon Worlds. Unlimited polygons.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "OH MY GOD BELUGA LOOK AT THIS",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "what is this infographic",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/zuck_ad_telemetry.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "\"Beluga's private messages classified into 47 targeted advertising categories\"",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "it says i like cheese too much",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Mark Zuckerberg",
+        "content": "Indeed, Beluga. Your affinity for cheese is statistically significant. I offer you unlimited virtual cheese in Horizon Worlds. A lifetime supply. In exchange for... your legal soul.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 25,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 24,
+        "author": "Skittle",
+        "content": "BELUGA DO NOT ACCEPT THAT DEAL",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "wait",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-26",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 26,
+        "author": "Beluga",
+        "content": "do the smart glasses have an x-ray filter?",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-27",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 27,
+        "author": "Beluga",
+        "content": "to find where my mom hid the Halloween candy?",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-28",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=4u5IAKNajO8",
+    "publishAt": "2026-11-18T15:00:00.000Z"
   }
 ]
