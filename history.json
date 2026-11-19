@@ -49157,5 +49157,449 @@
     ],
     "durationSeconds": 57.63333333333333,
     "videoUrl": "https://youtube.com/watch?v=srwVtnOAgHA"
+  },
+  {
+    "date": "2026-11-19T01:57:07.276Z",
+    "title": "Hecker Leaked GTA 6 In General Chat ️ (Part 27) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "gta_6_leak_discord",
+    "category": "gaming",
+    "headline": "Massive GTA 6 Gameplay Build Leaked in Discord Server",
+    "hookHeadline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀",
+    "storyOutline": {
+      "hook": "Hecker casually uploads \"gta6_final_build_real_no_virus.zip\" into the server general chat, summoning Rockstar Games corporate legal SWAT.",
+      "centralSituation": "Hecker casually uploads \"gta6_final_build_real_no_virus.zip\" into the server general chat, summoning Rockstar Games corporate legal SWAT.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend",
+        "Skittle": "Begs everyone to stop before catastrophe"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Rockstar Legal joins the voice channel threatening everyone with 400 consecutive life sentences.",
+        "Beluga opens the game file, which immediately turns his monitor into a live CCTV feed of a Miami gas station.",
+        "Skittle streams the gameplay on Discord, attracting 5 million FBI agents to the server in 3 seconds."
+      ],
+      "climax": "Hecker reveals the leaked file wasn't actually GTA 6, but 800 gigabytes of Beluga's search history.",
+      "payoff": "Beluga asks if the legal team can wait until he finishes customizing his virtual Honda Civic."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀",
+      "hookThumbnailUrl": "trending/trending_gta_6.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Rockstar Legal Agent",
+    "attachment": "attachments/gta6_alpha_leak.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Hecker",
+        "content": "yo i found gta 6",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_gta_6.jpg",
+        "hookHeadline": "BRO JUST LEAKED GTA 6 IN DISCORD GENERAL CHAT 💀"
+      },
+      {
+        "id": 2,
+        "author": "Hecker",
+        "content": "gta6_final_build_real_no_virus.zip",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "wait really",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "HECKER WHAT IS THAT",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Admin",
+        "content": "HECKER! RULE 3 VIOLATION: SHARING UNVERIFIED FILES. BAN IMMINENT.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "HE'S NOT LYING GTA 6 IS IN GENERAL CHAT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "i'm clicking it",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "BELUGA NOOOOOOO",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Rockstar Legal Agent",
+        "content": "*User Rockstar Legal Agent joined the voice channel.*",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Rockstar Legal Agent",
+        "content": "Good evening, gentlemen. This is Senior Vice President, Copyright Enforcement.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Rockstar Legal Agent",
+        "content": "Unauthorized distribution of proprietary assets carries a mandatory 400 consecutive life sentences. Disconnect immediately.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "my monitor just turned into a gas station",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "BRO WHAT",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "BELUGA YOUR SCREEN IS A LIVE FEED OF MIAMI",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Skittle",
+        "content": "(Attached: gta6_alpha_screenshot)",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/gta6_alpha_leak.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Hecker",
+        "content": "live CCTV stream, just patched it into your display driver",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Admin",
+        "content": "SKITTLE STOP STREAMING THAT! YOUR SCREEN SHARE IS PUBLIC!",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Skittle",
+        "content": "I'M NOT! IT'S STREAMING AUTOMATICALLY! 5 MILLION FBI AGENTS JUST JOINED THE SERVER!",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          },
+          {
+            "id": "cue-19",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Rockstar Legal Agent",
+        "content": "We have located the primary offender. Expect a full digital asset seizure within the next 30 seconds.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "SERVER UNDER FEDERAL INVESTIGATION",
+        "avatarUrl": "characters/rockstar_legal.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "hecker fix this",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Hecker",
+        "content": "it wasn't gta 6",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "what was it then",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Hecker",
+        "content": "800 gigabytes of your search history.",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          },
+          {
+            "id": "cue-25",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "oh. can the legal team wait until i finish customizing my virtual honda civic?",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-26",
+            "type": "notification"
+          },
+          {
+            "id": "cue-27",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.666666666666664,
+    "videoUrl": "https://youtube.com/watch?v=GY2LKgQLkWY"
   }
 ]
