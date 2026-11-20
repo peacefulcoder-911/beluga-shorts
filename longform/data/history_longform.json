@@ -726,5 +726,36 @@
     "durationSeconds": 236.8,
     "videoUrl": "https://youtube.com/watch?v=7gCqpAXRS2o",
     "videoFile": "longform_1795124702270.mp4"
+  },
+  {
+    "date": "2026-11-20T04:16:52.218Z",
+    "title": "The Leaning Tower of Pisa... Was Never Supposed To Lean?! 🤯 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a hidden blueprint revealing the Leaning Tower of Pisa was originally designed to stand perfectly straight.",
+      "centralSituation": "The gang confronts the possibility that one of the world's most famous architectural 'mistakes' was a deliberate, centuries-old prank.",
+      "conflict": "Beluga's literal-minded quest to 'fix' history clashes with Admin's rules, Skittle's exasperation, and the unexpected arrival of federal agents and Elon Musk.",
+      "climax": "Hecker's rapid-fire hacking exposes a royal decree confirming a whimsical Duke's order to intentionally make the tower lean for 'aesthetic reasons'.",
+      "payoff": "Elon Musk announces a new SpaceX initiative to 'straighten' the tower, charging a monthly subscription for its stability, while Pablo contemplates tilting other monuments."
+    },
+    "scenes": 4,
+    "totalMessages": 69,
+    "thumbnail": {
+      "author": "Elon Musk",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/elonmusk.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "Concerning. We must fix this lean.",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "i have a wrench"
+    },
+    "durationSeconds": 222.4
+  },
+  {
+    "date": "2026-11-20T04:21:29.646Z",
+    "title": "The Leaning Tower of Pisa... Was Never Supposed To Lean?! 🤯 (Full Episode)",
+    "videoId": "gUFxxmU1n3I",
+    "videoUrl": "https://youtube.com/watch?v=gUFxxmU1n3I",
+    "publishAt": "2026-11-20T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
