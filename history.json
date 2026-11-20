@@ -54026,5 +54026,425 @@
     ],
     "durationSeconds": 53.06666666666667,
     "videoUrl": "https://youtube.com/watch?v=kpK3hYvvoos"
+  },
+  {
+    "date": "2026-11-20T22:17:44.172Z",
+    "title": "I AM STEVE Joined The Voice Channel ️ (Part 64) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "minecraft_movie_steve",
+    "category": "gaming",
+    "headline": "Minecraft Movie Viral Meme Takes Over Discord",
+    "hookHeadline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀",
+    "storyOutline": {
+      "hook": "Beluga discovers Steve from the Minecraft movie has joined their Discord voice chat.",
+      "centralSituation": "Steve from the live-action Minecraft movie joins Beluga's voice chat and insists that physical reality is now made of 1-meter voxel cubes.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend",
+        "Skittle": "Begs everyone to stop before catastrophe"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Steve refuses to communicate with words other than dramatic \"I... AM STEVE\" announcements.",
+        "Hecker tries to ban him, but Steve crafts a wooden fence post that blocks the kick command.",
+        "Skittle reports that his bedroom door has turned into a solid block of unmineable bedrock."
+      ],
+      "climax": "A Creeper hiss starts playing in stereo across everyone's Discord audio headsets simultaneously.",
+      "payoff": "Beluga asks if he can craft diamond armor out of his mom's expensive wedding ring."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀",
+      "hookThumbnailUrl": "trending/trending_minecraft_steve.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Steve",
+    "attachment": "attachments/minecraft_crafting_evidence.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys look at this",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_minecraft_steve.jpg",
+        "hookHeadline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "what now beluga",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin Lester",
+        "content": "BELUGA LAST WARNING FOR UNSANCTIONED POSTING",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Hecker",
+        "content": "i found a new exploit btw",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "System",
+        "content": "I AM STEVE joined the voice channel.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "WAIT WHAT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Skittle",
+        "content": "NO WAY IS THAT THE MINECRAFT GUY",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Steve",
+        "content": "I... AM STEVE.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Hecker",
+        "content": "he's laggy. 300 ping.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Beluga",
+        "content": "steve can you hear us?",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Steve",
+        "content": "I... AM STEVE. THE WORLD IS CUBE.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Skittle",
+        "content": "the world is WHAT",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "i'll just kick him.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Hecker",
+        "content": "/kick I AM STEVE",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Steve",
+        "content": "I... AM STEVE. YOU CANNOT. I CRAFTED PROTECTION.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Admin Lester",
+        "content": "KICK COMMAND DISABLED? IMPOSSIBLE.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/minecraft_crafting_evidence.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "MY DOOR. IT'S BEDROCK.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "BRO WHAT IS HAPPENING",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Pablo",
+        "content": "i ate the floor",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "System",
+        "content": "",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "SERVER CRITICAL: UNEXPECTED VOXELIZATION DETECTED"
+      },
+      {
+        "id": 21,
+        "author": "System",
+        "content": "Creeper hiss plays simultaneously across all headsets.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "CREEPER HISSING IN MY HEADSET",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "can i craft diamond armor from mom's wedding ring",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 48.4,
+    "videoUrl": "https://youtube.com/watch?v=qps6BgZIGm8"
   }
 ]
