@@ -805,5 +805,22 @@
     "videoUrl": "https://youtube.com/watch?v=UMxSwJQl5xc",
     "publishAt": "2026-11-21T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-21T20:13:20.761Z",
+    "title": "The Statue of Liberty's Secret Ad Scandal 🗽 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga stumbles upon an ancient, obscure detail on the Statue of Liberty's original blueprint.",
+      "centralSituation": "The gang investigates a mysterious 'smudge' on the Statue of Liberty's blueprint, which Hecker identifies as an ancient cryptographic signature pointing to a hidden compartment.",
+      "conflict": "The 'smudge' points to a hidden compartment and a 138-year-old signal, escalating into a national security concern with Special Agent Miller and a brief appearance by Elon Musk.",
+      "climax": "During a tense tribunal, Hecker decodes the signal and reveals the 'cryptographic signature' was actually a corporate logo for an absurd, antique product, turning a historical mystery into a centuries-old advertising stunt.",
+      "payoff": "The 'scandal' is resolved with extreme anti-jingle measures from Agent Miller and Admin, while Mom grounds Beluga for playing with 'old ads,' leaving Beluga still longing for a real treasure map."
+    },
+    "scenes": 4,
+    "totalMessages": 69,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1795291995979.jpg",
+    "durationSeconds": 190.6,
+    "videoUrl": "https://youtube.com/watch?v=3jdOV0jyomQ",
+    "videoFile": "longform_1795292000762.mp4"
   }
 ]
