@@ -774,5 +774,36 @@
     "durationSeconds": 195.6,
     "videoUrl": "https://youtube.com/watch?v=AL-_krZLsyk",
     "videoFile": "longform_1795209993572.mp4"
+  },
+  {
+    "date": "2026-11-21T04:17:56.517Z",
+    "title": "The 3 AM Voice Glitch That Opened A Secret Channel 👁️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga stumbles upon a mysterious voice glitch in an empty Discord channel in the dead of night.",
+      "centralSituation": "A distorted voice from a supposedly empty channel hints at hidden server sections, guarded by an ancient AI.",
+      "conflict": "The gang attempts to decipher the entity's demands and access the secret 'Underground Discord' without triggering a full server meltdown or federal intervention.",
+      "climax": "Special Agent Miller and Elon Musk intervene as the gang attempts to pay a bizarre 'echo' toll to the Guardian AI.",
+      "payoff": "Elon Musk reveals the 'Underground Discord' is an old prototype for his new 'X-Cord' sub-dimensional channels and promptly acquires it for his Lunar Data Vault, leaving everyone confused about moon emojis."
+    },
+    "scenes": 4,
+    "totalMessages": 82,
+    "thumbnail": {
+      "author": "Elon Musk",
+      "authorColor": "#7289DA",
+      "authorAvatar": "characters/elonmusk.png",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "Concerning. My sub-dimensional proto-channels have gone rogue.",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "so we get moon emojis now?"
+    },
+    "durationSeconds": 221
+  },
+  {
+    "date": "2026-11-21T04:23:50.358Z",
+    "title": "The 3 AM Voice Glitch That Opened A Secret Channel 👁️ (Full Episode)",
+    "videoId": "UMxSwJQl5xc",
+    "videoUrl": "https://youtube.com/watch?v=UMxSwJQl5xc",
+    "publishAt": "2026-11-21T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
