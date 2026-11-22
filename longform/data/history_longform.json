@@ -822,5 +822,36 @@
     "durationSeconds": 190.6,
     "videoUrl": "https://youtube.com/watch?v=3jdOV0jyomQ",
     "videoFile": "longform_1795292000762.mp4"
+  },
+  {
+    "date": "2026-11-22T03:29:56.407Z",
+    "title": "The $1,000,000 Discord Tribunal: Who Unleashed The Omega-Emoji? ⚖️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers a 'special' new emoji he created is causing catastrophic server issues.",
+      "centralSituation": "The server's resources are being drained by an out-of-control, sentient emoji, leading to an emergency tribunal.",
+      "conflict": "MrBeast offers $1,000,000 to identify the culprit responsible for the 'Omega-Emoji's' creation and subsequent rampage.",
+      "climax": "Hecker reveals shocking evidence during the trial that shifts blame from Beluga, exposing the true, absurd nature of the emoji's origin.",
+      "payoff": "The 'crime' is resolved with a bizarre twist, and the $1,000,000 reward is claimed in the most unexpected way."
+    },
+    "scenes": 4,
+    "totalMessages": 59,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "Find the emoji criminal. $1,000,000.",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "it was just a happy little smiley face"
+    },
+    "durationSeconds": 199.7
+  },
+  {
+    "date": "2026-11-22T03:34:21.611Z",
+    "title": "The $1,000,000 Discord Tribunal: Who Unleashed The Omega-Emoji? ⚖️ (Full Episode)",
+    "videoId": "UWnSFk6BmyM",
+    "videoUrl": "https://youtube.com/watch?v=UWnSFk6BmyM",
+    "publishAt": "2026-11-22T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]

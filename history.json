@@ -57504,5 +57504,1288 @@
     ],
     "durationSeconds": 57.5,
     "videoUrl": "https://youtube.com/watch?v=iMRE_xw3iWA"
+  },
+  {
+    "date": "2026-11-22T03:22:14.743Z",
+    "title": "Hecker Plugged In An RTX 5090 (Part 34) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "rtx_5090_power_grid",
+    "category": "tech_ai",
+    "headline": "Nvidia RTX 5090 Melts Neighborhood Power Grids",
+    "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+    "storyOutline": {
+      "hook": "Immediate visual breaking topic followed by Beluga's chaotic action.",
+      "centralSituation": "Hecker finally gets a brand new RTX 5090 GPU and turns it on to play Minecraft at 10,000 FPS, instantly dimming the streetlights in three neighboring states.",
+      "characterMotivations": {
+        "Beluga": "Innocent, chaotic, and literal-minded. Interested in the absurd capabilities.",
+        "Skittle": "Exasperated, hyper-rational voice of reason trying to avert disaster."
+      },
+      "conflict": "The trending event spiraled completely out of hand, causing a global power crisis.",
+      "escalationStages": [
+        "Jensen Huang joins the voice call congratulating Hecker on buying more GPUs, while Hecker's room temperature hits 400 degrees.",
+        "Admin reports that the server lag is reaching 99,999 ms ping.",
+        "Pablo announces that his toaster in Mexico just started running Cyberpunk 2077 through the shared Wi-Fi."
+      ],
+      "climax": "The local electrical substation launches into low Earth orbit as a makeshift jet turbine.",
+      "payoff": "Beluga asks if he can fry bacon directly on the heat sink while downloading Shrek 2 in 8K."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+      "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Jensen Huang",
+    "attachment": "attachments/melted_power_meter.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "BRO THE STREETLIGHTS JUST WENT OUT",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+        "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "Beluga what did you DO",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "Nah. It was me. Just plugged in the RTX 5090.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Pablo",
+        "content": "My lights also dimmed. And I'm in Mexico.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Skittle",
+        "content": "HECKER ARE YOU INSANE?!",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Beluga",
+        "content": "wait what",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Admin",
+        "content": "Server ping just hit 99,999 ms. UNACCEPTABLE.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Hecker",
+        "content": "Running Minecraft at 10k FPS. Room temp at 400 degrees.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Skittle",
+        "content": "400 DEGREES?!",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Jensen Huang",
+        "content": "Jensen Huang joined the voice channel.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "discord_join"
+          },
+          {
+            "id": "cue-11",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Jensen Huang",
+        "content": "Excellent. More GPUs sold. We salute such commitment.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "who is this",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Skittle",
+        "content": "JENSEN HUANG?!",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Jensen Huang",
+        "content": "Next-gen technology demands... a certain level of enthusiast dedication. Keep buying.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Admin",
+        "content": "THIS SERVER IS MELTING. LITERALLY.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Hecker",
+        "content": "Proof.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "NOOO WAY",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/melted_power_meter.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "is that real",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Pablo",
+        "content": "My toaster just booted Cyberpunk 2077. In 8K.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Admin",
+        "content": "POWER GRID FAILURE DETECTED. ALL LOCAL SERVICES OFFLINE.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL GRID OVERLOAD"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "UNPLUG IT NOW! EVERYTHING IS DYING!",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Hecker",
+        "content": "Too late. Substation achieved low Earth orbit.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "Can I fry bacon directly on the heat sink? While downloading Shrek 2 in 8K?",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 55.03333333333333,
+    "videoUrl": "https://youtube.com/watch?v=491Negy6C3c",
+    "publishAt": "2026-11-22T07:30:00.000Z"
+  },
+  {
+    "date": "2026-11-22T03:24:32.260Z",
+    "title": "Valve Banned Hecker's $10,000 Steam Account (Part 72) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "steam_account_ban_10k",
+    "category": "gaming",
+    "headline": "Gabe Newell Personally Bans 50,000 Cheaters in Steam Purge",
+    "hookHeadline": "GABE NEWELL JUST BANNED HECKER ON STEAM 💀",
+    "storyOutline": {
+      "hook": "Beluga tries a 'free V-Bucks cheat' and accidentally gets Hecker's 15-year-old Steam account VAC banned.",
+      "centralSituation": "Hecker gets hit with a direct VAC ban on his 15-year-old Steam account with 4,000 games because Beluga tried installing a free V-Bucks cheat.",
+      "characterMotivations": {
+        "Beluga": "Wants to get free V-Bucks for games he doesn't play, causes chaos unintentionally.",
+        "Skittle": "Begs everyone to stop before catastrophe, panics as the situation escalates.",
+        "Hecker": "Overconfident in his hacking skills, attempts to counter-hack Valve, loses everything.",
+        "Admin": "Obsessed with server rules and maintaining order, fails to contain the chaos.",
+        "Lord Gabe": "Enforces Valve's rules with cold, disruptive authority, enjoys digital chaos."
+      },
+      "conflict": "Beluga's actions lead to Hecker's Steam account getting banned, culminating in direct intervention from Lord Gabe and absurd digital punishments.",
+      "escalationStages": [
+        "Gabe Newell enters general chat declaring that summer discounts do not apply to server rules.",
+        "Hecker attempts to counter-hack Valve HQ, but Steam automatically charges Hecker's card for 80 copies of Bad Rats.",
+        "Skittle points out that Beluga's only game was \"Purble Place\" which was also uninstalled."
+      ],
+      "climax": "Gabe Newell converts Hecker's entire CS:GO skin inventory into virtual trading cards of Pablo.",
+      "payoff": "Beluga asks if he can appeal the ban by trading three half-eaten Doritos."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "GABE NEWELL JUST BANNED HECKER ON STEAM 💀",
+      "hookThumbnailUrl": "trending/trending_steam_ban.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Lord Gabe",
+    "attachment": "attachments/steam_vac_ban_proof.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys i found a free vbucks cheat",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_steam_ban.jpg",
+        "hookHeadline": "GABE NEWELL JUST BANNED HECKER ON STEAM 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "BELUGA NO DONT DO IT",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "lmao watch this noob get VAC banned in 2 seconds",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "already installed it on hecker's pc for max power",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Hecker",
+        "content": "WAIT WHAT",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "YOU WHAT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Admin",
+        "content": "RULE 3.14 VIOLATION: UNSANCTIONED SOFTWARE. PREPARE FOR BAN HAMMER.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Lord Gabe",
+        "content": "has joined the chat.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Lord Gabe",
+        "content": "Summer discounts do not apply to server rules, gentlemen.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Hecker",
+        "content": "HA. My 15-year-old account is unhackable by your pathetic VAC system. I'll hack Valve HQ.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Skittle",
+        "content": "HECKER DON'T!",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Lord Gabe",
+        "content": "Attempting counter-intrusion results in automatic 80x Bad Rats purchase.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "MY CARD! NO! STEAM JUST CHARGED ME $800 FOR BAD RATS!",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "Beluga, your only game 'Purble Place' was also uninstalled.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Admin",
+        "content": "VAC BAN CONFIRMED. ACCOUNT PURGED.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "but i dont even play minecraft",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/steam_vac_ban_proof.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Hecker",
+        "content": "MY $10,000 CS:GO INVENTORY IS GONE! ALL MY DRAGON LORES!",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Lord Gabe",
+        "content": "All high-value items converted into Pablo trading cards. Digital collectible.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Hecker",
+        "content": "PABLO TRADING CARDS?! NOOOOO!",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "THE SERVER IS MELTING! UNPLUG IT NOW!",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL SERVER OVERLOAD DETECTED"
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "wait can i appeal this",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "i have three half-eaten doritos to trade",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "....",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "punch_zoom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.666666666666664,
+    "videoUrl": "https://youtube.com/watch?v=DFQN842pVxQ",
+    "publishAt": "2026-11-22T11:30:00.000Z"
+  },
+  {
+    "date": "2026-11-22T03:26:56.795Z",
+    "title": "The Duolingo Owl Infiltrated Discord At 3 AM (Part 16) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "duolingo_owl_threat",
+    "category": "internet_culture",
+    "headline": "Duolingo Owl Unhinged Push Notifications Spark Worldwide Memes",
+    "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga accidentally breaks his Duolingo streak, unleashing the unhinged Duolingo Owl into the Discord server.",
+      "centralSituation": "Beluga breaks his 350-day Spanish streak, and Duo the Owl immediately joins general chat with administrator permissions.",
+      "characterMotivations": {
+        "Beluga": "Wants to casually ignore the consequences of his actions.",
+        "Skittle": "Begs everyone to stop before catastrophe",
+        "Hecker": "Attempts to cyber-defend the server, but fails against Duo's linguistic power.",
+        "Admin": "Tries to enforce server rules against a literal language enforcer."
+      },
+      "conflict": "The Duolingo Owl escalates its presence, imposing Spanish language learning by force.",
+      "escalationStages": [
+        "Duo replaces all English letters in the chat with Spanish subjunctive verbs.",
+        "Pablo is thrilled and starts singing salsa, while Hecker gets locked in a digital Spanish conjugation chamber.",
+        "Skittle tries to use Google Translate, but Duo revokes Skittle's internet license."
+      ],
+      "climax": "Duo announces that Beluga's family will only be returned once Beluga conjugates \"haber\" in 14 different tenses.",
+      "payoff": "Beluga replies: \"donde esta la biblioteca senor owl i am literally a cat.\""
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Duo The Owl",
+    "attachment": "attachments/duolingo_streak_alert.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "streak is gone. 💀",
+        "time": "Today at 3:00 AM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+        "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "BELUGA NO!",
+        "time": "Today at 3:00 AM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Pablo",
+        "content": "mine died last year. chill.",
+        "time": "Today at 3:01 AM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Admin",
+        "content": "RULE 3: NO STREAK BREAKING.",
+        "time": "Today at 3:01 AM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Hecker",
+        "content": "uh oh. new join.",
+        "time": "Today at 3:02 AM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "Duo The Owl joined the server."
+      },
+      {
+        "id": 6,
+        "author": "Skittle",
+        "content": "OMG WHAT",
+        "time": "Today at 3:02 AM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Duo The Owl",
+        "content": "¡Hola, Beluga! ¿Olvidaste tu lección?",
+        "time": "Today at 3:02 AM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "chat looks spanish.",
+        "time": "Today at 3:03 AM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Hecker",
+        "content": "my text is conjugating.",
+        "time": "Today at 3:03 AM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "FIX IT, BELUGA!",
+        "time": "Today at 3:04 AM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Duo The Owl",
+        "content": "El español es vital. Apréndelo.",
+        "time": "Today at 3:04 AM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Pablo",
+        "content": "¡Ay, salsa! ¡Duo, cante!",
+        "time": "Today at 3:05 AM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "VERB CHAMBER! *YO HAYA*!",
+        "time": "Today at 3:05 AM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Admin",
+        "content": "DUO, STOP CONJUGATING.",
+        "time": "Today at 3:06 AM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "...",
+        "time": "Today at 3:06 AM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "",
+        "time": "Today at 3:07 AM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "GOOGLE TRANSLATE! NOW!",
+        "time": "Today at 3:07 AM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Duo The Owl",
+        "content": "Skittle. Internet revocado.",
+        "time": "Today at 3:08 AM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "SKITTLE'S INTERNET LICENSE REVOKED",
+        "avatarUrl": "characters/duo_owl.jpg",
+        "attachmentUrl": "attachments/duolingo_streak_alert.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "MY WIFI IS GONE!",
+        "time": "Today at 3:08 AM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Duo The Owl",
+        "content": "Conjugue 'haber' en 14 tiempos. Familia o español.",
+        "time": "Today at 3:09 AM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 21,
+        "author": "Hecker",
+        "content": "14 TENSES?! IMPOSSIBLE.",
+        "time": "Today at 3:09 AM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "...",
+        "time": "Today at 3:10 AM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 25,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "donde esta la biblioteca senor owl i am literally a cat.",
+        "time": "Today at 3:11 AM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 43.5,
+    "videoUrl": "https://youtube.com/watch?v=I7R3RvVssqE",
+    "publishAt": "2026-11-22T15:00:00.000Z"
   }
 ]
