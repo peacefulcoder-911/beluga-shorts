@@ -853,5 +853,22 @@
     "videoUrl": "https://youtube.com/watch?v=UWnSFk6BmyM",
     "publishAt": "2026-11-22T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-22T20:27:53.157Z",
+    "title": "The 3 AM Entity That Hacked Beluga's Future Self... ⏳ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga receives a cryptic, time-displaced message from what appears to be his future self at 3 AM.",
+      "centralSituation": "The message warns of an impending server collapse and a mysterious 'protocol' that must be initiated.",
+      "conflict": "The gang argues over the message's authenticity and the potentially disastrous 'protocol', leading to a chaotic voice call and an emergency server tribunal.",
+      "climax": "Special Agent Miller and Elon Musk intervene, revealing the 'protocol' is a prank, but with unintended consequences.",
+      "payoff": "The 'future Beluga' is unmasked as Pablo, who just wanted to play a game, but Elon takes his prank to an absurd, global level."
+    },
+    "scenes": 4,
+    "totalMessages": 56,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1795379268605.jpg",
+    "durationSeconds": 134.7,
+    "videoUrl": "https://youtube.com/watch?v=tIpwigvYyxc",
+    "videoFile": "longform_1795379273158.mp4"
   }
 ]
