@@ -57064,5 +57064,445 @@
     ],
     "durationSeconds": 57.6,
     "videoUrl": "https://youtube.com/watch?v=Vc11NPLi6GE"
+  },
+  {
+    "date": "2026-11-22T00:32:52.540Z",
+    "title": "Mark Zuckerberg Infiltrated Our DMs ️ (Part 72) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "mark_zuckerberg_metaverse_dm",
+    "category": "internet_culture",
+    "headline": "Meta AI & Smart Glasses Spark Privacy Controversy",
+    "hookHeadline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga and friends discover Mark Zuckerberg has joined their private Discord server.",
+      "centralSituation": "Mark Zuckerberg appears in the Discord server through Meta Ray-Ban smart glasses, politely taking notes on everything Beluga eats.",
+      "characterMotivations": {
+        "Beluga": "Wants to understand the unexpected guest and test the limits of his new 'spy' glasses.",
+        "Skittle": "Begs everyone to stop before catastrophe and is terrified of the privacy invasion."
+      },
+      "conflict": "The trending event spiraled completely out of hand when Mark Zuckerberg's digital presence invades personal privacy in an absurd and escalating manner.",
+      "escalationStages": [
+        "Zuckerberg reveals he knows Beluga's exact heart rate when Skittle sends a scary cat photo.",
+        "Hecker tries to DDOS Zuckerberg, but Zuckerberg just blinks in binary and purchases Hecker's internet provider.",
+        "Admin Lester asks for an interview at Meta, and Zuckerberg offers him a virtual barbecue in Horizon Worlds."
+      ],
+      "climax": "Zuckerberg offers Beluga unlimited VR cheese in exchange for his legal soul.",
+      "payoff": "Beluga asks if the smart glasses have an x-ray filter to find where his his mom hid the Halloween candy."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_zuckerberg_meta.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Mark Zuckerberg",
+    "attachment": "attachments/zuck_ad_telemetry.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "BRO WHAT",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_zuckerberg_meta.jpg",
+        "hookHeadline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Beluga",
+        "content": "ZUCKERBERG IS IN OUR DMS 💀",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Skittle",
+        "content": "beluga WHAT ARE YOU TALKING ABOUT",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "I SWEAR TO GOD IF YOU CLICKED ANOTHER SCAM LINK",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "System",
+        "content": "Mark Zuckerberg joined the server.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Mark Zuckerberg",
+        "content": "Greetings. Just observing. Taking notes on dietary habits. Your daily fiber intake is commendable, Beluga.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "he's watching me eat this cereal",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "SEE?! I TOLD YOU. GET HIM OUT OF HERE!",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Skittle",
+        "content": "[scary_cat_photo.jpeg]",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Mark Zuckerberg",
+        "content": "Interesting. Your heart rate increased by 27 BPM, Skittle. A classic fight-or-flight response. Adrenaline levels noted.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Skittle",
+        "content": "BRO HE KNOWS MY HEART RATE. UNPLUG IT NOW!",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "insignificant. i am initiating DDoS protocol.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "target acquired. servers locked.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "WARNING: HEAVILY ENCRYPTED DATA TRANSFER DETECTED"
+      },
+      {
+        "id": 14,
+        "author": "Mark Zuckerberg",
+        "content": "[blinks 0101010101010] Acquisition complete. Your internet service provider is now a Meta subsidiary.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          },
+          {
+            "id": "cue-3",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "...WHAT",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Admin Lester",
+        "content": "ZUCKERBERG! SIR! This is an unauthorized infiltration! I am Admin Lester! I demand an interview at Meta immediately!",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Mark Zuckerberg",
+        "content": "An interview. Fascinating. I can offer a virtual barbecue in Horizon Worlds. Excellent networking opportunity.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Beluga",
+        "content": "is that why my internet bill now says 'Meta-Fi'?",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Skittle",
+        "content": "OH MY GOD GUYS LOOK AT THIS",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "They've been logging EVERYTHING.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "they know i searched for 'how to hide snacks from mom'",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/zuck_ad_telemetry.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Mark Zuckerberg",
+        "content": "Beluga. We have an offer. Unlimited VR cheese in Horizon Worlds. For your legal soul.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "unlimited virtual cheese? but like, actual cheese?",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "and does the VR headset have an x-ray filter? to find where mom hid the Halloween candy?",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.5,
+    "videoUrl": "https://youtube.com/watch?v=iMRE_xw3iWA"
   }
 ]
