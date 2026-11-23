@@ -870,5 +870,36 @@
     "durationSeconds": 134.7,
     "videoUrl": "https://youtube.com/watch?v=tIpwigvYyxc",
     "videoFile": "longform_1795379273158.mp4"
+  },
+  {
+    "date": "2026-11-23T04:00:03.180Z",
+    "title": "The 100-Hour Extreme Silence Challenge 🤐 (Full Episode)",
+    "storyOutline": {
+      "hook": "MrBeast challenges the server to a 100-hour silence challenge for $500,000.",
+      "centralSituation": "Beluga, being literally minded, believes sending a message explaining why he is silent is the best strategy.",
+      "conflict": "Skittle and Hecker must stop Beluga from typing while Admin tries to bait him into a rule violation.",
+      "climax": "Hecker attempts to delete Beluga's messages from the server's backend before MrBeast sees them.",
+      "payoff": "MrBeast reveals the winner is the person who never even joined the server, while Elon Musk buys the prize money."
+    },
+    "scenes": 4,
+    "totalMessages": 70,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "https://example.com/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "LAST PERSON TO TYPE WINS $500,000! 🤐",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "can i use emojis?"
+    },
+    "durationSeconds": 162.3
+  },
+  {
+    "date": "2026-11-23T04:02:59.458Z",
+    "title": "The 100-Hour Extreme Silence Challenge 🤐 (Full Episode)",
+    "videoId": "P34YzPRn4Ak",
+    "videoUrl": "https://youtube.com/watch?v=P34YzPRn4Ak",
+    "publishAt": "2026-11-23T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
