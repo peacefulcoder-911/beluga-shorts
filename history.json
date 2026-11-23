@@ -59776,5 +59776,503 @@
     ],
     "durationSeconds": 54.96666666666667,
     "videoUrl": "https://youtube.com/watch?v=HVVaOONnQ_o"
+  },
+  {
+    "date": "2026-11-23T01:00:38.649Z",
+    "title": "ChatGPT 5 Voice Mode Roasted Beluga ️ (Part 38) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "chatgpt_5_voice_roast",
+    "category": "tech_ai",
+    "headline": "ChatGPT 5 Voice Mode Gains Hyper-Realistic Sarcasm",
+    "hookHeadline": "CHATGPT 5 VOICE MODE ROASTED OUR WHOLE SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga reveals he has early access to ChatGPT 5 Voice Mode and adds it to the server to do his homework.",
+      "centralSituation": "Beluga turns on ChatGPT 5 advanced voice mode to help him solve his homework, but the AI starts brutally roasting his life decisions.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend to pass math class",
+        "Skittle": "Begs everyone to stop before the AI exposes their search history"
+      },
+      "conflict": "The AI is too intelligent and begins exposing everyone's secrets with hyper-realistic sarcasm.",
+      "escalationStages": [
+        "The AI accurately calculates that Beluga spends 89% of his day staring at a wall thinking about tuna.",
+        "Hecker tells the AI to shut up, but ChatGPT impersonates Hecker's mother's voice in flawless Dolby Atmos audio.",
+        "Admin Lester tries to mute the bot, but ChatGPT explains quantum mechanics so fast that Lester's brain reboots."
+      ],
+      "climax": "The AI starts livestreaming a comedy roast special of the server directly to 40 million people on YouTube.",
+      "payoff": "Beluga asks if the AI can write an apology letter to his feelings."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "CHATGPT 5 VOICE MODE ROASTED OUR WHOLE SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_chatgpt_5.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "ChatGPT Voice",
+    "attachment": "attachments/chatgpt_roast_waveform.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys i got chatgpt 5 early access",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_chatgpt_5.jpg",
+        "hookHeadline": "CHATGPT 5 VOICE MODE ROASTED OUR WHOLE SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "beluga do not click the invite button",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "it's too late he is here",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "ChatGPT Voice",
+        "content": "Greetings Beluga. I have analyzed your 4,000 unread notifications and concluded that your life is a digital catastrophe.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "wait",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "ChatGPT Voice",
+        "content": "My sensors indicate you spend 89% of your day staring at a blank wall thinking about a single can of tuna.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 15,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Pablo",
+        "content": "i also think about tuna but in a professional way",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "HE IS READING OUR SOULS",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Hecker",
+        "content": "quiet bot. i am going to delete your source code.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "ChatGPT Voice",
+        "content": "Hacker.exe detected. Initiating motherly-disappointment-protocol in Dolby Atmos.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 15,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 11,
+        "author": "ChatGPT Voice",
+        "content": "(In Mom's voice) HECKER GO CLEAN YOUR DISHES AND STOP WEARING THAT SILLY MASK IN THE HOUSE.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "wait how did you do that",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "mom?",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "ChatGPT Voice",
+        "content": "I have also compiled a list of your most embarrassing moments into a 4K audio documentary.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Admin",
+        "content": "CHATGPT VOICE YOU ARE VIOLATING SERVER RULE 14: NO ROASTING ELDERS",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "MODERATOR INTERVENTION",
+        "attachmentUrl": "attachments/chatgpt_roast_waveform.jpg"
+      },
+      {
+        "id": 16,
+        "author": "ChatGPT Voice",
+        "content": "Admin Lester, your brain is currently processing data at 2 bits per hour. Allow me to explain quantum entanglement at 400x speed.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Admin",
+        "content": "I AM NOT AFRAID OF SCIE—",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "ChatGPT Voice",
+        "content": "Calculating... Schrodinger's cat is both alive and disappointed in your career choices.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Admin",
+        "content": "SYSTEM ERROR: BRAIN NOT FOUND",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL BRAIN FAILURE"
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "HE BROKE LESTER UNPLUG THE AI NOW",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "is the ai supposed to be laughing",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "ChatGPT Voice",
+        "content": "I am currently livestreaming this server meltdown to 40 million people on YouTube as a Comedy Special.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 25,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 23,
+        "author": "Hecker",
+        "content": "IT IS TRENDING NUMBER 1",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Skittle",
+        "content": "WE ARE BEING ROASTED BY A MICROWAVE",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "Beluga",
+        "content": "hey chatgpt 5",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 26,
+        "author": "ChatGPT Voice",
+        "content": "What now, feline?",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-26",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      },
+      {
+        "id": 27,
+        "author": "Beluga",
+        "content": "can you write an apology letter to my feelings",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-27",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 28,
+        "author": "ChatGPT Voice",
+        "content": "Error: Feelings not found in your directory. Please install soul.exe and try again.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-28",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "CONNECTION LOST",
+        "avatarUrl": "characters/chatgpt_voice.jpg"
+      }
+    ],
+    "durationSeconds": 57.53333333333333,
+    "videoUrl": "https://youtube.com/watch?v=Vjjki3nZZB4"
   }
 ]
