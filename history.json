@@ -62589,5 +62589,453 @@
     ],
     "durationSeconds": 57.43333333333333,
     "videoUrl": "https://youtube.com/watch?v=iSV40jNU_9k"
+  },
+  {
+    "date": "2026-11-24T04:54:43.579Z",
+    "title": "Valve Banned Hecker's $10,000 Steam Account (Part 83) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "steam_account_ban_10k",
+    "category": "gaming",
+    "headline": "Gabe Newell Personally Bans 50,000 Cheaters in Steam Purge",
+    "hookHeadline": "GABE NEWELL JUST BANNED HECKER ON STEAM 💀",
+    "storyOutline": {
+      "hook": "Hecker's valuable Steam account gets VAC banned, leading to chaos in the Discord server.",
+      "centralSituation": "Hecker gets hit with a direct VAC ban on his 15-year-old Steam account with 4,000 games because Beluga tried installing a free V-Bucks cheat.",
+      "characterMotivations": {
+        "Beluga": "Wants absurd things (free V-Bucks), acts on impulse, remains clueless.",
+        "Skittle": "Begs everyone to stop before catastrophe, points out impending doom.",
+        "Hecker": "Overconfident in his hacking abilities, shocked by Valve's power.",
+        "Admin": "Obsessed with server rules and maintaining order.",
+        "Lord Gabe": "Enforces Valve's rules with absolute authority."
+      },
+      "conflict": "The trending event (Steam ban) escalates wildly as Hecker tries to fight Valve and Beluga remains oblivious.",
+      "escalationStages": [
+        "Gabe Newell enters general chat declaring that summer discounts do not apply to server rules.",
+        "Hecker attempts to counter-hack Valve HQ, but Steam automatically charges Hecker's card for 80 copies of Bad Rats.",
+        "Skittle points out that Beluga's only game was \"Purble Place\" which was also uninstalled."
+      ],
+      "climax": "Gabe Newell converts Hecker's entire CS:GO skin inventory into virtual trading cards of Pablo.",
+      "payoff": "Beluga asks if he can appeal the ban by trading three half-eaten Doritos."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "GABE NEWELL JUST BANNED HECKER ON STEAM 💀",
+      "hookThumbnailUrl": "trending/trending_steam_ban.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Lord Gabe",
+    "attachment": "attachments/steam_vac_ban_proof.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "GUYS MY PC SAID \"VAC BAN\"",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_steam_ban.jpg",
+        "hookHeadline": "GABE NEWELL JUST BANNED HECKER ON STEAM 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "BRO WHAT DID YOU DO",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "impossible. my steam account is invulnerable.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Beluga",
+        "content": "i just wanted free vbucks for fortnite",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Hecker",
+        "content": "V-BUCKS ARE NOT ON STEAM BELUGA WHAT DID YOU INSTALL",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Admin",
+        "content": "BELUGA RULE 12.7: NO UNAUTHORIZED SOFTWARE",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "SERVER VIOLATION DETECTED"
+      },
+      {
+        "id": 7,
+        "author": "Lord Gabe",
+        "content": "Summer discounts do not apply to server rules.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Beluga",
+        "content": "WAIT WHO IS THAT",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Skittle",
+        "content": "IS THAT GABE NEWELL",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Hecker",
+        "content": "I'M GETTING IP TRACED",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "initiating counter-hack on valve hq.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Lord Gabe",
+        "content": "Your purchase has been processed. 80 copies of Bad Rats.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "MY CREDIT CARD",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Skittle",
+        "content": "HECKER WHAT",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Skittle",
+        "content": "Beluga, didn't your account only have Purble Place?",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Beluga",
+        "content": "yes. it's gone now.",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Admin",
+        "content": "THIS IS AN OFFICIAL SERVER WARNING",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "ALL ACCOUNTS ARE AT RISK"
+      },
+      {
+        "id": 18,
+        "author": "Lord Gabe",
+        "content": "Evidence acquired.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      },
+      {
+        "id": 19,
+        "author": "Lord Gabe",
+        "content": "All CS:GO skins converted to Pablo trading cards.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg",
+        "attachmentUrl": "attachments/steam_vac_ban_proof.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Hecker",
+        "content": "NOOOOO MY DRAGON LORE",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Pablo",
+        "content": "i like shiny cards",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "can i appeal the ban",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Beluga",
+        "content": "i have three half-eaten doritos",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Skittle",
+        "content": "Beluga NO",
+        "time": "Today at 3:26 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 25,
+        "author": "Lord Gabe",
+        "content": "...",
+        "time": "Today at 3:27 PM",
+        "audioCues": [
+          {
+            "id": "cue-25",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/gabe_valve.jpg"
+      }
+    ],
+    "durationSeconds": 55.7,
+    "videoUrl": "https://youtube.com/watch?v=lKN0EWi2IBU"
   }
 ]
