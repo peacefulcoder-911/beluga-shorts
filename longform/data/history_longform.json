@@ -901,5 +901,22 @@
     "videoUrl": "https://youtube.com/watch?v=P34YzPRn4Ak",
     "publishAt": "2026-11-23T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-24T01:11:18.706Z",
+    "title": "The $1,000,000 Discord Trial: Who Deleted The Internet? ⚖️ (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga accidentally deletes the server's 'Golden Emoji' and MrBeast puts a $1,000,000 bounty on the culprit's head.",
+      "centralSituation": "A high-stakes courtroom drama unfolds in Discord to find the 'Emoji Assassin' before the server self-destructs.",
+      "conflict": "Beluga tries to frame Pablo, while Hecker uses 'cyber-forensics' to trace the digital fingerprints back to Beluga's keyboard.",
+      "climax": "Elon Musk arrives as a surprise witness to testify about the 'digital physics' of the deleted emoji.",
+      "payoff": "The reward is revealed to be $1,000,000 in 'Beast-Bucks' redeemable only for air, and Mom pulls the plug on the router."
+    },
+    "scenes": 4,
+    "totalMessages": 75,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1795482673460.jpg",
+    "durationSeconds": 168.7,
+    "videoUrl": "https://youtube.com/watch?v=E3f5uWvCroo",
+    "videoFile": "longform_1795482678707.mp4"
   }
 ]
