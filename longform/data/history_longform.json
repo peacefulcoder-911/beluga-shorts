@@ -949,5 +949,22 @@
     "videoUrl": "https://youtube.com/watch?v=WJrWv0GnDF8",
     "publishAt": "2026-11-24T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-24T23:14:28.859Z",
+    "title": "Last Person To *NOT* Physically React Wins $500,000 🤯 (Full Episode)",
+    "storyOutline": {
+      "hook": "MrBeast announces a high-stakes 'Last to React' challenge on Discord with a $500,000 prize.",
+      "centralSituation": "Beluga misinterprets 'react' as physically moving or making a sound in response to MrBeast's increasingly absurd messages, rather than using Discord's emoji reactions.",
+      "conflict": "The gang desperately tries to explain Discord reactions to Beluga while MrBeast escalates his psychological warfare with bizarre messages, pushing Beluga to the brink of physical reaction.",
+      "climax": "As MrBeast sends a final, mind-bending message designed to break Beluga's stillness, Hecker performs a last-minute hack that reveals the true, hilarious intent behind the 'reaction' rule.",
+      "payoff": "Beluga wins the challenge by perfectly *not* reacting physically, only for MrBeast to reveal that everyone else lost by *not* using Discord emoji reactions, showcasing Beluga's accidental genius."
+    },
+    "scenes": 4,
+    "totalMessages": 58,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1795562063332.jpg",
+    "durationSeconds": 174.4,
+    "videoUrl": "https://youtube.com/watch?v=3e3c4hj6ts8",
+    "videoFile": "longform_1795562068860.mp4"
   }
 ]
