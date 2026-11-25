@@ -966,5 +966,36 @@
     "durationSeconds": 174.4,
     "videoUrl": "https://youtube.com/watch?v=3e3c4hj6ts8",
     "videoFile": "longform_1795562068860.mp4"
+  },
+  {
+    "date": "2026-11-25T05:41:33.503Z",
+    "title": "Napoleon's Secret Donkey Scandal... 🐴 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga finds a leaked document suggesting Napoleon's legendary horse was actually a confused donkey.",
+      "centralSituation": "The gang investigates 'The Great St. Bernard Pass' painting to uncover a 200-year-old cover-up.",
+      "conflict": "Special Agent Miller and the Discord Admin attempt to suppress the 'historical misinformation'.",
+      "climax": "Hecker hacks the Louvre's security archives during a live voice call to find the original polaroid.",
+      "payoff": "Elon Musk buys the rights to history and rebrands the donkey as a 'Cyber-Mule'."
+    },
+    "scenes": 4,
+    "totalMessages": 70,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "I JUST BOUGHT NAPOLEON'S DONKEY FOR $1,000,000!",
+      "belugaTime": "Today at 4:19 PM",
+      "belugaMessage": "can i ride it"
+    },
+    "durationSeconds": 165.3
+  },
+  {
+    "date": "2026-11-25T05:44:29.987Z",
+    "title": "Napoleon's Secret Donkey Scandal... 🐴 (Full Episode)",
+    "videoId": "yoFQMGZ40GM",
+    "videoUrl": "https://youtube.com/watch?v=yoFQMGZ40GM",
+    "publishAt": "2026-11-25T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]
