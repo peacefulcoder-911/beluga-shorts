@@ -67342,5 +67342,436 @@
     "durationSeconds": 57.666666666666664,
     "videoUrl": "https://youtube.com/watch?v=bzlu3B0NAPo",
     "publishAt": "2026-11-25T15:00:00.000Z"
+  },
+  {
+    "date": "2026-11-25T23:43:39.919Z",
+    "title": "The Duolingo Owl Infiltrated Discord At 3 AM (Part 19) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "duolingo_owl_threat",
+    "category": "internet_culture",
+    "headline": "Duolingo Owl Unhinged Push Notifications Spark Worldwide Memes",
+    "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga accidentally breaks his Duolingo streak, triggering an immediate, chaotic response.",
+      "centralSituation": "Beluga breaks his 350-day Spanish streak, and Duo the Owl immediately joins general chat with administrator permissions.",
+      "characterMotivations": {
+        "Beluga": "Wants to ignore the consequences of his actions.",
+        "Skittle": "Begs everyone to stop before catastrophe",
+        "Hecker": "Attempts to cyber-solve the problem with overconfidence.",
+        "Admin": "Tries to enforce rules despite escalating chaos."
+      },
+      "conflict": "The trending event (Duolingo Owl's wrath) spirals completely out of hand, taking over the entire Discord server.",
+      "escalationStages": [
+        "Duo replaces all English letters in the chat with Spanish subjunctive verbs.",
+        "Pablo is thrilled and starts singing salsa, while Hecker gets locked in a digital Spanish conjugation chamber.",
+        "Skittle tries to use Google Translate, but Duo revokes Skittle's internet license."
+      ],
+      "climax": "Duo announces that Beluga's family will only be returned once Beluga conjugates \"haber\" in 14 different tenses.",
+      "payoff": "Beluga replies: \"donde esta la biblioteca senor owl i am literally a cat.\""
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Duo The Owl",
+    "attachment": "attachments/duolingo_streak_alert.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "i think i accidentally broke my duolingo streak",
+        "time": "Today at 3:15 AM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_duolingo_owl.jpg",
+        "hookHeadline": "THE DUOLINGO OWL IS INSIDE OUR DISCORD SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "beluga NO",
+        "time": "Today at 3:15 AM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "it was 350 days 💀",
+        "time": "Today at 3:15 AM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Admin",
+        "content": "RULE 4 VIOLATION: LACK OF COMMITMENT.",
+        "time": "Today at 3:16 AM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Admin",
+        "content": "BANNING IN 5 SECONDS.",
+        "time": "Today at 3:16 AM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Hecker",
+        "content": "amateur. i hack duolingo servers daily.",
+        "time": "Today at 3:16 AM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Duo The Owl",
+        "content": "has joined the server.",
+        "time": "Today at 3:16 AM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 8,
+        "author": "Pablo",
+        "content": "WHO IS THIS PRETTY BIRD",
+        "time": "Today at 3:17 AM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Duo The Owl",
+        "content": "¡Hola, amigos! ¿Creáis que podéis escapar?",
+        "time": "Today at 3:17 AM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "BRO WHAT IS THAT AVATAR",
+        "time": "Today at 3:17 AM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Hecker",
+        "content": "MY KEYBOARD IS SPEAKING SPANISH",
+        "time": "Today at 3:18 AM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "my message 'hi' sent '¡que tengáis un buen día!'",
+        "time": "Today at 3:18 AM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Pablo",
+        "content": "¡AY, PAPI! ¡SALSAMUSICA!",
+        "time": "Today at 3:18 AM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Duo The Owl",
+        "content": "Hecker, estés en la Cámara de Conjugación. ¡Aprende!",
+        "time": "Today at 3:19 AM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Skittle",
+        "content": "I'M GOOGLE TRANSLATING HELP",
+        "time": "Today at 3:19 AM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/duolingo_streak_alert.jpg"
+      },
+      {
+        "id": 16,
+        "author": "Duo The Owl",
+        "content": "Tu internet ha sido revocada. No hay escapatoria.",
+        "time": "Today at 3:20 AM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Admin",
+        "content": "SYSTEM ALERT: CHANNELS ARE NOW ONLY SPANISH!",
+        "time": "Today at 3:20 AM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "WARNING: ALL CHANNELS EN ESPAÑOL"
+      },
+      {
+        "id": 18,
+        "author": "Hecker",
+        "content": "MY KEYBOARD IS A MARACA",
+        "time": "Today at 3:20 AM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Beluga",
+        "content": "my phone just vibrated 500 times",
+        "time": "Today at 3:21 AM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "WHAT DOES IT WANT BELUGA",
+        "time": "Today at 3:21 AM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Duo The Owl",
+        "content": "Beluga. Tus parientes serán devueltos cuando hayas conjugado 'haber' en 14 tiempos. ¡Rápido!",
+        "time": "Today at 3:22 AM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 25,
+        "systemAlert": "",
+        "avatarUrl": "characters/duo_owl.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Beluga",
+        "content": "i dont even know what 'haber' means",
+        "time": "Today at 3:22 AM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "BELUGA YOUR FAMILY IS GONE",
+        "time": "Today at 3:22 AM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "donde esta la biblioteca senor owl i am literally a cat.",
+        "time": "Today at 3:23 AM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 56.63333333333333,
+    "videoUrl": "https://youtube.com/watch?v=fFH3OfaH1Sw"
   }
 ]
