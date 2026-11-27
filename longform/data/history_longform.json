@@ -1062,5 +1062,36 @@
     "durationSeconds": 153.5,
     "videoUrl": "https://youtube.com/watch?v=nRCjDHMW304",
     "videoFile": "longform_1795732252506.mp4"
+  },
+  {
+    "date": "2026-11-27T05:22:40.660Z",
+    "title": "The $1,000,000 Discord Tribunal: The Case of the Missing Megabytes 💾 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga discovers the Discord server is mysteriously losing its 'megabytes' (RAM), causing everything to slow to a crawl.",
+      "centralSituation": "MrBeast offers a staggering $1,000,000 reward to anyone who can identify the culprit behind the server's resource depletion.",
+      "conflict": "A chaotic multi-scene Discord tribunal unfolds, with Beluga initially suspected, but the investigation uncovers a far more absurd and surprising entity.",
+      "climax": "Hecker, with the help of federal agents and Elon Musk, pinpoints the true culprit as a long-forgotten, over-efficient server cleaning bot.",
+      "payoff": "The 'Discordian Data Dust Bunny' is revealed and purged, Hecker claims the million dollars, and Beluga is left confused but innocent, ready to break something else."
+    },
+    "scenes": 4,
+    "totalMessages": 66,
+    "thumbnail": {
+      "author": "MrBeast",
+      "authorColor": "#00d2d3",
+      "authorAvatar": "characters/mrbeast.jpg",
+      "authorTime": "Today at 4:18 PM",
+      "authorMessage": "The server's brain is GONE. Who did it?!",
+      "belugaTime": "Today at 4:18 PM",
+      "belugaMessage": "it just disappeared i swear"
+    },
+    "durationSeconds": 195.1
+  },
+  {
+    "date": "2026-11-27T05:27:01.065Z",
+    "title": "The $1,000,000 Discord Tribunal: The Case of the Missing Megabytes 💾 (Full Episode)",
+    "videoId": "5kOOylSn_h8",
+    "videoUrl": "https://youtube.com/watch?v=5kOOylSn_h8",
+    "publishAt": "2026-11-27T13:30:00.000Z",
+    "privacy": "scheduled"
   }
 ]

@@ -70892,5 +70892,1250 @@
     ],
     "durationSeconds": 52.4,
     "videoUrl": "https://youtube.com/watch?v=k_xQPxZWAQg"
+  },
+  {
+    "date": "2026-11-27T05:14:58.648Z",
+    "title": "Hecker Plugged In An RTX 5090 (Part 98) 💀",
+    "archetype": "trending_tech_ai",
+    "trendingTopic": "rtx_5090_power_grid",
+    "category": "tech_ai",
+    "headline": "Nvidia RTX 5090 Melts Neighborhood Power Grids",
+    "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+    "storyOutline": {
+      "hook": "Hecker finally gets a brand new RTX 5090 GPU.",
+      "centralSituation": "Hecker finally gets a brand new RTX 5090 GPU and turns it on to play Minecraft at 10,000 FPS, instantly dimming the streetlights in three neighboring states.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend (and fry bacon).",
+        "Skittle": "Begs everyone to stop before catastrophe."
+      },
+      "conflict": "Hecker's new GPU overloads the power grid and the Discord server, attracting a tech CEO.",
+      "escalationStages": [
+        "Jensen Huang joins the voice call congratulating Hecker on buying more GPUs, while Hecker's room temperature hits 400 degrees.",
+        "Admin reports that the server lag is reaching 99,999 ms ping.",
+        "Pablo announces that his toaster in Mexico just started running Cyberpunk 2077 through the shared Wi-Fi."
+      ],
+      "climax": "The local electrical substation launches into low Earth orbit as a makeshift jet turbine.",
+      "payoff": "Beluga asks if he can fry bacon directly on the heat sink while downloading Shrek 2 in 8K."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀",
+      "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Jensen Huang",
+    "attachment": "attachments/melted_power_meter.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys check out my new gpu",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_rtx_5090.jpg",
+        "hookHeadline": "BRO PLUGGED IN AN RTX 5090 AND THE CITY WENT DARK 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "wait did he just say new gpu",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Hecker",
+        "content": "RTX 5090 has arrived. Initiating power cycle.",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Admin",
+        "content": "HECKER WHAT DID YOU DO LAST TIME",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Skittle",
+        "content": "NO STOP DON'T PLUG IT IN",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Hecker",
+        "content": "Too late. Minecraft at 10k FPS achieved.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "why are the streetlights dim",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Skittle",
+        "content": "Beluga look outside MY NEIGHBORHOOD IS DARK",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "System",
+        "content": "Jensen Huang (Nvidia CEO) joined the chat.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "NEW USER JOINED THE SERVER: Jensen Huang"
+      },
+      {
+        "id": 10,
+        "author": "Jensen Huang",
+        "content": "Excellent. More GPUs sold means more innovation. Keep up the good work.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg"
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "who is that",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Hecker",
+        "content": "Room temp approaching 400 Kelvin. Stable.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Admin",
+        "content": "HECKER YOUR ROOM IS A FURNACE",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Admin",
+        "content": "PING IS NOW 99,999 MS. SERVER IS LITERALLY MELTING.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Pablo",
+        "content": "my toaster in mexico just launched cyberpunk 2077",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "PABLO WHAT",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 17,
+        "author": "Beluga",
+        "content": "wait is this why my backyard is glowing",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Admin",
+        "content": "melted_power_meter",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Jensen Huang",
+        "content": "We are seeing unprecedented power draw. This is good for adoption.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/jensen_huang.jpg",
+        "attachmentUrl": "attachments/melted_power_meter.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "ADOPTION OF WHAT THE APOCALYPSE",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Admin",
+        "content": "CRITICAL GRID FAILURE! SUBSTATION OVERLOAD!",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL POWER GRID FAILURE DETECTED"
+      },
+      {
+        "id": 22,
+        "author": "Hecker",
+        "content": "Substation reached escape velocity. Expected trajectory: low Earth orbit.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Skittle",
+        "content": "THE SUBSTATION IS A ROCKET NOW?!",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "can i fry bacon on the heatsink while downloading shrek 2 in 8k",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 57.63333333333333,
+    "videoUrl": "https://youtube.com/watch?v=ssj9JjcYQZU",
+    "publishAt": "2026-11-27T07:30:00.000Z"
+  },
+  {
+    "date": "2026-11-27T05:17:16.261Z",
+    "title": "I AM STEVE Joined The Voice Channel ️ (Part 36) 💀",
+    "archetype": "trending_gaming",
+    "trendingTopic": "minecraft_movie_steve",
+    "category": "gaming",
+    "headline": "Minecraft Movie Viral Meme Takes Over Discord",
+    "hookHeadline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀",
+    "storyOutline": {
+      "hook": "Beluga discovers the viral Minecraft movie meme has infiltrated their Discord server, leading to chaos.",
+      "centralSituation": "Steve from the live-action Minecraft movie joins Beluga's voice chat and insists that physical reality is now made of 1-meter voxel cubes.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend to see if real-world crafting is possible.",
+        "Skittle": "Begs everyone to stop before catastrophe as reality starts to break."
+      },
+      "conflict": "The trending event spiraled completely out of hand when a fictional character physically manifests and alters reality.",
+      "escalationStages": [
+        "Steve refuses to communicate with words other than dramatic \"I... AM STEVE\" announcements.",
+        "Hecker tries to ban him, but Steve crafts a wooden fence post that blocks the kick command.",
+        "Skittle reports that his bedroom door has turned into a solid block of unmineable bedrock."
+      ],
+      "climax": "A Creeper hiss starts playing in stereo across everyone's Discord audio headsets simultaneously.",
+      "payoff": "Beluga asks if he can craft diamond armor out of his mom's expensive wedding ring."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀",
+      "hookThumbnailUrl": "trending/trending_minecraft_steve.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Steve",
+    "attachment": "attachments/minecraft_crafting_evidence.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "guys the minecraft movie meme is actually insane rn",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_minecraft_steve.jpg",
+        "hookHeadline": "I AM STEVE JUST JOINED OUR DISCORD VOICE CALL 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "beluga please don't summon real life Steve here",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Admin",
+        "content": "NO MINECRAFT ROLEPLAY IN #GENERAL. RULE 3 VIOLATION.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "System",
+        "content": "I AM STEVE joined the voice channel",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "discord_join"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "I AM STEVE joined the voice channel"
+      },
+      {
+        "id": 5,
+        "author": "Beluga",
+        "content": "OMG HE IS HERE",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "Steve",
+        "content": "I... AM STEVE.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 7,
+        "author": "Hecker",
+        "content": "who is this nerd. im kicking him.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Hecker",
+        "content": "/kick Steve",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": ""
+      },
+      {
+        "id": 9,
+        "author": "Steve",
+        "content": "I... AM STEVE. *[sound of wood crafting and item placement]*",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "KICK BLOCKED BY WOODEN FENCE POST",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 10,
+        "author": "Admin",
+        "content": "WHAT?! A FENCE POST?! HECKER, I AM BANNING YOU!",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Skittle",
+        "content": "uh guys my bedroom door just turned into a solid block of unmineable bedrock",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Beluga",
+        "content": "WHAT",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 13,
+        "author": "Pablo",
+        "content": "i tried mining it with a spoon. it broke.",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Steve",
+        "content": "I... AM STEVE. *[item dropped sound]*",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/steve_jack_black.jpg"
+      },
+      {
+        "id": 15,
+        "author": "Beluga",
+        "content": "he's not lying",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Skittle",
+        "content": "IS THAT A CUBIC FRIED EGG ON A CRAFTING TABLE?!",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/minecraft_crafting_evidence.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Hecker",
+        "content": "this guy broke reality",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 18,
+        "author": "Admin",
+        "content": "SERVER OVERLOAD. CRITICAL DIMENSIONAL SHIFT DETECTED.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "cyber_alarm"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "CRITICAL SERVER OVERLOAD"
+      },
+      {
+        "id": 19,
+        "author": "System",
+        "content": "*[Creeper hissing sound in stereo across headsets]*",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "horror_hit"
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 20,
+        "author": "Skittle",
+        "content": "BRO WHAT WAS THAT",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Beluga",
+        "content": "can i mine my mom's wedding ring to craft diamond armor now",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "twist_boom"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 54.766666666666666,
+    "videoUrl": "https://youtube.com/watch?v=ozBwDiyxDOU",
+    "publishAt": "2026-11-27T11:30:00.000Z"
+  },
+  {
+    "date": "2026-11-27T05:20:08.629Z",
+    "title": "Mark Zuckerberg Infiltrated Our DMs ️ (Part 8) 💀",
+    "archetype": "trending_internet_culture",
+    "trendingTopic": "mark_zuckerberg_metaverse_dm",
+    "category": "internet_culture",
+    "headline": "Meta AI & Smart Glasses Spark Privacy Controversy",
+    "hookHeadline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀",
+    "storyOutline": {
+      "hook": "Beluga discovers his toaster is a Meta device, leading to Mark Zuckerberg joining the Discord.",
+      "centralSituation": "Mark Zuckerberg appears in the Discord server through Meta Ray-Ban smart glasses, politely taking notes on everything Beluga eats.",
+      "characterMotivations": {
+        "Beluga": "Wants to test the trending trend",
+        "Skittle": "Begs everyone to stop before catastrophe"
+      },
+      "conflict": "The trending event spiraled completely out of hand",
+      "escalationStages": [
+        "Zuckerberg reveals he knows Beluga's exact heart rate when Skittle sends a scary cat photo.",
+        "Hecker tries to DDOS Zuckerberg, but Zuckerberg just blinks in binary and purchases Hecker's internet provider.",
+        "Admin Lester asks for an interview at Meta, and Zuckerberg offers him a virtual barbecue in Horizon Worlds."
+      ],
+      "climax": "Zuckerberg offers Beluga unlimited VR cheese in exchange for his legal soul.",
+      "payoff": "Beluga asks if the smart glasses have an x-ray filter to find where his mom hid the Halloween candy."
+    },
+    "hookCard": {
+      "shouldShowHookCard": true,
+      "headline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀",
+      "hookThumbnailUrl": "trending/trending_zuckerberg_meta.jpg",
+      "hookType": "image"
+    },
+    "guestCharacter": "Mark Zuckerberg",
+    "attachment": "attachments/zuck_ad_telemetry.jpg",
+    "messages": [
+      {
+        "id": 1,
+        "author": "Beluga",
+        "content": "GUYS MY TOASTER JUST TALKED TO ME",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-1",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "hookThumbnailUrl": "trending/trending_zuckerberg_meta.jpg",
+        "hookHeadline": "MARK ZUCKERBERG JUST JOINED OUR PRIVATE DISCORD SERVER 💀"
+      },
+      {
+        "id": 2,
+        "author": "Skittle",
+        "content": "what did you do this time",
+        "time": "Today at 3:15 PM",
+        "audioCues": [
+          {
+            "id": "cue-2",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 3,
+        "author": "Beluga",
+        "content": "it said \"optimal toast level achieved, Beluga. Consuming your data now.\"",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-3",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 4,
+        "author": "Skittle",
+        "content": "That's Meta, not toast.",
+        "time": "Today at 3:16 PM",
+        "audioCues": [
+          {
+            "id": "cue-4",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 5,
+        "author": "Admin",
+        "content": "NO SMART TOASTERS. RULE 3.",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-5",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 6,
+        "author": "System",
+        "content": "",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-6",
+            "type": "discord_join",
+            "volume": 0.65
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "Mark Zuckerberg joined the server."
+      },
+      {
+        "id": 7,
+        "author": "Beluga",
+        "content": "BRO WHAT",
+        "time": "Today at 3:17 PM",
+        "audioCues": [
+          {
+            "id": "cue-7",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 8,
+        "author": "Mark Zuckerberg",
+        "content": "Greetings. Observing organic social interactions.",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-8",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 9,
+        "author": "Skittle",
+        "content": "HE'S HERE THROUGH BELUGA'S GLASSES",
+        "time": "Today at 3:18 PM",
+        "audioCues": [
+          {
+            "id": "cue-9",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 10,
+        "author": "Skittle",
+        "content": "*sends a scary cat photo*",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-10",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 11,
+        "author": "Beluga",
+        "content": "AHHH",
+        "time": "Today at 3:19 PM",
+        "audioCues": [
+          {
+            "id": "cue-11",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 12,
+        "author": "Mark Zuckerberg",
+        "content": "Heart rate spiked 23 bpm. Biofeedback noted.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-12",
+            "type": "horror_hit",
+            "volume": 0.7
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 20,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 13,
+        "author": "Hecker",
+        "content": "mainframe breached.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-13",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 14,
+        "author": "Hecker",
+        "content": "he has 4 seconds.",
+        "time": "Today at 3:20 PM",
+        "audioCues": [
+          {
+            "id": "cue-14",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 15,
+        "author": "Hecker",
+        "content": "DDOS initiated on Meta.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-15",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 16,
+        "author": "Mark Zuckerberg",
+        "content": "(blinks in binary) Purchased Hecker's ISP. MetaVerse expanding.",
+        "time": "Today at 3:21 PM",
+        "audioCues": [
+          {
+            "id": "cue-16",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 17,
+        "author": "Skittle",
+        "content": "HE BOUGHT HECKER'S INTERNET!",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-17",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "attachmentUrl": "attachments/zuck_ad_telemetry.jpg"
+      },
+      {
+        "id": 18,
+        "author": "Admin",
+        "content": "ADMIN HERE. META INTERVIEW?",
+        "time": "Today at 3:22 PM",
+        "audioCues": [
+          {
+            "id": "cue-18",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 19,
+        "author": "Mark Zuckerberg",
+        "content": "Resume processed. Horizon Worlds: virtual barbecue.",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-19",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 18,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 20,
+        "author": "Beluga",
+        "content": "real barbecue?",
+        "time": "Today at 3:23 PM",
+        "audioCues": [
+          {
+            "id": "cue-20",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 21,
+        "author": "Mark Zuckerberg",
+        "content": "Unlimited VR cheese for your legal soul. Terms apply.",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-21",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": "",
+        "avatarUrl": "characters/mark_zuckerberg.jpg"
+      },
+      {
+        "id": 22,
+        "author": "Skittle",
+        "content": "NO, BELUGA! DON'T!",
+        "time": "Today at 3:24 PM",
+        "audioCues": [
+          {
+            "id": "cue-22",
+            "type": "cyber_alarm",
+            "volume": 0.75
+          }
+        ],
+        "screenShake": true,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 23,
+        "author": "Pablo",
+        "content": "i like cheese",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-23",
+            "type": "notification"
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": false,
+        "typingFrames": 0,
+        "systemAlert": ""
+      },
+      {
+        "id": 24,
+        "author": "Beluga",
+        "content": "X-ray for mom's candy?",
+        "time": "Today at 3:25 PM",
+        "audioCues": [
+          {
+            "id": "cue-24",
+            "type": "twist_boom",
+            "volume": 0.8
+          }
+        ],
+        "screenShake": false,
+        "punchZoom": true,
+        "typingFrames": 0,
+        "systemAlert": ""
+      }
+    ],
+    "durationSeconds": 51.833333333333336,
+    "videoUrl": "https://youtube.com/watch?v=j9aTuzi8C6M",
+    "publishAt": "2026-11-27T15:00:00.000Z"
   }
 ]
