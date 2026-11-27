@@ -1093,5 +1093,22 @@
     "videoUrl": "https://youtube.com/watch?v=5kOOylSn_h8",
     "publishAt": "2026-11-27T13:30:00.000Z",
     "privacy": "scheduled"
+  },
+  {
+    "date": "2026-11-27T22:16:48.245Z",
+    "title": "The Entity That Spoke From The #VOID Channel 🌌 (Full Episode)",
+    "storyOutline": {
+      "hook": "Beluga stumbles upon an eerie voice glitch playing a cryptic message at 3 AM, hinting at a 'protocol' and a secret channel.",
+      "centralSituation": "The gang investigates the source of the glitch, believing it to be a paranormal entity or a sophisticated hack, as it opens a hidden Discord channel named #THE-VOID.",
+      "conflict": "The mysterious 'entity' from #THE-VOID demands an 'emoji protocol' during an emergency server tribunal, leading to a confrontation over its true intentions.",
+      "climax": "Elon Musk appears as the 'entity' reveals its true demand: a specific emoji to 'unlock' something, shocking the entire server.",
+      "payoff": "The 'entity' is revealed to be Beluga's old bot, designed to unlock a forgotten archive of his own ancient, cringe-worthy memes, much to everyone's exasperation."
+    },
+    "scenes": 4,
+    "totalMessages": 72,
+    "thumbnail": "/home/runner/work/beluga-shorts/beluga-shorts/out/thumbnail_mrbeast_1795817803781.jpg",
+    "durationSeconds": 192.3,
+    "videoUrl": "https://youtube.com/watch?v=SYjyvo_M_mw",
+    "videoFile": "longform_1795817808246.mp4"
   }
 ]
